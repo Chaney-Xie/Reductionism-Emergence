@@ -1,0 +1,656 @@
+{
+  "schemaVersion": 1,
+  "kind": "o1-list-history-full-trace-regression-gate",
+  "description": "Exact O1 1.13.7 source and selection states for all four Round-5 history origins, including all seven divergent and downstream action states.",
+  "provenance": {
+    "obsidianEvidenceSha256": "80129b63457d37b624d5087bfe2f93e5f980b7e36a0cb4f0b28b260a4ea77690",
+    "comparisonEvidenceSha256": "e927e8c0c1191a8b13263e37125625dce5654962cfdc3c9a43e12064fb6e6d19",
+    "minimizedCorpus": "test/markdownConformance/scenarios/v0.3ListRandom500MinimizedRegressionsRound5.json",
+    "minimizedCorpusSha256": "879069564c34e03ba551a33b134d231d525a35b7b5d6e03ef465dda9f518864a",
+    "minimizedCorpusLogicalSha256": "2353fee9c7f463bcc30e5582914de7eef2011e267a756f56892f9c22bfece84d",
+    "oracleReplaySha256": "dccf551aa092f1e9017de2bfc67650f07fe61e8f5f6f01238c318a9aa7b76138"
+  },
+  "counts": {
+    "origins": 4,
+    "divergentActions": 7,
+    "exactHistorySteps": 10,
+    "navigationSteps": 10,
+    "editSteps": 21,
+    "intermediateSteps": 41
+  },
+  "cases": [
+    {
+      "scenarioId": "list-random-500.002.ab87e9a2e3876e26",
+      "mode": "live-preview",
+      "divergentActionNumbers": [
+        7
+      ],
+      "initialSource": "- Alpha\n  - Beta\n- Gamma",
+      "initialSelection": {
+        "anchor": 2,
+        "focus": 2
+      },
+      "steps": [
+        {
+          "actionIndex": 0,
+          "action": {
+            "id": "trusted-click-another-initial-item",
+            "historyEffect": "navigation"
+          },
+          "expected": {
+            "source": "- Alpha\n  - Beta\n- Gamma",
+            "selection": {
+              "anchor": 12,
+              "focus": 12
+            }
+          }
+        },
+        {
+          "actionIndex": 1,
+          "action": {
+            "id": "type-text",
+            "historyEffect": "guaranteed-edit"
+          },
+          "expected": {
+            "source": "- Alpha\n  - ABeta\n- Gamma",
+            "selection": {
+              "anchor": 13,
+              "focus": 13
+            }
+          }
+        },
+        {
+          "actionIndex": 2,
+          "action": {
+            "id": "enter",
+            "historyEffect": "guaranteed-edit"
+          },
+          "expected": {
+            "source": "- Alpha\n  - A\n  - Beta\n- Gamma",
+            "selection": {
+              "anchor": 18,
+              "focus": 18
+            }
+          }
+        },
+        {
+          "actionIndex": 3,
+          "action": {
+            "id": "delete",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "- Alpha\n  - A\n  - eta\n- Gamma",
+            "selection": {
+              "anchor": 18,
+              "focus": 18
+            }
+          }
+        },
+        {
+          "actionIndex": 4,
+          "action": {
+            "id": "shift-tab",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "- Alpha\n  - A\n- eta\n- Gamma",
+            "selection": {
+              "anchor": 16,
+              "focus": 16
+            }
+          }
+        },
+        {
+          "actionIndex": 5,
+          "action": {
+            "id": "backspace",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "- Alpha\n  - A\n-eta\n- Gamma",
+            "selection": {
+              "anchor": 15,
+              "focus": 15
+            }
+          }
+        },
+        {
+          "actionIndex": 6,
+          "action": {
+            "id": "undo",
+            "historyEffect": "undo"
+          },
+          "expected": {
+            "source": "- Alpha\n  - Beta\n- Gamma",
+            "selection": {
+              "anchor": 12,
+              "focus": 12
+            }
+          }
+        },
+        {
+          "actionIndex": 7,
+          "action": {
+            "id": "redo",
+            "historyEffect": "redo"
+          },
+          "expected": {
+            "source": "- Alpha\n  - A\n-eta\n- Gamma",
+            "selection": {
+              "anchor": 15,
+              "focus": 15
+            }
+          }
+        },
+        {
+          "actionIndex": 8,
+          "action": {
+            "id": "delete",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "- Alpha\n  - A\n-ta\n- Gamma",
+            "selection": {
+              "anchor": 15,
+              "focus": 15
+            }
+          }
+        },
+        {
+          "actionIndex": 9,
+          "action": {
+            "id": "arrowright",
+            "historyEffect": "navigation"
+          },
+          "expected": {
+            "source": "- Alpha\n  - A\n-ta\n- Gamma",
+            "selection": {
+              "anchor": 16,
+              "focus": 16
+            }
+          }
+        }
+      ]
+    },
+    {
+      "scenarioId": "list-random-500.090.db357197c37d622e",
+      "mode": "source",
+      "divergentActionNumbers": [
+        6
+      ],
+      "initialSource": "9. A\n10. B\n11. C",
+      "initialSelection": {
+        "anchor": 3,
+        "focus": 3
+      },
+      "steps": [
+        {
+          "actionIndex": 0,
+          "action": {
+            "id": "trusted-click-another-initial-item",
+            "historyEffect": "navigation"
+          },
+          "expected": {
+            "source": "9. A\n10. B\n11. C",
+            "selection": {
+              "anchor": 9,
+              "focus": 9
+            }
+          }
+        },
+        {
+          "actionIndex": 1,
+          "action": {
+            "id": "type-text",
+            "historyEffect": "guaranteed-edit"
+          },
+          "expected": {
+            "source": "9. A\n10. *B\n11. C",
+            "selection": {
+              "anchor": 10,
+              "focus": 10
+            }
+          }
+        },
+        {
+          "actionIndex": 2,
+          "action": {
+            "id": "arrowleft",
+            "historyEffect": "navigation"
+          },
+          "expected": {
+            "source": "9. A\n10. *B\n11. C",
+            "selection": {
+              "anchor": 9,
+              "focus": 9
+            }
+          }
+        },
+        {
+          "actionIndex": 3,
+          "action": {
+            "id": "tab",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "9. A\n    1. *B\n10. C",
+            "selection": {
+              "anchor": 12,
+              "focus": 12
+            }
+          }
+        },
+        {
+          "actionIndex": 4,
+          "action": {
+            "id": "type-text",
+            "historyEffect": "guaranteed-edit"
+          },
+          "expected": {
+            "source": "9. A\n    1. **B\n10. C",
+            "selection": {
+              "anchor": 13,
+              "focus": 13
+            }
+          }
+        },
+        {
+          "actionIndex": 5,
+          "action": {
+            "id": "undo",
+            "historyEffect": "undo"
+          },
+          "expected": {
+            "source": "9. A\n10. *B\n11. C",
+            "selection": {
+              "anchor": 9,
+              "focus": 9
+            }
+          }
+        },
+        {
+          "actionIndex": 6,
+          "action": {
+            "id": "redo",
+            "historyEffect": "redo"
+          },
+          "expected": {
+            "source": "9. A\n    1. **B\n10. C",
+            "selection": {
+              "anchor": 13,
+              "focus": 13
+            }
+          }
+        },
+        {
+          "actionIndex": 7,
+          "action": {
+            "id": "type-text",
+            "historyEffect": "guaranteed-edit"
+          },
+          "expected": {
+            "source": "9. A\n    1. *x*B\n10. C",
+            "selection": {
+              "anchor": 14,
+              "focus": 14
+            }
+          }
+        }
+      ]
+    },
+    {
+      "scenarioId": "list-random-500.118.a9ac910c37812c16",
+      "mode": "source",
+      "divergentActionNumbers": [
+        8
+      ],
+      "initialSource": "- Alpha\n  continued alpha\n  1. Beta\n- Gamma",
+      "initialSelection": {
+        "anchor": 2,
+        "focus": 2
+      },
+      "steps": [
+        {
+          "actionIndex": 0,
+          "action": {
+            "id": "trusted-click-another-initial-item",
+            "historyEffect": "navigation"
+          },
+          "expected": {
+            "source": "- Alpha\n  continued alpha\n  1. Beta\n- Gamma",
+            "selection": {
+              "anchor": 31,
+              "focus": 31
+            }
+          }
+        },
+        {
+          "actionIndex": 1,
+          "action": {
+            "id": "type-text",
+            "historyEffect": "guaranteed-edit"
+          },
+          "expected": {
+            "source": "- Alpha\n  continued alpha\n  1. *Beta\n- Gamma",
+            "selection": {
+              "anchor": 32,
+              "focus": 32
+            }
+          }
+        },
+        {
+          "actionIndex": 2,
+          "action": {
+            "id": "arrowright",
+            "historyEffect": "navigation"
+          },
+          "expected": {
+            "source": "- Alpha\n  continued alpha\n  1. *Beta\n- Gamma",
+            "selection": {
+              "anchor": 33,
+              "focus": 33
+            }
+          }
+        },
+        {
+          "actionIndex": 3,
+          "action": {
+            "id": "type-text",
+            "historyEffect": "guaranteed-edit"
+          },
+          "expected": {
+            "source": "- Alpha\n  continued alpha\n  1. *B*eta\n- Gamma",
+            "selection": {
+              "anchor": 34,
+              "focus": 34
+            }
+          }
+        },
+        {
+          "actionIndex": 4,
+          "action": {
+            "id": "enter",
+            "historyEffect": "guaranteed-edit"
+          },
+          "expected": {
+            "source": "- Alpha\n  continued alpha\n  1. *B*\n  2. eta\n- Gamma",
+            "selection": {
+              "anchor": 40,
+              "focus": 40
+            }
+          }
+        },
+        {
+          "actionIndex": 5,
+          "action": {
+            "id": "delete",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "- Alpha\n  continued alpha\n  1. *B*\n  2. ta\n- Gamma",
+            "selection": {
+              "anchor": 40,
+              "focus": 40
+            }
+          }
+        },
+        {
+          "actionIndex": 6,
+          "action": {
+            "id": "shift-tab",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "- Alpha\n  continued alpha\n  1. *B*\n2. ta\n- Gamma",
+            "selection": {
+              "anchor": 38,
+              "focus": 38
+            }
+          }
+        },
+        {
+          "actionIndex": 7,
+          "action": {
+            "id": "undo",
+            "historyEffect": "undo"
+          },
+          "expected": {
+            "source": "- Alpha\n  continued alpha\n  1. *Beta\n- Gamma",
+            "selection": {
+              "anchor": 33,
+              "focus": 33
+            }
+          }
+        },
+        {
+          "actionIndex": 8,
+          "action": {
+            "id": "redo",
+            "historyEffect": "redo"
+          },
+          "expected": {
+            "source": "- Alpha\n  continued alpha\n  1. *B*\n2. ta\n- Gamma",
+            "selection": {
+              "anchor": 38,
+              "focus": 38
+            }
+          }
+        },
+        {
+          "actionIndex": 9,
+          "action": {
+            "id": "backspace",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "- Alpha\n  continued alpha\n  1. *B*\n2.ta\n- Gamma",
+            "selection": {
+              "anchor": 37,
+              "focus": 37
+            }
+          }
+        },
+        {
+          "actionIndex": 10,
+          "action": {
+            "id": "arrowright",
+            "historyEffect": "navigation"
+          },
+          "expected": {
+            "source": "- Alpha\n  continued alpha\n  1. *B*\n2.ta\n- Gamma",
+            "selection": {
+              "anchor": 38,
+              "focus": 38
+            }
+          }
+        }
+      ]
+    },
+    {
+      "scenarioId": "list-random-500.264.ac52270c30fa0c8d",
+      "mode": "live-preview",
+      "divergentActionNumbers": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "initialSource": "9. A\n10. B\n11. C",
+      "initialSelection": {
+        "anchor": 3,
+        "focus": 3
+      },
+      "steps": [
+        {
+          "actionIndex": 0,
+          "action": {
+            "id": "trusted-click-another-initial-item",
+            "historyEffect": "navigation"
+          },
+          "expected": {
+            "source": "9. A\n10. B\n11. C",
+            "selection": {
+              "anchor": 9,
+              "focus": 9
+            }
+          }
+        },
+        {
+          "actionIndex": 1,
+          "action": {
+            "id": "type-text",
+            "historyEffect": "guaranteed-edit"
+          },
+          "expected": {
+            "source": "9. A\n10. AB\n11. C",
+            "selection": {
+              "anchor": 10,
+              "focus": 10
+            }
+          }
+        },
+        {
+          "actionIndex": 2,
+          "action": {
+            "id": "backspace",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "9. A\n10. B\n11. C",
+            "selection": {
+              "anchor": 9,
+              "focus": 9
+            }
+          }
+        },
+        {
+          "actionIndex": 3,
+          "action": {
+            "id": "undo",
+            "historyEffect": "undo"
+          },
+          "expected": {
+            "source": "9. A\n10. B\n11. C",
+            "selection": {
+              "anchor": 9,
+              "focus": 9
+            }
+          }
+        },
+        {
+          "actionIndex": 4,
+          "action": {
+            "id": "redo",
+            "historyEffect": "redo"
+          },
+          "expected": {
+            "source": "9. A\n10. B\n11. C",
+            "selection": {
+              "anchor": 9,
+              "focus": 9
+            }
+          }
+        },
+        {
+          "actionIndex": 5,
+          "action": {
+            "id": "arrowright",
+            "historyEffect": "navigation"
+          },
+          "expected": {
+            "source": "9. A\n10. B\n11. C",
+            "selection": {
+              "anchor": 10,
+              "focus": 10
+            }
+          }
+        },
+        {
+          "actionIndex": 6,
+          "action": {
+            "id": "shift-tab",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "9. A\n10. B\n11. C",
+            "selection": {
+              "anchor": 10,
+              "focus": 10
+            }
+          }
+        },
+        {
+          "actionIndex": 7,
+          "action": {
+            "id": "undo",
+            "historyEffect": "undo"
+          },
+          "expected": {
+            "source": "9. A\n10. B\n11. C",
+            "selection": {
+              "anchor": 10,
+              "focus": 10
+            }
+          }
+        },
+        {
+          "actionIndex": 8,
+          "action": {
+            "id": "redo",
+            "historyEffect": "redo"
+          },
+          "expected": {
+            "source": "9. A\n10. B\n11. C",
+            "selection": {
+              "anchor": 10,
+              "focus": 10
+            }
+          }
+        },
+        {
+          "actionIndex": 9,
+          "action": {
+            "id": "delete",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "9. A\n10. B11. C",
+            "selection": {
+              "anchor": 10,
+              "focus": 10
+            }
+          }
+        },
+        {
+          "actionIndex": 10,
+          "action": {
+            "id": "type-text",
+            "historyEffect": "guaranteed-edit"
+          },
+          "expected": {
+            "source": "9. A\n10. BA11. C",
+            "selection": {
+              "anchor": 11,
+              "focus": 11
+            }
+          }
+        },
+        {
+          "actionIndex": 11,
+          "action": {
+            "id": "arrowleft",
+            "historyEffect": "navigation"
+          },
+          "expected": {
+            "source": "9. A\n10. BA11. C",
+            "selection": {
+              "anchor": 10,
+              "focus": 10
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

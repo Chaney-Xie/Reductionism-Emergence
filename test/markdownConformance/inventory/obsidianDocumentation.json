@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "checkedOn": "2026-08-11",
+  "role": "Documentation annotations supplement actual installed-app O1 observations; they never replace them.",
+  "sources": [
+    {"id": "views", "title": "Views and editing mode", "url": "https://obsidian.md/help/edit-and-read"},
+    {"id": "basic", "title": "Basic formatting syntax", "url": "https://obsidian.md/help/syntax"},
+    {"id": "advanced", "title": "Advanced formatting syntax", "url": "https://obsidian.md/help/advanced-syntax"},
+    {"id": "flavored", "title": "Obsidian Flavored Markdown", "url": "https://obsidian.md/help/Editing%2Band%2Bformatting/Obsidian%2BFlavored%2BMarkdown"},
+    {"id": "settings", "title": "Settings", "url": "https://obsidian.md/help/settings"}
+  ],
+  "annotations": [
+    {"syntaxFamilies": ["paragraphs", "blank-lines"], "source": "basic", "rule": "Blank lines separate paragraphs; adjacent extra blank space collapses in Reading view."},
+    {"syntaxFamilies": ["soft-break"], "source": "basic", "rule": "One Enter creates a physical source line that is normally a semantic continuation in rendered output; Strict line breaks is a relevant recorded setting."},
+    {"syntaxFamilies": ["hard-break"], "source": "basic", "rule": "Two trailing spaces or Shift+Enter create a hard line break; HTML br is also documented for explicit spacing."},
+    {"syntaxFamilies": ["headings"], "source": "basic", "rule": "One through six leading hash characters create H1 through H6."},
+    {"syntaxFamilies": ["bold", "italic", "bold-italic", "strikethrough", "escaped-syntax"], "source": "basic", "rule": "Asterisk and underscore emphasis variants, double-tilde strike, and backslash escapes are documented."},
+    {"syntaxFamilies": ["quotes"], "source": "basic", "rule": "A leading greater-than marker creates quoted text."},
+    {"syntaxFamilies": ["ordered-lists", "unordered-lists", "mixed-lists", "task-lists"], "source": "basic", "rule": "Dash/asterisk/plus unordered markers, dot/right-parenthesis ordered markers, tasks, mixed nesting, and Tab/Shift+Tab indentation are documented."},
+    {"syntaxFamilies": ["inline-code", "fenced-code"], "source": "basic", "rule": "Inline backticks, backtick or tilde fences, and tab/four-space indented code are documented."},
+    {"syntaxFamilies": ["tables"], "source": "advanced", "rule": "Pipe-delimited tables require a header delimiter row; colon alignment and Live Preview table editing are documented."},
+    {"syntaxFamilies": ["inline-latex", "display-latex"], "source": "advanced", "rule": "Inline and display dollar-delimited math are documented."},
+    {"syntaxFamilies": ["paragraphs", "headings", "bold", "italic", "quotes", "links", "inline-code", "fenced-code", "tables", "inline-latex", "display-latex"], "source": "views", "rule": "Live Preview hides most syntax until the caret enters formatted content; Source mode displays syntax exactly; Reading view presents content without Markdown syntax."},
+    {"syntaxFamilies": ["soft-break", "ordered-lists", "unordered-lists", "mixed-lists", "task-lists"], "source": "settings", "rule": "Record Strict line breaks, smart lists, tab-vs-spaces indentation, and tab visual width with every O1 corpus."},
+    {"syntaxFamilies": [], "source": "flavored", "rule": "Obsidian combines CommonMark, GFM, LaTeX, and Obsidian extensions; unsupported Obsidian-only extensions are not implicitly added to Viewer audit scope."}
+  ],
+  "discrepancyRule": "When documentation and the installed runtime differ, retain both, use O1 as the interaction observation, and classify the discrepancy explicitly rather than silently choosing."
+}

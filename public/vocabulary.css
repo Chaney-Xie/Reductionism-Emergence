@@ -1,0 +1,338 @@
+:root {
+  --surface-tool: #F7F5F1;
+  --border-tool: #C4C0B8;
+  --surface-guide: #EEE8E0;
+  --surface-guide-section: #E8E2DA;
+  --border-guide: #CAC5BE;
+  --surface-canvas: #F2F0EB;
+  --border-canvas: #AEB6C1;
+  --font-system-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --accent-colour: #65778B;
+  --accent-soft: rgb(101 119 139 / 18%);
+  --accent-strong: rgb(101 119 139 / 28%);
+  --theme-colour: #597A5F;
+  --theme-colour-hover: #506E56;
+  --theme-colour-active: #49644E;
+  --theme-colour-contrast: #FFFFFF;
+  --theme-soft: rgb(89 122 95 / 10%);
+  --control-surface: var(--surface-tool);
+  --control-surface-hover: #eef2f6;
+  --control-border: var(--border-tool);
+  --structure-line-colour: var(--border-tool);
+  color: #334155;
+  background: #d9c8b3;
+  line-height: 1.5;
+  --vocab-muted: #6f7b8a;
+  --vocab-focus: #294f7c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-system-family);
+}
+
+button,
+input {
+  font: inherit;
+}
+
+.vocab-app {
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr) auto;
+  height: 100vh;
+  background: var(--surface-canvas);
+}
+
+.vocab-topbar {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 0.75rem;
+  align-items: center;
+  padding: 0.8rem 1.5rem;
+  border-bottom: 1px solid var(--border-tool);
+  background: var(--surface-tool);
+}
+
+.vocab-search,
+.vocab-new-word {
+  --input-border-colour: var(--control-border);
+
+  width: 100%;
+  min-width: 0;
+  padding: 0.48rem 0.65rem;
+  border: 1px solid var(--control-border);
+  border-radius: 8px;
+  color: #334155;
+  background: var(--control-surface);
+  outline: 0;
+}
+
+.vocab-search:focus,
+.vocab-new-word:focus {
+  border-color: var(--input-border-colour);
+  box-shadow: inset 0 0 0 1px var(--input-border-colour);
+}
+
+.vocab-tool-button,
+.vocab-clear-new-word {
+  border: 0;
+  border-radius: 7px;
+  color: #4e5a67;
+  background: transparent;
+}
+
+.vocab-tool-button {
+  width: 32px;
+  min-height: 32px;
+  opacity: 0.45;
+}
+
+.vocab-main {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 52px;
+  min-height: 0;
+  min-width: 0;
+}
+
+.vocab-list {
+  min-width: 0;
+  overflow: auto;
+  padding: 1rem 1.2rem 2rem;
+}
+
+.vocab-entry {
+  position: relative;
+  display: grid;
+  gap: 0.18rem;
+  width: max-content;
+  min-width: min(100%, 420px);
+  max-width: none;
+  padding: 0.55rem 0.65rem;
+  border-radius: 8px;
+}
+
+.vocab-entry.is-highlighted {
+  background: var(--accent-soft);
+}
+
+.vocab-entry.is-highlighted > .vocab-display-row,
+.vocab-entry.is-highlighted > .vocab-alias-row {
+  background: transparent;
+}
+
+.vocab-entry.has-aliases::before {
+  position: absolute;
+  top: 2.45rem;
+  bottom: 0.65rem;
+  left: 1.26rem;
+  border-left: 1px solid var(--structure-line-colour);
+  content: '';
+  pointer-events: none;
+}
+
+.vocab-display-row,
+.vocab-alias-row {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  width: 100%;
+  min-width: 0;
+  min-height: 1.6rem;
+  padding: 0.08rem 0.18rem;
+  border-radius: 5px;
+  cursor: grab;
+  white-space: nowrap;
+}
+
+.vocab-display-row:hover,
+.vocab-alias-row:hover,
+.vocab-entry.is-highlighted > .vocab-display-row:hover,
+.vocab-entry.is-highlighted > .vocab-alias-row:hover {
+  background: var(--accent-strong);
+}
+
+body.move-target-pick-mode .vocab-entry.is-highlighted {
+  background: transparent;
+}
+
+body.move-target-pick-mode .vocab-display-row:hover,
+body.move-target-pick-mode .vocab-alias-row:hover {
+  background: transparent;
+}
+
+body.move-target-pick-mode .vocab-display-row.is-move-source,
+body.move-target-pick-mode .vocab-alias-row.is-move-source,
+body.move-target-pick-mode .vocab-entry.is-move-hover {
+  background: var(--surface-guide);
+}
+
+body.move-target-pick-mode .vocab-entry.is-move-hover > .vocab-display-row,
+body.move-target-pick-mode .vocab-entry.is-move-hover > .vocab-alias-row {
+  background: transparent;
+}
+
+.vocab-display {
+  color: #1f2937;
+  font-size: 1rem;
+  font-weight: 750;
+}
+
+.vocab-alias-row {
+  padding-left: 1.1rem;
+  color: #64748b;
+  font-size: 0.88rem;
+}
+
+.vocab-word,
+.vocab-alias {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  border-radius: 4px;
+  cursor: inherit;
+  white-space: nowrap;
+}
+
+.vocab-word:hover,
+.vocab-alias:hover {
+  color: var(--vocab-focus);
+}
+
+.vocab-display-row:active,
+.vocab-alias-row:active {
+  cursor: grabbing;
+}
+
+.vocab-display-row.is-move-target {
+  color: #0f766e;
+  background: #ccfbf1;
+  box-shadow: 0 0 0 2px #99f6e4;
+}
+
+.vocab-inline-edit {
+  min-width: 12rem;
+  padding: 0.2rem 0.35rem;
+  border: 1px solid var(--border-tool);
+  border-radius: 5px;
+}
+
+.vocab-add-here {
+  display: none;
+}
+
+body.add-to-existing-mode .vocab-display-row:hover .vocab-add-here,
+body.add-to-existing-mode .vocab-alias-row:hover .vocab-add-here,
+.vocab-add-here:focus-visible {
+  display: inline-flex;
+}
+
+.vocab-empty {
+  margin: 2rem 0;
+  color: var(--vocab-muted);
+}
+
+.vocab-index {
+  display: grid;
+  align-content: center;
+  gap: 0.05rem;
+  padding: 0.35rem 0.25rem;
+  border-left: 1px solid var(--border-tool);
+  background: var(--surface-tool);
+  user-select: none;
+}
+
+.vocab-index button {
+  min-height: 18px;
+  padding: 0;
+  border: 0;
+  border-radius: 4px;
+  color: #64748b;
+  background: transparent;
+  cursor: pointer;
+  font-size: 0.68rem;
+  font-weight: 700;
+}
+
+.vocab-index button:hover,
+.vocab-index button:focus-visible {
+  color: var(--vocab-focus);
+  background: var(--accent-strong);
+}
+
+.vocab-index button:disabled {
+  cursor: default;
+  opacity: 0.3;
+}
+
+.vocab-inputbar {
+  display: grid;
+  grid-template-columns: minmax(180px, 1fr) max-content max-content;
+  gap: 0.55rem;
+  align-items: center;
+  padding: 0.75rem 1.5rem;
+  border-top: 1px solid var(--border-tool);
+  background: var(--surface-tool);
+}
+
+.vocab-new-word-wrap {
+  position: relative;
+  min-width: 0;
+}
+
+.vocab-new-word {
+  padding-right: 2rem;
+}
+
+.vocab-clear-new-word {
+  position: absolute;
+  top: 50%;
+  right: 0.45rem;
+  width: 1.25rem;
+  height: 1.25rem;
+  transform: translateY(-50%);
+  cursor: pointer;
+  line-height: 1;
+}
+
+.vocab-clear-new-word:hover,
+.vocab-clear-new-word:focus-visible {
+  color: var(--vocab-focus);
+}
+
+.vocab-status {
+  grid-column: 1 / -1;
+  min-width: 0;
+  color: #596575;
+  font-size: 0.82rem;
+}
+
+.vocab-status:empty {
+  display: none;
+}
+
+.vocab-status.error {
+  color: #b42318;
+}
+
+.vocab-floating-hint {
+  position: fixed;
+  z-index: 50;
+  max-width: min(320px, calc(100vw - 24px));
+  padding: 0.35rem 0.5rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 7px;
+  color: #334155;
+  background: #ffffff;
+  box-shadow: 0 8px 24px rgb(15 23 42 / 16%);
+  font-size: 0.78rem;
+  pointer-events: none;
+}
+
+.vocab-floating-hint.vocab-move-follow-hint {
+  border-color: var(--border-tool);
+  background: var(--surface-tool);
+}

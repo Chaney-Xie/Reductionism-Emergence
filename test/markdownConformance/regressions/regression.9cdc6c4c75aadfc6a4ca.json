@@ -1,0 +1,54 @@
+{
+  "evaluations": 6,
+  "kind": "minimized-o1-v1-regression",
+  "metadata": {
+    "evidenceLevels": [
+      "O1",
+      "V1"
+    ],
+    "minimizedAt": "2026-08-11T16:02:30.993Z",
+    "obsidianLaunches": 1,
+    "predicate": "source",
+    "randomOriginId": "certification-random.e69e1b3a4a9450cfa16d",
+    "viewerLaunches": 1
+  },
+  "minimizedLength": 1,
+  "originalLength": 14,
+  "schemaVersion": 1,
+  "sequence": {
+    "actions": [
+      {
+        "certificationEffect": "possible-edit",
+        "key": "Delete",
+        "type": "keyboard"
+      }
+    ],
+    "comparisonPolicy": {
+      "kind": "fully-comparable",
+      "nonComparableDimensions": []
+    },
+    "fixtureId": "plain-three-physical-lines",
+    "id": "regression.9cdc6c4c75aadfc6a4ca",
+    "index": 60,
+    "initialSelection": {
+      "anchor": 2,
+      "focus": 2
+    },
+    "initialSource": "A\nB\nC",
+    "mode": "source",
+    "profile": "v0.3-valid",
+    "randomOriginId": "certification-random.e69e1b3a4a9450cfa16d",
+    "requiredObservations": [
+      "source",
+      "selection",
+      "physical",
+      "semantic"
+    ],
+    "schemaVersion": 1,
+    "seed": "cogneuro-v0.3-certification-random-001",
+    "state": {
+      "active": true
+    },
+    "syntaxFamily": "paragraphs"
+  }
+}

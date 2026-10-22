@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "sequences": [
+    {
+      "id": "list-exit-merge.ordered.all-one-children",
+      "syntaxFamily": "ordered-lists",
+      "mode": "live-preview",
+      "state": { "active": true },
+      "initialSource": "1. A\n    1. X\n2. \n    1. Y",
+      "initialSelection": { "anchor": 17, "focus": 17 },
+      "actions": [{ "id": "enter", "type": "keyboard", "key": "Enter" }],
+      "requiredObservations": ["source", "selection", "physical", "semantic", "presentation"]
+    },
+    {
+      "id": "list-exit-merge.unordered-outer.ordered-children",
+      "syntaxFamily": "mixed-lists",
+      "mode": "live-preview",
+      "state": { "active": true },
+      "initialSource": "- A\n    1. X\n- \n    1. Y",
+      "initialSelection": { "anchor": 15, "focus": 15 },
+      "actions": [{ "id": "enter", "type": "keyboard", "key": "Enter" }],
+      "requiredObservations": ["source", "selection", "physical", "semantic", "presentation"]
+    },
+    {
+      "id": "list-exit-merge.delimiter-boundary",
+      "syntaxFamily": "ordered-lists",
+      "mode": "live-preview",
+      "state": { "active": true },
+      "initialSource": "1. A\n    1. X\n2. \n    1) Y",
+      "initialSelection": { "anchor": 17, "focus": 17 },
+      "actions": [{ "id": "enter", "type": "keyboard", "key": "Enter" }],
+      "requiredObservations": ["source", "selection", "physical", "semantic", "presentation"]
+    },
+    {
+      "id": "list-exit-merge.no-predecessor",
+      "syntaxFamily": "ordered-lists",
+      "mode": "live-preview",
+      "state": { "active": true },
+      "initialSource": "1. A\n2. \n    1. Y",
+      "initialSelection": { "anchor": 8, "focus": 8 },
+      "actions": [{ "id": "enter", "type": "keyboard", "key": "Enter" }],
+      "requiredObservations": ["source", "selection", "physical", "semantic", "presentation"]
+    },
+    {
+      "id": "list-exit-merge.explicit-child-start",
+      "syntaxFamily": "ordered-lists",
+      "mode": "live-preview",
+      "state": { "active": true },
+      "initialSource": "1. A\n    3. X\n2. \n    1. Y",
+      "initialSelection": { "anchor": 17, "focus": 17 },
+      "actions": [{ "id": "enter", "type": "keyboard", "key": "Enter" }],
+      "requiredObservations": ["source", "selection", "physical", "semantic", "presentation"]
+    }
+  ]
+}

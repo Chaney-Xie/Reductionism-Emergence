@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vocabulary Library</title>
+    <link rel="stylesheet" href="typography.css?v=typography-semantics-v01">
+    <link rel="stylesheet" href="vocabulary.css?v=semantic-colours-v02">
+    <link rel="stylesheet" href="sharedControls.css?v=shared-actions-v02">
+  </head>
+  <body class="system-typography">
+    <main class="vocab-app">
+      <header class="vocab-topbar">
+        <input id="vocab-search" class="vocab-search" type="search"
+          placeholder="Search display words and aliases" aria-label="Search vocabulary">
+        <button class="vocab-tool-button" type="button" disabled
+          aria-label="Import dictionary placeholder" title="Import dictionary">⇪</button>
+      </header>
+
+      <section class="vocab-main">
+        <div id="vocab-list" class="vocab-list" aria-label="Vocabulary entries"></div>
+        <nav id="vocab-index" class="vocab-index" aria-label="A to Z quick index"></nav>
+      </section>
+
+      <footer class="vocab-inputbar">
+        <div class="vocab-new-word-wrap">
+          <input id="vocab-new-word" class="vocab-new-word" type="text"
+            placeholder="New display word or alias" aria-label="New vocabulary word">
+          <button id="vocab-clear-new-word" class="vocab-clear-new-word" type="button"
+            aria-label="Clear new word">×</button>
+        </div>
+        <button id="vocab-add-existing" class="vocab-action-button ui-outline-action" type="button">Add to existing</button>
+        <button id="vocab-create-word" class="vocab-action-button ui-solid-action ui-primary-action" type="button">Create word</button>
+        <span id="vocab-status" class="vocab-status" role="status" aria-live="polite"></span>
+      </footer>
+    </main>
+
+    <script src="appearanceSettings.js?v=appearance-colours-v02"></script>
+    <script src="vaultAppearanceEvents.js?v=vault-appearance-events-v01"></script>
+    <script src="nativeContextMenu.js?v=native-context-menu-v04"></script>
+    <script src="textEditing.js?v=text-editing-v03"></script>
+    <script src="descriptorMetadataInstall.js?v=descriptor-metadata-commit-v01"></script>
+    <script src="vocabulary.js"></script>
+  </body>
+</html>

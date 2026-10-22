@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "kind": "real-o1-v1-repair-gate",
+  "scenarios": [
+    {
+      "id": "repair.nbsp-leading-space",
+      "syntaxFamily": "plain-text",
+      "initialSource": "Alpha",
+      "mode": "live-preview",
+      "initialSelection": { "anchor": 0, "focus": 0 },
+      "actions": [{ "type": "input", "command": "insertText", "text": " " }],
+      "requiredObservations": ["source", "selection", "physical", "semantic"]
+    },
+    {
+      "id": "repair.quote-tab",
+      "syntaxFamily": "quotes",
+      "initialSource": "> A\n> B",
+      "mode": "live-preview",
+      "initialSelection": { "anchor": 2, "focus": 2 },
+      "actions": [{ "type": "keyboard", "key": "Tab" }],
+      "requiredObservations": ["source", "selection", "physical", "semantic"]
+    },
+    {
+      "id": "repair.quote-shift-tab",
+      "syntaxFamily": "quotes",
+      "initialSource": "> A\n> B",
+      "mode": "live-preview",
+      "initialSelection": { "anchor": 2, "focus": 2 },
+      "actions": [{ "type": "keyboard", "key": "Tab", "shiftKey": true }],
+      "requiredObservations": ["source", "selection", "physical", "semantic"]
+    },
+    {
+      "id": "repair.quote-repeated-tab",
+      "syntaxFamily": "quotes",
+      "initialSource": "> A",
+      "mode": "live-preview",
+      "initialSelection": { "anchor": 2, "focus": 2 },
+      "actions": [
+        { "type": "keyboard", "key": "Tab" },
+        { "type": "keyboard", "key": "Tab" }
+      ],
+      "requiredObservations": ["source", "selection", "physical", "semantic"]
+    },
+    {
+      "id": "repair.shift-enter-plain-live",
+      "syntaxFamily": "hard-break",
+      "initialSource": "Alpha",
+      "mode": "live-preview",
+      "initialSelection": { "anchor": 5, "focus": 5 },
+      "actions": [{ "type": "keyboard", "key": "Enter", "shiftKey": true }],
+      "requiredObservations": ["source", "selection", "physical", "semantic"]
+    },
+    {
+      "id": "repair.shift-enter-plain-source",
+      "syntaxFamily": "hard-break",
+      "initialSource": "Alpha",
+      "mode": "source",
+      "initialSelection": { "anchor": 5, "focus": 5 },
+      "actions": [{ "type": "keyboard", "key": "Enter", "shiftKey": true }],
+      "requiredObservations": ["source", "selection", "physical", "semantic"]
+    },
+    {
+      "id": "repair.shift-enter-indented",
+      "syntaxFamily": "paragraphs",
+      "initialSource": "A\nB\n    C\nD",
+      "mode": "live-preview",
+      "initialSelection": { "anchor": 9, "focus": 9 },
+      "actions": [{ "type": "keyboard", "key": "Enter", "shiftKey": true }],
+      "requiredObservations": ["source", "selection", "physical", "semantic"]
+    },
+    {
+      "id": "repair.enter-indented",
+      "syntaxFamily": "paragraphs",
+      "initialSource": "A\nB\n    C\nD",
+      "mode": "live-preview",
+      "initialSelection": { "anchor": 9, "focus": 9 },
+      "actions": [{ "type": "keyboard", "key": "Enter" }],
+      "requiredObservations": ["source", "selection", "physical", "semantic"]
+    },
+    {
+      "id": "repair.shift-enter-unordered",
+      "syntaxFamily": "unordered-lists",
+      "initialSource": "- Alpha",
+      "mode": "live-preview",
+      "initialSelection": { "anchor": 7, "focus": 7 },
+      "actions": [{ "type": "keyboard", "key": "Enter", "shiftKey": true }],
+      "requiredObservations": ["source", "selection", "physical", "semantic"]
+    },
+    {
+      "id": "repair.shift-enter-ordered",
+      "syntaxFamily": "ordered-lists",
+      "initialSource": "1. Alpha",
+      "mode": "live-preview",
+      "initialSelection": { "anchor": 8, "focus": 8 },
+      "actions": [{ "type": "keyboard", "key": "Enter", "shiftKey": true }],
+      "requiredObservations": ["source", "selection", "physical", "semantic"]
+    },
+    {
+      "id": "repair.shift-enter-quote",
+      "syntaxFamily": "quotes",
+      "initialSource": "> Alpha",
+      "mode": "live-preview",
+      "initialSelection": { "anchor": 7, "focus": 7 },
+      "actions": [{ "type": "keyboard", "key": "Enter", "shiftKey": true }],
+      "requiredObservations": ["source", "selection", "physical", "semantic"]
+    },
+    {
+      "id": "repair.ordered-delete-minimized",
+      "syntaxFamily": "mixed-lists",
+      "initialSource": "1. Ordered parent\n   - Bullet child\n     1. Number grandchild\n     2. Number sibling\n   - Bullet sibling\n2. Ordered next",
+      "mode": "live-preview",
+      "initialSelection": { "anchor": 90, "focus": 90 },
+      "actions": [{ "type": "keyboard", "key": "Delete" }],
+      "requiredObservations": ["source", "selection", "physical", "semantic"]
+    },
+    {
+      "id": "repair.ordered-delete-explicit-start",
+      "syntaxFamily": "mixed-lists",
+      "initialSource": "3. Root\n   - Child\n8. Next\n9. Last",
+      "mode": "live-preview",
+      "initialSelection": { "anchor": 13, "focus": 13 },
+      "actions": [{ "type": "keyboard", "key": "Delete" }],
+      "requiredObservations": ["source", "selection", "physical", "semantic"]
+    }
+  ]
+}

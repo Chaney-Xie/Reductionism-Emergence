@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "productVersion": "v0.3",
+  "rule": "A mismatch is intentional only when every differing observation path is allowed and every applicable Viewer expectation passes.",
+  "overrides": [
+    {
+      "id": "viewer-hidden-horizontal-rule",
+      "syntaxFamilies": ["thematic-break"],
+      "rationale": "Reductionism & Emergence intentionally never paints a visible horizontal rule.",
+      "allowedDifferencePaths": [
+        "presentation.renderedState",
+        "presentation.markerVisibility",
+        "presentation.visibleText",
+        "presentation.elementType"
+      ],
+      "expectations": [
+        {"when": {"mode": "reading"}, "path": "presentation.renderedState", "equals": "hidden"},
+        {"when": {"mode": "reading"}, "path": "presentation.markerVisibility", "equals": "hidden"},
+        {"when": {"mode": "live-preview", "active": false}, "path": "presentation.renderedState", "equals": "hidden"},
+        {"when": {"mode": "live-preview", "active": false}, "path": "presentation.markerVisibility", "equals": "hidden"},
+        {"when": {"mode": "live-preview", "active": true}, "path": "presentation.renderedState", "equals": "raw"},
+        {"when": {"mode": "live-preview", "active": true}, "path": "presentation.visibleText", "equals": "---"},
+        {"when": {"mode": "source"}, "path": "presentation.renderedState", "equals": "raw"},
+        {"when": {"mode": "source"}, "path": "presentation.visibleText", "equals": "---"},
+        {"path": "presentation.elementType", "notEquals": "hr"}
+      ]
+    },
+    {
+      "id": "viewer-quote-rails",
+      "syntaxFamilies": ["quotes"],
+      "rationale": "Viewer owns quote-rail presentation; Obsidian remains the transaction, continuation, exit, nesting, and caret reference.",
+      "allowedDifferencePaths": [
+        "presentation.quoteRailText",
+        "presentation.visibleMarkers",
+        "presentation.markerVisibility",
+        "presentation.geometry.rails"
+      ],
+      "expectations": [
+        {"when": {"mode": "reading", "quoteDepth": 1}, "path": "presentation.quoteRailText", "equals": "|"},
+        {"when": {"mode": "reading", "quoteDepth": 2}, "path": "presentation.quoteRailText", "equals": "||"},
+        {"when": {"mode": "reading", "quoteDepth": 3}, "path": "presentation.quoteRailText", "equals": "|||"},
+        {"when": {"mode": "live-preview", "active": false, "quoteDepth": 1}, "path": "presentation.quoteRailText", "equals": "|"},
+        {"when": {"mode": "live-preview", "active": false, "quoteDepth": 2}, "path": "presentation.quoteRailText", "equals": "||"},
+        {"when": {"mode": "live-preview", "active": false, "quoteDepth": 3}, "path": "presentation.quoteRailText", "equals": "|||"},
+        {"when": {"mode": "live-preview", "active": true, "quoteDepth": 1}, "path": "presentation.quoteRailText", "equals": "|>"},
+        {"when": {"mode": "live-preview", "active": true, "quoteDepth": 2}, "path": "presentation.quoteRailText", "equals": "|>>"},
+        {"when": {"mode": "live-preview", "active": true, "quoteDepth": 3}, "path": "presentation.quoteRailText", "equals": "|>>>"},
+        {"when": {"mode": "source", "quoteDepth": 1}, "path": "presentation.quoteRailText", "equals": "|>"},
+        {"when": {"mode": "source", "quoteDepth": 2}, "path": "presentation.quoteRailText", "equals": "|>>"},
+        {"when": {"mode": "source", "quoteDepth": 3}, "path": "presentation.quoteRailText", "equals": "|>>>"}
+      ]
+    },
+    {
+      "id": "viewer-latex-frozen",
+      "syntaxFamilies": ["inline-latex", "display-latex"],
+      "rationale": "The approved v0.3 Viewer LaTeX interaction and presentation are frozen.",
+      "allowedDifferencePaths": [
+        "presentation.renderedState",
+        "presentation.markerVisibility",
+        "presentation.visibleText",
+        "presentation.layout",
+        "presentation.elementType",
+        "presentation.geometry.formula"
+      ],
+      "expectations": [
+        {"when": {"mode": "reading"}, "path": "presentation.renderedState", "equals": "rendered"},
+        {"when": {"mode": "live-preview", "active": false}, "path": "presentation.renderedState", "equals": "rendered"},
+        {"when": {"mode": "source"}, "path": "presentation.renderedState", "equals": "raw"},
+        {"when": {"mode": "live-preview", "active": true, "syntaxFamily": "inline-latex"}, "path": "presentation.renderedState", "equals": "raw"},
+        {"when": {"mode": "live-preview", "active": true, "syntaxFamily": "display-latex"}, "path": "presentation.renderedState", "equals": "source-above-rendered"},
+        {"when": {"mode": "live-preview", "active": true, "syntaxFamily": "display-latex"}, "path": "presentation.layout", "equals": "column"}
+      ]
+    },
+    {
+      "id": "viewer-table-interaction",
+      "syntaxFamilies": ["tables"],
+      "rationale": "Viewer retains its approved table UI; conformance still requires canonical syntax/source and ordinary editing correctness.",
+      "allowedDifferencePaths": [
+        "presentation.controls",
+        "presentation.renderedState",
+        "presentation.markerVisibility",
+        "presentation.elementType",
+        "presentation.geometry.table"
+      ],
+      "expectations": [
+        {"when": {"mode": "reading"}, "path": "presentation.renderedState", "equals": "static"},
+        {"when": {"mode": "source"}, "path": "presentation.renderedState", "equals": "raw"},
+        {"when": {"mode": "live-preview"}, "path": "presentation.renderedState", "equals": "interactive"}
+      ]
+    }
+  ],
+  "frozenRegressionControls": [
+    {"id": "latex", "syntaxFamilies": ["inline-latex", "display-latex"]},
+    {"id": "blank-and-terminal-line-ownership", "syntaxFamilies": ["blank-lines", "soft-break"]},
+    {"id": "quote-newline-state-machine", "syntaxFamilies": ["quotes"]}
+  ]
+}

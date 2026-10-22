@@ -1,0 +1,3075 @@
+{
+  "schemaVersion": 1,
+  "evidenceLevel": "O1",
+  "oracleId": "obsidian-1.13.6-source-interactions",
+  "generatedAt": "2026-08-11T09:17:22.745Z",
+  "scope": {
+    "application": "Obsidian",
+    "appPackageVersion": "1.13.6",
+    "installedShellVersion": "1.12.4",
+    "mode": "source",
+    "scenarioCount": 70,
+    "actionStepCount": 76
+  },
+  "hashes": {
+    "obsidianAsarSha256": "d769003f81435abe53576172f3bb0695132880cc7b7970f2f0086f7d5ea968b5",
+    "normalizedBehaviorSha256": "9737babd27a325420eca0d96d3fac6bf0b52012b57d6e28c0fdac9337d06390d",
+    "normalizedBehaviorHashRepeatedIdentically": true,
+    "independentRunCount": 2
+  },
+  "runtime": {
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) obsidian/1.12.4 Chrome/142.0.7444.265 Electron/39.7.0 Safari/537.36",
+    "navigatorPlatform": "MacIntel",
+    "rendererPlatform": "darwin",
+    "architecture": "arm64",
+    "electron": "39.7.0",
+    "chromium": "142.0.7444.265",
+    "rendererNode": "22.22.0",
+    "v8": "14.2.231.22-electron.0",
+    "host": {
+      "platform": "darwin",
+      "arch": "arm64",
+      "osType": "Darwin",
+      "osRelease": "25.5.0",
+      "osVersion": "Darwin Kernel Version 25.5.0: Tue Jun  9 22:18:58 PDT 2026; root:xnu-12377.121.10~1/RELEASE_ARM64_T6000"
+    },
+    "probeNode": "24.18.0"
+  },
+  "settings": {
+    "requested": {
+      "defaultViewMode": "source",
+      "livePreview": false,
+      "strictLineBreaks": true,
+      "useTab": false,
+      "tabSize": 4,
+      "smartIndentList": true,
+      "autoPairBrackets": true,
+      "autoPairMarkdown": true,
+      "showLineNumber": false
+    },
+    "observed": {
+      "defaultViewMode": {
+        "getConfig": "source",
+        "configProperty": "source"
+      },
+      "livePreview": {
+        "getConfig": false,
+        "configProperty": false
+      },
+      "strictLineBreaks": {
+        "getConfig": true,
+        "configProperty": true
+      },
+      "useTab": {
+        "getConfig": false,
+        "configProperty": false
+      },
+      "tabSize": {
+        "getConfig": 4,
+        "configProperty": 4
+      },
+      "smartIndentList": {
+        "getConfig": true,
+        "configProperty": true
+      },
+      "autoPairBrackets": {
+        "getConfig": true,
+        "configProperty": true
+      },
+      "autoPairMarkdown": {
+        "getConfig": true,
+        "configProperty": true
+      },
+      "showLineNumber": {
+        "getConfig": false,
+        "configProperty": false
+      }
+    }
+  },
+  "safety": {
+    "disposableProfileAndVaultOnly": true,
+    "realUserProfileOrVaultTouched": false,
+    "cachedAsarCopiedIntoDisposableProfile": true,
+    "repositoryEditedByProbe": false,
+    "tempProfileAndVaultPathsExcluded": true,
+    "actionTransport": "Chrome DevTools Protocol Input.dispatchKeyEvent.",
+    "trustedReachCriterion": "Captured document keydown has isTrusted=true and targetInsideCodeMirror=true with the requested key.",
+    "nonReachedClassification": "OBSIDIAN_NOT_AUTOMATABLE"
+  },
+  "integrity": {
+    "trustedActionSteps": 76,
+    "allActionStepsTrusted": true,
+    "allStepsEditorVaultAndDiskAgree": true,
+    "explicitReopenChecks": 6,
+    "successfulReopenChecks": 6,
+    "comparisonCounts": {
+      "SOURCE_MISMATCH": 16,
+      "MATCH": 32,
+      "VIEWER_MODEL_NATIVE_FALLTHROUGH": 19,
+      "VIEWER_MODEL_NOT_APPLICABLE": 3
+    }
+  },
+  "cases": [
+    {
+      "id": "plain_tab_start",
+      "family": "plain-paragraph",
+      "description": "Tab in a plain paragraph at start",
+      "initialSource": "Alpha",
+      "initialSelection": {
+        "anchor": 0,
+        "focus": 0
+      },
+      "actions": [
+        {
+          "action": {
+            "kind": "key",
+            "key": "Tab"
+          },
+          "trustedKeyReachedEditor": true
+        }
+      ],
+      "final": {
+        "source": "    Alpha",
+        "selection": {
+          "anchor": 4,
+          "focus": 4
+        }
+      },
+      "diskAgreement": {
+        "finalEditorEqualsVault": true,
+        "finalEditorEqualsDisk": true,
+        "allStepsEditorVaultAndDiskAgree": true
+      },
+      "reopen": {
+        "performed": false
+      },
+      "viewerModelComparison": {
+        "label": "SOURCE_MISMATCH",
+        "modelFunction": "applyMarkdownIndentation",
+        "applicability": "modeled",
+        "sourceMatch": false,
+        "selectionMatch": false
+      }
+    },
+    {
+      "id": "plain_shift_tab_start",
+      "family": "plain-paragraph",
+      "description": "Shift+Tab in a plain paragraph at start",
+      "initialSource": "Alpha",
+      "initialSelection": {
+        "anchor": 0,
+        "focus": 0
+      },
+      "actions": [
+        {
+          "action": {
+            "kind": "key",
+            "key": "Tab",
+            "shift": true
+          },
+          "trustedKeyReachedEditor": true
+        }
+      ],
+      "final": {
+        "source": "Alpha",
+        "selection": {
+          "anchor": 0,
+          "focus": 0
+        }
+      },
+      "diskAgreement": {
+        "finalEditorEqualsVault": true,
+        "finalEditorEqualsDisk": true,
+        "allStepsEditorVaultAndDiskAgree": true
+      },
+      "reopen": {
+        "performed": false
+      },
+      "viewerModelComparison": {
+        "label": "MATCH",
+        "modelFunction": "applyMarkdownIndentation",
+        "applicability": "modeled",
+        "sourceMatch": true,
+        "selectionMatch": true
+      }
+    },
+    {
+      "id": "plain_tab_middle",
+      "family": "plain-paragraph",
+      "description": "Tab in a plain paragraph at middle",
+      "initialSource": "Alpha",
+      "initialSelection": {
+        "anchor": 2,
+        "focus": 2
+      },
+      "actions": [
+        {
+          "action": {
+            "kind": "key",
+            "key": "Tab"
+          },
+          "trustedKeyReachedEditor": true
+        }
+      ],
+      "final": {
+        "source": "    Alpha",
+        "selection": {
+          "anchor": 6,
+          "focus": 6
+        }
+      },
+      "diskAgreement": {
+        "finalEditorEqualsVault": true,
+        "finalEditorEqualsDisk": true,
+        "allStepsEditorVaultAndDiskAgree": true
+      },
+      "reopen": {
+        "performed": false
+      },
+      "viewerModelComparison": {
+        "label": "SOURCE_MISMATCH",
+        "modelFunction": "applyMarkdownIndentation",
+        "applicability": "modeled",
+        "sourceMatch": false,
+        "selectionMatch": false
+      }
+    },
+    {
+      "id": "plain_shift_tab_middle",
+      "family": "plain-paragraph",
+      "description": "Shift+Tab in a plain paragraph at middle",
+      "initialSource": "Alpha",
+      "initialSelection": {
+        "anchor": 2,
+        "focus": 2
+      },
+      "actions": [
+        {
+          "action": {
+            "kind": "key",
+            "key": "Tab",
+            "shift": true
+          },
+          "trustedKeyReachedEditor": true
+        }
+      ],
+      "final": {
+        "source": "Alpha",
+        "selection": {
+          "anchor": 2,
+          "focus": 2
+        }
+      },
+      "diskAgreement": {
+        "finalEditorEqualsVault": true,
+        "finalEditorEqualsDisk": true,
+        "allStepsEditorVaultAndDiskAgree": true
+      },
+      "reopen": {
+        "performed": false
+      },
+      "viewerModelComparison": {
+        "label": "MATCH",
+        "modelFunction": "applyMarkdownIndentation",
+        "applicability": "modeled",
+        "sourceMatch": true,
+        "selectionMatch": true
+      }
+    },
+    {
+      "id": "plain_tab_end",
+      "family": "plain-paragraph",
+      "description": "Tab in a plain paragraph at end",
+      "initialSource": "Alpha",
+      "initialSelection": {
+        "anchor": 5,
+        "focus": 5
+      },
+      "actions": [
+        {
+          "action": {
+            "kind": "key",
+            "key": "Tab"
+          },
+          "trustedKeyReachedEditor": true
+        }
+      ],
+      "final": {
+        "source": "    Alpha",
+        "selection": {
+          "anchor": 9,
+          "focus": 9
+        }
+      },
+      "diskAgreement": {
+        "finalEditorEqualsVault": true,
+        "finalEditorEqualsDisk": true,
+        "allStepsEditorVaultAndDiskAgree": true
+      },
+      "reopen": {
+        "performed": false
+      },
+      "viewerModelComparison": {
+        "label": "SOURCE_MISMATCH",
+        "modelFunction": "applyMarkdownIndentation",
+        "applicability": "modeled",
+        "sourceMatch": false,
+        "selectionMatch": false
+      }
+    },
+    {
+      "id": "plain_shift_tab_end",
+      "family": "plain-paragraph",
+      "description": "Shift+Tab in a plain paragraph at end",
+      "initialSource": "Alpha",
+      "initialSelection": {
+        "anchor": 5,
+        "focus": 5
+      },
+      "actions": [
+        {
+          "action": {
+            "kind": "key",
+            "key": "Tab",
+            "shift": true
+          },
+          "trustedKeyReachedEditor": true
+        }
+      ],
+      "final": {
+        "source": "Alpha",
+        "selection": {
+          "anchor": 5,
+          "focus": 5
+        }
+      },
+      "diskAgreement": {
+        "finalEditorEqualsVault": true,
+        "finalEditorEqualsDisk": true,
+        "allStepsEditorVaultAndDiskAgree": true
+      },
+      "reopen": {
+        "performed": false
+      },
+      "viewerModelComparison": {
+        "label": "MATCH",
+        "modelFunction": "applyMarkdownIndentation",
+        "applicability": "modeled",
+        "sourceMatch": true,
+        "selectionMatch": true
+      }
+    },
+    {
+      "id": "quote_depth1_enter_nonempty",
+      "family": "quote",
+      "description": "Enter at end of nonempty quote depth 1",
+      "initialSource": "> Quote",
+      "initialSelection": {
+        "anchor": 7,
+        "focus": 7
+      },
+      "actions": [
+        {
+          "action": {
+            "kind": "key",
+            "key": "Enter"
+          },
+          "trustedKeyReachedEditor": true
+        }
+      ],
+      "final": {
+        "source": "> Quote\n> ",
+        "selection": {
+          "anchor": 10,
+          "focus": 10
+        }
+      },
+      "diskAgreement": {
+        "finalEditorEqualsVault": true,
+        "finalEditorEqualsDisk": true,
+        "allStepsEditorVaultAndDiskAgree": true
+      },
+      "reopen": {
+        "performed": false
+      },
+      "viewerModelComparison": {
+        "label": "MATCH",
+        "modelFunction": "applyMarkdownNewline",
+        "applicability": "modeled",
+        "sourceMatch": true,
+        "selectionMatch": true
+      }
+    },
+    {
+      "id": "quote_depth1_enter_empty",
+      "family": "quote",
+      "description": "Enter at end of marker-only quote depth 1",
+      "initialSource": "> ",
+      "initialSelection": {
+        "anchor": 2,
+        "focus": 2
+      },
+      "actions": [
+        {
+          "action": {
+            "kind": "key",
+            "key": "Enter"
+          },
+          "trustedKeyReachedEditor": true
+        }
+      ],
+      "final": {
+        "source": "\n",
+        "selection": {
+          "anchor": 1,
+          "focus": 1
+        }
+      },
+      "diskAgreement": {
+        "finalEditorEqualsVault": true,
+        "finalEditorEqualsDisk": true,
+        "allStepsEditorVaultAndDiskAgree": true
+      },
+      "reopen": {
+        "performed": false
+      },
+      "viewerModelComparison": {
+        "label": "MATCH",
+        "modelFunction": "applyMarkdownNewline",
+        "applicability": "modeled",
+        "sourceMatch": true,
+        "selectionMatch": true
+      }
+    },
+    {
+      "id": "quote_depth1_shift_enter",
+      "family": "quote",
+      "description": "Shift+Enter at end of nonempty quote depth 1",
+      "initialSource": "> Quote",
+      "initialSelection": {
+        "anchor": 7,
+        "focus": 7
+      },
+      "actions": [
+        {
+          "action": {
+            "kind": "key",
+            "key": "Enter",
+            "shift": true
+          },
+          "trustedKeyReachedEditor": true
+        }
+      ],
+      "final": {
+        "source": "> Quote\n> ",
+        "selection": {
+          "anchor": 10,
+          "focus": 10
+        }
+      },
+      "diskAgreement": {
+        "finalEditorEqualsVault": true,
+        "finalEditorEqualsDisk": true,
+        "allStepsEditorVaultAndDiskAgree": true
+      },
+      "reopen": {
+        "performed": false
+      },
+      "viewerModelComparison": {
+        "label": "MATCH",
+        "modelFunction": "applyMarkdownNewline",
+        "applicability": "modeled",
+        "sourceMatch": true,
+        "selectionMatch": true
+      }
+    },
+    {
+      "id": "quote_depth2_enter_nonempty",
+      "family": "quote",
+      "description": "Enter at end of nonempty quote depth 2",
+      "initialSource": ">> Quote",
+      "initialSelection": {
+        "anchor": 8,
+        "focus": 8
+      },
+      "actions": [
+        {
+          "action": {
+            "kind": "key",
+            "key": "Enter"
+          },
+          "trustedKeyReachedEditor": true
+        }
+      ],
+      "final": {
+        "source": ">> Quote\n>> ",
+        "selection": {
+          "anchor": 12,
+          "focus": 12
+        }
+      },
+      "diskAgreement": {
+        "finalEditorEqualsVault": true,
+        "finalEditorEqualsDisk": true,
+        "allStepsEditorVaultAndDiskAgree": true
+      },
+      "reopen": {
+        "performed": true,
+        "source": ">> Quote\n>> ",
+        "editorEqualsVault": true,
+        "editorEqualsDisk": true,
+        "matchesPreReopen": true
+      },
+      "viewerModelComparison": {
+        "label": "MATCH",
+        "modelFunction": "applyMarkdownNewline",
+        "applicability": "modeled",
+        "sourceMatch": true,
+        "selectionMatch": true
+      }
+    },
+    {
+      "id": "quote_depth2_enter_empty",
+      "family": "quote",
+      "description": "Enter at end of marker-only quote depth 2",
+      "initialSource": ">> ",
+      "initialSelection": {
+        "anchor": 3,
+        "focus": 3
+      },
+      "actions": [
+        {
+          "action": {
+            "kind": "key",
+            "key": "Enter"
+          },
+          "trustedKeyReachedEditor": true
+        }
+      ],
+      "final": {
+        "source": ">\n>",
+        "selection": {
+          "anchor": 3,
+          "focus": 3
+        }
+      },
+      "diskAgreement": {
+        "finalEditorEqualsVault": true,
+        "finalEditorEqualsDisk": true,
+        "allStepsEditorVaultAndDiskAgree": true
+      },
+      "reopen": {
+        "performed": true,
+        "source": ">\n>",
+        "editorEqualsVault": true,
+        "editorEqualsDisk": true,
+        "matchesPreReopen": true
+      },
+      "viewerModelComparison": {
+        "label": "SOURCE_MISMATCH",
+        "modelFunction": "applyMarkdownNewline",
+        "applicability": "modeled",
+        "sourceMatch": false,
+        "selectionMatch": false
+      }
+    },
+    {
+      "id": "quote_depth2_shift_enter",
+      "family": "quote",
+      "description": "Shift+Enter at end of nonempty quote depth 2",
+      "initialSource": ">> Quote",
+      "initialSelection": {
+        "anchor": 8,
+        "focus": 8
+      },
+      "actions": [
+        {
+          "action": {
+            "kind": "key",
+            "key": "Enter",
+            "shift": true
+          },
+          "trustedKeyReachedEditor": true
+        }
+      ],
+      "final": {
+        "source": ">> Quote\n>> ",
+        "selection": {
+          "anchor": 12,
+          "focus": 12
+        }
+      },
+      "diskAgreement": {
+        "finalEditorEqualsVault": true,
+        "finalEditorEqualsDisk": true,
+        "allStepsEditorVaultAndDiskAgree": true
+      },
+      "reopen": {
+        "performed": false
+      },
+      "viewerModelComparison": {
+        "label": "MATCH",
+        "modelFunction": "applyMarkdownNewline",
+        "applicability": "modeled",
+        "sourceMatch": true,
+        "selectionMatch": true
+      }
+    },
+    {
+      "id": "quote_depth3_enter_nonempty",
+      "family": "quote",
+      "description": "Enter at end of nonempty quote depth 3",
+      "initialSource": ">>> Quote",
+      "initialSelection": {
+        "anchor": 9,
+        "focus": 9
+      },
+      "actions": [
+        {
+          "action": {
+            "kind": "key",
+            "key": "Enter"
+          },
+          "trustedKeyReachedEditor": true
+        }
+      ],
+      "final": {
+        "source": ">>> Quote\n>>> ",
+        "selection": {
+          "anchor": 14,
+          "focus": 14
+        }
+      },
+      "diskAgreement": {
+        "finalEditorEqualsVault": true,
+        "finalEditorEqualsDisk": true,
+        "allStepsEditorVaultAndDiskAgree": true
+      },
+      "reopen": {
+        "performed": false
+      },
+      "viewerModelComparison": {
+        "label": "MATCH",
+        "modelFunction": "applyMarkdownNewline",
+        "applicability": "modeled",
+        "sourceMatch": true,
+        "selectionMatch": true
+      }
+    },
+    {
+      "id": "quote_depth3_enter_empty",
+      "family": "quote",
+      "description": "Enter at end of marker-only quote depth 3",
+      "initialSource": ">>> ",
+      "initialSelection": {
+        "anchor": 4,
+        "focus": 4
+      },
+      "actions": [
+        {
+          "action": {
+            "kind": "key",
+            "key": "Enter"
+          },
+          "trustedKeyReachedEditor": true
+        }
+      ],
+      "final": {
+        "source": ">>\n>>",
+        "selection": {
+          "anchor": 5,
+          "focus": 5
+        }
+      },
+      "diskAgreement": {
+        "finalEditorEqualsVault": true,
+        "finalEditorEqualsDisk": true,
+        "allStepsEditorVaultAndDiskAgree": true
+      },
+      "reopen": {
+        "performed": false
+      },
+      "viewerModelComparison": {
+        "label": "SOURCE_MISMATCH",
+        "modelFunction": "applyMarkdownNewline",
+        "applicability": "modeled",
+        "sourceMatch": false,
+        "selectionMatch": false
+      }
+    },
+    {
+      "id": "quote_depth3_shift_enter",
+      "family": "quote",
+      "description": "Shift+Enter at end of nonempty quote depth 3",
+      "initialSource": ">>> Quote",
+      "initialSelection": {
+        "anchor": 9,
+        "focus": 9
+      },
+      "actions": [
+        {
+          "action": {
+            "kind": "key",
+            "key": "Enter",
+            "shift": true
+          },
+          "trustedKeyReachedEditor": true
+        }
+      ],
+      "final": {
+        "source": ">>> Quote\n>>> ",
+        "selection": {
+          "anchor": 14,
+          "focus": 14
+        }
+      },
+      "diskAgreement": {
+        "finalEditorEqualsVault": true,
+        "finalEditorEqualsDisk": true,
+        "allStepsEditorVaultAndDiskAgree": true
+      },
+      "reopen": {
+        "performed": false
+      },
+      "viewerModelComparison": {
+        "label": "MATCH",
+        "modelFunction": "applyMarkdownNewline",
+        "applicability": "modeled",
+        "sourceMatch": true,
+        "selectionMatch": true
+      }
+    },
+    {
+      "id": "list_ordered_enter_nonempty",
+      "family": "ordered-list",
+      "description": "Enter at end of nonempty ordered list item",
+      "initialSource": "1. Item",
+      "initialSelection": {
+        "anchor": 7,
+        "focus": 7
+      },
+      "actions": [
+        {
+          "action": {
+            "kind": "key",
+            "key": "Enter"
+          },
+          "trustedKeyReachedEditor": true
+        }
+      ],
+      "final": {
+        "source": "1. Item\n2. ",
+        "selection": {
+          "anchor": 11,
+          "focus": 11
+        }
+      },
+      "diskAgreement": {
+        "finalEditorEqualsVault": true,
+        "finalEditorEqualsDisk": true,
+        "allStepsEditorVaultAndDiskAgree": true
+      },
+      "reopen": {
+        "performed": true,
+        "source": "1. Item\n2. ",
+        "editorEqualsVault": true,
+        "editorEqualsDisk": true,
+        "matchesPreReopen": true
+      },
+      "viewerModelComparison": {
+        "label": "SOURCE_MISMATCH",
+        "modelFunction": "applyMarkdownNewline",
+        "applicability": "modeled",
+        "sourceMatch": false,
+        "selectionMatch": true
+      }
+    },
+    {
+      "id": "list_ordered_enter_empty",
+      "family": "ordered-list",
+      "description": "Enter at end of marker-only ordered list item",
+      "initialSource": "1. ",
+      "initialSelection": {
+        "anchor": 3,
+        "focus": 3
+      },
+      "actions": [
+        {
+          "action": {
+            "kind": "key",
+            "key": "Enter"
+          },
+          "trustedKeyReachedEditor": true
+        }
+      ],
+      "final": {
+        "source": "",
+        "selection": {
+          "anchor": 0,
+          "focus": 0
+        }
+      },
+      "diskAgreement": {
+        "finalEditorEqualsVault": true,
+        "finalEditorEqualsDisk": true,
+        "allStepsEditorVaultAndDiskAgree": true
+      },
+      "reopen": {
+        "performed": true,
+        "source": "",
+        "editorEqualsVault": true,
+        "editorEqualsDisk": true,
+        "matchesPreReopen": true
+      },
+      "viewerModelComparison": {
+        "label": "SOURCE_MISMATCH",
+        "modelFunction": "applyMarkdownNewline",
+        "applicability": "modeled",
+        "sourceMatch": false,
+        "selectionMatch": false
+      }
+    },
+    {
+      "id": "list_ordered_tab_depth1",
+      "family": "ordered-list",
+      "description": "Tab on ordered list item at depth 1",
+      "initialSource": "1. A\n2. Target",
+      "initialSelection": {
+        "anchor": 14,
+        "focus": 14
+      },
+      "actions": [
+        {
+          "action": {
+            "kind": "key",
+            "key": "Tab"
+          },
+          "trustedKeyReachedEditor": true
+        }
+      ],
+      "final": {
+        "source": "1. A\n    1. Target",
+        "selection": {
+          "anchor": 18,
+          "focus": 18
+        }
+      },
+      "diskAgreement": {
+        "finalEditorEqualsVault": true,
+        "finalEditorEqualsDisk": true,
+        "allStepsEditorVaultAndDiskAgree": true
+      },
+      "reopen": {
+        "performed": false
+      },
+      "viewerModelComparison": {
+        "label": "SOURCE_MISMATCH",
+        "modelFunction": "applyMarkdownIndentation",
+        "applicability": "modeled",
+        "sourceMatch": false,
+        "selectionMatch": false
+      }
+    },
+    {
+      "id": "list_ordered_shift_tab_depth1",
+      "family": "ordered-list",
+      "description": "Shift+Tab on ordered list item at depth 1",
+      "initialSource": "1. A\n2. Target",
+      "initialSelection": {
+        "anchor": 14,
+        "focus": 14
+      },
+      "actions": [
+        {
+          "action": {
+            "kind": "key",
+            "key": "Tab",
+            "shift": true
+          },
+          "trustedKeyReachedEditor": true
+        }
+      ],
+      "final": {
+        "source": "1. A\n2. Target",
+        "selection": {
+          "anchor": 14,
+          "focus": 14
+        }
+      },
+      "diskAgreement": {
+        "finalEditorEqualsVault": true,
+        "finalEditorEqualsDisk": true,
+        "allStepsEditorVaultAndDiskAgree": true
+      },
+      "reopen": {
+        "performed": false
+      },
+      "viewerModelComparison": {
+        "label": "MATCH",
+        "modelFunction": "applyMarkdownIndentation",
+        "applicability": "modeled",
+        "sourceMatch": true,
+        "selectionMatch": true
+      }
+    },
+    {
+      "id": "list_ordered_tab_depth2",
+      "family": "ordered-list",
+      "description": "Tab on ordered list item at depth 2",
+      "initialSource": "1. A\n    1. B\n    2. Target",
+      "initialSelection": {
+        "anchor": 27,
+        "focus": 27
+      },
+      "actions": [
+        {
+          "action": {
+            "kind": "key",
+            "key": "Tab"
+          },
+          "trustedKeyReachedEditor": true
+        }
+      ],
+      "final": {
+        "source": "1. A\n    1. B\n        1. Target",
+        "selection": {
+          "anchor": 31,
+          "focus": 31
+        }
+      },
+      "diskAgreement": {
+        "finalEditorEqualsVault": true,
+        "finalEditorEqualsDisk": true,
+        "allStepsEditorVaultAndDiskAgree": true
+      },
+      "reopen": {
+        "performed": false
+      },
+      "viewerModelComparison": {
+        "label": "MATCH",
+        "modelFunction": "applyMarkdownIndentation",
+        "applicability": "modeled",
+        "sourceMatch": true,
+        "selectionMatch": true
+      }
+    },
+    {
+      "id": "list_ordered_shift_tab_depth2",
+      "family": "ordered-list",
+      "description": "Shift+Tab on ordered list item at depth 2",
+      "initialSource": "1. A\n    1. B\n    2. Target",
+      "initialSelection": {
+        "anchor": 27,
+        "focus": 27
+      },
+      "actions": [
+        {
+          "action": {
+            "kind": "key",
+            "key": "Tab",
+            "shift": true
+          },
+          "trustedKeyReachedEditor": true
+        }
+      ],
+      "final": {
+        "source": "1. A\n    1. B\n2. Target",
+        "selection": {
+          "anchor": 23,
+          "focus": 23
+        }
+      },
+      "diskAgreement": {
+        "finalEditorEqualsVault": true,
+        "finalEditorEqualsDisk": true,
+        "allStepsEditorVaultAndDiskAgree": true
+      },
+      "reopen": {
+        "performed": false
+      },
+      "viewerModelComparison": {
+        "label": "MATCH",
+        "modelFunction": "applyMarkdownIndentation",
+        "applicability": "modeled",
+        "sourceMatch": true,
+        "selectionMatch": true
+      }
+    },
+    {
+      "id": "list_ordered_tab_depth3",
+      "family": "ordered-list",
+      "description": "Tab on ordered list item at depth 3",
+      "initialSource": "1. A\n    1. B\n        1. C\n        2. Target",
+      "initialSelection": {
+        "anchor": 44,
+        "focus": 44
+      },
+      "actions": [
+        {
+          "action": {
+            "kind": "key",
+            "key": "Tab"
+          },
+          "trustedKeyReachedEditor": true
+        }
+      ],
+      "final": {
+        "source": "1. A\n    1. B\n        1. C\n            1. Target",
+        "selection": {
+          "anchor": 48,
+          "focus": 48
+        }
+      },
+      "diskAgreement": {
+        "finalEditorEqualsVault": true,
+        "finalEditorEqualsDisk": true,
+        "allStepsEditorVaultAndDiskAgree": true
+      },
+      "reopen": {
+        "performed": false
+      },
+      "viewerModelComparison": {
+        "label": "MATCH",
+        "modelFunction": "applyMarkdownIndentation",
+        "applicability": "modeled",
+        "sourceMatch": true,
+        "selectionMatch": true
+      }
+    },
+    {
+      "id": "list_ordered_shift_tab_depth3",
+      "family": "ordered-list",
+      "description": "Shift+Tab on ordered list item at depth 3",
+      "initialSource": "1. A\n    1. B\n        1. C\n        2. Target",
+      "initialSelection": {
+        "anchor": 44,
+        "focus": 44
+      },
+      "actions": [
+        {
+          "action": {
+            "kind": "key",
+            "key": "Tab",
+            "shift": true
+          },
+          "trustedKeyReachedEditor": true
+        }
+      ],
+      "final": {
+        "source": "1. A\n    1. B\n        1. C\n    2. Target",
+        "selection": {
+          "anchor": 40,
+          "focus": 40
+        }
+      },
+      "diskAgreement": {
+        "finalEditorEqualsVault": true,
+        "finalEditorEqualsDisk": true,
+        "allStepsEditorVaultAndDiskAgree": true
+      },
+      "reopen": {
+        "performed": false
+      },
+      "viewerModelComparison": {
+        "label": "MATCH",
+        "modelFunction": "applyMarkdownIndentation",
+        "applicability": "modeled",
+        "sourceMatch": true,
+        "selectionMatch": true
+      }
+    },
+    {
+      "id": "list_unordered_enter_nonempty",
+      "family": "unordered-list",
+      "description": "Enter at end of nonempty unordered list item",
+      "initialSource": "- Item",
+      "initialSelection": {
+        "anchor": 6,
+        "focus": 6
+      },
+      "actions": [
+        {
+          "action": {
+            "kind": "key",
+            "key": "Enter"
+          },
+          "trustedKeyReachedEditor": true
+        }
+      ],
+      "final": {
+        "source": "- Item\n- ",
+        "selection": {
+          "anchor": 9,
+          "focus": 9
+        }
+      },
+      "diskAgreement": {
+        "finalEditorEqualsVault": true,
+        "finalEditorEqualsDisk": true,
+        "allStepsEditorVaultAndDiskAgree": true
+      },
+      "reopen": {
+        "performed": false
+      },
+      "viewerModelComparison": {
+        "label": "MATCH",
+        "modelFunction": "applyMarkdownNewline",
+        "applicability": "modeled",
+        "sourceMatch": true,
+        "selectionMatch": true
+      }
+    },
+    {
+      "id": "list_unordered_enter_empty",
+      "family": "unordered-list",
+      "description": "Enter at end of marker-only unordered list item",
+      "initialSource": "- ",
+      "initialSelection": {
+        "anchor": 2,
+        "focus": 2
+      },
+      "actions": [
+        {
+          "action": {
+            "kind": "key",
+            "key": "Enter"
+          },
+          "trustedKeyReachedEditor": true
+        }
+      ],
+      "final": {
+        "source": "",
+        "selection": {
+          "anchor": 0,
+          "focus": 0
+        }
+      },
+      "diskAgreement": {
+        "finalEditorEqualsVault": true,
+        "finalEditorEqualsDisk": true,
+        "allStepsEditorVaultAndDiskAgree": true
+      },
+      "reopen": {
+        "performed": false
+      },
+      "viewerModelComparison": {
+        "label": "SOURCE_MISMATCH",
+        "modelFunction": "applyMarkdownNewline",
+        "applicability": "modeled",
+        "sourceMatch": false,
+        "selectionMatch": false
+      }
+    },
+    {
+      "id": "list_unordered_tab_depth1",
+      "family": "unordered-list",
+      "description": "Tab on unordered list item at depth 1",
+      "initialSource": "- A\n- Target",
+      "initialSelection": {
+        "anchor": 12,
+        "focus": 12
+      },
+      "actions": [
+        {
+          "action": {
+            "kind": "key",
+            "key": "Tab"
+          },
+          "trustedKeyReachedEditor": true
+        }
+      ],
+      "final": {
+        "source": "- A\n    - Target",
+        "selection": {
+          "anchor": 16,
+          "focus": 16
+        }
+      },
+      "diskAgreement": {
+        "finalEditorEqualsVault": true,
+        "finalEditorEqualsDisk": true,
+        "allStepsEditorVaultAndDiskAgree": true
+      },
+      "reopen": {
+        "performed": false
+      },
+      "viewerModelComparison": {
+        "label": "SOURCE_MISMATCH",
+        "modelFunction": "applyMarkdownIndentation",
+        "applicability": "modeled",
+        "sourceMatch": false,
+        "selectionMatch": false
+      }
+    },
+    {
+      "id": "list_unordered_shift_tab_depth1",
+      "family": "unordered-list",
+      "description": "Shift+Tab on unordered list item at depth 1",
+      "initialSource": "- A\n- Target",
+      "initialSelection": {
+        "anchor": 12,
+        "focus": 12
+      },
+      "actions": [
+        {
+          "action": {
+            "kind": "key",
+            "key": "Tab",
+            "shift": true
+          },
+          "trustedKeyReachedEditor": true
+        }
+      ],
+      "final": {
+        "source": "- A\n- Target",
+        "selection": {
+          "anchor": 12,
+          "focus": 12
+        }
+      },
+      "diskAgreement": {
+        "finalEditorEqualsVault": true,
+        "finalEditorEqualsDisk": true,
+        "allStepsEditorVaultAndDiskAgree": true
+      },
+      "reopen": {
+        "performed": false
+      },
+      "viewerModelComparison": {
+        "label": "MATCH",
+        "modelFunction": "applyMarkdownIndentation",
+        "applicability": "modeled",
+        "sourceMatch": true,
+        "selectionMatch": true
+      }
+    },
+    {
+      "id": "list_unordered_tab_depth2",
+      "family": "unordered-list",
+      "description": "Tab on unordered list item at depth 2",
+      "initialSource": "- A\n    - B\n    - Target",
+      "initialSelection": {
+        "anchor": 24,
+        "focus": 24
+      },
+      "actions": [
+        {
+          "action": {
+            "kind": "key",
+            "key": "Tab"
+          },
+          "trustedKeyReachedEditor": true
+        }
+      ],
+      "final": {
+        "source": "- A\n    - B\n        - Target",
+        "selection": {
+          "anchor": 28,
+          "focus": 28
+        }
+      },
+      "diskAgreement": {
+        "finalEditorEqualsVault": true,
+        "finalEditorEqualsDisk": true,
+        "allStepsEditorVaultAndDiskAgree": true
+      },
+      "reopen": {
+        "performed": true,
+        "source": "- A\n    - B\n        - Target",
+        "editorEqualsVault": true,
+        "editorEqualsDisk": true,
+        "matchesPreReopen": true
+      },
+      "viewerModelComparison": {
+        "label": "MATCH",
+        "modelFunction": "applyMarkdownIndentation",
+        "applicability": "modeled",
+        "sourceMatch": true,
+        "selectionMatch": true
+      }
+    },
+    {
+      "id": "list_unordered_shift_tab_depth2",
+      "family": "unordered-list",
+      "description": "Shift+Tab on unordered list item at depth 2",
+      "initialSource": "- A\n    - B\n    - Target",
+      "initialSelection": {
+        "anchor": 24,
+        "focus": 24
+      },
+      "actions": [
+        {
+          "action": {
+            "kind": "key",
+            "key": "Tab",
+            "shift": true
+          },
+          "trustedKeyReachedEditor": true
+        }
+      ],
+      "final": {
+        "source": "- A\n    - B\n- Target",
+        "selection": {
+          "anchor": 20,
+          "focus": 20
+        }
+      },
+      "diskAgreement": {
+        "finalEditorEqualsVault": true,
+        "finalEditorEqualsDisk": true,
+        "allStepsEditorVaultAndDiskAgree": true
+      },
+      "reopen": {
+        "performed": false
+      },
+      "viewerModelComparison": {
+        "label": "MATCH",
+        "modelFunction": "applyMarkdownIndentation",
+        "applicability": "modeled",
+        "sourceMatch": true,
+        "selectionMatch": true
+      }
+    },
+    {
+      "id": "list_unordered_tab_depth3",
+      "family": "unordered-list",
+      "description": "Tab on unordered list item at depth 3",
+      "initialSource": "- A\n    - B\n        - C\n        - Target",
+      "initialSelection": {
+        "anchor": 40,
+        "focus": 40
+      },
+      "actions": [
+        {
+          "action": {
+            "kind": "key",
+            "key": "Tab"
+          },
+          "trustedKeyReachedEditor": true
+        }
+      ],
+      "final": {
+        "source": "- A\n    - B\n        - C\n            - Target",
+        "selection": {
+          "anchor": 44,
+          "focus": 44
+        }
+      },
+      "diskAgreement": {
+        "finalEditorEqualsVault": true,
+        "finalEditorEqualsDisk": true,
+        "allStepsEditorVaultAndDiskAgree": true
+      },
+      "reopen": {
+        "performed": false
+      },
+      "viewerModelComparison": {
+        "label": "MATCH",
+        "modelFunction": "applyMarkdownIndentation",
+        "applicability": "modeled",
+        "sourceMatch": true,
+        "selectionMatch": true
+      }
+    },
+    {
+      "id": "list_unordered_shift_tab_depth3",
+      "family": "unordered-list",
+      "description": "Shift+Tab on unordered list item at depth 3",
+      "initialSource": "- A\n    - B\n        - C\n        - Target",
+      "initialSelection": {
+        "anchor": 40,
+        "focus": 40
+      },
+      "actions": [
+        {
+          "action": {
+            "kind": "key",
+            "key": "Tab",
+            "shift": true
+          },
+          "trustedKeyReachedEditor": true
+        }
+      ],
+      "final": {
+        "source": "- A\n    - B\n        - C\n    - Target",
+        "selection": {
+          "anchor": 36,
+          "focus": 36
+        }
+      },
+      "diskAgreement": {
+        "finalEditorEqualsVault": true,
+        "finalEditorEqualsDisk": true,
+        "allStepsEditorVaultAndDiskAgree": true
+      },
+      "reopen": {
+        "performed": false
+      },
+      "viewerModelComparison": {
+        "label": "MATCH",
+        "modelFunction": "applyMarkdownIndentation",
+        "applicability": "modeled",
+        "sourceMatch": true,
+        "selectionMatch": true
+      }
+    },
+    {
+      "id": "list_task_enter_nonempty",
+      "family": "task-list",
+      "description": "Enter at end of nonempty task list item",
+      "initialSource": "- [ ] Item",
+      "initialSelection": {
+        "anchor": 10,
+        "focus": 10
+      },
+      "actions": [
+        {
+          "action": {
+            "kind": "key",
+            "key": "Enter"
+          },
+          "trustedKeyReachedEditor": true
+        }
+      ],
+      "final": {
+        "source": "- [ ] Item\n- [ ] ",
+        "selection": {
+          "anchor": 17,
+          "focus": 17
+        }
+      },
+      "diskAgreement": {
+        "finalEditorEqualsVault": true,
+        "finalEditorEqualsDisk": true,
+        "allStepsEditorVaultAndDiskAgree": true
+      },
+      "reopen": {
+        "performed": false
+      },
+      "viewerModelComparison": {
+        "label": "MATCH",
+        "modelFunction": "applyMarkdownNewline",
+        "applicability": "modeled",
+        "sourceMatch": true,
+        "selectionMatch": true
+      }
+    },
+    {
+      "id": "list_task_enter_empty",
+      "family": "task-list",
+      "description": "Enter at end of marker-only task list item",
+      "initialSource": "- [ ] ",
+      "initialSelection": {
+        "anchor": 6,
+        "focus": 6
+      },
+      "actions": [
+        {
+          "action": {
+            "kind": "key",
+            "key": "Enter"
+          },
+          "trustedKeyReachedEditor": true
+        }
+      ],
+      "final": {
+        "source": "",
+        "selection": {
+          "anchor": 0,
+          "focus": 0
+        }
+      },
+      "diskAgreement": {
+        "finalEditorEqualsVault": true,
+        "finalEditorEqualsDisk": true,
+        "allStepsEditorVaultAndDiskAgree": true
+      },
+      "reopen": {
+        "performed": false
+      },
+      "viewerModelComparison": {
+        "label": "SOURCE_MISMATCH",
+        "modelFunction": "applyMarkdownNewline",
+        "applicability": "modeled",
+        "sourceMatch": false,
+        "selectionMatch": false
+      }
+    },
+    {
+      "id": "list_task_tab_depth1",
+      "family": "task-list",
+      "description": "Tab on task list item at depth 1",
+      "initialSource": "- [ ] A\n- [ ] Target",
+      "initialSelection": {
+        "anchor": 20,
+        "focus": 20
+      },
+      "actions": [
+        {
+          "action": {
+            "kind": "key",
+            "key": "Tab"
+          },
+          "trustedKeyReachedEditor": true
+        }
+      ],
+      "final": {
+        "source": "- [ ] A\n    - [ ] Target",
+        "selection": {
+          "anchor": 24,
+          "focus": 24
+        }
+      },
+      "diskAgreement": {
+        "finalEditorEqualsVault": true,
+        "finalEditorEqualsDisk": true,
+        "allStepsEditorVaultAndDiskAgree": true
+      },
+      "reopen": {
+        "performed": false
+      },
+      "viewerModelComparison": {
+        "label": "SOURCE_MISMATCH",
+        "modelFunction": "applyMarkdownIndentation",
+        "applicability": "modeled",
+        "sourceMatch": false,
+        "selectionMatch": false
+      }
+    },
+    {
+      "id": "list_task_shift_tab_depth1",
+      "family": "task-list",
+      "description": "Shift+Tab on task list item at depth 1",
+      "initialSource": "- [ ] A\n- [ ] Target",
+      "initialSelection": {
+        "anchor": 20,
+        "focus": 20
+      },
+      "actions": [
+        {
+          "action": {
+            "kind": "key",
+            "key": "Tab",
+            "shift": true
+          },
+          "trustedKeyReachedEditor": true
+        }
+      ],
+      "final": {
+        "source": "- [ ] A\n- [ ] Target",
+        "selection": {
+          "anchor": 20,
+          "focus": 20
+        }
+      },
+      "diskAgreement": {
+        "finalEditorEqualsVault": true,
+        "finalEditorEqualsDisk": true,
+        "allStepsEditorVaultAndDiskAgree": true
+      },
+      "reopen": {
+        "performed": false
+      },
+      "viewerModelComparison": {
+        "label": "MATCH",
+        "modelFunction": "applyMarkdownIndentation",
+        "applicability": "modeled",
+        "sourceMatch": true,
+        "selectionMatch": true
+      }
+    },
+    {
+      "id": "list_task_tab_depth2",
+      "family": "task-list",
+      "description": "Tab on task list item at depth 2",
+      "initialSource": "- [ ] A\n    - [ ] B\n    - [ ] Target",
+      "initialSelection": {
+        "anchor": 36,
+        "focus": 36
+      },
+      "actions": [
+        {
+          "action": {
+            "kind": "key",
+            "key": "Tab"
+          },
+          "trustedKeyReachedEditor": true
+        }
+      ],
+      "final": {
+        "source": "- [ ] A\n    - [ ] B\n        - [ ] Target",
+        "selection": {
+          "anchor": 40,
+          "focus": 40
+        }
+      },
+      "diskAgreement": {
+        "finalEditorEqualsVault": true,
+        "finalEditorEqualsDisk": true,
+        "allStepsEditorVaultAndDiskAgree": true
+      },
+      "reopen": {
+        "performed": false
+      },
+      "viewerModelComparison": {
+        "label": "MATCH",
+        "modelFunction": "applyMarkdownIndentation",
+        "applicability": "modeled",
+        "sourceMatch": true,
+        "selectionMatch": true
+      }
+    },
+    {
+      "id": "list_task_shift_tab_depth2",
+      "family": "task-list",
+      "description": "Shift+Tab on task list item at depth 2",
+      "initialSource": "- [ ] A\n    - [ ] B\n    - [ ] Target",
+      "initialSelection": {
+        "anchor": 36,
+        "focus": 36
+      },
+      "actions": [
+        {
+          "action": {
+            "kind": "key",
+            "key": "Tab",
+            "shift": true
+          },
+          "trustedKeyReachedEditor": true
+        }
+      ],
+      "final": {
+        "source": "- [ ] A\n    - [ ] B\n- [ ] Target",
+        "selection": {
+          "anchor": 32,
+          "focus": 32
+        }
+      },
+      "diskAgreement": {
+        "finalEditorEqualsVault": true,
+        "finalEditorEqualsDisk": true,
+        "allStepsEditorVaultAndDiskAgree": true
+      },
+      "reopen": {
+        "performed": false
+      },
+      "viewerModelComparison": {
+        "label": "MATCH",
+        "modelFunction": "applyMarkdownIndentation",
+        "applicability": "modeled",
+        "sourceMatch": true,
+        "selectionMatch": true
+      }
+    },
+    {
+      "id": "list_task_tab_depth3",
+      "family": "task-list",
+      "description": "Tab on task list item at depth 3",
+      "initialSource": "- [ ] A\n    - [ ] B\n        - [ ] C\n        - [ ] Target",
+      "initialSelection": {
+        "anchor": 56,
+        "focus": 56
+      },
+      "actions": [
+        {
+          "action": {
+            "kind": "key",
+            "key": "Tab"
+          },
+          "trustedKeyReachedEditor": true
+        }
+      ],
+      "final": {
+        "source": "- [ ] A\n    - [ ] B\n        - [ ] C\n            - [ ] Target",
+        "selection": {
+          "anchor": 60,
+          "focus": 60
+        }
+      },
+      "diskAgreement": {
+        "finalEditorEqualsVault": true,
+        "finalEditorEqualsDisk": true,
+        "allStepsEditorVaultAndDiskAgree": true
+      },
+      "reopen": {
+        "performed": false
+      },
+      "viewerModelComparison": {
+        "label": "MATCH",
+        "modelFunction": "applyMarkdownIndentation",
+        "applicability": "modeled",
+        "sourceMatch": true,
+        "selectionMatch": true
+      }
+    },
+    {
+      "id": "list_task_shift_tab_depth3",
+      "family": "task-list",
+      "description": "Shift+Tab on task list item at depth 3",
+      "initialSource": "- [ ] A\n    - [ ] B\n        - [ ] C\n        - [ ] Target",
+      "initialSelection": {
+        "anchor": 56,
+        "focus": 56
+      },
+      "actions": [
+        {
+          "action": {
+            "kind": "key",
+            "key": "Tab",
+            "shift": true
+          },
+          "trustedKeyReachedEditor": true
+        }
+      ],
+      "final": {
+        "source": "- [ ] A\n    - [ ] B\n        - [ ] C\n    - [ ] Target",
+        "selection": {
+          "anchor": 52,
+          "focus": 52
+        }
+      },
+      "diskAgreement": {
+        "finalEditorEqualsVault": true,
+        "finalEditorEqualsDisk": true,
+        "allStepsEditorVaultAndDiskAgree": true
+      },
+      "reopen": {
+        "performed": false
+      },
+      "viewerModelComparison": {
+        "label": "MATCH",
+        "modelFunction": "applyMarkdownIndentation",
+        "applicability": "modeled",
+        "sourceMatch": true,
+        "selectionMatch": true
+      }
+    },
+    {
+      "id": "list_mixed_enter_innermost",
+      "family": "mixed-list",
+      "description": "Enter on the innermost ordered item of ordered/unordered mixed nesting",
+      "initialSource": "1. Root\n    - Bullet\n        1. Child\n2. Tail",
+      "initialSelection": {
+        "anchor": 37,
+        "focus": 37
+      },
+      "actions": [
+        {
+          "action": {
+            "kind": "key",
+            "key": "Enter"
+          },
+          "trustedKeyReachedEditor": true
+        }
+      ],
+      "final": {
+        "source": "1. Root\n    - Bullet\n        1. Child\n        2. \n2. Tail",
+        "selection": {
+          "anchor": 49,
+          "focus": 49
+        }
+      },
+      "diskAgreement": {
+        "finalEditorEqualsVault": true,
+        "finalEditorEqualsDisk": true,
+        "allStepsEditorVaultAndDiskAgree": true
+      },
+      "reopen": {
+        "performed": false
+      },
+      "viewerModelComparison": {
+        "label": "SOURCE_MISMATCH",
+        "modelFunction": "applyMarkdownNewline",
+        "applicability": "modeled",
+        "sourceMatch": false,
+        "selectionMatch": true
+      }
+    },
+    {
+      "id": "list_mixed_tab_innermost",
+      "family": "mixed-list",
+      "description": "Tab on the innermost ordered item of ordered/unordered mixed nesting",
+      "initialSource": "1. Root\n    - Bullet\n        1. Child\n        2. Target\n2. Tail",
+      "initialSelection": {
+        "anchor": 55,
+        "focus": 55
+      },
+      "actions": [
+        {
+          "action": {
+            "kind": "key",
+            "key": "Tab"
+          },
+          "trustedKeyReachedEditor": true
+        }
+      ],
+      "final": {
+        "source": "1. Root\n    - Bullet\n        1. Child\n            1. Target\n2. Tail",
+        "selection": {
+          "anchor": 59,
+          "focus": 59
+        }
+      },
+      "diskAgreement": {
+        "finalEditorEqualsVault": true,
+        "finalEditorEqualsDisk": true,
+        "allStepsEditorVaultAndDiskAgree": true
+      },
+      "reopen": {
+        "performed": false
+      },
+      "viewerModelComparison": {
+        "label": "MATCH",
+        "modelFunction": "applyMarkdownIndentation",
+        "applicability": "modeled",
+        "sourceMatch": true,
+        "selectionMatch": true
+      }
+    },
+    {
+      "id": "list_mixed_shift_tab_innermost",
+      "family": "mixed-list",
+      "description": "Shift+Tab on the innermost ordered item of ordered/unordered mixed nesting",
+      "initialSource": "1. Root\n    - Bullet\n        1. Child\n        2. Target\n2. Tail",
+      "initialSelection": {
+        "anchor": 55,
+        "focus": 55
+      },
+      "actions": [
+        {
+          "action": {
+            "kind": "key",
+            "key": "Tab",
+            "shift": true
+          },
+          "trustedKeyReachedEditor": true
+        }
+      ],
+      "final": {
+        "source": "1. Root\n    - Bullet\n        1. Child\n    1. Target\n2. Tail",
+        "selection": {
+          "anchor": 51,
+          "focus": 51
+        }
+      },
+      "diskAgreement": {
+        "finalEditorEqualsVault": true,
+        "finalEditorEqualsDisk": true,
+        "allStepsEditorVaultAndDiskAgree": true
+      },
+      "reopen": {
+        "performed": false
+      },
+      "viewerModelComparison": {
+        "label": "SOURCE_MISMATCH",
+        "modelFunction": "applyMarkdownIndentation",
+        "applicability": "modeled",
+        "sourceMatch": false,
+        "selectionMatch": true
+      }
+    },
+    {
+      "id": "heading_backspace_content_start",
+      "family": "heading-boundary",
+      "description": "Backspace at H1 content start, immediately after opening marker and space",
+      "initialSource": "# Heading",
+      "initialSelection": {
+        "anchor": 2,
+        "focus": 2
+      },
+      "actions": [
+        {
+          "action": {
+            "kind": "key",
+            "key": "Backspace"
+          },
+          "trustedKeyReachedEditor": true
+        }
+      ],
+      "final": {
+        "source": "#Heading",
+        "selection": {
+          "anchor": 1,
+          "focus": 1
+        }
+      },
+      "diskAgreement": {
+        "finalEditorEqualsVault": true,
+        "finalEditorEqualsDisk": true,
+        "allStepsEditorVaultAndDiskAgree": true
+      },
+      "reopen": {
+        "performed": false
+      },
+      "viewerModelComparison": {
+        "label": "SOURCE_MISMATCH",
+        "modelFunction": "applyMarkdownStructuralDeletion",
+        "applicability": "modeled",
+        "sourceMatch": false,
+        "selectionMatch": false
+      }
+    },
+    {
+      "id": "heading_delete_marker_start",
+      "family": "heading-boundary",
+      "description": "Delete immediately before H1 opening marker",
+      "initialSource": "# Heading",
+      "initialSelection": {
+        "anchor": 0,
+        "focus": 0
+      },
+      "actions": [
+        {
+          "action": {
+            "kind": "key",
+            "key": "Delete"
+          },
+          "trustedKeyReachedEditor": true
+        }
+      ],
+      "final": {
+        "source": " Heading",
+        "selection": {
+          "anchor": 0,
+          "focus": 0
+        }
+      },
+      "diskAgreement": {
+        "finalEditorEqualsVault": true,
+        "finalEditorEqualsDisk": true,
+        "allStepsEditorVaultAndDiskAgree": true
+      },
+      "reopen": {
+        "performed": false
+      },
+      "viewerModelComparison": {
+        "label": "VIEWER_MODEL_NATIVE_FALLTHROUGH",
+        "modelFunction": "applyMarkdownStructuralDeletion",
+        "applicability": "native-fallthrough",
+        "sourceMatch": null,
+        "selectionMatch": null
+      }
+    },
+    {
+      "id": "italic_backspace_after_open",
+      "family": "emphasis-boundary",
+      "description": "Backspace immediately after italic opening marker",
+      "initialSource": "*word*",
+      "initialSelection": {
+        "anchor": 1,
+        "focus": 1
+      },
+      "actions": [
+        {
+          "action": {
+            "kind": "key",
+            "key": "Backspace"
+          },
+          "trustedKeyReachedEditor": true
+        }
+      ],
+      "final": {
+        "source": "word*",
+        "selection": {
+          "anchor": 0,
+          "focus": 0
+        }
+      },
+      "diskAgreement": {
+        "finalEditorEqualsVault": true,
+        "finalEditorEqualsDisk": true,
+        "allStepsEditorVaultAndDiskAgree": true
+      },
+      "reopen": {
+        "performed": false
+      },
+      "viewerModelComparison": {
+        "label": "VIEWER_MODEL_NATIVE_FALLTHROUGH",
+        "modelFunction": "applyMarkdownStructuralDeletion",
+        "applicability": "native-fallthrough",
+        "sourceMatch": null,
+        "selectionMatch": null
+      }
+    },
+    {
+      "id": "italic_delete_before_close",
+      "family": "emphasis-boundary",
+      "description": "Delete immediately before italic closing marker",
+      "initialSource": "*word*",
+      "initialSelection": {
+        "anchor": 5,
+        "focus": 5
+      },
+      "actions": [
+        {
+          "action": {
+            "kind": "key",
+            "key": "Delete"
+          },
+          "trustedKeyReachedEditor": true
+        }
+      ],
+      "final": {
+        "source": "*word",
+        "selection": {
+          "anchor": 5,
+          "focus": 5
+        }
+      },
+      "diskAgreement": {
+        "finalEditorEqualsVault": true,
+        "finalEditorEqualsDisk": true,
+        "allStepsEditorVaultAndDiskAgree": true
+      },
+      "reopen": {
+        "performed": false
+      },
+      "viewerModelComparison": {
+        "label": "VIEWER_MODEL_NATIVE_FALLTHROUGH",
+        "modelFunction": "applyMarkdownStructuralDeletion",
+        "applicability": "native-fallthrough",
+        "sourceMatch": null,
+        "selectionMatch": null
+      }
+    },
+    {
+      "id": "bold_backspace_after_open",
+      "family": "emphasis-boundary",
+      "description": "Backspace immediately after bold opening marker",
+      "initialSource": "**word**",
+      "initialSelection": {
+        "anchor": 2,
+        "focus": 2
+      },
+      "actions": [
+        {
+          "action": {
+            "kind": "key",
+            "key": "Backspace"
+          },
+          "trustedKeyReachedEditor": true
+        }
+      ],
+      "final": {
+        "source": "*word**",
+        "selection": {
+          "anchor": 1,
+          "focus": 1
+        }
+      },
+      "diskAgreement": {
+        "finalEditorEqualsVault": true,
+        "finalEditorEqualsDisk": true,
+        "allStepsEditorVaultAndDiskAgree": true
+      },
+      "reopen": {
+        "performed": false
+      },
+      "viewerModelComparison": {
+        "label": "VIEWER_MODEL_NATIVE_FALLTHROUGH",
+        "modelFunction": "applyMarkdownStructuralDeletion",
+        "applicability": "native-fallthrough",
+        "sourceMatch": null,
+        "selectionMatch": null
+      }
+    },
+    {
+      "id": "bold_delete_before_close",
+      "family": "emphasis-boundary",
+      "description": "Delete immediately before bold closing marker",
+      "initialSource": "**word**",
+      "initialSelection": {
+        "anchor": 6,
+        "focus": 6
+      },
+      "actions": [
+        {
+          "action": {
+            "kind": "key",
+            "key": "Delete"
+          },
+          "trustedKeyReachedEditor": true
+        }
+      ],
+      "final": {
+        "source": "**word*",
+        "selection": {
+          "anchor": 6,
+          "focus": 6
+        }
+      },
+      "diskAgreement": {
+        "finalEditorEqualsVault": true,
+        "finalEditorEqualsDisk": true,
+        "allStepsEditorVaultAndDiskAgree": true
+      },
+      "reopen": {
+        "performed": false
+      },
+      "viewerModelComparison": {
+        "label": "VIEWER_MODEL_NATIVE_FALLTHROUGH",
+        "modelFunction": "applyMarkdownStructuralDeletion",
+        "applicability": "native-fallthrough",
+        "sourceMatch": null,
+        "selectionMatch": null
+      }
+    },
+    {
+      "id": "inline_code_backspace_after_open",
+      "family": "code-boundary",
+      "description": "Backspace immediately after inline_code opening marker",
+      "initialSource": "`code`",
+      "initialSelection": {
+        "anchor": 1,
+        "focus": 1
+      },
+      "actions": [
+        {
+          "action": {
+            "kind": "key",
+            "key": "Backspace"
+          },
+          "trustedKeyReachedEditor": true
+        }
+      ],
+      "final": {
+        "source": "code`",
+        "selection": {
+          "anchor": 0,
+          "focus": 0
+        }
+      },
+      "diskAgreement": {
+        "finalEditorEqualsVault": true,
+        "finalEditorEqualsDisk": true,
+        "allStepsEditorVaultAndDiskAgree": true
+      },
+      "reopen": {
+        "performed": false
+      },
+      "viewerModelComparison": {
+        "label": "VIEWER_MODEL_NATIVE_FALLTHROUGH",
+        "modelFunction": "applyMarkdownStructuralDeletion",
+        "applicability": "native-fallthrough",
+        "sourceMatch": null,
+        "selectionMatch": null
+      }
+    },
+    {
+      "id": "inline_code_delete_before_close",
+      "family": "code-boundary",
+      "description": "Delete immediately before inline_code closing marker",
+      "initialSource": "`code`",
+      "initialSelection": {
+        "anchor": 5,
+        "focus": 5
+      },
+      "actions": [
+        {
+          "action": {
+            "kind": "key",
+            "key": "Delete"
+          },
+          "trustedKeyReachedEditor": true
+        }
+      ],
+      "final": {
+        "source": "`code",
+        "selection": {
+          "anchor": 5,
+          "focus": 5
+        }
+      },
+      "diskAgreement": {
+        "finalEditorEqualsVault": true,
+        "finalEditorEqualsDisk": true,
+        "allStepsEditorVaultAndDiskAgree": true
+      },
+      "reopen": {
+        "performed": false
+      },
+      "viewerModelComparison": {
+        "label": "VIEWER_MODEL_NATIVE_FALLTHROUGH",
+        "modelFunction": "applyMarkdownStructuralDeletion",
+        "applicability": "native-fallthrough",
+        "sourceMatch": null,
+        "selectionMatch": null
+      }
+    },
+    {
+      "id": "italic_empty_backspace",
+      "family": "emphasis-boundary",
+      "description": "Backspace between empty italic_empty markers with auto-pair enabled",
+      "initialSource": "**",
+      "initialSelection": {
+        "anchor": 1,
+        "focus": 1
+      },
+      "actions": [
+        {
+          "action": {
+            "kind": "key",
+            "key": "Backspace"
+          },
+          "trustedKeyReachedEditor": true
+        }
+      ],
+      "final": {
+        "source": "",
+        "selection": {
+          "anchor": 0,
+          "focus": 0
+        }
+      },
+      "diskAgreement": {
+        "finalEditorEqualsVault": true,
+        "finalEditorEqualsDisk": true,
+        "allStepsEditorVaultAndDiskAgree": true
+      },
+      "reopen": {
+        "performed": false
+      },
+      "viewerModelComparison": {
+        "label": "VIEWER_MODEL_NATIVE_FALLTHROUGH",
+        "modelFunction": "applyMarkdownStructuralDeletion",
+        "applicability": "native-fallthrough",
+        "sourceMatch": null,
+        "selectionMatch": null
+      }
+    },
+    {
+      "id": "italic_empty_delete",
+      "family": "emphasis-boundary",
+      "description": "Delete between empty italic_empty markers with auto-pair enabled",
+      "initialSource": "**",
+      "initialSelection": {
+        "anchor": 1,
+        "focus": 1
+      },
+      "actions": [
+        {
+          "action": {
+            "kind": "key",
+            "key": "Delete"
+          },
+          "trustedKeyReachedEditor": true
+        }
+      ],
+      "final": {
+        "source": "*",
+        "selection": {
+          "anchor": 1,
+          "focus": 1
+        }
+      },
+      "diskAgreement": {
+        "finalEditorEqualsVault": true,
+        "finalEditorEqualsDisk": true,
+        "allStepsEditorVaultAndDiskAgree": true
+      },
+      "reopen": {
+        "performed": false
+      },
+      "viewerModelComparison": {
+        "label": "VIEWER_MODEL_NATIVE_FALLTHROUGH",
+        "modelFunction": "applyMarkdownStructuralDeletion",
+        "applicability": "native-fallthrough",
+        "sourceMatch": null,
+        "selectionMatch": null
+      }
+    },
+    {
+      "id": "bold_empty_backspace",
+      "family": "emphasis-boundary",
+      "description": "Backspace between empty bold_empty markers with auto-pair enabled",
+      "initialSource": "****",
+      "initialSelection": {
+        "anchor": 2,
+        "focus": 2
+      },
+      "actions": [
+        {
+          "action": {
+            "kind": "key",
+            "key": "Backspace"
+          },
+          "trustedKeyReachedEditor": true
+        }
+      ],
+      "final": {
+        "source": "**",
+        "selection": {
+          "anchor": 1,
+          "focus": 1
+        }
+      },
+      "diskAgreement": {
+        "finalEditorEqualsVault": true,
+        "finalEditorEqualsDisk": true,
+        "allStepsEditorVaultAndDiskAgree": true
+      },
+      "reopen": {
+        "performed": false
+      },
+      "viewerModelComparison": {
+        "label": "VIEWER_MODEL_NATIVE_FALLTHROUGH",
+        "modelFunction": "applyMarkdownStructuralDeletion",
+        "applicability": "native-fallthrough",
+        "sourceMatch": null,
+        "selectionMatch": null
+      }
+    },
+    {
+      "id": "bold_empty_delete",
+      "family": "emphasis-boundary",
+      "description": "Delete between empty bold_empty markers with auto-pair enabled",
+      "initialSource": "****",
+      "initialSelection": {
+        "anchor": 2,
+        "focus": 2
+      },
+      "actions": [
+        {
+          "action": {
+            "kind": "key",
+            "key": "Delete"
+          },
+          "trustedKeyReachedEditor": true
+        }
+      ],
+      "final": {
+        "source": "***",
+        "selection": {
+          "anchor": 2,
+          "focus": 2
+        }
+      },
+      "diskAgreement": {
+        "finalEditorEqualsVault": true,
+        "finalEditorEqualsDisk": true,
+        "allStepsEditorVaultAndDiskAgree": true
+      },
+      "reopen": {
+        "performed": false
+      },
+      "viewerModelComparison": {
+        "label": "VIEWER_MODEL_NATIVE_FALLTHROUGH",
+        "modelFunction": "applyMarkdownStructuralDeletion",
+        "applicability": "native-fallthrough",
+        "sourceMatch": null,
+        "selectionMatch": null
+      }
+    },
+    {
+      "id": "inline_code_empty_backspace",
+      "family": "code-boundary",
+      "description": "Backspace between empty inline_code_empty markers with auto-pair enabled",
+      "initialSource": "``",
+      "initialSelection": {
+        "anchor": 1,
+        "focus": 1
+      },
+      "actions": [
+        {
+          "action": {
+            "kind": "key",
+            "key": "Backspace"
+          },
+          "trustedKeyReachedEditor": true
+        }
+      ],
+      "final": {
+        "source": "",
+        "selection": {
+          "anchor": 0,
+          "focus": 0
+        }
+      },
+      "diskAgreement": {
+        "finalEditorEqualsVault": true,
+        "finalEditorEqualsDisk": true,
+        "allStepsEditorVaultAndDiskAgree": true
+      },
+      "reopen": {
+        "performed": false
+      },
+      "viewerModelComparison": {
+        "label": "VIEWER_MODEL_NATIVE_FALLTHROUGH",
+        "modelFunction": "applyMarkdownStructuralDeletion",
+        "applicability": "native-fallthrough",
+        "sourceMatch": null,
+        "selectionMatch": null
+      }
+    },
+    {
+      "id": "inline_code_empty_delete",
+      "family": "code-boundary",
+      "description": "Delete between empty inline_code_empty markers with auto-pair enabled",
+      "initialSource": "``",
+      "initialSelection": {
+        "anchor": 1,
+        "focus": 1
+      },
+      "actions": [
+        {
+          "action": {
+            "kind": "key",
+            "key": "Delete"
+          },
+          "trustedKeyReachedEditor": true
+        }
+      ],
+      "final": {
+        "source": "`",
+        "selection": {
+          "anchor": 1,
+          "focus": 1
+        }
+      },
+      "diskAgreement": {
+        "finalEditorEqualsVault": true,
+        "finalEditorEqualsDisk": true,
+        "allStepsEditorVaultAndDiskAgree": true
+      },
+      "reopen": {
+        "performed": false
+      },
+      "viewerModelComparison": {
+        "label": "VIEWER_MODEL_NATIVE_FALLTHROUGH",
+        "modelFunction": "applyMarkdownStructuralDeletion",
+        "applicability": "native-fallthrough",
+        "sourceMatch": null,
+        "selectionMatch": null
+      }
+    },
+    {
+      "id": "fenced_code_backspace_content_start",
+      "family": "code-boundary",
+      "description": "Backspace at fenced code content start after opening-fence newline",
+      "initialSource": "```\ncode\n```",
+      "initialSelection": {
+        "anchor": 4,
+        "focus": 4
+      },
+      "actions": [
+        {
+          "action": {
+            "kind": "key",
+            "key": "Backspace"
+          },
+          "trustedKeyReachedEditor": true
+        }
+      ],
+      "final": {
+        "source": "```code\n```",
+        "selection": {
+          "anchor": 3,
+          "focus": 3
+        }
+      },
+      "diskAgreement": {
+        "finalEditorEqualsVault": true,
+        "finalEditorEqualsDisk": true,
+        "allStepsEditorVaultAndDiskAgree": true
+      },
+      "reopen": {
+        "performed": false
+      },
+      "viewerModelComparison": {
+        "label": "MATCH",
+        "modelFunction": "applyMarkdownStructuralDeletion",
+        "applicability": "modeled",
+        "sourceMatch": true,
+        "selectionMatch": true
+      }
+    },
+    {
+      "id": "fenced_code_delete_content_end",
+      "family": "code-boundary",
+      "description": "Delete at fenced code content end before closing-fence newline",
+      "initialSource": "```\ncode\n```",
+      "initialSelection": {
+        "anchor": 8,
+        "focus": 8
+      },
+      "actions": [
+        {
+          "action": {
+            "kind": "key",
+            "key": "Delete"
+          },
+          "trustedKeyReachedEditor": true
+        }
+      ],
+      "final": {
+        "source": "```\ncode```",
+        "selection": {
+          "anchor": 8,
+          "focus": 8
+        }
+      },
+      "diskAgreement": {
+        "finalEditorEqualsVault": true,
+        "finalEditorEqualsDisk": true,
+        "allStepsEditorVaultAndDiskAgree": true
+      },
+      "reopen": {
+        "performed": false
+      },
+      "viewerModelComparison": {
+        "label": "MATCH",
+        "modelFunction": "applyMarkdownStructuralDeletion",
+        "applicability": "modeled",
+        "sourceMatch": true,
+        "selectionMatch": true
+      }
+    },
+    {
+      "id": "link_backspace_after_label_open",
+      "family": "link-boundary",
+      "description": "Backspace immediately after link-label opening bracket",
+      "initialSource": "[label](url)",
+      "initialSelection": {
+        "anchor": 1,
+        "focus": 1
+      },
+      "actions": [
+        {
+          "action": {
+            "kind": "key",
+            "key": "Backspace"
+          },
+          "trustedKeyReachedEditor": true
+        }
+      ],
+      "final": {
+        "source": "label](url)",
+        "selection": {
+          "anchor": 0,
+          "focus": 0
+        }
+      },
+      "diskAgreement": {
+        "finalEditorEqualsVault": true,
+        "finalEditorEqualsDisk": true,
+        "allStepsEditorVaultAndDiskAgree": true
+      },
+      "reopen": {
+        "performed": false
+      },
+      "viewerModelComparison": {
+        "label": "VIEWER_MODEL_NATIVE_FALLTHROUGH",
+        "modelFunction": "applyMarkdownStructuralDeletion",
+        "applicability": "native-fallthrough",
+        "sourceMatch": null,
+        "selectionMatch": null
+      }
+    },
+    {
+      "id": "link_delete_before_label_close",
+      "family": "link-boundary",
+      "description": "Delete immediately before link-label closing bracket",
+      "initialSource": "[label](url)",
+      "initialSelection": {
+        "anchor": 6,
+        "focus": 6
+      },
+      "actions": [
+        {
+          "action": {
+            "kind": "key",
+            "key": "Delete"
+          },
+          "trustedKeyReachedEditor": true
+        }
+      ],
+      "final": {
+        "source": "[label(url)",
+        "selection": {
+          "anchor": 6,
+          "focus": 6
+        }
+      },
+      "diskAgreement": {
+        "finalEditorEqualsVault": true,
+        "finalEditorEqualsDisk": true,
+        "allStepsEditorVaultAndDiskAgree": true
+      },
+      "reopen": {
+        "performed": false
+      },
+      "viewerModelComparison": {
+        "label": "VIEWER_MODEL_NATIVE_FALLTHROUGH",
+        "modelFunction": "applyMarkdownStructuralDeletion",
+        "applicability": "native-fallthrough",
+        "sourceMatch": null,
+        "selectionMatch": null
+      }
+    },
+    {
+      "id": "link_backspace_after_destination_open",
+      "family": "link-boundary",
+      "description": "Backspace immediately after link-destination opening parenthesis",
+      "initialSource": "[label](url)",
+      "initialSelection": {
+        "anchor": 8,
+        "focus": 8
+      },
+      "actions": [
+        {
+          "action": {
+            "kind": "key",
+            "key": "Backspace"
+          },
+          "trustedKeyReachedEditor": true
+        }
+      ],
+      "final": {
+        "source": "[label]url)",
+        "selection": {
+          "anchor": 7,
+          "focus": 7
+        }
+      },
+      "diskAgreement": {
+        "finalEditorEqualsVault": true,
+        "finalEditorEqualsDisk": true,
+        "allStepsEditorVaultAndDiskAgree": true
+      },
+      "reopen": {
+        "performed": false
+      },
+      "viewerModelComparison": {
+        "label": "VIEWER_MODEL_NATIVE_FALLTHROUGH",
+        "modelFunction": "applyMarkdownStructuralDeletion",
+        "applicability": "native-fallthrough",
+        "sourceMatch": null,
+        "selectionMatch": null
+      }
+    },
+    {
+      "id": "link_delete_before_destination_close",
+      "family": "link-boundary",
+      "description": "Delete immediately before link-destination closing parenthesis",
+      "initialSource": "[label](url)",
+      "initialSelection": {
+        "anchor": 11,
+        "focus": 11
+      },
+      "actions": [
+        {
+          "action": {
+            "kind": "key",
+            "key": "Delete"
+          },
+          "trustedKeyReachedEditor": true
+        }
+      ],
+      "final": {
+        "source": "[label](url",
+        "selection": {
+          "anchor": 11,
+          "focus": 11
+        }
+      },
+      "diskAgreement": {
+        "finalEditorEqualsVault": true,
+        "finalEditorEqualsDisk": true,
+        "allStepsEditorVaultAndDiskAgree": true
+      },
+      "reopen": {
+        "performed": false
+      },
+      "viewerModelComparison": {
+        "label": "VIEWER_MODEL_NATIVE_FALLTHROUGH",
+        "modelFunction": "applyMarkdownStructuralDeletion",
+        "applicability": "native-fallthrough",
+        "sourceMatch": null,
+        "selectionMatch": null
+      }
+    },
+    {
+      "id": "link_empty_backspace",
+      "family": "link-boundary",
+      "description": "backspace between empty link-label brackets with auto-pair enabled",
+      "initialSource": "[]()",
+      "initialSelection": {
+        "anchor": 1,
+        "focus": 1
+      },
+      "actions": [
+        {
+          "action": {
+            "kind": "key",
+            "key": "Backspace"
+          },
+          "trustedKeyReachedEditor": true
+        }
+      ],
+      "final": {
+        "source": "()",
+        "selection": {
+          "anchor": 0,
+          "focus": 0
+        }
+      },
+      "diskAgreement": {
+        "finalEditorEqualsVault": true,
+        "finalEditorEqualsDisk": true,
+        "allStepsEditorVaultAndDiskAgree": true
+      },
+      "reopen": {
+        "performed": false
+      },
+      "viewerModelComparison": {
+        "label": "VIEWER_MODEL_NATIVE_FALLTHROUGH",
+        "modelFunction": "applyMarkdownStructuralDeletion",
+        "applicability": "native-fallthrough",
+        "sourceMatch": null,
+        "selectionMatch": null
+      }
+    },
+    {
+      "id": "link_empty_delete",
+      "family": "link-boundary",
+      "description": "delete between empty link-label brackets with auto-pair enabled",
+      "initialSource": "[]()",
+      "initialSelection": {
+        "anchor": 1,
+        "focus": 1
+      },
+      "actions": [
+        {
+          "action": {
+            "kind": "key",
+            "key": "Delete"
+          },
+          "trustedKeyReachedEditor": true
+        }
+      ],
+      "final": {
+        "source": "[()",
+        "selection": {
+          "anchor": 1,
+          "focus": 1
+        }
+      },
+      "diskAgreement": {
+        "finalEditorEqualsVault": true,
+        "finalEditorEqualsDisk": true,
+        "allStepsEditorVaultAndDiskAgree": true
+      },
+      "reopen": {
+        "performed": false
+      },
+      "viewerModelComparison": {
+        "label": "VIEWER_MODEL_NATIVE_FALLTHROUGH",
+        "modelFunction": "applyMarkdownStructuralDeletion",
+        "applicability": "native-fallthrough",
+        "sourceMatch": null,
+        "selectionMatch": null
+      }
+    },
+    {
+      "id": "softline_enter_end_first_physical_line",
+      "family": "soft-line",
+      "description": "Enter before an existing soft physical newline",
+      "initialSource": "Alpha\nBeta",
+      "initialSelection": {
+        "anchor": 5,
+        "focus": 5
+      },
+      "actions": [
+        {
+          "action": {
+            "kind": "key",
+            "key": "Enter"
+          },
+          "trustedKeyReachedEditor": true
+        }
+      ],
+      "final": {
+        "source": "Alpha\n\nBeta",
+        "selection": {
+          "anchor": 6,
+          "focus": 6
+        }
+      },
+      "diskAgreement": {
+        "finalEditorEqualsVault": true,
+        "finalEditorEqualsDisk": true,
+        "allStepsEditorVaultAndDiskAgree": true
+      },
+      "reopen": {
+        "performed": true,
+        "source": "Alpha\n\nBeta",
+        "editorEqualsVault": true,
+        "editorEqualsDisk": true,
+        "matchesPreReopen": true
+      },
+      "viewerModelComparison": {
+        "label": "MATCH",
+        "modelFunction": "applyMarkdownNewline",
+        "applicability": "modeled",
+        "sourceMatch": true,
+        "selectionMatch": true
+      }
+    },
+    {
+      "id": "softline_enter_middle_second_physical_line",
+      "family": "soft-line",
+      "description": "Enter in the middle of the second physical line of one soft-line paragraph",
+      "initialSource": "Alpha\nBeta",
+      "initialSelection": {
+        "anchor": 8,
+        "focus": 8
+      },
+      "actions": [
+        {
+          "action": {
+            "kind": "key",
+            "key": "Enter"
+          },
+          "trustedKeyReachedEditor": true
+        }
+      ],
+      "final": {
+        "source": "Alpha\nBe\nta",
+        "selection": {
+          "anchor": 9,
+          "focus": 9
+        }
+      },
+      "diskAgreement": {
+        "finalEditorEqualsVault": true,
+        "finalEditorEqualsDisk": true,
+        "allStepsEditorVaultAndDiskAgree": true
+      },
+      "reopen": {
+        "performed": false
+      },
+      "viewerModelComparison": {
+        "label": "MATCH",
+        "modelFunction": "applyMarkdownNewline",
+        "applicability": "modeled",
+        "sourceMatch": true,
+        "selectionMatch": true
+      }
+    },
+    {
+      "id": "softline_enter_middle_plain_line",
+      "family": "soft-line",
+      "description": "Enter in the middle of a plain line, creating a Markdown soft line break",
+      "initialSource": "Alpha Beta",
+      "initialSelection": {
+        "anchor": 5,
+        "focus": 5
+      },
+      "actions": [
+        {
+          "action": {
+            "kind": "key",
+            "key": "Enter"
+          },
+          "trustedKeyReachedEditor": true
+        }
+      ],
+      "final": {
+        "source": "Alpha\nBeta",
+        "selection": {
+          "anchor": 6,
+          "focus": 6
+        }
+      },
+      "diskAgreement": {
+        "finalEditorEqualsVault": true,
+        "finalEditorEqualsDisk": true,
+        "allStepsEditorVaultAndDiskAgree": true
+      },
+      "reopen": {
+        "performed": false
+      },
+      "viewerModelComparison": {
+        "label": "SOURCE_MISMATCH",
+        "modelFunction": "applyMarkdownNewline",
+        "applicability": "modeled",
+        "sourceMatch": false,
+        "selectionMatch": true
+      }
+    },
+    {
+      "id": "history_typing_undo_redo",
+      "family": "history",
+      "description": "Trusted character insertion followed by Cmd+Z and Cmd+Shift+Z",
+      "initialSource": "AB",
+      "initialSelection": {
+        "anchor": 1,
+        "focus": 1
+      },
+      "actions": [
+        {
+          "action": {
+            "kind": "type",
+            "text": "x"
+          },
+          "trustedKeyReachedEditor": true
+        },
+        {
+          "action": {
+            "kind": "key",
+            "key": "z",
+            "meta": true
+          },
+          "trustedKeyReachedEditor": true
+        },
+        {
+          "action": {
+            "kind": "key",
+            "key": "z",
+            "meta": true,
+            "shift": true
+          },
+          "trustedKeyReachedEditor": true
+        }
+      ],
+      "final": {
+        "source": "AxB",
+        "selection": {
+          "anchor": 2,
+          "focus": 2
+        }
+      },
+      "diskAgreement": {
+        "finalEditorEqualsVault": true,
+        "finalEditorEqualsDisk": true,
+        "allStepsEditorVaultAndDiskAgree": true
+      },
+      "reopen": {
+        "performed": false
+      },
+      "viewerModelComparison": {
+        "label": "VIEWER_MODEL_NOT_APPLICABLE",
+        "modelFunction": null,
+        "applicability": "not-exported-history-sequence",
+        "sourceMatch": null,
+        "selectionMatch": null
+      }
+    },
+    {
+      "id": "history_selection_replace_undo_redo",
+      "family": "history",
+      "description": "Trusted replacement of selected text followed by Cmd+Z and Cmd+Shift+Z",
+      "initialSource": "ABCD",
+      "initialSelection": {
+        "anchor": 1,
+        "focus": 3
+      },
+      "actions": [
+        {
+          "action": {
+            "kind": "type",
+            "text": "x"
+          },
+          "trustedKeyReachedEditor": true
+        },
+        {
+          "action": {
+            "kind": "key",
+            "key": "z",
+            "meta": true
+          },
+          "trustedKeyReachedEditor": true
+        },
+        {
+          "action": {
+            "kind": "key",
+            "key": "z",
+            "meta": true,
+            "shift": true
+          },
+          "trustedKeyReachedEditor": true
+        }
+      ],
+      "final": {
+        "source": "AxD",
+        "selection": {
+          "anchor": 1,
+          "focus": 2
+        }
+      },
+      "diskAgreement": {
+        "finalEditorEqualsVault": true,
+        "finalEditorEqualsDisk": true,
+        "allStepsEditorVaultAndDiskAgree": true
+      },
+      "reopen": {
+        "performed": false
+      },
+      "viewerModelComparison": {
+        "label": "VIEWER_MODEL_NOT_APPLICABLE",
+        "modelFunction": null,
+        "applicability": "not-exported-history-sequence",
+        "sourceMatch": null,
+        "selectionMatch": null
+      }
+    },
+    {
+      "id": "history_list_enter_undo_redo",
+      "family": "history",
+      "description": "Trusted list continuation Enter followed by Cmd+Z and Cmd+Shift+Z",
+      "initialSource": "- Item",
+      "initialSelection": {
+        "anchor": 6,
+        "focus": 6
+      },
+      "actions": [
+        {
+          "action": {
+            "kind": "key",
+            "key": "Enter"
+          },
+          "trustedKeyReachedEditor": true
+        },
+        {
+          "action": {
+            "kind": "key",
+            "key": "z",
+            "meta": true
+          },
+          "trustedKeyReachedEditor": true
+        },
+        {
+          "action": {
+            "kind": "key",
+            "key": "z",
+            "meta": true,
+            "shift": true
+          },
+          "trustedKeyReachedEditor": true
+        }
+      ],
+      "final": {
+        "source": "- Item\n- ",
+        "selection": {
+          "anchor": 9,
+          "focus": 9
+        }
+      },
+      "diskAgreement": {
+        "finalEditorEqualsVault": true,
+        "finalEditorEqualsDisk": true,
+        "allStepsEditorVaultAndDiskAgree": true
+      },
+      "reopen": {
+        "performed": false
+      },
+      "viewerModelComparison": {
+        "label": "VIEWER_MODEL_NOT_APPLICABLE",
+        "modelFunction": null,
+        "applicability": "not-exported-history-sequence",
+        "sourceMatch": null,
+        "selectionMatch": null
+      }
+    }
+  ]
+}

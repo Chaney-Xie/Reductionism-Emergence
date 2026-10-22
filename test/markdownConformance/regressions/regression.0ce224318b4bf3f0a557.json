@@ -1,0 +1,45 @@
+{
+  "evaluations": 2,
+  "kind": "minimized-o1-v1-regression",
+  "metadata": {
+    "evidenceLevels": [
+      "O1",
+      "V1"
+    ],
+    "minimizedAt": "2026-08-11T14:21:36.708Z",
+    "obsidianLaunches": 1,
+    "predicate": "source",
+    "randomOriginId": "random.7bbcfcf71cf914c5f6c2",
+    "viewerLaunches": 1
+  },
+  "minimizedLength": 1,
+  "originalLength": 3,
+  "schemaVersion": 1,
+  "sequence": {
+    "actions": [
+      {
+        "key": "Delete",
+        "type": "keyboard"
+      }
+    ],
+    "fixtureId": "mixed-siblings",
+    "id": "regression.0ce224318b4bf3f0a557",
+    "index": 77,
+    "initialSelection": {
+      "anchor": 90,
+      "focus": 90
+    },
+    "initialSource": "1. Ordered parent\n   - Bullet child\n     1. Number grandchild\n     2. Number sibling\n   - Bullet sibling\n2. Ordered next",
+    "mode": "live-preview",
+    "randomOriginId": "random.7bbcfcf71cf914c5f6c2",
+    "requiredObservations": [
+      "source",
+      "selection",
+      "physical",
+      "semantic"
+    ],
+    "schemaVersion": 1,
+    "seed": "v03-fixed",
+    "syntaxFamily": "mixed-lists"
+  }
+}

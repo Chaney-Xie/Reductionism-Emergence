@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "oracles": [
+    {
+      "id": "obsidian-1.13.6-source-interactions",
+      "file": "obsidian-1.13.6-source-interactions.json",
+      "obsidianVersion": "1.13.6",
+      "installedShellVersion": "1.12.4",
+      "evidenceLevel": "O1",
+      "mode": "source",
+      "caseCount": 70,
+      "actionStepCount": 76,
+      "obsidianAsarSha256": "d769003f81435abe53576172f3bb0695132880cc7b7970f2f0086f7d5ea968b5",
+      "normalizedBehaviorSha256": "9737babd27a325420eca0d96d3fac6bf0b52012b57d6e28c0fdac9337d06390d"
+    }
+  ],
+  "note": "Actual O1 corpora use versioned obsidian-<version>*.json names and are never overwritten silently. No synthetic oracle is checked in as truth."
+}

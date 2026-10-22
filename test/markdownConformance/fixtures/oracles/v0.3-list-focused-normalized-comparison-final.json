@@ -1,0 +1,1431 @@
+{
+  "contractVersion": 2,
+  "counts": {
+    "AMBIGUOUS": 0,
+    "INTENTIONAL_VIEWER_OVERRIDE": 0,
+    "MATCH": 3,
+    "OBSIDIAN_NOT_AUTOMATABLE": 0,
+    "VIEWER_FAIL": 0
+  },
+  "coverage": {
+    "obsidianObservationCount": 3,
+    "unexpectedObsidianScenarioIds": [],
+    "unexpectedViewerScenarioIds": [],
+    "viewerObservationCount": 3
+  },
+  "kind": "o1-v1-normalized-cross-runtime-comparison",
+  "policy": {
+    "domNodePathsTagsAndInternalCountsExcluded": true,
+    "editingQuoteTextComparesContentTokens": true,
+    "focusedOrderedListNumberingUsesObservedOrdinalsAndMarkerRendering": true,
+    "genericStructuralContractAppliesToAllOtherFamilies": true,
+    "normalizedFamilies": [
+      "display-latex",
+      "inline-latex",
+      "quotes",
+      "tables",
+      "thematic-break"
+    ],
+    "rawEvidencePreservedByDigestAndSourceDocument": true,
+    "readingVisibleTextRemainsLineBreakSensitive": true,
+    "sourceSelectionAndPhysicalRemainExact": true,
+    "strictOverrideEngineUnchanged": true
+  },
+  "rawStrictCounts": {
+    "AMBIGUOUS": 0,
+    "INTENTIONAL_VIEWER_OVERRIDE": 0,
+    "MATCH": 0,
+    "OBSIDIAN_NOT_AUTOMATABLE": 0,
+    "VIEWER_FAIL": 3
+  },
+  "results": [
+    {
+      "actionId": "inspect",
+      "comparisonLayer": "cross-runtime-behavior-contract-v2",
+      "differences": [],
+      "evidence": {
+        "obsidian": "O1",
+        "viewer": "V1"
+      },
+      "fixtureId": "v0.3-list-numbering",
+      "mode": "live-preview",
+      "normalizationAudit": {
+        "obsidian": {
+          "available": true,
+          "normalized": true,
+          "observedSemanticTypes": [
+            "list",
+            "listItem"
+          ],
+          "presentation": {
+            "adapter": "ordered-list-numbering-behavior-v1",
+            "itemFacts": null,
+            "role": "obsidian",
+            "visibleMarkerOrdinals": [
+              3,
+              4,
+              1,
+              5
+            ]
+          },
+          "semanticAdapter": "generic-structural-concept-v1",
+          "semanticBridge": null,
+          "semanticContract": {
+            "concepts": [
+              "list",
+              "listItem"
+            ],
+            "contentBlockRecognized": true,
+            "headingDepths": [],
+            "listStructure": [
+              {
+                "checked": null,
+                "listDepth": 1,
+                "ordered": true,
+                "ordinal": null,
+                "quoteDepth": 0,
+                "startNumber": 3,
+                "type": "list"
+              },
+              {
+                "checked": null,
+                "listDepth": 1,
+                "ordered": null,
+                "ordinal": 3,
+                "quoteDepth": 0,
+                "startNumber": null,
+                "type": "listItem"
+              },
+              {
+                "checked": null,
+                "listDepth": 1,
+                "ordered": null,
+                "ordinal": 4,
+                "quoteDepth": 0,
+                "startNumber": null,
+                "type": "listItem"
+              },
+              {
+                "checked": null,
+                "listDepth": 2,
+                "ordered": true,
+                "ordinal": null,
+                "quoteDepth": 0,
+                "startNumber": 1,
+                "type": "list"
+              },
+              {
+                "checked": null,
+                "listDepth": 2,
+                "ordered": null,
+                "ordinal": 1,
+                "quoteDepth": 0,
+                "startNumber": null,
+                "type": "listItem"
+              },
+              {
+                "checked": null,
+                "listDepth": 1,
+                "ordered": null,
+                "ordinal": 5,
+                "quoteDepth": 0,
+                "startNumber": null,
+                "type": "listItem"
+              }
+            ],
+            "maximumListDepth": 2,
+            "maximumQuoteDepth": 0,
+            "tableCells": []
+          }
+        },
+        "viewer": {
+          "available": true,
+          "normalized": true,
+          "observedSemanticTypes": [
+            "list",
+            "listItem",
+            "paragraph"
+          ],
+          "presentation": {
+            "adapter": "ordered-list-numbering-behavior-v1",
+            "itemFacts": [
+              {
+                "listDepth": 1,
+                "listStyleType": "decimal",
+                "markerContent": "normal",
+                "markerRendered": true,
+                "ordinal": 3,
+                "startNumber": 3
+              },
+              {
+                "listDepth": 1,
+                "listStyleType": "decimal",
+                "markerContent": "normal",
+                "markerRendered": true,
+                "ordinal": 4,
+                "startNumber": 3
+              },
+              {
+                "listDepth": 2,
+                "listStyleType": "decimal",
+                "markerContent": "normal",
+                "markerRendered": true,
+                "ordinal": 1,
+                "startNumber": 1
+              },
+              {
+                "listDepth": 1,
+                "listStyleType": "decimal",
+                "markerContent": "normal",
+                "markerRendered": true,
+                "ordinal": 5,
+                "startNumber": 3
+              }
+            ],
+            "role": "viewer",
+            "visibleMarkerOrdinals": null
+          },
+          "semanticAdapter": "generic-structural-concept-v1",
+          "semanticBridge": null,
+          "semanticContract": {
+            "concepts": [
+              "list",
+              "listItem"
+            ],
+            "contentBlockRecognized": true,
+            "headingDepths": [],
+            "listStructure": [
+              {
+                "checked": null,
+                "listDepth": 1,
+                "ordered": true,
+                "ordinal": null,
+                "quoteDepth": 0,
+                "startNumber": 3,
+                "type": "list"
+              },
+              {
+                "checked": null,
+                "listDepth": 1,
+                "ordered": null,
+                "ordinal": 3,
+                "quoteDepth": 0,
+                "startNumber": null,
+                "type": "listItem"
+              },
+              {
+                "checked": null,
+                "listDepth": 1,
+                "ordered": null,
+                "ordinal": 4,
+                "quoteDepth": 0,
+                "startNumber": null,
+                "type": "listItem"
+              },
+              {
+                "checked": null,
+                "listDepth": 2,
+                "ordered": true,
+                "ordinal": null,
+                "quoteDepth": 0,
+                "startNumber": 1,
+                "type": "list"
+              },
+              {
+                "checked": null,
+                "listDepth": 2,
+                "ordered": null,
+                "ordinal": 1,
+                "quoteDepth": 0,
+                "startNumber": null,
+                "type": "listItem"
+              },
+              {
+                "checked": null,
+                "listDepth": 1,
+                "ordered": null,
+                "ordinal": 5,
+                "quoteDepth": 0,
+                "startNumber": null,
+                "type": "listItem"
+              }
+            ],
+            "maximumListDepth": 2,
+            "maximumQuoteDepth": 0,
+            "tableCells": []
+          }
+        }
+      },
+      "normalizedEvidence": {
+        "obsidian": {
+          "presentation": {
+            "active": false,
+            "mode": "live-preview",
+            "orderedNumbering": {
+              "entries": [
+                {
+                  "listDepth": 1,
+                  "ordinal": 3
+                },
+                {
+                  "listDepth": 1,
+                  "ordinal": 4
+                },
+                {
+                  "listDepth": 2,
+                  "ordinal": 1
+                },
+                {
+                  "listDepth": 1,
+                  "ordinal": 5
+                }
+              ],
+              "rendered": true
+            }
+          },
+          "semantic": {
+            "concepts": [
+              "list",
+              "listItem"
+            ],
+            "contentBlockRecognized": true,
+            "headingDepths": [],
+            "listStructure": [
+              {
+                "checked": null,
+                "listDepth": 1,
+                "ordered": true,
+                "ordinal": null,
+                "quoteDepth": 0,
+                "startNumber": 3,
+                "type": "list"
+              },
+              {
+                "checked": null,
+                "listDepth": 1,
+                "ordered": null,
+                "ordinal": 3,
+                "quoteDepth": 0,
+                "startNumber": null,
+                "type": "listItem"
+              },
+              {
+                "checked": null,
+                "listDepth": 1,
+                "ordered": null,
+                "ordinal": 4,
+                "quoteDepth": 0,
+                "startNumber": null,
+                "type": "listItem"
+              },
+              {
+                "checked": null,
+                "listDepth": 2,
+                "ordered": true,
+                "ordinal": null,
+                "quoteDepth": 0,
+                "startNumber": 1,
+                "type": "list"
+              },
+              {
+                "checked": null,
+                "listDepth": 2,
+                "ordered": null,
+                "ordinal": 1,
+                "quoteDepth": 0,
+                "startNumber": null,
+                "type": "listItem"
+              },
+              {
+                "checked": null,
+                "listDepth": 1,
+                "ordered": null,
+                "ordinal": 5,
+                "quoteDepth": 0,
+                "startNumber": null,
+                "type": "listItem"
+              }
+            ],
+            "maximumListDepth": 2,
+            "maximumQuoteDepth": 0,
+            "tableCells": []
+          }
+        },
+        "viewer": {
+          "presentation": {
+            "active": false,
+            "mode": "live-preview",
+            "orderedNumbering": {
+              "entries": [
+                {
+                  "listDepth": 1,
+                  "ordinal": 3
+                },
+                {
+                  "listDepth": 1,
+                  "ordinal": 4
+                },
+                {
+                  "listDepth": 2,
+                  "ordinal": 1
+                },
+                {
+                  "listDepth": 1,
+                  "ordinal": 5
+                }
+              ],
+              "rendered": true
+            }
+          },
+          "semantic": {
+            "concepts": [
+              "list",
+              "listItem"
+            ],
+            "contentBlockRecognized": true,
+            "headingDepths": [],
+            "listStructure": [
+              {
+                "checked": null,
+                "listDepth": 1,
+                "ordered": true,
+                "ordinal": null,
+                "quoteDepth": 0,
+                "startNumber": 3,
+                "type": "list"
+              },
+              {
+                "checked": null,
+                "listDepth": 1,
+                "ordered": null,
+                "ordinal": 3,
+                "quoteDepth": 0,
+                "startNumber": null,
+                "type": "listItem"
+              },
+              {
+                "checked": null,
+                "listDepth": 1,
+                "ordered": null,
+                "ordinal": 4,
+                "quoteDepth": 0,
+                "startNumber": null,
+                "type": "listItem"
+              },
+              {
+                "checked": null,
+                "listDepth": 2,
+                "ordered": true,
+                "ordinal": null,
+                "quoteDepth": 0,
+                "startNumber": 1,
+                "type": "list"
+              },
+              {
+                "checked": null,
+                "listDepth": 2,
+                "ordered": null,
+                "ordinal": 1,
+                "quoteDepth": 0,
+                "startNumber": null,
+                "type": "listItem"
+              },
+              {
+                "checked": null,
+                "listDepth": 1,
+                "ordered": null,
+                "ordinal": 5,
+                "quoteDepth": 0,
+                "startNumber": null,
+                "type": "listItem"
+              }
+            ],
+            "maximumListDepth": 2,
+            "maximumQuoteDepth": 0,
+            "tableCells": []
+          }
+        }
+      },
+      "observedSemanticBridge": null,
+      "rawEvidence": {
+        "obsidianSha256": "0ddb4cea7b87a275625359ef38867d88ed9eef004daddf96ec72f6890a3915c2",
+        "preservedInSourceDocuments": true,
+        "rawDifferencePaths": [
+          "semantic.nodes.2.checked",
+          "semantic.nodes.2.ordinal",
+          "semantic.nodes.2.path",
+          "semantic.nodes.2.type",
+          "semantic.nodes.3.checked",
+          "semantic.nodes.3.listDepth",
+          "semantic.nodes.3.ordered",
+          "semantic.nodes.3.ordinal",
+          "semantic.nodes.3.path",
+          "semantic.nodes.3.startNumber",
+          "semantic.nodes.3.type",
+          "semantic.nodes.4.checked",
+          "semantic.nodes.4.listDepth",
+          "semantic.nodes.4.ordinal",
+          "semantic.nodes.4.path",
+          "semantic.nodes.4.type",
+          "semantic.nodes.5.checked",
+          "semantic.nodes.5.listDepth",
+          "semantic.nodes.5.ordered",
+          "semantic.nodes.5.ordinal",
+          "semantic.nodes.5.path",
+          "semantic.nodes.5.startNumber",
+          "semantic.nodes.5.type",
+          "semantic.nodes.6",
+          "semantic.nodes.7",
+          "semantic.nodes.8",
+          "semantic.nodes.9",
+          "semantic.typeCounts.paragraph",
+          "presentation.markerVisibility",
+          "presentation.visibleLines.0",
+          "presentation.visibleLines.1",
+          "presentation.visibleLines.2",
+          "presentation.visibleLines.3",
+          "presentation.visibleLines.4",
+          "presentation.visibleLines.5",
+          "presentation.visibleLines.6",
+          "presentation.visibleMarkers",
+          "presentation.visibleText"
+        ],
+        "viewerSha256": "2f88fece2a0af6fa1491674543f6605231ed8a3a4fd68aba1dd9ea97d583b328"
+      },
+      "rawStrictStatus": "VIEWER_FAIL",
+      "reasonCode": "normalized-contract-match",
+      "scenarioId": "v0.3-list-numbering.live-preview.inactive.inspect",
+      "status": "MATCH",
+      "syntaxFamily": "ordered-lists"
+    },
+    {
+      "actionId": "inspect",
+      "comparisonLayer": "cross-runtime-behavior-contract-v2",
+      "differences": [],
+      "evidence": {
+        "obsidian": "O1",
+        "viewer": "V1"
+      },
+      "fixtureId": "v0.3-list-numbering",
+      "mode": "live-preview",
+      "normalizationAudit": {
+        "obsidian": {
+          "available": true,
+          "normalized": true,
+          "observedSemanticTypes": [
+            "list",
+            "listItem"
+          ],
+          "presentation": {
+            "adapter": "ordered-list-numbering-behavior-v1",
+            "itemFacts": null,
+            "role": "obsidian",
+            "visibleMarkerOrdinals": [
+              3,
+              4,
+              1,
+              5
+            ]
+          },
+          "semanticAdapter": "generic-structural-concept-v1",
+          "semanticBridge": null,
+          "semanticContract": {
+            "concepts": [
+              "list",
+              "listItem"
+            ],
+            "contentBlockRecognized": true,
+            "headingDepths": [],
+            "listStructure": [
+              {
+                "checked": null,
+                "listDepth": 1,
+                "ordered": true,
+                "ordinal": null,
+                "quoteDepth": 0,
+                "startNumber": 3,
+                "type": "list"
+              },
+              {
+                "checked": null,
+                "listDepth": 1,
+                "ordered": null,
+                "ordinal": 3,
+                "quoteDepth": 0,
+                "startNumber": null,
+                "type": "listItem"
+              },
+              {
+                "checked": null,
+                "listDepth": 1,
+                "ordered": null,
+                "ordinal": 4,
+                "quoteDepth": 0,
+                "startNumber": null,
+                "type": "listItem"
+              },
+              {
+                "checked": null,
+                "listDepth": 2,
+                "ordered": true,
+                "ordinal": null,
+                "quoteDepth": 0,
+                "startNumber": 1,
+                "type": "list"
+              },
+              {
+                "checked": null,
+                "listDepth": 2,
+                "ordered": null,
+                "ordinal": 1,
+                "quoteDepth": 0,
+                "startNumber": null,
+                "type": "listItem"
+              },
+              {
+                "checked": null,
+                "listDepth": 1,
+                "ordered": null,
+                "ordinal": 5,
+                "quoteDepth": 0,
+                "startNumber": null,
+                "type": "listItem"
+              }
+            ],
+            "maximumListDepth": 2,
+            "maximumQuoteDepth": 0,
+            "tableCells": []
+          }
+        },
+        "viewer": {
+          "available": true,
+          "normalized": true,
+          "observedSemanticTypes": [
+            "list",
+            "listItem",
+            "paragraph"
+          ],
+          "presentation": {
+            "adapter": "ordered-list-numbering-behavior-v1",
+            "itemFacts": [
+              {
+                "listDepth": 1,
+                "listStyleType": "decimal",
+                "markerContent": "normal",
+                "markerRendered": true,
+                "ordinal": 3,
+                "startNumber": 3
+              },
+              {
+                "listDepth": 1,
+                "listStyleType": "none",
+                "markerContent": "normal",
+                "markerRendered": false,
+                "ordinal": 4,
+                "startNumber": 3
+              },
+              {
+                "listDepth": 2,
+                "listStyleType": "decimal",
+                "markerContent": "normal",
+                "markerRendered": true,
+                "ordinal": 1,
+                "startNumber": 1
+              },
+              {
+                "listDepth": 1,
+                "listStyleType": "decimal",
+                "markerContent": "normal",
+                "markerRendered": true,
+                "ordinal": 5,
+                "startNumber": 3
+              }
+            ],
+            "role": "viewer",
+            "visibleMarkerOrdinals": null
+          },
+          "semanticAdapter": "generic-structural-concept-v1",
+          "semanticBridge": null,
+          "semanticContract": {
+            "concepts": [
+              "list",
+              "listItem"
+            ],
+            "contentBlockRecognized": true,
+            "headingDepths": [],
+            "listStructure": [
+              {
+                "checked": null,
+                "listDepth": 1,
+                "ordered": true,
+                "ordinal": null,
+                "quoteDepth": 0,
+                "startNumber": 3,
+                "type": "list"
+              },
+              {
+                "checked": null,
+                "listDepth": 1,
+                "ordered": null,
+                "ordinal": 3,
+                "quoteDepth": 0,
+                "startNumber": null,
+                "type": "listItem"
+              },
+              {
+                "checked": null,
+                "listDepth": 1,
+                "ordered": null,
+                "ordinal": 4,
+                "quoteDepth": 0,
+                "startNumber": null,
+                "type": "listItem"
+              },
+              {
+                "checked": null,
+                "listDepth": 2,
+                "ordered": true,
+                "ordinal": null,
+                "quoteDepth": 0,
+                "startNumber": 1,
+                "type": "list"
+              },
+              {
+                "checked": null,
+                "listDepth": 2,
+                "ordered": null,
+                "ordinal": 1,
+                "quoteDepth": 0,
+                "startNumber": null,
+                "type": "listItem"
+              },
+              {
+                "checked": null,
+                "listDepth": 1,
+                "ordered": null,
+                "ordinal": 5,
+                "quoteDepth": 0,
+                "startNumber": null,
+                "type": "listItem"
+              }
+            ],
+            "maximumListDepth": 2,
+            "maximumQuoteDepth": 0,
+            "tableCells": []
+          }
+        }
+      },
+      "normalizedEvidence": {
+        "obsidian": {
+          "presentation": {
+            "active": true,
+            "mode": "live-preview",
+            "orderedNumbering": {
+              "entries": [
+                {
+                  "listDepth": 1,
+                  "ordinal": 3
+                },
+                {
+                  "listDepth": 1,
+                  "ordinal": 4
+                },
+                {
+                  "listDepth": 2,
+                  "ordinal": 1
+                },
+                {
+                  "listDepth": 1,
+                  "ordinal": 5
+                }
+              ],
+              "rendered": true
+            }
+          },
+          "semantic": {
+            "concepts": [
+              "list",
+              "listItem"
+            ],
+            "contentBlockRecognized": true,
+            "headingDepths": [],
+            "listStructure": [
+              {
+                "checked": null,
+                "listDepth": 1,
+                "ordered": true,
+                "ordinal": null,
+                "quoteDepth": 0,
+                "startNumber": 3,
+                "type": "list"
+              },
+              {
+                "checked": null,
+                "listDepth": 1,
+                "ordered": null,
+                "ordinal": 3,
+                "quoteDepth": 0,
+                "startNumber": null,
+                "type": "listItem"
+              },
+              {
+                "checked": null,
+                "listDepth": 1,
+                "ordered": null,
+                "ordinal": 4,
+                "quoteDepth": 0,
+                "startNumber": null,
+                "type": "listItem"
+              },
+              {
+                "checked": null,
+                "listDepth": 2,
+                "ordered": true,
+                "ordinal": null,
+                "quoteDepth": 0,
+                "startNumber": 1,
+                "type": "list"
+              },
+              {
+                "checked": null,
+                "listDepth": 2,
+                "ordered": null,
+                "ordinal": 1,
+                "quoteDepth": 0,
+                "startNumber": null,
+                "type": "listItem"
+              },
+              {
+                "checked": null,
+                "listDepth": 1,
+                "ordered": null,
+                "ordinal": 5,
+                "quoteDepth": 0,
+                "startNumber": null,
+                "type": "listItem"
+              }
+            ],
+            "maximumListDepth": 2,
+            "maximumQuoteDepth": 0,
+            "tableCells": []
+          }
+        },
+        "viewer": {
+          "presentation": {
+            "active": true,
+            "mode": "live-preview",
+            "orderedNumbering": {
+              "entries": [
+                {
+                  "listDepth": 1,
+                  "ordinal": 3
+                },
+                {
+                  "listDepth": 1,
+                  "ordinal": 4
+                },
+                {
+                  "listDepth": 2,
+                  "ordinal": 1
+                },
+                {
+                  "listDepth": 1,
+                  "ordinal": 5
+                }
+              ],
+              "rendered": true
+            }
+          },
+          "semantic": {
+            "concepts": [
+              "list",
+              "listItem"
+            ],
+            "contentBlockRecognized": true,
+            "headingDepths": [],
+            "listStructure": [
+              {
+                "checked": null,
+                "listDepth": 1,
+                "ordered": true,
+                "ordinal": null,
+                "quoteDepth": 0,
+                "startNumber": 3,
+                "type": "list"
+              },
+              {
+                "checked": null,
+                "listDepth": 1,
+                "ordered": null,
+                "ordinal": 3,
+                "quoteDepth": 0,
+                "startNumber": null,
+                "type": "listItem"
+              },
+              {
+                "checked": null,
+                "listDepth": 1,
+                "ordered": null,
+                "ordinal": 4,
+                "quoteDepth": 0,
+                "startNumber": null,
+                "type": "listItem"
+              },
+              {
+                "checked": null,
+                "listDepth": 2,
+                "ordered": true,
+                "ordinal": null,
+                "quoteDepth": 0,
+                "startNumber": 1,
+                "type": "list"
+              },
+              {
+                "checked": null,
+                "listDepth": 2,
+                "ordered": null,
+                "ordinal": 1,
+                "quoteDepth": 0,
+                "startNumber": null,
+                "type": "listItem"
+              },
+              {
+                "checked": null,
+                "listDepth": 1,
+                "ordered": null,
+                "ordinal": 5,
+                "quoteDepth": 0,
+                "startNumber": null,
+                "type": "listItem"
+              }
+            ],
+            "maximumListDepth": 2,
+            "maximumQuoteDepth": 0,
+            "tableCells": []
+          }
+        }
+      },
+      "observedSemanticBridge": null,
+      "rawEvidence": {
+        "obsidianSha256": "48a6019dc13a1c5b160dd706e577fb2c89259c5a937ea1ce9cc099c859400dcb",
+        "preservedInSourceDocuments": true,
+        "rawDifferencePaths": [
+          "semantic.nodes.2.checked",
+          "semantic.nodes.2.ordinal",
+          "semantic.nodes.2.path",
+          "semantic.nodes.2.type",
+          "semantic.nodes.3.checked",
+          "semantic.nodes.3.listDepth",
+          "semantic.nodes.3.ordered",
+          "semantic.nodes.3.ordinal",
+          "semantic.nodes.3.path",
+          "semantic.nodes.3.startNumber",
+          "semantic.nodes.3.type",
+          "semantic.nodes.4.checked",
+          "semantic.nodes.4.listDepth",
+          "semantic.nodes.4.ordinal",
+          "semantic.nodes.4.path",
+          "semantic.nodes.4.type",
+          "semantic.nodes.5.checked",
+          "semantic.nodes.5.listDepth",
+          "semantic.nodes.5.ordered",
+          "semantic.nodes.5.ordinal",
+          "semantic.nodes.5.path",
+          "semantic.nodes.5.startNumber",
+          "semantic.nodes.5.type",
+          "semantic.nodes.6",
+          "semantic.nodes.7",
+          "semantic.nodes.8",
+          "semantic.nodes.9",
+          "semantic.typeCounts.paragraph",
+          "presentation.visibleLines.0",
+          "presentation.visibleLines.1",
+          "presentation.visibleLines.2",
+          "presentation.visibleLines.3",
+          "presentation.visibleLines.4",
+          "presentation.visibleLines.5",
+          "presentation.visibleLines.6",
+          "presentation.visibleLines.7",
+          "presentation.visibleLines.8",
+          "presentation.visibleMarkers",
+          "presentation.visibleText"
+        ],
+        "viewerSha256": "5ce73127028df6d7e33491855eac4d900a10846697272be889c82793843732b5"
+      },
+      "rawStrictStatus": "VIEWER_FAIL",
+      "reasonCode": "normalized-contract-match",
+      "scenarioId": "v0.3-list-numbering.live-preview.active.inspect",
+      "status": "MATCH",
+      "syntaxFamily": "ordered-lists"
+    },
+    {
+      "actionId": "select-cross-items",
+      "comparisonLayer": "cross-runtime-behavior-contract-v2",
+      "differences": [],
+      "evidence": {
+        "obsidian": "O1",
+        "viewer": "V1"
+      },
+      "fixtureId": "v0.3-list-numbering",
+      "mode": "live-preview",
+      "normalizationAudit": {
+        "obsidian": {
+          "available": true,
+          "normalized": true,
+          "observedSemanticTypes": [
+            "list",
+            "listItem"
+          ],
+          "presentation": {
+            "adapter": "ordered-list-numbering-behavior-v1",
+            "itemFacts": null,
+            "role": "obsidian",
+            "visibleMarkerOrdinals": [
+              3,
+              4,
+              1,
+              5
+            ]
+          },
+          "semanticAdapter": "generic-structural-concept-v1",
+          "semanticBridge": null,
+          "semanticContract": {
+            "concepts": [
+              "list",
+              "listItem"
+            ],
+            "contentBlockRecognized": true,
+            "headingDepths": [],
+            "listStructure": [
+              {
+                "checked": null,
+                "listDepth": 1,
+                "ordered": true,
+                "ordinal": null,
+                "quoteDepth": 0,
+                "startNumber": 3,
+                "type": "list"
+              },
+              {
+                "checked": null,
+                "listDepth": 1,
+                "ordered": null,
+                "ordinal": 3,
+                "quoteDepth": 0,
+                "startNumber": null,
+                "type": "listItem"
+              },
+              {
+                "checked": null,
+                "listDepth": 1,
+                "ordered": null,
+                "ordinal": 4,
+                "quoteDepth": 0,
+                "startNumber": null,
+                "type": "listItem"
+              },
+              {
+                "checked": null,
+                "listDepth": 2,
+                "ordered": true,
+                "ordinal": null,
+                "quoteDepth": 0,
+                "startNumber": 1,
+                "type": "list"
+              },
+              {
+                "checked": null,
+                "listDepth": 2,
+                "ordered": null,
+                "ordinal": 1,
+                "quoteDepth": 0,
+                "startNumber": null,
+                "type": "listItem"
+              },
+              {
+                "checked": null,
+                "listDepth": 1,
+                "ordered": null,
+                "ordinal": 5,
+                "quoteDepth": 0,
+                "startNumber": null,
+                "type": "listItem"
+              }
+            ],
+            "maximumListDepth": 2,
+            "maximumQuoteDepth": 0,
+            "tableCells": []
+          }
+        },
+        "viewer": {
+          "available": true,
+          "normalized": true,
+          "observedSemanticTypes": [
+            "list",
+            "listItem",
+            "paragraph"
+          ],
+          "presentation": {
+            "adapter": "ordered-list-numbering-behavior-v1",
+            "itemFacts": [
+              {
+                "listDepth": 1,
+                "listStyleType": "none",
+                "markerContent": "normal",
+                "markerRendered": false,
+                "ordinal": 3,
+                "startNumber": 3
+              },
+              {
+                "listDepth": 1,
+                "listStyleType": "none",
+                "markerContent": "normal",
+                "markerRendered": false,
+                "ordinal": 4,
+                "startNumber": 3
+              },
+              {
+                "listDepth": 2,
+                "listStyleType": "decimal",
+                "markerContent": "normal",
+                "markerRendered": true,
+                "ordinal": 1,
+                "startNumber": 1
+              },
+              {
+                "listDepth": 1,
+                "listStyleType": "decimal",
+                "markerContent": "normal",
+                "markerRendered": true,
+                "ordinal": 5,
+                "startNumber": 3
+              }
+            ],
+            "role": "viewer",
+            "visibleMarkerOrdinals": null
+          },
+          "semanticAdapter": "generic-structural-concept-v1",
+          "semanticBridge": null,
+          "semanticContract": {
+            "concepts": [
+              "list",
+              "listItem"
+            ],
+            "contentBlockRecognized": true,
+            "headingDepths": [],
+            "listStructure": [
+              {
+                "checked": null,
+                "listDepth": 1,
+                "ordered": true,
+                "ordinal": null,
+                "quoteDepth": 0,
+                "startNumber": 3,
+                "type": "list"
+              },
+              {
+                "checked": null,
+                "listDepth": 1,
+                "ordered": null,
+                "ordinal": 3,
+                "quoteDepth": 0,
+                "startNumber": null,
+                "type": "listItem"
+              },
+              {
+                "checked": null,
+                "listDepth": 1,
+                "ordered": null,
+                "ordinal": 4,
+                "quoteDepth": 0,
+                "startNumber": null,
+                "type": "listItem"
+              },
+              {
+                "checked": null,
+                "listDepth": 2,
+                "ordered": true,
+                "ordinal": null,
+                "quoteDepth": 0,
+                "startNumber": 1,
+                "type": "list"
+              },
+              {
+                "checked": null,
+                "listDepth": 2,
+                "ordered": null,
+                "ordinal": 1,
+                "quoteDepth": 0,
+                "startNumber": null,
+                "type": "listItem"
+              },
+              {
+                "checked": null,
+                "listDepth": 1,
+                "ordered": null,
+                "ordinal": 5,
+                "quoteDepth": 0,
+                "startNumber": null,
+                "type": "listItem"
+              }
+            ],
+            "maximumListDepth": 2,
+            "maximumQuoteDepth": 0,
+            "tableCells": []
+          }
+        }
+      },
+      "normalizedEvidence": {
+        "obsidian": {
+          "presentation": {
+            "active": true,
+            "mode": "live-preview",
+            "orderedNumbering": {
+              "entries": [
+                {
+                  "listDepth": 1,
+                  "ordinal": 3
+                },
+                {
+                  "listDepth": 1,
+                  "ordinal": 4
+                },
+                {
+                  "listDepth": 2,
+                  "ordinal": 1
+                },
+                {
+                  "listDepth": 1,
+                  "ordinal": 5
+                }
+              ],
+              "rendered": true
+            }
+          },
+          "semantic": {
+            "concepts": [
+              "list",
+              "listItem"
+            ],
+            "contentBlockRecognized": true,
+            "headingDepths": [],
+            "listStructure": [
+              {
+                "checked": null,
+                "listDepth": 1,
+                "ordered": true,
+                "ordinal": null,
+                "quoteDepth": 0,
+                "startNumber": 3,
+                "type": "list"
+              },
+              {
+                "checked": null,
+                "listDepth": 1,
+                "ordered": null,
+                "ordinal": 3,
+                "quoteDepth": 0,
+                "startNumber": null,
+                "type": "listItem"
+              },
+              {
+                "checked": null,
+                "listDepth": 1,
+                "ordered": null,
+                "ordinal": 4,
+                "quoteDepth": 0,
+                "startNumber": null,
+                "type": "listItem"
+              },
+              {
+                "checked": null,
+                "listDepth": 2,
+                "ordered": true,
+                "ordinal": null,
+                "quoteDepth": 0,
+                "startNumber": 1,
+                "type": "list"
+              },
+              {
+                "checked": null,
+                "listDepth": 2,
+                "ordered": null,
+                "ordinal": 1,
+                "quoteDepth": 0,
+                "startNumber": null,
+                "type": "listItem"
+              },
+              {
+                "checked": null,
+                "listDepth": 1,
+                "ordered": null,
+                "ordinal": 5,
+                "quoteDepth": 0,
+                "startNumber": null,
+                "type": "listItem"
+              }
+            ],
+            "maximumListDepth": 2,
+            "maximumQuoteDepth": 0,
+            "tableCells": []
+          }
+        },
+        "viewer": {
+          "presentation": {
+            "active": true,
+            "mode": "live-preview",
+            "orderedNumbering": {
+              "entries": [
+                {
+                  "listDepth": 1,
+                  "ordinal": 3
+                },
+                {
+                  "listDepth": 1,
+                  "ordinal": 4
+                },
+                {
+                  "listDepth": 2,
+                  "ordinal": 1
+                },
+                {
+                  "listDepth": 1,
+                  "ordinal": 5
+                }
+              ],
+              "rendered": true
+            }
+          },
+          "semantic": {
+            "concepts": [
+              "list",
+              "listItem"
+            ],
+            "contentBlockRecognized": true,
+            "headingDepths": [],
+            "listStructure": [
+              {
+                "checked": null,
+                "listDepth": 1,
+                "ordered": true,
+                "ordinal": null,
+                "quoteDepth": 0,
+                "startNumber": 3,
+                "type": "list"
+              },
+              {
+                "checked": null,
+                "listDepth": 1,
+                "ordered": null,
+                "ordinal": 3,
+                "quoteDepth": 0,
+                "startNumber": null,
+                "type": "listItem"
+              },
+              {
+                "checked": null,
+                "listDepth": 1,
+                "ordered": null,
+                "ordinal": 4,
+                "quoteDepth": 0,
+                "startNumber": null,
+                "type": "listItem"
+              },
+              {
+                "checked": null,
+                "listDepth": 2,
+                "ordered": true,
+                "ordinal": null,
+                "quoteDepth": 0,
+                "startNumber": 1,
+                "type": "list"
+              },
+              {
+                "checked": null,
+                "listDepth": 2,
+                "ordered": null,
+                "ordinal": 1,
+                "quoteDepth": 0,
+                "startNumber": null,
+                "type": "listItem"
+              },
+              {
+                "checked": null,
+                "listDepth": 1,
+                "ordered": null,
+                "ordinal": 5,
+                "quoteDepth": 0,
+                "startNumber": null,
+                "type": "listItem"
+              }
+            ],
+            "maximumListDepth": 2,
+            "maximumQuoteDepth": 0,
+            "tableCells": []
+          }
+        }
+      },
+      "observedSemanticBridge": null,
+      "rawEvidence": {
+        "obsidianSha256": "f51b808d2047cd0c358e165c960afd84b15bfe332f929f9dc4ea62cae613e101",
+        "preservedInSourceDocuments": true,
+        "rawDifferencePaths": [
+          "semantic.nodes.2.checked",
+          "semantic.nodes.2.ordinal",
+          "semantic.nodes.2.path",
+          "semantic.nodes.2.type",
+          "semantic.nodes.3.checked",
+          "semantic.nodes.3.listDepth",
+          "semantic.nodes.3.ordered",
+          "semantic.nodes.3.ordinal",
+          "semantic.nodes.3.path",
+          "semantic.nodes.3.startNumber",
+          "semantic.nodes.3.type",
+          "semantic.nodes.4.checked",
+          "semantic.nodes.4.listDepth",
+          "semantic.nodes.4.ordinal",
+          "semantic.nodes.4.path",
+          "semantic.nodes.4.type",
+          "semantic.nodes.5.checked",
+          "semantic.nodes.5.listDepth",
+          "semantic.nodes.5.ordered",
+          "semantic.nodes.5.ordinal",
+          "semantic.nodes.5.path",
+          "semantic.nodes.5.startNumber",
+          "semantic.nodes.5.type",
+          "semantic.nodes.6",
+          "semantic.nodes.7",
+          "semantic.nodes.8",
+          "semantic.nodes.9",
+          "semantic.typeCounts.paragraph",
+          "presentation.visibleLines.0",
+          "presentation.visibleLines.1",
+          "presentation.visibleLines.10",
+          "presentation.visibleLines.2",
+          "presentation.visibleLines.3",
+          "presentation.visibleLines.4",
+          "presentation.visibleLines.5",
+          "presentation.visibleLines.6",
+          "presentation.visibleLines.7",
+          "presentation.visibleLines.8",
+          "presentation.visibleLines.9",
+          "presentation.visibleMarkers",
+          "presentation.visibleText"
+        ],
+        "viewerSha256": "0f0605753e042d486cc1c305cef0cb8e524f00c617702af2dcf6b898e92716fd"
+      },
+      "rawStrictStatus": "VIEWER_FAIL",
+      "reasonCode": "normalized-contract-match",
+      "scenarioId": "v0.3-list-selection.live-preview.active.cross-items",
+      "status": "MATCH",
+      "syntaxFamily": "ordered-lists"
+    }
+  ],
+  "scenarioCount": 3,
+  "scenarioSource": {
+    "corpusScenarioCount": 3,
+    "corpusSha256": "498ab0d04a0bab621a68ccee31221692066bd03522583a81ecb622d3f469a8fc",
+    "selectedScenarioCount": 3
+  },
+  "schemaVersion": 1
+}

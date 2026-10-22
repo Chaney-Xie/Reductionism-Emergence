@@ -1,0 +1,124 @@
+{
+  "evaluations": 12,
+  "kind": "minimized-o1-v1-regression",
+  "metadata": {
+    "differencePathPrefix": null,
+    "evidenceLevels": [
+      "O1",
+      "V1"
+    ],
+    "minimizedAt": "2026-08-20T06:24:07.107Z",
+    "obsidianLaunches": 1,
+    "predicate": "source",
+    "preRepairViewerAsarSha256": "f0999c764e2be97003b61e36f43fe843f9a4d100f4edb36433fc1277ab4af470",
+    "randomOriginId": "list-lifecycle-random-500.064.17087a10b9089378",
+    "viewerLaunches": 1
+  },
+  "minimizedLength": 3,
+  "originalLength": 8,
+  "schemaVersion": 1,
+  "sequence": {
+    "actionTracePolicy": {
+      "captureAfterEveryAction": true,
+      "compareAfterEveryAction": true,
+      "expectedActionCount": 8,
+      "required": true,
+      "requiredDimensions": [
+        "source",
+        "selection",
+        "physical",
+        "semantic",
+        "presentation.list",
+        "presentation.list.focus",
+        "presentation.list.lifecycleIntegrity"
+      ]
+    },
+    "actions": [
+      {
+        "captureAfterAction": true,
+        "historyEffect": "possible-edit",
+        "id": "backspace",
+        "key": "Backspace",
+        "motifRole": "motif-core",
+        "traceIndex": 0,
+        "type": "keyboard"
+      },
+      {
+        "captureAfterAction": true,
+        "historyEffect": "possible-edit",
+        "id": "backspace",
+        "key": "Backspace",
+        "motifRole": "motif-core",
+        "traceIndex": 1,
+        "type": "keyboard"
+      },
+      {
+        "captureAfterAction": true,
+        "historyEffect": "possible-edit",
+        "id": "backspace",
+        "key": "Backspace",
+        "motifRole": "motif-core",
+        "traceIndex": 2,
+        "type": "keyboard"
+      }
+    ],
+    "boundary": {
+      "name": "empty-parent-item-before-nested-list",
+      "notation": "1. A\n2. |\n    1. C\n    2. D",
+      "offset": 8
+    },
+    "boundaryKind": "empty-parent-item-before-nested-list",
+    "comparisonPolicy": {
+      "kind": "fully-comparable",
+      "nonComparableDimensions": []
+    },
+    "fixtureId": "lifecycle-ordered-empty-parent-with-nested-list",
+    "id": "regression.bcc189cb8ea962f9802a",
+    "index": 64,
+    "initialItem": 2,
+    "initialSelection": {
+      "anchor": 8,
+      "focus": 8
+    },
+    "initialSource": "1. A\n2. \n    1. C\n    2. D",
+    "lifecycleCoverage": {
+      "activeTransitions": false,
+      "alternatingActions": null,
+      "emptyItem": true,
+      "historyReplay": false,
+      "parentNestedBoundary": true,
+      "repeatedAction": "Backspace"
+    },
+    "listKind": "ordered",
+    "marker": "ordered",
+    "maximumDepth": 2,
+    "mode": "live-preview",
+    "motifFamily": "owned-empty-repeated-backspace",
+    "motifId": "owned-empty-repeated-backspace.ordered",
+    "motifRepetition": 14,
+    "profile": "v0.3-list-lifecycle-random-500",
+    "randomOriginId": "list-lifecycle-random-500.064.17087a10b9089378",
+    "requiredObservations": [
+      "source",
+      "selection",
+      "physical",
+      "semantic",
+      "presentation"
+    ],
+    "schemaVersion": 1,
+    "seed": "cogneuro-v0.3-list-lifecycle-random-500-001",
+    "sequenceSeed": "cogneuro-v0.3-list-lifecycle-random-500-001:owned-empty-repeated-backspace.ordered:14",
+    "state": {
+      "active": true
+    },
+    "syntaxFamily": "ordered-lists",
+    "tags": [
+      "list-editing-expanded",
+      "list-lifecycle-random-500",
+      "empty-item-lifecycle",
+      "ordered-list-lifecycle",
+      "lifecycle-motif-owned-empty-repeated-backspace",
+      "parent-nested-boundary"
+    ]
+  }
+}

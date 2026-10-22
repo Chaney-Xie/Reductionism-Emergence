@@ -1,0 +1,66 @@
+{
+  "evaluations": 6,
+  "kind": "minimized-o1-v1-regression",
+  "metadata": {
+    "corpusOriginId": "list-lifecycle-random-500.214.6890d6926e950f3a",
+    "differencePathPrefix": null,
+    "evidenceLevels": [
+      "O1",
+      "V1"
+    ],
+    "minimizedAt": "2026-08-20T06:28:17.345Z",
+    "obsidianLaunches": 1,
+    "originActionPrefixLength": 3,
+    "predicate": "source",
+    "preRepairViewerAsarSha256": "f0999c764e2be97003b61e36f43fe843f9a4d100f4edb36433fc1277ab4af470",
+    "randomOriginId": "list-lifecycle-random-500.214.6890d6926e950f3a.prefix3",
+    "viewerLaunches": 1
+  },
+  "minimizedLength": 3,
+  "originalLength": 3,
+  "schemaVersion": 1,
+  "sequence": {
+    "actions": [
+      {
+        "id": "enter",
+        "key": "Enter",
+        "type": "keyboard"
+      },
+      {
+        "id": "delete",
+        "key": "Delete",
+        "type": "keyboard"
+      },
+      {
+        "id": "enter",
+        "key": "Enter",
+        "type": "keyboard"
+      }
+    ],
+    "fixtureId": "lifecycle-ordered-parent-before-nested-list",
+    "id": "regression.880b6b7c480e5b586896",
+    "initialSelection": {
+      "anchor": 43,
+      "focus": 43
+    },
+    "initialSource": "1. Glycolysis\n2. Link reaction\n3. TCA cycle\n    1. Citrate\n    2. Isocitrate",
+    "mode": "live-preview",
+    "randomOriginId": "list-lifecycle-random-500.214.6890d6926e950f3a.prefix3",
+    "requiredObservations": [
+      "source",
+      "selection",
+      "physical",
+      "semantic",
+      "presentation"
+    ],
+    "state": {
+      "active": true
+    },
+    "syntaxFamily": "ordered-lists",
+    "tags": [
+      "list-editing-expanded",
+      "empty-item-lifecycle",
+      "random500-truncated-prefix"
+    ]
+  }
+}

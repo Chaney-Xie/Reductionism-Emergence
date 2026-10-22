@@ -1,0 +1,48 @@
+{
+  "evaluations": 9,
+  "kind": "minimized-o1-v1-regression",
+  "metadata": {
+    "evidenceLevels": [
+      "V1"
+    ],
+    "minimizedAt": "2026-08-11T10:20:54.319Z",
+    "obsidianLaunches": 0,
+    "predicate": "viewer-integrity",
+    "randomOriginId": "random.a0d719916d3e926d0cf6",
+    "viewerLaunches": 1
+  },
+  "minimizedLength": 2,
+  "originalLength": 9,
+  "schemaVersion": 1,
+  "sequence": {
+    "actions": [
+      {
+        "key": "ArrowUp",
+        "type": "keyboard"
+      },
+      {
+        "key": "Tab",
+        "type": "keyboard"
+      }
+    ],
+    "fixtureId": "tilde-fenced-code",
+    "id": "regression.d9bbbbacde5d9c734280",
+    "index": 86,
+    "initialSelection": {
+      "anchor": 6,
+      "focus": 6
+    },
+    "initialSource": "~~~js\nconst x = 1;\n~~~",
+    "mode": "source",
+    "randomOriginId": "random.a0d719916d3e926d0cf6",
+    "requiredObservations": [
+      "source",
+      "selection",
+      "physical",
+      "semantic"
+    ],
+    "schemaVersion": 1,
+    "seed": "v03-fixed",
+    "syntaxFamily": "fenced-code"
+  }
+}

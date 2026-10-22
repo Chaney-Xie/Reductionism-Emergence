@@ -1,0 +1,1364 @@
+{
+  "gate": {
+    "corpusSha256": "1041e48b62fbaaecb1d02405132b9584074feda2c2a7e4cc49d484fdec7080be",
+    "kind": "v0.3-valid-random-full-action-trace-repair-gate",
+    "sourceCorpusSha256": "6085a46a252f666a9f0ae3e60e9d649a797039c84500e8f385b86cf78db24868"
+  },
+  "kind": "repair-gate-o1-oracle-replay-validation",
+  "results": [
+    {
+      "actionReplay": {
+        "capturedActionCount": 1,
+        "complete": true,
+        "differences": [],
+        "expectedActionCount": 1,
+        "status": "VERIFIED",
+        "timingPreservingIntermediateCapture": true
+      },
+      "actual": {
+        "selection": {
+          "anchor": 17,
+          "focus": 17
+        },
+        "source": "> \n> \n>   >\n>   >A\n>\n> B"
+      },
+      "automatable": true,
+      "differences": [],
+      "evidenceLevel": "O1",
+      "expected": {
+        "selection": {
+          "anchor": 17,
+          "focus": 17
+        },
+        "source": "> \n> \n>   >\n>   >A\n>\n> B"
+      },
+      "fixtureId": "quote-blank-line",
+      "mode": "source",
+      "originReplay": {
+        "differences": [],
+        "firstDivergentActionIndex": 8,
+        "firstDivergentActionNumber": 9,
+        "gateActionCount": 1,
+        "originScenarioId": "certification-random.29910640d4db8641345d",
+        "prefixStatePreserved": false,
+        "status": "REBASED_NOT_APPLICABLE"
+      },
+      "originScenarioId": "certification-random.29910640d4db8641345d",
+      "reason": "Fresh O1 source/selection and the captured action trace reproduce the embedded oracle.",
+      "reasonCode": "oracle-reproduced",
+      "scenarioId": "v0.3-full-trace-repair.29910640d4db8641345d.action-9",
+      "status": "REPRODUCIBLE"
+    },
+    {
+      "actionReplay": {
+        "capturedActionCount": 1,
+        "complete": true,
+        "differences": [],
+        "expectedActionCount": 1,
+        "status": "VERIFIED",
+        "timingPreservingIntermediateCapture": true
+      },
+      "actual": {
+        "selection": {
+          "anchor": 18,
+          "focus": 18
+        },
+        "source": "- A\n  - \n    \n    - C"
+      },
+      "automatable": true,
+      "differences": [],
+      "evidenceLevel": "O1",
+      "expected": {
+        "selection": {
+          "anchor": 18,
+          "focus": 18
+        },
+        "source": "- A\n  - \n    \n    - C"
+      },
+      "fixtureId": "unordered-three-depths",
+      "mode": "source",
+      "originReplay": {
+        "differences": [],
+        "firstDivergentActionIndex": 6,
+        "firstDivergentActionNumber": 7,
+        "gateActionCount": 1,
+        "originScenarioId": "certification-random.0d41a3de9d2bd48b00dc",
+        "prefixStatePreserved": false,
+        "status": "REBASED_NOT_APPLICABLE"
+      },
+      "originScenarioId": "certification-random.0d41a3de9d2bd48b00dc",
+      "reason": "Fresh O1 source/selection and the captured action trace reproduce the embedded oracle.",
+      "reasonCode": "oracle-reproduced",
+      "scenarioId": "v0.3-full-trace-repair.0d41a3de9d2bd48b00dc.action-7",
+      "status": "REPRODUCIBLE"
+    },
+    {
+      "actionReplay": {
+        "capturedActionCount": 12,
+        "complete": true,
+        "differences": [],
+        "expectedActionCount": 12,
+        "status": "VERIFIED",
+        "timingPreservingIntermediateCapture": true
+      },
+      "actual": {
+        "selection": {
+          "anchor": 7,
+          "focus": 7
+        },
+        "source": "```js\n\n```"
+      },
+      "automatable": true,
+      "differences": [],
+      "evidenceLevel": "O1",
+      "expected": {
+        "selection": {
+          "anchor": 7,
+          "focus": 7
+        },
+        "source": "```js\n\n```"
+      },
+      "fixtureId": "empty-fenced-code",
+      "mode": "source",
+      "originReplay": {
+        "differences": [],
+        "firstDivergentActionIndex": 11,
+        "firstDivergentActionNumber": 12,
+        "gateActionCount": 12,
+        "originScenarioId": "certification-random.daa564d97259e8507239",
+        "prefixStatePreserved": true,
+        "status": "VERIFIED"
+      },
+      "originScenarioId": "certification-random.daa564d97259e8507239",
+      "reason": "Fresh O1 source/selection and the captured action trace reproduce the embedded oracle.",
+      "reasonCode": "oracle-reproduced",
+      "scenarioId": "v0.3-full-trace-repair.daa564d97259e8507239.action-12",
+      "status": "REPRODUCIBLE"
+    },
+    {
+      "actionReplay": {
+        "capturedActionCount": 4,
+        "complete": true,
+        "differences": [],
+        "expectedActionCount": 4,
+        "status": "VERIFIED",
+        "timingPreservingIntermediateCapture": true
+      },
+      "actual": {
+        "selection": {
+          "anchor": 67,
+          "focus": 67
+        },
+        "source": "1. Glycolysis\n2. Link reaction\n3. TCA cycle\n   1. Citrate\n   2. \n3.socitrate\n      1. deeper\n   4. Succinate\n5. Next"
+      },
+      "automatable": true,
+      "differences": [],
+      "evidenceLevel": "O1",
+      "expected": {
+        "selection": {
+          "anchor": 67,
+          "focus": 67
+        },
+        "source": "1. Glycolysis\n2. Link reaction\n3. TCA cycle\n   1. Citrate\n   2. \n3.socitrate\n      1. deeper\n   4. Succinate\n5. Next"
+      },
+      "fixtureId": "ordered-three-depths",
+      "mode": "source",
+      "originReplay": {
+        "differences": [],
+        "firstDivergentActionIndex": 3,
+        "firstDivergentActionNumber": 4,
+        "gateActionCount": 4,
+        "originScenarioId": "certification-random.cefdf2028632fd423fb9",
+        "prefixStatePreserved": true,
+        "status": "VERIFIED"
+      },
+      "originScenarioId": "certification-random.cefdf2028632fd423fb9",
+      "reason": "Fresh O1 source/selection and the captured action trace reproduce the embedded oracle.",
+      "reasonCode": "oracle-reproduced",
+      "scenarioId": "v0.3-full-trace-repair.cefdf2028632fd423fb9.action-4",
+      "status": "REPRODUCIBLE"
+    },
+    {
+      "actionReplay": {
+        "capturedActionCount": 1,
+        "complete": true,
+        "differences": [],
+        "expectedActionCount": 1,
+        "status": "VERIFIED",
+        "timingPreservingIntermediateCapture": true
+      },
+      "actual": {
+        "selection": {
+          "anchor": 7,
+          "focus": 7
+        },
+        "source": "```js \n"
+      },
+      "automatable": true,
+      "differences": [],
+      "evidenceLevel": "O1",
+      "expected": {
+        "selection": {
+          "anchor": 7,
+          "focus": 7
+        },
+        "source": "```js \n"
+      },
+      "fixtureId": "unclosed-fenced-code",
+      "mode": "live-preview",
+      "originReplay": {
+        "differences": [],
+        "firstDivergentActionIndex": 2,
+        "firstDivergentActionNumber": 3,
+        "gateActionCount": 1,
+        "originScenarioId": "certification-random.3afc6d8f4178ba691588",
+        "prefixStatePreserved": false,
+        "status": "REBASED_NOT_APPLICABLE"
+      },
+      "originScenarioId": "certification-random.3afc6d8f4178ba691588",
+      "reason": "Fresh O1 source/selection and the captured action trace reproduce the embedded oracle.",
+      "reasonCode": "oracle-reproduced",
+      "scenarioId": "v0.3-full-trace-repair.3afc6d8f4178ba691588.action-3",
+      "status": "REPRODUCIBLE"
+    },
+    {
+      "actionReplay": {
+        "capturedActionCount": 1,
+        "complete": true,
+        "differences": [],
+        "expectedActionCount": 1,
+        "status": "VERIFIED",
+        "timingPreservingIntermediateCapture": true
+      },
+      "actual": {
+        "selection": {
+          "anchor": 13,
+          "focus": 13
+        },
+        "source": "- A\n  - x\n-$\n> \n    - C"
+      },
+      "automatable": true,
+      "differences": [],
+      "evidenceLevel": "O1",
+      "expected": {
+        "selection": {
+          "anchor": 13,
+          "focus": 13
+        },
+        "source": "- A\n  - x\n-$\n> \n    - C"
+      },
+      "fixtureId": "unordered-three-depths",
+      "mode": "live-preview",
+      "originReplay": {
+        "differences": [],
+        "firstDivergentActionIndex": 17,
+        "firstDivergentActionNumber": 18,
+        "gateActionCount": 1,
+        "originScenarioId": "certification-random.5cb9e8d7cd01f6445f9c",
+        "prefixStatePreserved": false,
+        "status": "REBASED_NOT_APPLICABLE"
+      },
+      "originScenarioId": "certification-random.5cb9e8d7cd01f6445f9c",
+      "reason": "Fresh O1 source/selection and the captured action trace reproduce the embedded oracle.",
+      "reasonCode": "oracle-reproduced",
+      "scenarioId": "v0.3-full-trace-repair.5cb9e8d7cd01f6445f9c.action-18",
+      "status": "REPRODUCIBLE"
+    },
+    {
+      "actionReplay": {
+        "capturedActionCount": 1,
+        "complete": true,
+        "differences": [],
+        "expectedActionCount": 1,
+        "status": "VERIFIED",
+        "timingPreservingIntermediateCapture": true
+      },
+      "actual": {
+        "selection": {
+          "anchor": 77,
+          "focus": 77
+        },
+        "source": "1. Glycolysis\n2. Link reaction\n3. TCA cycle\n   1. Citrate\n   2. \n       1. >$Isocitrate\n      2. deeper\n   4. Succinate\n5. Next"
+      },
+      "automatable": true,
+      "differences": [],
+      "evidenceLevel": "O1",
+      "expected": {
+        "selection": {
+          "anchor": 77,
+          "focus": 77
+        },
+        "source": "1. Glycolysis\n2. Link reaction\n3. TCA cycle\n   1. Citrate\n   2. \n       1. >$Isocitrate\n      2. deeper\n   4. Succinate\n5. Next"
+      },
+      "fixtureId": "ordered-three-depths",
+      "mode": "live-preview",
+      "originReplay": {
+        "differences": [],
+        "firstDivergentActionIndex": 3,
+        "firstDivergentActionNumber": 4,
+        "gateActionCount": 1,
+        "originScenarioId": "certification-random.a58b5941c6274445bfa5",
+        "prefixStatePreserved": false,
+        "status": "REBASED_NOT_APPLICABLE"
+      },
+      "originScenarioId": "certification-random.a58b5941c6274445bfa5",
+      "reason": "Fresh O1 source/selection and the captured action trace reproduce the embedded oracle.",
+      "reasonCode": "oracle-reproduced",
+      "scenarioId": "v0.3-full-trace-repair.a58b5941c6274445bfa5.action-4",
+      "status": "REPRODUCIBLE"
+    },
+    {
+      "actionReplay": {
+        "capturedActionCount": 10,
+        "complete": true,
+        "differences": [],
+        "expectedActionCount": 10,
+        "status": "VERIFIED",
+        "timingPreservingIntermediateCapture": true
+      },
+      "actual": {
+        "selection": {
+          "anchor": 8,
+          "focus": 8
+        },
+        "source": "```js\n**\n```"
+      },
+      "automatable": true,
+      "differences": [],
+      "evidenceLevel": "O1",
+      "expected": {
+        "selection": {
+          "anchor": 8,
+          "focus": 8
+        },
+        "source": "```js\n**\n```"
+      },
+      "fixtureId": "empty-fenced-code",
+      "mode": "live-preview",
+      "originReplay": {
+        "differences": [],
+        "firstDivergentActionIndex": 9,
+        "firstDivergentActionNumber": 10,
+        "gateActionCount": 10,
+        "originScenarioId": "certification-random.295e722f4b8d8a45154a",
+        "prefixStatePreserved": true,
+        "status": "VERIFIED"
+      },
+      "originScenarioId": "certification-random.295e722f4b8d8a45154a",
+      "reason": "Fresh O1 source/selection and the captured action trace reproduce the embedded oracle.",
+      "reasonCode": "oracle-reproduced",
+      "scenarioId": "v0.3-full-trace-repair.295e722f4b8d8a45154a.action-10",
+      "status": "REPRODUCIBLE"
+    },
+    {
+      "actionReplay": {
+        "capturedActionCount": 8,
+        "complete": true,
+        "differences": [],
+        "expectedActionCount": 8,
+        "status": "VERIFIED",
+        "timingPreservingIntermediateCapture": true
+      },
+      "actual": {
+        "selection": {
+          "anchor": 8,
+          "focus": 8
+        },
+        "source": ">>  \n>> \n> B\nC"
+      },
+      "automatable": true,
+      "differences": [],
+      "evidenceLevel": "O1",
+      "expected": {
+        "selection": {
+          "anchor": 8,
+          "focus": 8
+        },
+        "source": ">>  \n>> \n> B\nC"
+      },
+      "fixtureId": "quote-transition",
+      "mode": "live-preview",
+      "originReplay": {
+        "differences": [],
+        "firstDivergentActionIndex": 7,
+        "firstDivergentActionNumber": 8,
+        "gateActionCount": 8,
+        "originScenarioId": "certification-random.9f6cc92b1d816115d2c1",
+        "prefixStatePreserved": true,
+        "status": "VERIFIED"
+      },
+      "originScenarioId": "certification-random.9f6cc92b1d816115d2c1",
+      "reason": "Fresh O1 source/selection and the captured action trace reproduce the embedded oracle.",
+      "reasonCode": "oracle-reproduced",
+      "scenarioId": "v0.3-full-trace-repair.9f6cc92b1d816115d2c1.action-8",
+      "status": "REPRODUCIBLE"
+    },
+    {
+      "actionReplay": {
+        "capturedActionCount": 11,
+        "complete": true,
+        "differences": [],
+        "expectedActionCount": 11,
+        "status": "VERIFIED",
+        "timingPreservingIntermediateCapture": true
+      },
+      "actual": {
+        "selection": {
+          "anchor": 22,
+          "focus": 22
+        },
+        "source": "1. A\n\t1. \n\t2.  B\n\t   \n\t3. C"
+      },
+      "automatable": true,
+      "differences": [],
+      "evidenceLevel": "O1",
+      "expected": {
+        "selection": {
+          "anchor": 22,
+          "focus": 22
+        },
+        "source": "1. A\n\t1. \n\t2.  B\n\t   \n\t3. C"
+      },
+      "fixtureId": "ordered-tab-indent",
+      "mode": "live-preview",
+      "originReplay": {
+        "differences": [],
+        "firstDivergentActionIndex": 10,
+        "firstDivergentActionNumber": 11,
+        "gateActionCount": 11,
+        "originScenarioId": "certification-random.b2e410bc3e8beae135f7",
+        "prefixStatePreserved": true,
+        "status": "VERIFIED"
+      },
+      "originScenarioId": "certification-random.b2e410bc3e8beae135f7",
+      "reason": "Fresh O1 source/selection and the captured action trace reproduce the embedded oracle.",
+      "reasonCode": "oracle-reproduced",
+      "scenarioId": "v0.3-full-trace-repair.b2e410bc3e8beae135f7.action-11",
+      "status": "REPRODUCIBLE"
+    },
+    {
+      "actionReplay": {
+        "capturedActionCount": 1,
+        "complete": true,
+        "differences": [],
+        "expectedActionCount": 1,
+        "status": "VERIFIED",
+        "timingPreservingIntermediateCapture": true
+      },
+      "actual": {
+        "selection": {
+          "anchor": 39,
+          "focus": 39
+        },
+        "source": ">>>  \n>>>          >$ **\n>>>          >"
+      },
+      "automatable": true,
+      "differences": [],
+      "evidenceLevel": "O1",
+      "expected": {
+        "selection": {
+          "anchor": 39,
+          "focus": 39
+        },
+        "source": ">>>  \n>>>          >$ **\n>>>          >"
+      },
+      "fixtureId": "quote-depth-3",
+      "mode": "live-preview",
+      "originReplay": {
+        "differences": [],
+        "firstDivergentActionIndex": 16,
+        "firstDivergentActionNumber": 17,
+        "gateActionCount": 1,
+        "originScenarioId": "certification-random.319e26dd87549165bd56",
+        "prefixStatePreserved": false,
+        "status": "REBASED_NOT_APPLICABLE"
+      },
+      "originScenarioId": "certification-random.319e26dd87549165bd56",
+      "reason": "Fresh O1 source/selection and the captured action trace reproduce the embedded oracle.",
+      "reasonCode": "oracle-reproduced",
+      "scenarioId": "v0.3-full-trace-repair.319e26dd87549165bd56.action-17",
+      "status": "REPRODUCIBLE"
+    },
+    {
+      "actionReplay": {
+        "capturedActionCount": 1,
+        "complete": true,
+        "differences": [],
+        "expectedActionCount": 1,
+        "status": "VERIFIED",
+        "timingPreservingIntermediateCapture": true
+      },
+      "actual": {
+        "selection": {
+          "anchor": 101,
+          "focus": 101
+        },
+        "source": "1. Ordered parent\n   - Bullet child\n     1. Number grandchild\n     2. Number sibling\n   - \n       -  Bullet sibling\n1. Ordered next"
+      },
+      "automatable": true,
+      "differences": [],
+      "evidenceLevel": "O1",
+      "expected": {
+        "selection": {
+          "anchor": 101,
+          "focus": 101
+        },
+        "source": "1. Ordered parent\n   - Bullet child\n     1. Number grandchild\n     2. Number sibling\n   - \n       -  Bullet sibling\n1. Ordered next"
+      },
+      "fixtureId": "mixed-siblings",
+      "mode": "live-preview",
+      "originReplay": {
+        "differences": [],
+        "firstDivergentActionIndex": 2,
+        "firstDivergentActionNumber": 3,
+        "gateActionCount": 1,
+        "originScenarioId": "certification-random.5332ec0dec2b31113fed",
+        "prefixStatePreserved": false,
+        "status": "REBASED_NOT_APPLICABLE"
+      },
+      "originScenarioId": "certification-random.5332ec0dec2b31113fed",
+      "reason": "Fresh O1 source/selection and the captured action trace reproduce the embedded oracle.",
+      "reasonCode": "oracle-reproduced",
+      "scenarioId": "v0.3-full-trace-repair.5332ec0dec2b31113fed.action-3",
+      "status": "REPRODUCIBLE"
+    },
+    {
+      "actionReplay": {
+        "capturedActionCount": 4,
+        "complete": true,
+        "differences": [],
+        "expectedActionCount": 4,
+        "status": "VERIFIED",
+        "timingPreservingIntermediateCapture": true
+      },
+      "actual": {
+        "selection": {
+          "anchor": 30,
+          "focus": 30
+        },
+        "source": "1. A\n2. B\n   3.  \n   4. \n   5.C\n   5. D\n6. E"
+      },
+      "automatable": true,
+      "differences": [],
+      "evidenceLevel": "O1",
+      "expected": {
+        "selection": {
+          "anchor": 30,
+          "focus": 30
+        },
+        "source": "1. A\n2. B\n   3.  \n   4. \n   5.C\n   5. D\n6. E"
+      },
+      "fixtureId": "ordered-required",
+      "mode": "source",
+      "originReplay": {
+        "differences": [],
+        "firstDivergentActionIndex": 3,
+        "firstDivergentActionNumber": 4,
+        "gateActionCount": 4,
+        "originScenarioId": "certification-random.11a090f7e3bb618edb45",
+        "prefixStatePreserved": true,
+        "status": "VERIFIED"
+      },
+      "originScenarioId": "certification-random.11a090f7e3bb618edb45",
+      "reason": "Fresh O1 source/selection and the captured action trace reproduce the embedded oracle.",
+      "reasonCode": "oracle-reproduced",
+      "scenarioId": "v0.3-full-trace-repair.11a090f7e3bb618edb45.action-4",
+      "status": "REPRODUCIBLE"
+    },
+    {
+      "actionReplay": {
+        "capturedActionCount": 1,
+        "complete": true,
+        "differences": [],
+        "expectedActionCount": 1,
+        "status": "VERIFIED",
+        "timingPreservingIntermediateCapture": true
+      },
+      "actual": {
+        "selection": {
+          "anchor": 17,
+          "focus": 17
+        },
+        "source": "    \n    * $ A* Setext one\n==========\n\nSetext two\n----------"
+      },
+      "automatable": true,
+      "differences": [],
+      "evidenceLevel": "O1",
+      "expected": {
+        "selection": {
+          "anchor": 17,
+          "focus": 17
+        },
+        "source": "    \n    * $ A* Setext one\n==========\n\nSetext two\n----------"
+      },
+      "fixtureId": "setext-headings",
+      "mode": "source",
+      "originReplay": {
+        "differences": [],
+        "firstDivergentActionIndex": 14,
+        "firstDivergentActionNumber": 15,
+        "gateActionCount": 1,
+        "originScenarioId": "certification-random.d378320c9c2b0002a6f5",
+        "prefixStatePreserved": false,
+        "status": "REBASED_NOT_APPLICABLE"
+      },
+      "originScenarioId": "certification-random.d378320c9c2b0002a6f5",
+      "reason": "Fresh O1 source/selection and the captured action trace reproduce the embedded oracle.",
+      "reasonCode": "oracle-reproduced",
+      "scenarioId": "v0.3-full-trace-repair.d378320c9c2b0002a6f5.action-15",
+      "status": "REPRODUCIBLE"
+    },
+    {
+      "actionReplay": {
+        "capturedActionCount": 1,
+        "complete": true,
+        "differences": [],
+        "expectedActionCount": 1,
+        "status": "VERIFIED",
+        "timingPreservingIntermediateCapture": true
+      },
+      "actual": {
+        "selection": {
+          "anchor": 31,
+          "focus": 31
+        },
+        "source": "Escaped symbols: \\*\n \n \n     \n not italic\\*, \\# not a heading."
+      },
+      "automatable": true,
+      "differences": [],
+      "evidenceLevel": "O1",
+      "expected": {
+        "selection": {
+          "anchor": 31,
+          "focus": 31
+        },
+        "source": "Escaped symbols: \\*\n \n \n     \n not italic\\*, \\# not a heading."
+      },
+      "fixtureId": "escaped-markers",
+      "mode": "source",
+      "originReplay": {
+        "differences": [],
+        "firstDivergentActionIndex": 8,
+        "firstDivergentActionNumber": 9,
+        "gateActionCount": 1,
+        "originScenarioId": "certification-random.d16b3c0cb5aa8bddbf47",
+        "prefixStatePreserved": false,
+        "status": "REBASED_NOT_APPLICABLE"
+      },
+      "originScenarioId": "certification-random.d16b3c0cb5aa8bddbf47",
+      "reason": "Fresh O1 source/selection and the captured action trace reproduce the embedded oracle.",
+      "reasonCode": "oracle-reproduced",
+      "scenarioId": "v0.3-full-trace-repair.d16b3c0cb5aa8bddbf47.action-9",
+      "status": "REPRODUCIBLE"
+    },
+    {
+      "actionReplay": {
+        "capturedActionCount": 20,
+        "complete": true,
+        "differences": [
+          {
+            "actual": 20,
+            "expected": 1,
+            "path": "actionTrace.length"
+          },
+          {
+            "actual": {
+              "certificationEffect": "guaranteed-edit",
+              "command": "insertText",
+              "text": "`",
+              "type": "input"
+            },
+            "expected": {
+              "certificationEffect": "possible-edit",
+              "key": "Backspace",
+              "type": "keyboard"
+            },
+            "path": "actionTrace.0.action"
+          },
+          {
+            "actual": 20,
+            "expected": 1,
+            "path": "metadata.actionTrace.expectedActionCount"
+          },
+          {
+            "actual": 20,
+            "expected": 1,
+            "path": "metadata.actionTrace.capturedActionCount"
+          }
+        ],
+        "expectedActionCount": 1,
+        "status": "MISMATCH",
+        "timingPreservingIntermediateCapture": true
+      },
+      "actual": {
+        "selection": {
+          "anchor": 3,
+          "focus": 3
+        },
+        "source": "<  erline</u>`, H<sub>2</sub>O, x<sup>2</sup>, <br> next; <kbd>escaped</kbd>."
+      },
+      "automatable": true,
+      "differences": [
+        {
+          "actual": "<  erline</u>`, H<sub>2</sub>O, x<sup>2</sup>, <br> next; <kbd>escaped</kbd>.",
+          "expected": "<u  erline</u>, H<sub>2</sub>O, x<sup>2</sup>, <br> next; <kbd>escaped</kbd>.",
+          "path": "source"
+        },
+        {
+          "actual": 3,
+          "expected": 4,
+          "path": "selection.anchor"
+        },
+        {
+          "actual": 3,
+          "expected": 4,
+          "path": "selection.focus"
+        }
+      ],
+      "evidenceLevel": "O1",
+      "expected": {
+        "selection": {
+          "anchor": 4,
+          "focus": 4
+        },
+        "source": "<u  erline</u>, H<sub>2</sub>O, x<sup>2</sup>, <br> next; <kbd>escaped</kbd>."
+      },
+      "fixtureId": "safe-inline-html",
+      "mode": "live-preview",
+      "originReplay": {
+        "differences": [],
+        "firstDivergentActionIndex": 19,
+        "firstDivergentActionNumber": 20,
+        "gateActionCount": 1,
+        "originScenarioId": "certification-random.6b79cb9a3ebc970e5b3b",
+        "prefixStatePreserved": false,
+        "status": "REBASED_NOT_APPLICABLE"
+      },
+      "originScenarioId": "certification-random.6b79cb9a3ebc970e5b3b",
+      "reason": "Fresh O1 source and/or selection does not reproduce the embedded oracle.",
+      "reasonCode": "oracle-final-mismatch",
+      "scenarioId": "v0.3-full-trace-repair.6b79cb9a3ebc970e5b3b.action-20",
+      "status": "AMBIGUOUS_ORACLE_MISMATCH"
+    },
+    {
+      "actionReplay": {
+        "capturedActionCount": 1,
+        "complete": true,
+        "differences": [],
+        "expectedActionCount": 1,
+        "status": "VERIFIED",
+        "timingPreservingIntermediateCapture": true
+      },
+      "actual": {
+        "selection": {
+          "anchor": 4,
+          "focus": 4
+        },
+        "source": "A\n>1\nC"
+      },
+      "automatable": true,
+      "differences": [],
+      "evidenceLevel": "O1",
+      "expected": {
+        "selection": {
+          "anchor": 4,
+          "focus": 4
+        },
+        "source": "A\n>1\nC"
+      },
+      "fixtureId": "plain-three-physical-lines",
+      "mode": "source",
+      "originReplay": {
+        "differences": [],
+        "firstDivergentActionIndex": 11,
+        "firstDivergentActionNumber": 12,
+        "gateActionCount": 1,
+        "originScenarioId": "certification-random.e69e1b3a4a9450cfa16d",
+        "prefixStatePreserved": false,
+        "status": "REBASED_NOT_APPLICABLE"
+      },
+      "originScenarioId": "certification-random.e69e1b3a4a9450cfa16d",
+      "reason": "Fresh O1 source/selection and the captured action trace reproduce the embedded oracle.",
+      "reasonCode": "oracle-reproduced",
+      "scenarioId": "v0.3-full-trace-repair.e69e1b3a4a9450cfa16d.action-12",
+      "status": "REPRODUCIBLE"
+    },
+    {
+      "actionReplay": {
+        "capturedActionCount": 1,
+        "complete": true,
+        "differences": [],
+        "expectedActionCount": 1,
+        "status": "VERIFIED",
+        "timingPreservingIntermediateCapture": true
+      },
+      "actual": {
+        "selection": {
+          "anchor": 17,
+          "focus": 17
+        },
+        "source": "- A\n\t-   A\n\t\n    - C"
+      },
+      "automatable": true,
+      "differences": [],
+      "evidenceLevel": "O1",
+      "expected": {
+        "selection": {
+          "anchor": 17,
+          "focus": 17
+        },
+        "source": "- A\n\t-   A\n\t\n    - C"
+      },
+      "fixtureId": "unordered-tab-indent",
+      "mode": "source",
+      "originReplay": {
+        "differences": [],
+        "firstDivergentActionIndex": 8,
+        "firstDivergentActionNumber": 9,
+        "gateActionCount": 1,
+        "originScenarioId": "certification-random.86b8ac65128482b298c4",
+        "prefixStatePreserved": false,
+        "status": "REBASED_NOT_APPLICABLE"
+      },
+      "originScenarioId": "certification-random.86b8ac65128482b298c4",
+      "reason": "Fresh O1 source/selection and the captured action trace reproduce the embedded oracle.",
+      "reasonCode": "oracle-reproduced",
+      "scenarioId": "v0.3-full-trace-repair.86b8ac65128482b298c4.action-9",
+      "status": "REPRODUCIBLE"
+    },
+    {
+      "actionReplay": {
+        "capturedActionCount": 14,
+        "complete": true,
+        "differences": [],
+        "expectedActionCount": 14,
+        "status": "VERIFIED",
+        "timingPreservingIntermediateCapture": true
+      },
+      "actual": {
+        "selection": {
+          "anchor": 40,
+          "focus": 40
+        },
+        "source": "1. A\n2. B\n           1. >\n           2.    3. D\n3. E"
+      },
+      "automatable": true,
+      "differences": [],
+      "evidenceLevel": "O1",
+      "expected": {
+        "selection": {
+          "anchor": 40,
+          "focus": 40
+        },
+        "source": "1. A\n2. B\n           1. >\n           2.    3. D\n3. E"
+      },
+      "fixtureId": "ordered-required",
+      "mode": "live-preview",
+      "originReplay": {
+        "differences": [],
+        "firstDivergentActionIndex": 13,
+        "firstDivergentActionNumber": 14,
+        "gateActionCount": 14,
+        "originScenarioId": "certification-random.cdf1ab53a7fb7967a478",
+        "prefixStatePreserved": true,
+        "status": "VERIFIED"
+      },
+      "originScenarioId": "certification-random.cdf1ab53a7fb7967a478",
+      "reason": "Fresh O1 source/selection and the captured action trace reproduce the embedded oracle.",
+      "reasonCode": "oracle-reproduced",
+      "scenarioId": "v0.3-full-trace-repair.cdf1ab53a7fb7967a478.action-14",
+      "status": "REPRODUCIBLE"
+    },
+    {
+      "actionReplay": {
+        "capturedActionCount": 24,
+        "complete": true,
+        "differences": [],
+        "expectedActionCount": 24,
+        "status": "VERIFIED",
+        "timingPreservingIntermediateCapture": true
+      },
+      "actual": {
+        "selection": {
+          "anchor": 20,
+          "focus": 20
+        },
+        "source": "- A\n\t- \n\t- \n  \nA> `x\t\t- C"
+      },
+      "automatable": true,
+      "differences": [],
+      "evidenceLevel": "O1",
+      "expected": {
+        "selection": {
+          "anchor": 20,
+          "focus": 20
+        },
+        "source": "- A\n\t- \n\t- \n  \nA> `x\t\t- C"
+      },
+      "fixtureId": "unordered-tab-indent",
+      "mode": "live-preview",
+      "originReplay": {
+        "differences": [],
+        "firstDivergentActionIndex": 23,
+        "firstDivergentActionNumber": 24,
+        "gateActionCount": 24,
+        "originScenarioId": "certification-random.9ceb2c498d46d4a3a491",
+        "prefixStatePreserved": true,
+        "status": "VERIFIED"
+      },
+      "originScenarioId": "certification-random.9ceb2c498d46d4a3a491",
+      "reason": "Fresh O1 source/selection and the captured action trace reproduce the embedded oracle.",
+      "reasonCode": "oracle-reproduced",
+      "scenarioId": "v0.3-full-trace-repair.9ceb2c498d46d4a3a491.action-24",
+      "status": "REPRODUCIBLE"
+    },
+    {
+      "actionReplay": {
+        "capturedActionCount": 15,
+        "complete": true,
+        "differences": [],
+        "expectedActionCount": 15,
+        "status": "VERIFIED",
+        "timingPreservingIntermediateCapture": true
+      },
+      "actual": {
+        "selection": {
+          "anchor": 29,
+          "focus": 29
+        },
+        "source": "1. A\n   - \n   - \n     *\n    - B\n     1. C"
+      },
+      "automatable": true,
+      "differences": [],
+      "evidenceLevel": "O1",
+      "expected": {
+        "selection": {
+          "anchor": 29,
+          "focus": 29
+        },
+        "source": "1. A\n   - \n   - \n     *\n    - B\n     1. C"
+      },
+      "fixtureId": "mixed-required",
+      "mode": "live-preview",
+      "originReplay": {
+        "differences": [],
+        "firstDivergentActionIndex": 14,
+        "firstDivergentActionNumber": 15,
+        "gateActionCount": 15,
+        "originScenarioId": "certification-random.cdec4d9548fafea97331",
+        "prefixStatePreserved": true,
+        "status": "VERIFIED"
+      },
+      "originScenarioId": "certification-random.cdec4d9548fafea97331",
+      "reason": "Fresh O1 source/selection and the captured action trace reproduce the embedded oracle.",
+      "reasonCode": "oracle-reproduced",
+      "scenarioId": "v0.3-full-trace-repair.cdec4d9548fafea97331.action-15",
+      "status": "REPRODUCIBLE"
+    },
+    {
+      "actionReplay": {
+        "capturedActionCount": 1,
+        "complete": true,
+        "differences": [],
+        "expectedActionCount": 1,
+        "status": "VERIFIED",
+        "timingPreservingIntermediateCapture": true
+      },
+      "actual": {
+        "selection": {
+          "anchor": 19,
+          "focus": 19
+        },
+        "source": "- A\n  - 1\n    -B\n \n- C"
+      },
+      "automatable": true,
+      "differences": [],
+      "evidenceLevel": "O1",
+      "expected": {
+        "selection": {
+          "anchor": 19,
+          "focus": 19
+        },
+        "source": "- A\n  - 1\n    -B\n \n- C"
+      },
+      "fixtureId": "unordered-three-depths",
+      "mode": "live-preview",
+      "originReplay": {
+        "differences": [],
+        "firstDivergentActionIndex": 12,
+        "firstDivergentActionNumber": 13,
+        "gateActionCount": 1,
+        "originScenarioId": "certification-random.9423a4532d045e7d4d19",
+        "prefixStatePreserved": false,
+        "status": "REBASED_NOT_APPLICABLE"
+      },
+      "originScenarioId": "certification-random.9423a4532d045e7d4d19",
+      "reason": "Fresh O1 source/selection and the captured action trace reproduce the embedded oracle.",
+      "reasonCode": "oracle-reproduced",
+      "scenarioId": "v0.3-full-trace-repair.9423a4532d045e7d4d19.action-13",
+      "status": "REPRODUCIBLE"
+    },
+    {
+      "actionReplay": {
+        "capturedActionCount": 1,
+        "complete": true,
+        "differences": [],
+        "expectedActionCount": 1,
+        "status": "VERIFIED",
+        "timingPreservingIntermediateCapture": true
+      },
+      "actual": {
+        "selection": {
+          "anchor": 14,
+          "focus": 14
+        },
+        "source": "\n\n>\n>     \n>\n>"
+      },
+      "automatable": true,
+      "differences": [],
+      "evidenceLevel": "O1",
+      "expected": {
+        "selection": {
+          "anchor": 14,
+          "focus": 14
+        },
+        "source": "\n\n>\n>     \n>\n>"
+      },
+      "fixtureId": "leading-blank",
+      "mode": "live-preview",
+      "originReplay": {
+        "differences": [],
+        "firstDivergentActionIndex": 17,
+        "firstDivergentActionNumber": 18,
+        "gateActionCount": 1,
+        "originScenarioId": "certification-random.0ac274b17cd0e55956bb",
+        "prefixStatePreserved": false,
+        "status": "REBASED_NOT_APPLICABLE"
+      },
+      "originScenarioId": "certification-random.0ac274b17cd0e55956bb",
+      "reason": "Fresh O1 source/selection and the captured action trace reproduce the embedded oracle.",
+      "reasonCode": "oracle-reproduced",
+      "scenarioId": "v0.3-full-trace-repair.0ac274b17cd0e55956bb.action-18",
+      "status": "REPRODUCIBLE"
+    },
+    {
+      "actionReplay": {
+        "capturedActionCount": 1,
+        "complete": true,
+        "differences": [],
+        "expectedActionCount": 1,
+        "status": "VERIFIED",
+        "timingPreservingIntermediateCapture": true
+      },
+      "actual": {
+        "selection": {
+          "anchor": 8,
+          "focus": 8
+        },
+        "source": "Plain \n`>paragraph alpha.\n\nPlain paragraph beta."
+      },
+      "automatable": true,
+      "differences": [],
+      "evidenceLevel": "O1",
+      "expected": {
+        "selection": {
+          "anchor": 8,
+          "focus": 8
+        },
+        "source": "Plain \n`>paragraph alpha.\n\nPlain paragraph beta."
+      },
+      "fixtureId": "plain-paragraphs",
+      "mode": "source",
+      "originReplay": {
+        "differences": [],
+        "firstDivergentActionIndex": 11,
+        "firstDivergentActionNumber": 12,
+        "gateActionCount": 1,
+        "originScenarioId": "certification-random.e8b4d1582ef18eabe54f",
+        "prefixStatePreserved": false,
+        "status": "REBASED_NOT_APPLICABLE"
+      },
+      "originScenarioId": "certification-random.e8b4d1582ef18eabe54f",
+      "reason": "Fresh O1 source/selection and the captured action trace reproduce the embedded oracle.",
+      "reasonCode": "oracle-reproduced",
+      "scenarioId": "v0.3-full-trace-repair.e8b4d1582ef18eabe54f.action-12",
+      "status": "REPRODUCIBLE"
+    },
+    {
+      "actionReplay": {
+        "capturedActionCount": 11,
+        "complete": true,
+        "differences": [],
+        "expectedActionCount": 11,
+        "status": "VERIFIED",
+        "timingPreservingIntermediateCapture": true
+      },
+      "actual": {
+        "selection": {
+          "anchor": 7,
+          "focus": 7
+        },
+        "source": "~~ A \nStrikethrough text~~"
+      },
+      "automatable": true,
+      "differences": [],
+      "evidenceLevel": "O1",
+      "expected": {
+        "selection": {
+          "anchor": 7,
+          "focus": 7
+        },
+        "source": "~~ A \nStrikethrough text~~"
+      },
+      "fixtureId": "strikethrough",
+      "mode": "live-preview",
+      "originReplay": {
+        "differences": [],
+        "firstDivergentActionIndex": 10,
+        "firstDivergentActionNumber": 11,
+        "gateActionCount": 11,
+        "originScenarioId": "certification-random.0275083ceaf47e99c65c",
+        "prefixStatePreserved": true,
+        "status": "VERIFIED"
+      },
+      "originScenarioId": "certification-random.0275083ceaf47e99c65c",
+      "reason": "Fresh O1 source/selection and the captured action trace reproduce the embedded oracle.",
+      "reasonCode": "oracle-reproduced",
+      "scenarioId": "v0.3-full-trace-repair.0275083ceaf47e99c65c.action-11",
+      "status": "REPRODUCIBLE"
+    },
+    {
+      "actionReplay": {
+        "capturedActionCount": 1,
+        "complete": true,
+        "differences": [],
+        "expectedActionCount": 1,
+        "status": "VERIFIED",
+        "timingPreservingIntermediateCapture": true
+      },
+      "actual": {
+        "selection": {
+          "anchor": 76,
+          "focus": 76
+        },
+        "source": "- [ ] Open\n- [x] Done\n  - [X] Nested done\n  - [ ] \n            \n            Nested open\n- [ ] Last"
+      },
+      "automatable": true,
+      "differences": [],
+      "evidenceLevel": "O1",
+      "expected": {
+        "selection": {
+          "anchor": 76,
+          "focus": 76
+        },
+        "source": "- [ ] Open\n- [x] Done\n  - [X] Nested done\n  - [ ] \n            \n            Nested open\n- [ ] Last"
+      },
+      "fixtureId": "task-list",
+      "mode": "source",
+      "originReplay": {
+        "differences": [],
+        "firstDivergentActionIndex": 2,
+        "firstDivergentActionNumber": 3,
+        "gateActionCount": 1,
+        "originScenarioId": "certification-random.170d1fc84d06025f2e0d",
+        "prefixStatePreserved": false,
+        "status": "REBASED_NOT_APPLICABLE"
+      },
+      "originScenarioId": "certification-random.170d1fc84d06025f2e0d",
+      "reason": "Fresh O1 source/selection and the captured action trace reproduce the embedded oracle.",
+      "reasonCode": "oracle-reproduced",
+      "scenarioId": "v0.3-full-trace-repair.170d1fc84d06025f2e0d.action-3",
+      "status": "REPRODUCIBLE"
+    },
+    {
+      "actionReplay": {
+        "capturedActionCount": 11,
+        "complete": true,
+        "differences": [],
+        "expectedActionCount": 11,
+        "status": "VERIFIED",
+        "timingPreservingIntermediateCapture": true
+      },
+      "actual": {
+        "selection": {
+          "anchor": 26,
+          "focus": 26
+        },
+        "source": "A\nB\n        A\n            \nD"
+      },
+      "automatable": true,
+      "differences": [],
+      "evidenceLevel": "O1",
+      "expected": {
+        "selection": {
+          "anchor": 26,
+          "focus": 26
+        },
+        "source": "A\nB\n        A\n            \nD"
+      },
+      "fixtureId": "plain-indented-transition",
+      "mode": "source",
+      "originReplay": {
+        "differences": [],
+        "firstDivergentActionIndex": 10,
+        "firstDivergentActionNumber": 11,
+        "gateActionCount": 11,
+        "originScenarioId": "certification-random.82e3bf1768aa31d45b99",
+        "prefixStatePreserved": true,
+        "status": "VERIFIED"
+      },
+      "originScenarioId": "certification-random.82e3bf1768aa31d45b99",
+      "reason": "Fresh O1 source/selection and the captured action trace reproduce the embedded oracle.",
+      "reasonCode": "oracle-reproduced",
+      "scenarioId": "v0.3-full-trace-repair.82e3bf1768aa31d45b99.action-11",
+      "status": "REPRODUCIBLE"
+    },
+    {
+      "actionReplay": {
+        "capturedActionCount": 15,
+        "complete": true,
+        "differences": [],
+        "expectedActionCount": 15,
+        "status": "VERIFIED",
+        "timingPreservingIntermediateCapture": true
+      },
+      "actual": {
+        "selection": {
+          "anchor": 17,
+          "focus": 17
+        },
+        "source": "A\nB\n    * \n  \n  \n"
+      },
+      "automatable": true,
+      "differences": [],
+      "evidenceLevel": "O1",
+      "expected": {
+        "selection": {
+          "anchor": 17,
+          "focus": 17
+        },
+        "source": "A\nB\n    * \n  \n  \n"
+      },
+      "fixtureId": "plain-indented-transition",
+      "mode": "source",
+      "originReplay": {
+        "differences": [],
+        "firstDivergentActionIndex": 14,
+        "firstDivergentActionNumber": 15,
+        "gateActionCount": 15,
+        "originScenarioId": "certification-random.410d77b9df51f401b0bc",
+        "prefixStatePreserved": true,
+        "status": "VERIFIED"
+      },
+      "originScenarioId": "certification-random.410d77b9df51f401b0bc",
+      "reason": "Fresh O1 source/selection and the captured action trace reproduce the embedded oracle.",
+      "reasonCode": "oracle-reproduced",
+      "scenarioId": "v0.3-full-trace-repair.410d77b9df51f401b0bc.action-15",
+      "status": "REPRODUCIBLE"
+    },
+    {
+      "actionReplay": {
+        "capturedActionCount": 1,
+        "complete": true,
+        "differences": [],
+        "expectedActionCount": 1,
+        "status": "VERIFIED",
+        "timingPreservingIntermediateCapture": true
+      },
+      "actual": {
+        "selection": {
+          "anchor": 27,
+          "focus": 27
+        },
+        "source": "- [ ] A\n- [ ] \n      \n      "
+      },
+      "automatable": true,
+      "differences": [],
+      "evidenceLevel": "O1",
+      "expected": {
+        "selection": {
+          "anchor": 27,
+          "focus": 27
+        },
+        "source": "- [ ] A\n- [ ] \n      \n      "
+      },
+      "fixtureId": "task-blank-item",
+      "mode": "source",
+      "originReplay": {
+        "differences": [],
+        "firstDivergentActionIndex": 2,
+        "firstDivergentActionNumber": 3,
+        "gateActionCount": 1,
+        "originScenarioId": "certification-random.d13d18dc6021e3bb2176",
+        "prefixStatePreserved": false,
+        "status": "REBASED_NOT_APPLICABLE"
+      },
+      "originScenarioId": "certification-random.d13d18dc6021e3bb2176",
+      "reason": "Fresh O1 source/selection and the captured action trace reproduce the embedded oracle.",
+      "reasonCode": "oracle-reproduced",
+      "scenarioId": "v0.3-full-trace-repair.d13d18dc6021e3bb2176.action-3",
+      "status": "REPRODUCIBLE"
+    },
+    {
+      "actionReplay": {
+        "capturedActionCount": 1,
+        "complete": true,
+        "differences": [],
+        "expectedActionCount": 1,
+        "status": "VERIFIED",
+        "timingPreservingIntermediateCapture": true
+      },
+      "actual": {
+        "selection": {
+          "anchor": 28,
+          "focus": 28
+        },
+        "source": "- Item first line\n    x\n    ` ordinary continuation\n- Next"
+      },
+      "automatable": true,
+      "differences": [],
+      "evidenceLevel": "O1",
+      "expected": {
+        "selection": {
+          "anchor": 28,
+          "focus": 28
+        },
+        "source": "- Item first line\n    x\n    ` ordinary continuation\n- Next"
+      },
+      "fixtureId": "unordered-continuation",
+      "mode": "live-preview",
+      "originReplay": {
+        "differences": [],
+        "firstDivergentActionIndex": 12,
+        "firstDivergentActionNumber": 13,
+        "gateActionCount": 1,
+        "originScenarioId": "certification-random.0d46d3187e24cacbaf75",
+        "prefixStatePreserved": false,
+        "status": "REBASED_NOT_APPLICABLE"
+      },
+      "originScenarioId": "certification-random.0d46d3187e24cacbaf75",
+      "reason": "Fresh O1 source/selection and the captured action trace reproduce the embedded oracle.",
+      "reasonCode": "oracle-reproduced",
+      "scenarioId": "v0.3-full-trace-repair.0d46d3187e24cacbaf75.action-13",
+      "status": "REPRODUCIBLE"
+    }
+  ],
+  "schemaVersion": 1,
+  "totals": {
+    "AMBIGUOUS_ORACLE_MISMATCH": 1,
+    "OBSIDIAN_NOT_AUTOMATABLE": 0,
+    "REPRODUCIBLE": 29,
+    "actionReplayMismatchCount": 1,
+    "actionReplayNotCapturedCount": 0,
+    "classifiedCount": 30,
+    "exactFinalMismatchCount": 1,
+    "missingObservationCount": 0,
+    "observationCount": 30,
+    "originMetadataMismatchCount": 0,
+    "rebasedOriginPrefixCount": 18,
+    "scenarioCount": 30,
+    "unexpectedObservationCount": 0,
+    "verifiedActionReplayCount": 29,
+    "verifiedOriginPrefixCount": 12
+  }
+}

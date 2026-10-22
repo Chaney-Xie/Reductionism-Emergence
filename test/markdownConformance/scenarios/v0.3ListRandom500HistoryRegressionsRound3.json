@@ -1,0 +1,3853 @@
+{
+  "schemaVersion": 1,
+  "kind": "o1-list-history-regression-gate",
+  "description": "Exact O1 1.13.7 source and selection states through every Round-3 first Undo/Redo divergence.",
+  "provenance": {
+    "obsidianEvidenceSha256": "80129b63457d37b624d5087bfe2f93e5f980b7e36a0cb4f0b28b260a4ea77690",
+    "comparisonEvidenceSha256": "c7bb729403fcd7cc603580f4c22b2187dbdb8e844ed4f3f4775307a2ad84dbc3",
+    "randomCorpus": "test/markdownConformance/scenarios/v0.3ListRandom500.json",
+    "randomCorpusSha256": "b447879f180fe7b3465bdb930f577589c3329b33e8899fc8ed5924f0959cbda0"
+  },
+  "counts": {
+    "cases": 30,
+    "undo": 19,
+    "redo": 11,
+    "intermediateSteps": 246
+  },
+  "cases": [
+    {
+      "scenarioId": "list-random-500.013.7bb2baa01bed4f63",
+      "mode": "source",
+      "targetActionIndex": 9,
+      "targetActionId": "redo",
+      "initialSource": "1. Alpha\n2. Beta\n3. Gamma",
+      "initialSelection": {
+        "anchor": 3,
+        "focus": 3
+      },
+      "steps": [
+        {
+          "actionIndex": 0,
+          "action": {
+            "id": "trusted-click-another-initial-item",
+            "historyEffect": "navigation"
+          },
+          "expected": {
+            "source": "1. Alpha\n2. Beta\n3. Gamma",
+            "selection": {
+              "anchor": 12,
+              "focus": 12
+            }
+          }
+        },
+        {
+          "actionIndex": 1,
+          "action": {
+            "id": "type-text",
+            "historyEffect": "guaranteed-edit"
+          },
+          "expected": {
+            "source": "1. Alpha\n2. ABeta\n3. Gamma",
+            "selection": {
+              "anchor": 13,
+              "focus": 13
+            }
+          }
+        },
+        {
+          "actionIndex": 2,
+          "action": {
+            "id": "delete",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "1. Alpha\n2. Aeta\n3. Gamma",
+            "selection": {
+              "anchor": 13,
+              "focus": 13
+            }
+          }
+        },
+        {
+          "actionIndex": 3,
+          "action": {
+            "id": "arrowleft",
+            "historyEffect": "navigation"
+          },
+          "expected": {
+            "source": "1. Alpha\n2. Aeta\n3. Gamma",
+            "selection": {
+              "anchor": 12,
+              "focus": 12
+            }
+          }
+        },
+        {
+          "actionIndex": 4,
+          "action": {
+            "id": "arrowleft",
+            "historyEffect": "navigation"
+          },
+          "expected": {
+            "source": "1. Alpha\n2. Aeta\n3. Gamma",
+            "selection": {
+              "anchor": 11,
+              "focus": 11
+            }
+          }
+        },
+        {
+          "actionIndex": 5,
+          "action": {
+            "id": "tab",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "1. Alpha\n    1. Aeta\n2. Gamma",
+            "selection": {
+              "anchor": 13,
+              "focus": 13
+            }
+          }
+        },
+        {
+          "actionIndex": 6,
+          "action": {
+            "id": "delete",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "1. Alpha\n    . Aeta\n2. Gamma",
+            "selection": {
+              "anchor": 13,
+              "focus": 13
+            }
+          }
+        },
+        {
+          "actionIndex": 7,
+          "action": {
+            "id": "delete",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "1. Alpha\n     Aeta\n2. Gamma",
+            "selection": {
+              "anchor": 13,
+              "focus": 13
+            }
+          }
+        },
+        {
+          "actionIndex": 8,
+          "action": {
+            "id": "undo",
+            "historyEffect": "undo"
+          },
+          "expected": {
+            "source": "1. Alpha\n2. Aeta\n3. Gamma",
+            "selection": {
+              "anchor": 11,
+              "focus": 11
+            }
+          }
+        },
+        {
+          "actionIndex": 9,
+          "action": {
+            "id": "redo",
+            "historyEffect": "redo"
+          },
+          "expected": {
+            "source": "1. Alpha\n     Aeta\n2. Gamma",
+            "selection": {
+              "anchor": 14,
+              "focus": 14
+            }
+          }
+        }
+      ]
+    },
+    {
+      "scenarioId": "list-random-500.019.6f0f7080257e3004",
+      "mode": "live-preview",
+      "targetActionIndex": 9,
+      "targetActionId": "undo",
+      "initialSource": "1. A\n7. B\n3. C",
+      "initialSelection": {
+        "anchor": 3,
+        "focus": 3
+      },
+      "steps": [
+        {
+          "actionIndex": 0,
+          "action": {
+            "id": "trusted-click-another-initial-item",
+            "historyEffect": "navigation"
+          },
+          "expected": {
+            "source": "1. A\n7. B\n3. C",
+            "selection": {
+              "anchor": 8,
+              "focus": 8
+            }
+          }
+        },
+        {
+          "actionIndex": 1,
+          "action": {
+            "id": "type-text",
+            "historyEffect": "guaranteed-edit"
+          },
+          "expected": {
+            "source": "1. A\n2. AB\n3. C",
+            "selection": {
+              "anchor": 9,
+              "focus": 9
+            }
+          }
+        },
+        {
+          "actionIndex": 2,
+          "action": {
+            "id": "arrowright",
+            "historyEffect": "navigation"
+          },
+          "expected": {
+            "source": "1. A\n2. AB\n3. C",
+            "selection": {
+              "anchor": 10,
+              "focus": 10
+            }
+          }
+        },
+        {
+          "actionIndex": 3,
+          "action": {
+            "id": "delete",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "1. A\n2. AB3. C",
+            "selection": {
+              "anchor": 10,
+              "focus": 10
+            }
+          }
+        },
+        {
+          "actionIndex": 4,
+          "action": {
+            "id": "delete",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "1. A\n2. AB. C",
+            "selection": {
+              "anchor": 10,
+              "focus": 10
+            }
+          }
+        },
+        {
+          "actionIndex": 5,
+          "action": {
+            "id": "shift-tab",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "1. A\n2. AB. C",
+            "selection": {
+              "anchor": 10,
+              "focus": 10
+            }
+          }
+        },
+        {
+          "actionIndex": 6,
+          "action": {
+            "id": "enter",
+            "historyEffect": "guaranteed-edit"
+          },
+          "expected": {
+            "source": "1. A\n2. AB\n3. . C",
+            "selection": {
+              "anchor": 14,
+              "focus": 14
+            }
+          }
+        },
+        {
+          "actionIndex": 7,
+          "action": {
+            "id": "arrowleft",
+            "historyEffect": "navigation"
+          },
+          "expected": {
+            "source": "1. A\n2. AB\n3. . C",
+            "selection": {
+              "anchor": 13,
+              "focus": 13
+            }
+          }
+        },
+        {
+          "actionIndex": 8,
+          "action": {
+            "id": "arrowright",
+            "historyEffect": "navigation"
+          },
+          "expected": {
+            "source": "1. A\n2. AB\n3. . C",
+            "selection": {
+              "anchor": 14,
+              "focus": 14
+            }
+          }
+        },
+        {
+          "actionIndex": 9,
+          "action": {
+            "id": "undo",
+            "historyEffect": "undo"
+          },
+          "expected": {
+            "source": "1. A\n2. AB. C",
+            "selection": {
+              "anchor": 10,
+              "focus": 10
+            }
+          }
+        }
+      ]
+    },
+    {
+      "scenarioId": "list-random-500.078.682b76163a6b6325",
+      "mode": "live-preview",
+      "targetActionIndex": 4,
+      "targetActionId": "undo",
+      "initialSource": "+ Alpha\n+ Beta\n+ Gamma",
+      "initialSelection": {
+        "anchor": 2,
+        "focus": 2
+      },
+      "steps": [
+        {
+          "actionIndex": 0,
+          "action": {
+            "id": "trusted-click-another-initial-item",
+            "historyEffect": "navigation"
+          },
+          "expected": {
+            "source": "+ Alpha\n+ Beta\n+ Gamma",
+            "selection": {
+              "anchor": 10,
+              "focus": 10
+            }
+          }
+        },
+        {
+          "actionIndex": 1,
+          "action": {
+            "id": "type-text",
+            "historyEffect": "guaranteed-edit"
+          },
+          "expected": {
+            "source": "+ Alpha\n+ ABeta\n+ Gamma",
+            "selection": {
+              "anchor": 11,
+              "focus": 11
+            }
+          }
+        },
+        {
+          "actionIndex": 2,
+          "action": {
+            "id": "shift-tab",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "+ Alpha\n+ ABeta\n+ Gamma",
+            "selection": {
+              "anchor": 11,
+              "focus": 11
+            }
+          }
+        },
+        {
+          "actionIndex": 3,
+          "action": {
+            "id": "delete",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "+ Alpha\n+ Aeta\n+ Gamma",
+            "selection": {
+              "anchor": 11,
+              "focus": 11
+            }
+          }
+        },
+        {
+          "actionIndex": 4,
+          "action": {
+            "id": "undo",
+            "historyEffect": "undo"
+          },
+          "expected": {
+            "source": "+ Alpha\n+ ABeta\n+ Gamma",
+            "selection": {
+              "anchor": 11,
+              "focus": 11
+            }
+          }
+        }
+      ]
+    },
+    {
+      "scenarioId": "list-random-500.084.c9e9818f4f4d90c6",
+      "mode": "source",
+      "targetActionIndex": 9,
+      "targetActionId": "redo",
+      "initialSource": "1. Alpha\n   - Beta\n     1. Gamma\n2. Delta",
+      "initialSelection": {
+        "anchor": 3,
+        "focus": 3
+      },
+      "steps": [
+        {
+          "actionIndex": 0,
+          "action": {
+            "id": "trusted-click-another-initial-item",
+            "historyEffect": "navigation"
+          },
+          "expected": {
+            "source": "1. Alpha\n   - Beta\n     1. Gamma\n2. Delta",
+            "selection": {
+              "anchor": 14,
+              "focus": 14
+            }
+          }
+        },
+        {
+          "actionIndex": 1,
+          "action": {
+            "id": "type-text",
+            "historyEffect": "guaranteed-edit"
+          },
+          "expected": {
+            "source": "1. Alpha\n   - 1Beta\n     1. Gamma\n2. Delta",
+            "selection": {
+              "anchor": 15,
+              "focus": 15
+            }
+          }
+        },
+        {
+          "actionIndex": 2,
+          "action": {
+            "id": "backspace",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "1. Alpha\n   - Beta\n     1. Gamma\n2. Delta",
+            "selection": {
+              "anchor": 14,
+              "focus": 14
+            }
+          }
+        },
+        {
+          "actionIndex": 3,
+          "action": {
+            "id": "type-text",
+            "historyEffect": "guaranteed-edit"
+          },
+          "expected": {
+            "source": "1. Alpha\n   - *Beta\n     1. Gamma\n2. Delta",
+            "selection": {
+              "anchor": 15,
+              "focus": 15
+            }
+          }
+        },
+        {
+          "actionIndex": 4,
+          "action": {
+            "id": "arrowright",
+            "historyEffect": "navigation"
+          },
+          "expected": {
+            "source": "1. Alpha\n   - *Beta\n     1. Gamma\n2. Delta",
+            "selection": {
+              "anchor": 16,
+              "focus": 16
+            }
+          }
+        },
+        {
+          "actionIndex": 5,
+          "action": {
+            "id": "enter",
+            "historyEffect": "guaranteed-edit"
+          },
+          "expected": {
+            "source": "1. Alpha\n   - *B\n   - eta\n     1. Gamma\n2. Delta",
+            "selection": {
+              "anchor": 22,
+              "focus": 22
+            }
+          }
+        },
+        {
+          "actionIndex": 6,
+          "action": {
+            "id": "shift-tab",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "1. Alpha\n   - *B\n- eta\n     1. Gamma\n2. Delta",
+            "selection": {
+              "anchor": 19,
+              "focus": 19
+            }
+          }
+        },
+        {
+          "actionIndex": 7,
+          "action": {
+            "id": "type-text",
+            "historyEffect": "guaranteed-edit"
+          },
+          "expected": {
+            "source": "1. Alpha\n   - *B\n- *eta\n     1. Gamma\n2. Delta",
+            "selection": {
+              "anchor": 20,
+              "focus": 20
+            }
+          }
+        },
+        {
+          "actionIndex": 8,
+          "action": {
+            "id": "undo",
+            "historyEffect": "undo"
+          },
+          "expected": {
+            "source": "1. Alpha\n   - *Beta\n     1. Gamma\n2. Delta",
+            "selection": {
+              "anchor": 16,
+              "focus": 16
+            }
+          }
+        },
+        {
+          "actionIndex": 9,
+          "action": {
+            "id": "redo",
+            "historyEffect": "redo"
+          },
+          "expected": {
+            "source": "1. Alpha\n   - *B\n- *eta\n     1. Gamma\n2. Delta",
+            "selection": {
+              "anchor": 20,
+              "focus": 20
+            }
+          }
+        }
+      ]
+    },
+    {
+      "scenarioId": "list-random-500.111.be15e194d14f959f",
+      "mode": "source",
+      "targetActionIndex": 8,
+      "targetActionId": "redo",
+      "initialSource": "- Alpha\n  - Beta\n- Gamma",
+      "initialSelection": {
+        "anchor": 2,
+        "focus": 2
+      },
+      "steps": [
+        {
+          "actionIndex": 0,
+          "action": {
+            "id": "trusted-click-another-initial-item",
+            "historyEffect": "navigation"
+          },
+          "expected": {
+            "source": "- Alpha\n  - Beta\n- Gamma",
+            "selection": {
+              "anchor": 12,
+              "focus": 12
+            }
+          }
+        },
+        {
+          "actionIndex": 1,
+          "action": {
+            "id": "type-text",
+            "historyEffect": "guaranteed-edit"
+          },
+          "expected": {
+            "source": "- Alpha\n  -  Beta\n- Gamma",
+            "selection": {
+              "anchor": 13,
+              "focus": 13
+            }
+          }
+        },
+        {
+          "actionIndex": 2,
+          "action": {
+            "id": "backspace",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "- Alpha\n  - Beta\n- Gamma",
+            "selection": {
+              "anchor": 12,
+              "focus": 12
+            }
+          }
+        },
+        {
+          "actionIndex": 3,
+          "action": {
+            "id": "tab",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "- Alpha\n      - Beta\n- Gamma",
+            "selection": {
+              "anchor": 16,
+              "focus": 16
+            }
+          }
+        },
+        {
+          "actionIndex": 4,
+          "action": {
+            "id": "enter",
+            "historyEffect": "guaranteed-edit"
+          },
+          "expected": {
+            "source": "- Alpha\n      - \n      - Beta\n- Gamma",
+            "selection": {
+              "anchor": 25,
+              "focus": 25
+            }
+          }
+        },
+        {
+          "actionIndex": 5,
+          "action": {
+            "id": "enter",
+            "historyEffect": "guaranteed-edit"
+          },
+          "expected": {
+            "source": "- Alpha\n      - \n      - \n      - Beta\n- Gamma",
+            "selection": {
+              "anchor": 34,
+              "focus": 34
+            }
+          }
+        },
+        {
+          "actionIndex": 6,
+          "action": {
+            "id": "backspace",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "- Alpha\n      - \n      - \n      -Beta\n- Gamma",
+            "selection": {
+              "anchor": 33,
+              "focus": 33
+            }
+          }
+        },
+        {
+          "actionIndex": 7,
+          "action": {
+            "id": "undo",
+            "historyEffect": "undo"
+          },
+          "expected": {
+            "source": "- Alpha\n      - Beta\n- Gamma",
+            "selection": {
+              "anchor": 16,
+              "focus": 16
+            }
+          }
+        },
+        {
+          "actionIndex": 8,
+          "action": {
+            "id": "redo",
+            "historyEffect": "redo"
+          },
+          "expected": {
+            "source": "- Alpha\n      - \n      - \n      -Beta\n- Gamma",
+            "selection": {
+              "anchor": 33,
+              "focus": 33
+            }
+          }
+        }
+      ]
+    },
+    {
+      "scenarioId": "list-random-500.113.3f4eb639be5e1d9d",
+      "mode": "source",
+      "targetActionIndex": 10,
+      "targetActionId": "redo",
+      "initialSource": "1. Alpha\n   - Beta\n     1. Gamma\n2. Delta",
+      "initialSelection": {
+        "anchor": 3,
+        "focus": 3
+      },
+      "steps": [
+        {
+          "actionIndex": 0,
+          "action": {
+            "id": "trusted-click-another-initial-item",
+            "historyEffect": "navigation"
+          },
+          "expected": {
+            "source": "1. Alpha\n   - Beta\n     1. Gamma\n2. Delta",
+            "selection": {
+              "anchor": 14,
+              "focus": 14
+            }
+          }
+        },
+        {
+          "actionIndex": 1,
+          "action": {
+            "id": "type-text",
+            "historyEffect": "guaranteed-edit"
+          },
+          "expected": {
+            "source": "1. Alpha\n   - *Beta\n     1. Gamma\n2. Delta",
+            "selection": {
+              "anchor": 15,
+              "focus": 15
+            }
+          }
+        },
+        {
+          "actionIndex": 2,
+          "action": {
+            "id": "tab",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "1. Alpha\n       - *Beta\n     1. Gamma\n2. Delta",
+            "selection": {
+              "anchor": 19,
+              "focus": 19
+            }
+          }
+        },
+        {
+          "actionIndex": 3,
+          "action": {
+            "id": "tab",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "1. Alpha\n           - *Beta\n     1. Gamma\n2. Delta",
+            "selection": {
+              "anchor": 23,
+              "focus": 23
+            }
+          }
+        },
+        {
+          "actionIndex": 4,
+          "action": {
+            "id": "arrowleft",
+            "historyEffect": "navigation"
+          },
+          "expected": {
+            "source": "1. Alpha\n           - *Beta\n     1. Gamma\n2. Delta",
+            "selection": {
+              "anchor": 22,
+              "focus": 22
+            }
+          }
+        },
+        {
+          "actionIndex": 5,
+          "action": {
+            "id": "tab",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "1. Alpha\n               - *Beta\n     1. Gamma\n2. Delta",
+            "selection": {
+              "anchor": 26,
+              "focus": 26
+            }
+          }
+        },
+        {
+          "actionIndex": 6,
+          "action": {
+            "id": "enter",
+            "historyEffect": "guaranteed-edit"
+          },
+          "expected": {
+            "source": "1. Alpha\n               - \n               - *Beta\n     1. Gamma\n2. Delta",
+            "selection": {
+              "anchor": 44,
+              "focus": 44
+            }
+          }
+        },
+        {
+          "actionIndex": 7,
+          "action": {
+            "id": "enter",
+            "historyEffect": "guaranteed-edit"
+          },
+          "expected": {
+            "source": "1. Alpha\n               - \n               - \n               - *Beta\n     1. Gamma\n2. Delta",
+            "selection": {
+              "anchor": 62,
+              "focus": 62
+            }
+          }
+        },
+        {
+          "actionIndex": 8,
+          "action": {
+            "id": "delete",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "1. Alpha\n               - \n               - \n               - Beta\n     1. Gamma\n2. Delta",
+            "selection": {
+              "anchor": 62,
+              "focus": 62
+            }
+          }
+        },
+        {
+          "actionIndex": 9,
+          "action": {
+            "id": "undo",
+            "historyEffect": "undo"
+          },
+          "expected": {
+            "source": "1. Alpha\n               - *Beta\n     1. Gamma\n2. Delta",
+            "selection": {
+              "anchor": 26,
+              "focus": 26
+            }
+          }
+        },
+        {
+          "actionIndex": 10,
+          "action": {
+            "id": "redo",
+            "historyEffect": "redo"
+          },
+          "expected": {
+            "source": "1. Alpha\n               - \n               - \n               - Beta\n     1. Gamma\n2. Delta",
+            "selection": {
+              "anchor": 62,
+              "focus": 62
+            }
+          }
+        }
+      ]
+    },
+    {
+      "scenarioId": "list-random-500.123.bd992aa8685ad6b8",
+      "mode": "source",
+      "targetActionIndex": 8,
+      "targetActionId": "undo",
+      "initialSource": "1. Alpha\n2. Beta\n3. Gamma",
+      "initialSelection": {
+        "anchor": 3,
+        "focus": 3
+      },
+      "steps": [
+        {
+          "actionIndex": 0,
+          "action": {
+            "id": "trusted-click-another-initial-item",
+            "historyEffect": "navigation"
+          },
+          "expected": {
+            "source": "1. Alpha\n2. Beta\n3. Gamma",
+            "selection": {
+              "anchor": 12,
+              "focus": 12
+            }
+          }
+        },
+        {
+          "actionIndex": 1,
+          "action": {
+            "id": "type-text",
+            "historyEffect": "guaranteed-edit"
+          },
+          "expected": {
+            "source": "1. Alpha\n2. xBeta\n3. Gamma",
+            "selection": {
+              "anchor": 13,
+              "focus": 13
+            }
+          }
+        },
+        {
+          "actionIndex": 2,
+          "action": {
+            "id": "shift-tab",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "1. Alpha\n2. xBeta\n3. Gamma",
+            "selection": {
+              "anchor": 13,
+              "focus": 13
+            }
+          }
+        },
+        {
+          "actionIndex": 3,
+          "action": {
+            "id": "arrowright",
+            "historyEffect": "navigation"
+          },
+          "expected": {
+            "source": "1. Alpha\n2. xBeta\n3. Gamma",
+            "selection": {
+              "anchor": 14,
+              "focus": 14
+            }
+          }
+        },
+        {
+          "actionIndex": 4,
+          "action": {
+            "id": "backspace",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "1. Alpha\n2. xeta\n3. Gamma",
+            "selection": {
+              "anchor": 13,
+              "focus": 13
+            }
+          }
+        },
+        {
+          "actionIndex": 5,
+          "action": {
+            "id": "shift-tab",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "1. Alpha\n2. xeta\n3. Gamma",
+            "selection": {
+              "anchor": 13,
+              "focus": 13
+            }
+          }
+        },
+        {
+          "actionIndex": 6,
+          "action": {
+            "id": "shift-tab",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "1. Alpha\n2. xeta\n3. Gamma",
+            "selection": {
+              "anchor": 13,
+              "focus": 13
+            }
+          }
+        },
+        {
+          "actionIndex": 7,
+          "action": {
+            "id": "delete",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "1. Alpha\n2. xta\n3. Gamma",
+            "selection": {
+              "anchor": 13,
+              "focus": 13
+            }
+          }
+        },
+        {
+          "actionIndex": 8,
+          "action": {
+            "id": "undo",
+            "historyEffect": "undo"
+          },
+          "expected": {
+            "source": "1. Alpha\n2. xeta\n3. Gamma",
+            "selection": {
+              "anchor": 13,
+              "focus": 13
+            }
+          }
+        }
+      ]
+    },
+    {
+      "scenarioId": "list-random-500.132.50992a4a697091cc",
+      "mode": "source",
+      "targetActionIndex": 5,
+      "targetActionId": "undo",
+      "initialSource": "* Alpha\n* Beta\n* Gamma",
+      "initialSelection": {
+        "anchor": 2,
+        "focus": 2
+      },
+      "steps": [
+        {
+          "actionIndex": 0,
+          "action": {
+            "id": "trusted-click-another-initial-item",
+            "historyEffect": "navigation"
+          },
+          "expected": {
+            "source": "* Alpha\n* Beta\n* Gamma",
+            "selection": {
+              "anchor": 10,
+              "focus": 10
+            }
+          }
+        },
+        {
+          "actionIndex": 1,
+          "action": {
+            "id": "type-text",
+            "historyEffect": "guaranteed-edit"
+          },
+          "expected": {
+            "source": "* Alpha\n* ABeta\n* Gamma",
+            "selection": {
+              "anchor": 11,
+              "focus": 11
+            }
+          }
+        },
+        {
+          "actionIndex": 2,
+          "action": {
+            "id": "shift-tab",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "* Alpha\n* ABeta\n* Gamma",
+            "selection": {
+              "anchor": 11,
+              "focus": 11
+            }
+          }
+        },
+        {
+          "actionIndex": 3,
+          "action": {
+            "id": "shift-tab",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "* Alpha\n* ABeta\n* Gamma",
+            "selection": {
+              "anchor": 11,
+              "focus": 11
+            }
+          }
+        },
+        {
+          "actionIndex": 4,
+          "action": {
+            "id": "type-text",
+            "historyEffect": "guaranteed-edit"
+          },
+          "expected": {
+            "source": "* Alpha\n* AxBeta\n* Gamma",
+            "selection": {
+              "anchor": 12,
+              "focus": 12
+            }
+          }
+        },
+        {
+          "actionIndex": 5,
+          "action": {
+            "id": "undo",
+            "historyEffect": "undo"
+          },
+          "expected": {
+            "source": "* Alpha\n* ABeta\n* Gamma",
+            "selection": {
+              "anchor": 11,
+              "focus": 11
+            }
+          }
+        }
+      ]
+    },
+    {
+      "scenarioId": "list-random-500.149.e19a4e441f04336f",
+      "mode": "source",
+      "targetActionIndex": 8,
+      "targetActionId": "redo",
+      "initialSource": "1. A\n7. B\n3. C",
+      "initialSelection": {
+        "anchor": 3,
+        "focus": 3
+      },
+      "steps": [
+        {
+          "actionIndex": 0,
+          "action": {
+            "id": "trusted-click-another-initial-item",
+            "historyEffect": "navigation"
+          },
+          "expected": {
+            "source": "1. A\n7. B\n3. C",
+            "selection": {
+              "anchor": 8,
+              "focus": 8
+            }
+          }
+        },
+        {
+          "actionIndex": 1,
+          "action": {
+            "id": "type-text",
+            "historyEffect": "guaranteed-edit"
+          },
+          "expected": {
+            "source": "1. A\n2.  B\n3. C",
+            "selection": {
+              "anchor": 9,
+              "focus": 9
+            }
+          }
+        },
+        {
+          "actionIndex": 2,
+          "action": {
+            "id": "tab",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "1. A\n    1.  B\n2. C",
+            "selection": {
+              "anchor": 13,
+              "focus": 13
+            }
+          }
+        },
+        {
+          "actionIndex": 3,
+          "action": {
+            "id": "undo",
+            "historyEffect": "undo"
+          },
+          "expected": {
+            "source": "1. A\n2.  B\n3. C",
+            "selection": {
+              "anchor": 9,
+              "focus": 9
+            }
+          }
+        },
+        {
+          "actionIndex": 4,
+          "action": {
+            "id": "redo",
+            "historyEffect": "redo"
+          },
+          "expected": {
+            "source": "1. A\n    1.  B\n2. C",
+            "selection": {
+              "anchor": 13,
+              "focus": 13
+            }
+          }
+        },
+        {
+          "actionIndex": 5,
+          "action": {
+            "id": "enter",
+            "historyEffect": "guaranteed-edit"
+          },
+          "expected": {
+            "source": "1. A\n    1.  \n    2. B\n2. C",
+            "selection": {
+              "anchor": 21,
+              "focus": 21
+            }
+          }
+        },
+        {
+          "actionIndex": 6,
+          "action": {
+            "id": "backspace",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "1. A\n    1.  \n    2.B\n2. C",
+            "selection": {
+              "anchor": 20,
+              "focus": 20
+            }
+          }
+        },
+        {
+          "actionIndex": 7,
+          "action": {
+            "id": "undo",
+            "historyEffect": "undo"
+          },
+          "expected": {
+            "source": "1. A\n    1.  B\n2. C",
+            "selection": {
+              "anchor": 13,
+              "focus": 13
+            }
+          }
+        },
+        {
+          "actionIndex": 8,
+          "action": {
+            "id": "redo",
+            "historyEffect": "redo"
+          },
+          "expected": {
+            "source": "1. A\n    1.  \n    2.B\n2. C",
+            "selection": {
+              "anchor": 20,
+              "focus": 20
+            }
+          }
+        }
+      ]
+    },
+    {
+      "scenarioId": "list-random-500.186.95b177e2057b5bf2",
+      "mode": "live-preview",
+      "targetActionIndex": 6,
+      "targetActionId": "undo",
+      "initialSource": "- Alpha\n  continued alpha\n- Beta\n- Gamma",
+      "initialSelection": {
+        "anchor": 2,
+        "focus": 2
+      },
+      "steps": [
+        {
+          "actionIndex": 0,
+          "action": {
+            "id": "trusted-click-another-initial-item",
+            "historyEffect": "navigation"
+          },
+          "expected": {
+            "source": "- Alpha\n  continued alpha\n- Beta\n- Gamma",
+            "selection": {
+              "anchor": 28,
+              "focus": 28
+            }
+          }
+        },
+        {
+          "actionIndex": 1,
+          "action": {
+            "id": "type-text",
+            "historyEffect": "guaranteed-edit"
+          },
+          "expected": {
+            "source": "- Alpha\n  continued alpha\n- 1Beta\n- Gamma",
+            "selection": {
+              "anchor": 29,
+              "focus": 29
+            }
+          }
+        },
+        {
+          "actionIndex": 2,
+          "action": {
+            "id": "shift-tab",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "- Alpha\n  continued alpha\n- 1Beta\n- Gamma",
+            "selection": {
+              "anchor": 29,
+              "focus": 29
+            }
+          }
+        },
+        {
+          "actionIndex": 3,
+          "action": {
+            "id": "type-text",
+            "historyEffect": "guaranteed-edit"
+          },
+          "expected": {
+            "source": "- Alpha\n  continued alpha\n- 1ABeta\n- Gamma",
+            "selection": {
+              "anchor": 30,
+              "focus": 30
+            }
+          }
+        },
+        {
+          "actionIndex": 4,
+          "action": {
+            "id": "backspace",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "- Alpha\n  continued alpha\n- 1Beta\n- Gamma",
+            "selection": {
+              "anchor": 29,
+              "focus": 29
+            }
+          }
+        },
+        {
+          "actionIndex": 5,
+          "action": {
+            "id": "backspace",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "- Alpha\n  continued alpha\n- Beta\n- Gamma",
+            "selection": {
+              "anchor": 28,
+              "focus": 28
+            }
+          }
+        },
+        {
+          "actionIndex": 6,
+          "action": {
+            "id": "undo",
+            "historyEffect": "undo"
+          },
+          "expected": {
+            "source": "- Alpha\n  continued alpha\n- 1Beta\n- Gamma",
+            "selection": {
+              "anchor": 29,
+              "focus": 29
+            }
+          }
+        }
+      ]
+    },
+    {
+      "scenarioId": "list-random-500.194.fa5fa5846ffa6c4b",
+      "mode": "source",
+      "targetActionIndex": 6,
+      "targetActionId": "undo",
+      "initialSource": "- Alpha\n  continued alpha\n  1. Beta\n- Gamma",
+      "initialSelection": {
+        "anchor": 2,
+        "focus": 2
+      },
+      "steps": [
+        {
+          "actionIndex": 0,
+          "action": {
+            "id": "trusted-click-another-initial-item",
+            "historyEffect": "navigation"
+          },
+          "expected": {
+            "source": "- Alpha\n  continued alpha\n  1. Beta\n- Gamma",
+            "selection": {
+              "anchor": 31,
+              "focus": 31
+            }
+          }
+        },
+        {
+          "actionIndex": 1,
+          "action": {
+            "id": "type-text",
+            "historyEffect": "guaranteed-edit"
+          },
+          "expected": {
+            "source": "- Alpha\n  continued alpha\n  1.  Beta\n- Gamma",
+            "selection": {
+              "anchor": 32,
+              "focus": 32
+            }
+          }
+        },
+        {
+          "actionIndex": 2,
+          "action": {
+            "id": "tab",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "- Alpha\n  continued alpha\n      1.  Beta\n- Gamma",
+            "selection": {
+              "anchor": 36,
+              "focus": 36
+            }
+          }
+        },
+        {
+          "actionIndex": 3,
+          "action": {
+            "id": "backspace",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "- Alpha\n  continued alpha\n      1. Beta\n- Gamma",
+            "selection": {
+              "anchor": 35,
+              "focus": 35
+            }
+          }
+        },
+        {
+          "actionIndex": 4,
+          "action": {
+            "id": "enter",
+            "historyEffect": "guaranteed-edit"
+          },
+          "expected": {
+            "source": "- Alpha\n  continued alpha\n      1. \n      2. Beta\n- Gamma",
+            "selection": {
+              "anchor": 45,
+              "focus": 45
+            }
+          }
+        },
+        {
+          "actionIndex": 5,
+          "action": {
+            "id": "delete",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "- Alpha\n  continued alpha\n      1. \n      2. eta\n- Gamma",
+            "selection": {
+              "anchor": 45,
+              "focus": 45
+            }
+          }
+        },
+        {
+          "actionIndex": 6,
+          "action": {
+            "id": "undo",
+            "historyEffect": "undo"
+          },
+          "expected": {
+            "source": "- Alpha\n  continued alpha\n      1.  Beta\n- Gamma",
+            "selection": {
+              "anchor": 36,
+              "focus": 36
+            }
+          }
+        }
+      ]
+    },
+    {
+      "scenarioId": "list-random-500.213.2fa1dee4ebf1c237",
+      "mode": "live-preview",
+      "targetActionIndex": 5,
+      "targetActionId": "undo",
+      "initialSource": "1) Alpha\n2) Beta\n3) Gamma",
+      "initialSelection": {
+        "anchor": 3,
+        "focus": 3
+      },
+      "steps": [
+        {
+          "actionIndex": 0,
+          "action": {
+            "id": "trusted-click-another-initial-item",
+            "historyEffect": "navigation"
+          },
+          "expected": {
+            "source": "1) Alpha\n2) Beta\n3) Gamma",
+            "selection": {
+              "anchor": 12,
+              "focus": 12
+            }
+          }
+        },
+        {
+          "actionIndex": 1,
+          "action": {
+            "id": "type-text",
+            "historyEffect": "guaranteed-edit"
+          },
+          "expected": {
+            "source": "1) Alpha\n2) xBeta\n3) Gamma",
+            "selection": {
+              "anchor": 13,
+              "focus": 13
+            }
+          }
+        },
+        {
+          "actionIndex": 2,
+          "action": {
+            "id": "shift-tab",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "1) Alpha\n2) xBeta\n3) Gamma",
+            "selection": {
+              "anchor": 13,
+              "focus": 13
+            }
+          }
+        },
+        {
+          "actionIndex": 3,
+          "action": {
+            "id": "type-text",
+            "historyEffect": "guaranteed-edit"
+          },
+          "expected": {
+            "source": "1) Alpha\n2) xxBeta\n3) Gamma",
+            "selection": {
+              "anchor": 14,
+              "focus": 14
+            }
+          }
+        },
+        {
+          "actionIndex": 4,
+          "action": {
+            "id": "arrowright",
+            "historyEffect": "navigation"
+          },
+          "expected": {
+            "source": "1) Alpha\n2) xxBeta\n3) Gamma",
+            "selection": {
+              "anchor": 15,
+              "focus": 15
+            }
+          }
+        },
+        {
+          "actionIndex": 5,
+          "action": {
+            "id": "undo",
+            "historyEffect": "undo"
+          },
+          "expected": {
+            "source": "1) Alpha\n2) xBeta\n3) Gamma",
+            "selection": {
+              "anchor": 13,
+              "focus": 13
+            }
+          }
+        }
+      ]
+    },
+    {
+      "scenarioId": "list-random-500.216.5563ca8e4f16597c",
+      "mode": "source",
+      "targetActionIndex": 6,
+      "targetActionId": "undo",
+      "initialSource": "1. Alpha\n2. Beta\n3. Gamma",
+      "initialSelection": {
+        "anchor": 3,
+        "focus": 3
+      },
+      "steps": [
+        {
+          "actionIndex": 0,
+          "action": {
+            "id": "trusted-click-another-initial-item",
+            "historyEffect": "navigation"
+          },
+          "expected": {
+            "source": "1. Alpha\n2. Beta\n3. Gamma",
+            "selection": {
+              "anchor": 12,
+              "focus": 12
+            }
+          }
+        },
+        {
+          "actionIndex": 1,
+          "action": {
+            "id": "type-text",
+            "historyEffect": "guaranteed-edit"
+          },
+          "expected": {
+            "source": "1. Alpha\n2.  Beta\n3. Gamma",
+            "selection": {
+              "anchor": 13,
+              "focus": 13
+            }
+          }
+        },
+        {
+          "actionIndex": 2,
+          "action": {
+            "id": "arrowleft",
+            "historyEffect": "navigation"
+          },
+          "expected": {
+            "source": "1. Alpha\n2.  Beta\n3. Gamma",
+            "selection": {
+              "anchor": 12,
+              "focus": 12
+            }
+          }
+        },
+        {
+          "actionIndex": 3,
+          "action": {
+            "id": "delete",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "1. Alpha\n2. Beta\n3. Gamma",
+            "selection": {
+              "anchor": 12,
+              "focus": 12
+            }
+          }
+        },
+        {
+          "actionIndex": 4,
+          "action": {
+            "id": "shift-tab",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "1. Alpha\n2. Beta\n3. Gamma",
+            "selection": {
+              "anchor": 12,
+              "focus": 12
+            }
+          }
+        },
+        {
+          "actionIndex": 5,
+          "action": {
+            "id": "enter",
+            "historyEffect": "guaranteed-edit"
+          },
+          "expected": {
+            "source": "1. Alpha\n2. \n3. Beta\n4. Gamma",
+            "selection": {
+              "anchor": 16,
+              "focus": 16
+            }
+          }
+        },
+        {
+          "actionIndex": 6,
+          "action": {
+            "id": "undo",
+            "historyEffect": "undo"
+          },
+          "expected": {
+            "source": "1. Alpha\n2. Beta\n3. Gamma",
+            "selection": {
+              "anchor": 12,
+              "focus": 12
+            }
+          }
+        }
+      ]
+    },
+    {
+      "scenarioId": "list-random-500.246.279cabc4767c5d7c",
+      "mode": "live-preview",
+      "targetActionIndex": 6,
+      "targetActionId": "redo",
+      "initialSource": "1. Alpha\n   - Beta\n2. Gamma",
+      "initialSelection": {
+        "anchor": 3,
+        "focus": 3
+      },
+      "steps": [
+        {
+          "actionIndex": 0,
+          "action": {
+            "id": "trusted-click-another-initial-item",
+            "historyEffect": "navigation"
+          },
+          "expected": {
+            "source": "1. Alpha\n   - Beta\n2. Gamma",
+            "selection": {
+              "anchor": 14,
+              "focus": 14
+            }
+          }
+        },
+        {
+          "actionIndex": 1,
+          "action": {
+            "id": "type-text",
+            "historyEffect": "guaranteed-edit"
+          },
+          "expected": {
+            "source": "1. Alpha\n   - 1Beta\n1. Gamma",
+            "selection": {
+              "anchor": 15,
+              "focus": 15
+            }
+          }
+        },
+        {
+          "actionIndex": 2,
+          "action": {
+            "id": "backspace",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "1. Alpha\n   - Beta\n1. Gamma",
+            "selection": {
+              "anchor": 14,
+              "focus": 14
+            }
+          }
+        },
+        {
+          "actionIndex": 3,
+          "action": {
+            "id": "enter",
+            "historyEffect": "guaranteed-edit"
+          },
+          "expected": {
+            "source": "1. Alpha\n   - \n   - Beta\n1. Gamma",
+            "selection": {
+              "anchor": 20,
+              "focus": 20
+            }
+          }
+        },
+        {
+          "actionIndex": 4,
+          "action": {
+            "id": "backspace",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "1. Alpha\n   - \n   -Beta\n1. Gamma",
+            "selection": {
+              "anchor": 19,
+              "focus": 19
+            }
+          }
+        },
+        {
+          "actionIndex": 5,
+          "action": {
+            "id": "undo",
+            "historyEffect": "undo"
+          },
+          "expected": {
+            "source": "1. Alpha\n   - Beta\n1. Gamma",
+            "selection": {
+              "anchor": 14,
+              "focus": 14
+            }
+          }
+        },
+        {
+          "actionIndex": 6,
+          "action": {
+            "id": "redo",
+            "historyEffect": "redo"
+          },
+          "expected": {
+            "source": "1. Alpha\n   - \n   -Beta\n1. Gamma",
+            "selection": {
+              "anchor": 19,
+              "focus": 19
+            }
+          }
+        }
+      ]
+    },
+    {
+      "scenarioId": "list-random-500.264.ac52270c30fa0c8d",
+      "mode": "live-preview",
+      "targetActionIndex": 7,
+      "targetActionId": "undo",
+      "initialSource": "9. A\n10. B\n11. C",
+      "initialSelection": {
+        "anchor": 3,
+        "focus": 3
+      },
+      "steps": [
+        {
+          "actionIndex": 0,
+          "action": {
+            "id": "trusted-click-another-initial-item",
+            "historyEffect": "navigation"
+          },
+          "expected": {
+            "source": "9. A\n10. B\n11. C",
+            "selection": {
+              "anchor": 9,
+              "focus": 9
+            }
+          }
+        },
+        {
+          "actionIndex": 1,
+          "action": {
+            "id": "type-text",
+            "historyEffect": "guaranteed-edit"
+          },
+          "expected": {
+            "source": "9. A\n10. AB\n11. C",
+            "selection": {
+              "anchor": 10,
+              "focus": 10
+            }
+          }
+        },
+        {
+          "actionIndex": 2,
+          "action": {
+            "id": "backspace",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "9. A\n10. B\n11. C",
+            "selection": {
+              "anchor": 9,
+              "focus": 9
+            }
+          }
+        },
+        {
+          "actionIndex": 3,
+          "action": {
+            "id": "undo",
+            "historyEffect": "undo"
+          },
+          "expected": {
+            "source": "9. A\n10. B\n11. C",
+            "selection": {
+              "anchor": 9,
+              "focus": 9
+            }
+          }
+        },
+        {
+          "actionIndex": 4,
+          "action": {
+            "id": "redo",
+            "historyEffect": "redo"
+          },
+          "expected": {
+            "source": "9. A\n10. B\n11. C",
+            "selection": {
+              "anchor": 9,
+              "focus": 9
+            }
+          }
+        },
+        {
+          "actionIndex": 5,
+          "action": {
+            "id": "arrowright",
+            "historyEffect": "navigation"
+          },
+          "expected": {
+            "source": "9. A\n10. B\n11. C",
+            "selection": {
+              "anchor": 10,
+              "focus": 10
+            }
+          }
+        },
+        {
+          "actionIndex": 6,
+          "action": {
+            "id": "shift-tab",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "9. A\n10. B\n11. C",
+            "selection": {
+              "anchor": 10,
+              "focus": 10
+            }
+          }
+        },
+        {
+          "actionIndex": 7,
+          "action": {
+            "id": "undo",
+            "historyEffect": "undo"
+          },
+          "expected": {
+            "source": "9. A\n10. B\n11. C",
+            "selection": {
+              "anchor": 10,
+              "focus": 10
+            }
+          }
+        }
+      ]
+    },
+    {
+      "scenarioId": "list-random-500.286.abe072369554ad6b",
+      "mode": "live-preview",
+      "targetActionIndex": 7,
+      "targetActionId": "undo",
+      "initialSource": "1. Alpha\n   - Beta\n2. Gamma",
+      "initialSelection": {
+        "anchor": 3,
+        "focus": 3
+      },
+      "steps": [
+        {
+          "actionIndex": 0,
+          "action": {
+            "id": "trusted-click-another-initial-item",
+            "historyEffect": "navigation"
+          },
+          "expected": {
+            "source": "1. Alpha\n   - Beta\n2. Gamma",
+            "selection": {
+              "anchor": 14,
+              "focus": 14
+            }
+          }
+        },
+        {
+          "actionIndex": 1,
+          "action": {
+            "id": "type-text",
+            "historyEffect": "guaranteed-edit"
+          },
+          "expected": {
+            "source": "1. Alpha\n   - ABeta\n1. Gamma",
+            "selection": {
+              "anchor": 15,
+              "focus": 15
+            }
+          }
+        },
+        {
+          "actionIndex": 2,
+          "action": {
+            "id": "undo",
+            "historyEffect": "undo"
+          },
+          "expected": {
+            "source": "1. Alpha\n   - Beta\n2. Gamma",
+            "selection": {
+              "anchor": 14,
+              "focus": 14
+            }
+          }
+        },
+        {
+          "actionIndex": 3,
+          "action": {
+            "id": "redo",
+            "historyEffect": "redo"
+          },
+          "expected": {
+            "source": "1. Alpha\n   - ABeta\n1. Gamma",
+            "selection": {
+              "anchor": 15,
+              "focus": 15
+            }
+          }
+        },
+        {
+          "actionIndex": 4,
+          "action": {
+            "id": "tab",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "1. Alpha\n       - ABeta\n2. Gamma",
+            "selection": {
+              "anchor": 19,
+              "focus": 19
+            }
+          }
+        },
+        {
+          "actionIndex": 5,
+          "action": {
+            "id": "backspace",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "1. Alpha\n       - Beta\n2. Gamma",
+            "selection": {
+              "anchor": 18,
+              "focus": 18
+            }
+          }
+        },
+        {
+          "actionIndex": 6,
+          "action": {
+            "id": "shift-tab",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "1. Alpha\n   - Beta\n1. Gamma",
+            "selection": {
+              "anchor": 14,
+              "focus": 14
+            }
+          }
+        },
+        {
+          "actionIndex": 7,
+          "action": {
+            "id": "undo",
+            "historyEffect": "undo"
+          },
+          "expected": {
+            "source": "1. Alpha\n       - Beta\n2. Gamma",
+            "selection": {
+              "anchor": 18,
+              "focus": 18
+            }
+          }
+        }
+      ]
+    },
+    {
+      "scenarioId": "list-random-500.304.4da6afb5490fcbd4",
+      "mode": "live-preview",
+      "targetActionIndex": 11,
+      "targetActionId": "redo",
+      "initialSource": "+ Alpha\n+ Beta\n+ Gamma",
+      "initialSelection": {
+        "anchor": 2,
+        "focus": 2
+      },
+      "steps": [
+        {
+          "actionIndex": 0,
+          "action": {
+            "id": "trusted-click-another-initial-item",
+            "historyEffect": "navigation"
+          },
+          "expected": {
+            "source": "+ Alpha\n+ Beta\n+ Gamma",
+            "selection": {
+              "anchor": 10,
+              "focus": 10
+            }
+          }
+        },
+        {
+          "actionIndex": 1,
+          "action": {
+            "id": "type-text",
+            "historyEffect": "guaranteed-edit"
+          },
+          "expected": {
+            "source": "+ Alpha\n+ ABeta\n+ Gamma",
+            "selection": {
+              "anchor": 11,
+              "focus": 11
+            }
+          }
+        },
+        {
+          "actionIndex": 2,
+          "action": {
+            "id": "undo",
+            "historyEffect": "undo"
+          },
+          "expected": {
+            "source": "+ Alpha\n+ Beta\n+ Gamma",
+            "selection": {
+              "anchor": 10,
+              "focus": 10
+            }
+          }
+        },
+        {
+          "actionIndex": 3,
+          "action": {
+            "id": "redo",
+            "historyEffect": "redo"
+          },
+          "expected": {
+            "source": "+ Alpha\n+ ABeta\n+ Gamma",
+            "selection": {
+              "anchor": 11,
+              "focus": 11
+            }
+          }
+        },
+        {
+          "actionIndex": 4,
+          "action": {
+            "id": "undo",
+            "historyEffect": "undo"
+          },
+          "expected": {
+            "source": "+ Alpha\n+ Beta\n+ Gamma",
+            "selection": {
+              "anchor": 10,
+              "focus": 10
+            }
+          }
+        },
+        {
+          "actionIndex": 5,
+          "action": {
+            "id": "redo",
+            "historyEffect": "redo"
+          },
+          "expected": {
+            "source": "+ Alpha\n+ ABeta\n+ Gamma",
+            "selection": {
+              "anchor": 11,
+              "focus": 11
+            }
+          }
+        },
+        {
+          "actionIndex": 6,
+          "action": {
+            "id": "undo",
+            "historyEffect": "undo"
+          },
+          "expected": {
+            "source": "+ Alpha\n+ Beta\n+ Gamma",
+            "selection": {
+              "anchor": 10,
+              "focus": 10
+            }
+          }
+        },
+        {
+          "actionIndex": 7,
+          "action": {
+            "id": "redo",
+            "historyEffect": "redo"
+          },
+          "expected": {
+            "source": "+ Alpha\n+ ABeta\n+ Gamma",
+            "selection": {
+              "anchor": 11,
+              "focus": 11
+            }
+          }
+        },
+        {
+          "actionIndex": 8,
+          "action": {
+            "id": "enter",
+            "historyEffect": "guaranteed-edit"
+          },
+          "expected": {
+            "source": "+ Alpha\n+ A\n+ Beta\n+ Gamma",
+            "selection": {
+              "anchor": 14,
+              "focus": 14
+            }
+          }
+        },
+        {
+          "actionIndex": 9,
+          "action": {
+            "id": "backspace",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "+ Alpha\n+ A\n+Beta\n+ Gamma",
+            "selection": {
+              "anchor": 13,
+              "focus": 13
+            }
+          }
+        },
+        {
+          "actionIndex": 10,
+          "action": {
+            "id": "undo",
+            "historyEffect": "undo"
+          },
+          "expected": {
+            "source": "+ Alpha\n+ ABeta\n+ Gamma",
+            "selection": {
+              "anchor": 11,
+              "focus": 11
+            }
+          }
+        },
+        {
+          "actionIndex": 11,
+          "action": {
+            "id": "redo",
+            "historyEffect": "redo"
+          },
+          "expected": {
+            "source": "+ Alpha\n+ A\n+Beta\n+ Gamma",
+            "selection": {
+              "anchor": 13,
+              "focus": 13
+            }
+          }
+        }
+      ]
+    },
+    {
+      "scenarioId": "list-random-500.329.cdc579b5cd30f4d2",
+      "mode": "source",
+      "targetActionIndex": 10,
+      "targetActionId": "redo",
+      "initialSource": "1. Alpha\n   continued alpha\n   1. Beta\n2. Gamma",
+      "initialSelection": {
+        "anchor": 3,
+        "focus": 3
+      },
+      "steps": [
+        {
+          "actionIndex": 0,
+          "action": {
+            "id": "trusted-click-another-initial-item",
+            "historyEffect": "navigation"
+          },
+          "expected": {
+            "source": "1. Alpha\n   continued alpha\n   1. Beta\n2. Gamma",
+            "selection": {
+              "anchor": 34,
+              "focus": 34
+            }
+          }
+        },
+        {
+          "actionIndex": 1,
+          "action": {
+            "id": "type-text",
+            "historyEffect": "guaranteed-edit"
+          },
+          "expected": {
+            "source": "1. Alpha\n   continued alpha\n   2. xBeta\n3. Gamma",
+            "selection": {
+              "anchor": 35,
+              "focus": 35
+            }
+          }
+        },
+        {
+          "actionIndex": 2,
+          "action": {
+            "id": "tab",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "1. Alpha\n   continued alpha\n       1. xBeta\n2. Gamma",
+            "selection": {
+              "anchor": 39,
+              "focus": 39
+            }
+          }
+        },
+        {
+          "actionIndex": 3,
+          "action": {
+            "id": "tab",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "1. Alpha\n   continued alpha\n           1. xBeta\n2. Gamma",
+            "selection": {
+              "anchor": 43,
+              "focus": 43
+            }
+          }
+        },
+        {
+          "actionIndex": 4,
+          "action": {
+            "id": "delete",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "1. Alpha\n   continued alpha\n           1. xeta\n2. Gamma",
+            "selection": {
+              "anchor": 43,
+              "focus": 43
+            }
+          }
+        },
+        {
+          "actionIndex": 5,
+          "action": {
+            "id": "delete",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "1. Alpha\n   continued alpha\n           1. xta\n2. Gamma",
+            "selection": {
+              "anchor": 43,
+              "focus": 43
+            }
+          }
+        },
+        {
+          "actionIndex": 6,
+          "action": {
+            "id": "enter",
+            "historyEffect": "guaranteed-edit"
+          },
+          "expected": {
+            "source": "1. Alpha\n   continued alpha\n           1. x\n           2. ta\n2. Gamma",
+            "selection": {
+              "anchor": 58,
+              "focus": 58
+            }
+          }
+        },
+        {
+          "actionIndex": 7,
+          "action": {
+            "id": "arrowleft",
+            "historyEffect": "navigation"
+          },
+          "expected": {
+            "source": "1. Alpha\n   continued alpha\n           1. x\n           2. ta\n2. Gamma",
+            "selection": {
+              "anchor": 57,
+              "focus": 57
+            }
+          }
+        },
+        {
+          "actionIndex": 8,
+          "action": {
+            "id": "enter",
+            "historyEffect": "guaranteed-edit"
+          },
+          "expected": {
+            "source": "1. Alpha\n   continued alpha\n           1. x\n           2.\n           ta\n2. Gamma",
+            "selection": {
+              "anchor": 69,
+              "focus": 69
+            }
+          }
+        },
+        {
+          "actionIndex": 9,
+          "action": {
+            "id": "undo",
+            "historyEffect": "undo"
+          },
+          "expected": {
+            "source": "1. Alpha\n   continued alpha\n           1. x\n           2. ta\n2. Gamma",
+            "selection": {
+              "anchor": 57,
+              "focus": 57
+            }
+          }
+        },
+        {
+          "actionIndex": 10,
+          "action": {
+            "id": "redo",
+            "historyEffect": "redo"
+          },
+          "expected": {
+            "source": "1. Alpha\n   continued alpha\n           1. x\n           2.\n           ta\n2. Gamma",
+            "selection": {
+              "anchor": 57,
+              "focus": 57
+            }
+          }
+        }
+      ]
+    },
+    {
+      "scenarioId": "list-random-500.353.c77c1c42d6899b0e",
+      "mode": "source",
+      "targetActionIndex": 7,
+      "targetActionId": "undo",
+      "initialSource": "1. A\n1. B\n1. C",
+      "initialSelection": {
+        "anchor": 3,
+        "focus": 3
+      },
+      "steps": [
+        {
+          "actionIndex": 0,
+          "action": {
+            "id": "trusted-click-another-initial-item",
+            "historyEffect": "navigation"
+          },
+          "expected": {
+            "source": "1. A\n1. B\n1. C",
+            "selection": {
+              "anchor": 8,
+              "focus": 8
+            }
+          }
+        },
+        {
+          "actionIndex": 1,
+          "action": {
+            "id": "type-text",
+            "historyEffect": "guaranteed-edit"
+          },
+          "expected": {
+            "source": "1. A\n2. AB\n3. C",
+            "selection": {
+              "anchor": 9,
+              "focus": 9
+            }
+          }
+        },
+        {
+          "actionIndex": 2,
+          "action": {
+            "id": "enter",
+            "historyEffect": "guaranteed-edit"
+          },
+          "expected": {
+            "source": "1. A\n2. A\n3. B\n4. C",
+            "selection": {
+              "anchor": 13,
+              "focus": 13
+            }
+          }
+        },
+        {
+          "actionIndex": 3,
+          "action": {
+            "id": "arrowright",
+            "historyEffect": "navigation"
+          },
+          "expected": {
+            "source": "1. A\n2. A\n3. B\n4. C",
+            "selection": {
+              "anchor": 14,
+              "focus": 14
+            }
+          }
+        },
+        {
+          "actionIndex": 4,
+          "action": {
+            "id": "enter",
+            "historyEffect": "guaranteed-edit"
+          },
+          "expected": {
+            "source": "1. A\n2. A\n3. B\n4. \n5. C",
+            "selection": {
+              "anchor": 18,
+              "focus": 18
+            }
+          }
+        },
+        {
+          "actionIndex": 5,
+          "action": {
+            "id": "shift-tab",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "1. A\n2. A\n3. B\n4. \n5. C",
+            "selection": {
+              "anchor": 18,
+              "focus": 18
+            }
+          }
+        },
+        {
+          "actionIndex": 6,
+          "action": {
+            "id": "enter",
+            "historyEffect": "guaranteed-edit"
+          },
+          "expected": {
+            "source": "1. A\n2. A\n3. B\n\n4. C",
+            "selection": {
+              "anchor": 15,
+              "focus": 15
+            }
+          }
+        },
+        {
+          "actionIndex": 7,
+          "action": {
+            "id": "undo",
+            "historyEffect": "undo"
+          },
+          "expected": {
+            "source": "1. A\n2. A\n3. B\n4. \n5. C",
+            "selection": {
+              "anchor": 18,
+              "focus": 18
+            }
+          }
+        }
+      ]
+    },
+    {
+      "scenarioId": "list-random-500.357.f2e5ce3e58bd7344",
+      "mode": "live-preview",
+      "targetActionIndex": 5,
+      "targetActionId": "undo",
+      "initialSource": "1. Alpha\n2. Beta\n3. Gamma",
+      "initialSelection": {
+        "anchor": 3,
+        "focus": 3
+      },
+      "steps": [
+        {
+          "actionIndex": 0,
+          "action": {
+            "id": "trusted-click-another-initial-item",
+            "historyEffect": "navigation"
+          },
+          "expected": {
+            "source": "1. Alpha\n2. Beta\n3. Gamma",
+            "selection": {
+              "anchor": 12,
+              "focus": 12
+            }
+          }
+        },
+        {
+          "actionIndex": 1,
+          "action": {
+            "id": "type-text",
+            "historyEffect": "guaranteed-edit"
+          },
+          "expected": {
+            "source": "1. Alpha\n2.  Beta\n3. Gamma",
+            "selection": {
+              "anchor": 13,
+              "focus": 13
+            }
+          }
+        },
+        {
+          "actionIndex": 2,
+          "action": {
+            "id": "shift-tab",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "1. Alpha\n2.  Beta\n3. Gamma",
+            "selection": {
+              "anchor": 13,
+              "focus": 13
+            }
+          }
+        },
+        {
+          "actionIndex": 3,
+          "action": {
+            "id": "shift-tab",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "1. Alpha\n2.  Beta\n3. Gamma",
+            "selection": {
+              "anchor": 13,
+              "focus": 13
+            }
+          }
+        },
+        {
+          "actionIndex": 4,
+          "action": {
+            "id": "delete",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "1. Alpha\n2.  eta\n3. Gamma",
+            "selection": {
+              "anchor": 13,
+              "focus": 13
+            }
+          }
+        },
+        {
+          "actionIndex": 5,
+          "action": {
+            "id": "undo",
+            "historyEffect": "undo"
+          },
+          "expected": {
+            "source": "1. Alpha\n2.  Beta\n3. Gamma",
+            "selection": {
+              "anchor": 13,
+              "focus": 13
+            }
+          }
+        }
+      ]
+    },
+    {
+      "scenarioId": "list-random-500.368.ba1f6596b1bde55d",
+      "mode": "source",
+      "targetActionIndex": 10,
+      "targetActionId": "redo",
+      "initialSource": "+ Alpha\n+ Beta\n+ Gamma",
+      "initialSelection": {
+        "anchor": 2,
+        "focus": 2
+      },
+      "steps": [
+        {
+          "actionIndex": 0,
+          "action": {
+            "id": "trusted-click-another-initial-item",
+            "historyEffect": "navigation"
+          },
+          "expected": {
+            "source": "+ Alpha\n+ Beta\n+ Gamma",
+            "selection": {
+              "anchor": 10,
+              "focus": 10
+            }
+          }
+        },
+        {
+          "actionIndex": 1,
+          "action": {
+            "id": "type-text",
+            "historyEffect": "guaranteed-edit"
+          },
+          "expected": {
+            "source": "+ Alpha\n+ 1Beta\n+ Gamma",
+            "selection": {
+              "anchor": 11,
+              "focus": 11
+            }
+          }
+        },
+        {
+          "actionIndex": 2,
+          "action": {
+            "id": "undo",
+            "historyEffect": "undo"
+          },
+          "expected": {
+            "source": "+ Alpha\n+ Beta\n+ Gamma",
+            "selection": {
+              "anchor": 10,
+              "focus": 10
+            }
+          }
+        },
+        {
+          "actionIndex": 3,
+          "action": {
+            "id": "redo",
+            "historyEffect": "redo"
+          },
+          "expected": {
+            "source": "+ Alpha\n+ 1Beta\n+ Gamma",
+            "selection": {
+              "anchor": 11,
+              "focus": 11
+            }
+          }
+        },
+        {
+          "actionIndex": 4,
+          "action": {
+            "id": "shift-tab",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "+ Alpha\n+ 1Beta\n+ Gamma",
+            "selection": {
+              "anchor": 11,
+              "focus": 11
+            }
+          }
+        },
+        {
+          "actionIndex": 5,
+          "action": {
+            "id": "arrowright",
+            "historyEffect": "navigation"
+          },
+          "expected": {
+            "source": "+ Alpha\n+ 1Beta\n+ Gamma",
+            "selection": {
+              "anchor": 12,
+              "focus": 12
+            }
+          }
+        },
+        {
+          "actionIndex": 6,
+          "action": {
+            "id": "tab",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "+ Alpha\n    + 1Beta\n+ Gamma",
+            "selection": {
+              "anchor": 16,
+              "focus": 16
+            }
+          }
+        },
+        {
+          "actionIndex": 7,
+          "action": {
+            "id": "enter",
+            "historyEffect": "guaranteed-edit"
+          },
+          "expected": {
+            "source": "+ Alpha\n    + 1B\n    + eta\n+ Gamma",
+            "selection": {
+              "anchor": 23,
+              "focus": 23
+            }
+          }
+        },
+        {
+          "actionIndex": 8,
+          "action": {
+            "id": "delete",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "+ Alpha\n    + 1B\n    + ta\n+ Gamma",
+            "selection": {
+              "anchor": 23,
+              "focus": 23
+            }
+          }
+        },
+        {
+          "actionIndex": 9,
+          "action": {
+            "id": "undo",
+            "historyEffect": "undo"
+          },
+          "expected": {
+            "source": "+ Alpha\n    + 1Beta\n+ Gamma",
+            "selection": {
+              "anchor": 16,
+              "focus": 16
+            }
+          }
+        },
+        {
+          "actionIndex": 10,
+          "action": {
+            "id": "redo",
+            "historyEffect": "redo"
+          },
+          "expected": {
+            "source": "+ Alpha\n    + 1B\n    + ta\n+ Gamma",
+            "selection": {
+              "anchor": 23,
+              "focus": 23
+            }
+          }
+        }
+      ]
+    },
+    {
+      "scenarioId": "list-random-500.374.fa16ae718b1ba446",
+      "mode": "source",
+      "targetActionIndex": 6,
+      "targetActionId": "redo",
+      "initialSource": "0. A\n3. B\n99. C",
+      "initialSelection": {
+        "anchor": 3,
+        "focus": 3
+      },
+      "steps": [
+        {
+          "actionIndex": 0,
+          "action": {
+            "id": "trusted-click-another-initial-item",
+            "historyEffect": "navigation"
+          },
+          "expected": {
+            "source": "0. A\n3. B\n99. C",
+            "selection": {
+              "anchor": 8,
+              "focus": 8
+            }
+          }
+        },
+        {
+          "actionIndex": 1,
+          "action": {
+            "id": "type-text",
+            "historyEffect": "guaranteed-edit"
+          },
+          "expected": {
+            "source": "0. A\n1. xB\n2. C",
+            "selection": {
+              "anchor": 9,
+              "focus": 9
+            }
+          }
+        },
+        {
+          "actionIndex": 2,
+          "action": {
+            "id": "tab",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "0. A\n    1. xB\n1. C",
+            "selection": {
+              "anchor": 13,
+              "focus": 13
+            }
+          }
+        },
+        {
+          "actionIndex": 3,
+          "action": {
+            "id": "enter",
+            "historyEffect": "guaranteed-edit"
+          },
+          "expected": {
+            "source": "0. A\n    1. x\n    2. B\n1. C",
+            "selection": {
+              "anchor": 21,
+              "focus": 21
+            }
+          }
+        },
+        {
+          "actionIndex": 4,
+          "action": {
+            "id": "type-text",
+            "historyEffect": "guaranteed-edit"
+          },
+          "expected": {
+            "source": "0. A\n    1. x\n    2. xB\n1. C",
+            "selection": {
+              "anchor": 22,
+              "focus": 22
+            }
+          }
+        },
+        {
+          "actionIndex": 5,
+          "action": {
+            "id": "undo",
+            "historyEffect": "undo"
+          },
+          "expected": {
+            "source": "0. A\n    1. xB\n1. C",
+            "selection": {
+              "anchor": 13,
+              "focus": 13
+            }
+          }
+        },
+        {
+          "actionIndex": 6,
+          "action": {
+            "id": "redo",
+            "historyEffect": "redo"
+          },
+          "expected": {
+            "source": "0. A\n    1. x\n    2. xB\n1. C",
+            "selection": {
+              "anchor": 22,
+              "focus": 22
+            }
+          }
+        }
+      ]
+    },
+    {
+      "scenarioId": "list-random-500.398.ca53b98b70cf43a5",
+      "mode": "live-preview",
+      "targetActionIndex": 9,
+      "targetActionId": "undo",
+      "initialSource": "1. Alpha\n   continued alpha\n   1. Beta\n2. Gamma",
+      "initialSelection": {
+        "anchor": 3,
+        "focus": 3
+      },
+      "steps": [
+        {
+          "actionIndex": 0,
+          "action": {
+            "id": "trusted-click-another-initial-item",
+            "historyEffect": "navigation"
+          },
+          "expected": {
+            "source": "1. Alpha\n   continued alpha\n   1. Beta\n2. Gamma",
+            "selection": {
+              "anchor": 34,
+              "focus": 34
+            }
+          }
+        },
+        {
+          "actionIndex": 1,
+          "action": {
+            "id": "type-text",
+            "historyEffect": "guaranteed-edit"
+          },
+          "expected": {
+            "source": "1. Alpha\n   continued alpha\n   2. *Beta\n3. Gamma",
+            "selection": {
+              "anchor": 35,
+              "focus": 35
+            }
+          }
+        },
+        {
+          "actionIndex": 2,
+          "action": {
+            "id": "enter",
+            "historyEffect": "guaranteed-edit"
+          },
+          "expected": {
+            "source": "1. Alpha\n   continued alpha\n   2. *\n   3. Beta\n4. Gamma",
+            "selection": {
+              "anchor": 42,
+              "focus": 42
+            }
+          }
+        },
+        {
+          "actionIndex": 3,
+          "action": {
+            "id": "shift-tab",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "1. Alpha\n   continued alpha\n   2. *\n3. Beta\n4. Gamma",
+            "selection": {
+              "anchor": 39,
+              "focus": 39
+            }
+          }
+        },
+        {
+          "actionIndex": 4,
+          "action": {
+            "id": "tab",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "1. Alpha\n   continued alpha\n   2. *\n    1. Beta\n3. Gamma",
+            "selection": {
+              "anchor": 43,
+              "focus": 43
+            }
+          }
+        },
+        {
+          "actionIndex": 5,
+          "action": {
+            "id": "backspace",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "1. Alpha\n   continued alpha\n   2. *\n    1.Beta\n3. Gamma",
+            "selection": {
+              "anchor": 42,
+              "focus": 42
+            }
+          }
+        },
+        {
+          "actionIndex": 6,
+          "action": {
+            "id": "shift-tab",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "1. Alpha\n   continued alpha\n   2. *\n1.Beta\n3. Gamma",
+            "selection": {
+              "anchor": 38,
+              "focus": 38
+            }
+          }
+        },
+        {
+          "actionIndex": 7,
+          "action": {
+            "id": "delete",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "1. Alpha\n   continued alpha\n   2. *\n1.eta\n3. Gamma",
+            "selection": {
+              "anchor": 38,
+              "focus": 38
+            }
+          }
+        },
+        {
+          "actionIndex": 8,
+          "action": {
+            "id": "backspace",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "1. Alpha\n   continued alpha\n   2. *\n1eta\n3. Gamma",
+            "selection": {
+              "anchor": 37,
+              "focus": 37
+            }
+          }
+        },
+        {
+          "actionIndex": 9,
+          "action": {
+            "id": "undo",
+            "historyEffect": "undo"
+          },
+          "expected": {
+            "source": "1. Alpha\n   continued alpha\n   2. *\n3. Beta\n4. Gamma",
+            "selection": {
+              "anchor": 39,
+              "focus": 39
+            }
+          }
+        }
+      ]
+    },
+    {
+      "scenarioId": "list-random-500.419.b5ce07b2d97e31e3",
+      "mode": "source",
+      "targetActionIndex": 9,
+      "targetActionId": "undo",
+      "initialSource": "- Alpha\n* Beta\n+ Gamma",
+      "initialSelection": {
+        "anchor": 2,
+        "focus": 2
+      },
+      "steps": [
+        {
+          "actionIndex": 0,
+          "action": {
+            "id": "trusted-click-another-initial-item",
+            "historyEffect": "navigation"
+          },
+          "expected": {
+            "source": "- Alpha\n* Beta\n+ Gamma",
+            "selection": {
+              "anchor": 10,
+              "focus": 10
+            }
+          }
+        },
+        {
+          "actionIndex": 1,
+          "action": {
+            "id": "type-text",
+            "historyEffect": "guaranteed-edit"
+          },
+          "expected": {
+            "source": "- Alpha\n*  Beta\n+ Gamma",
+            "selection": {
+              "anchor": 11,
+              "focus": 11
+            }
+          }
+        },
+        {
+          "actionIndex": 2,
+          "action": {
+            "id": "tab",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "- Alpha\n    *  Beta\n+ Gamma",
+            "selection": {
+              "anchor": 15,
+              "focus": 15
+            }
+          }
+        },
+        {
+          "actionIndex": 3,
+          "action": {
+            "id": "arrowleft",
+            "historyEffect": "navigation"
+          },
+          "expected": {
+            "source": "- Alpha\n    *  Beta\n+ Gamma",
+            "selection": {
+              "anchor": 14,
+              "focus": 14
+            }
+          }
+        },
+        {
+          "actionIndex": 4,
+          "action": {
+            "id": "arrowleft",
+            "historyEffect": "navigation"
+          },
+          "expected": {
+            "source": "- Alpha\n    *  Beta\n+ Gamma",
+            "selection": {
+              "anchor": 13,
+              "focus": 13
+            }
+          }
+        },
+        {
+          "actionIndex": 5,
+          "action": {
+            "id": "tab",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "- Alpha\n        *  Beta\n+ Gamma",
+            "selection": {
+              "anchor": 17,
+              "focus": 17
+            }
+          }
+        },
+        {
+          "actionIndex": 6,
+          "action": {
+            "id": "shift-tab",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "- Alpha\n    *  Beta\n+ Gamma",
+            "selection": {
+              "anchor": 13,
+              "focus": 13
+            }
+          }
+        },
+        {
+          "actionIndex": 7,
+          "action": {
+            "id": "enter",
+            "historyEffect": "guaranteed-edit"
+          },
+          "expected": {
+            "source": "- Alpha\n    *\n    Beta\n+ Gamma",
+            "selection": {
+              "anchor": 18,
+              "focus": 18
+            }
+          }
+        },
+        {
+          "actionIndex": 8,
+          "action": {
+            "id": "type-text",
+            "historyEffect": "guaranteed-edit"
+          },
+          "expected": {
+            "source": "- Alpha\n    *\n    *Beta\n+ Gamma",
+            "selection": {
+              "anchor": 19,
+              "focus": 19
+            }
+          }
+        },
+        {
+          "actionIndex": 9,
+          "action": {
+            "id": "undo",
+            "historyEffect": "undo"
+          },
+          "expected": {
+            "source": "- Alpha\n    *  Beta\n+ Gamma",
+            "selection": {
+              "anchor": 13,
+              "focus": 13
+            }
+          }
+        }
+      ]
+    },
+    {
+      "scenarioId": "list-random-500.420.ddf4b5db346c3c5e",
+      "mode": "source",
+      "targetActionIndex": 4,
+      "targetActionId": "undo",
+      "initialSource": "* Alpha\n* Beta\n* Gamma",
+      "initialSelection": {
+        "anchor": 2,
+        "focus": 2
+      },
+      "steps": [
+        {
+          "actionIndex": 0,
+          "action": {
+            "id": "trusted-click-another-initial-item",
+            "historyEffect": "navigation"
+          },
+          "expected": {
+            "source": "* Alpha\n* Beta\n* Gamma",
+            "selection": {
+              "anchor": 10,
+              "focus": 10
+            }
+          }
+        },
+        {
+          "actionIndex": 1,
+          "action": {
+            "id": "type-text",
+            "historyEffect": "guaranteed-edit"
+          },
+          "expected": {
+            "source": "* Alpha\n* 1Beta\n* Gamma",
+            "selection": {
+              "anchor": 11,
+              "focus": 11
+            }
+          }
+        },
+        {
+          "actionIndex": 2,
+          "action": {
+            "id": "shift-tab",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "* Alpha\n* 1Beta\n* Gamma",
+            "selection": {
+              "anchor": 11,
+              "focus": 11
+            }
+          }
+        },
+        {
+          "actionIndex": 3,
+          "action": {
+            "id": "type-text",
+            "historyEffect": "guaranteed-edit"
+          },
+          "expected": {
+            "source": "* Alpha\n* 11Beta\n* Gamma",
+            "selection": {
+              "anchor": 12,
+              "focus": 12
+            }
+          }
+        },
+        {
+          "actionIndex": 4,
+          "action": {
+            "id": "undo",
+            "historyEffect": "undo"
+          },
+          "expected": {
+            "source": "* Alpha\n* 1Beta\n* Gamma",
+            "selection": {
+              "anchor": 11,
+              "focus": 11
+            }
+          }
+        }
+      ]
+    },
+    {
+      "scenarioId": "list-random-500.424.ebd2d35ee39b902b",
+      "mode": "source",
+      "targetActionIndex": 9,
+      "targetActionId": "redo",
+      "initialSource": "1. Alpha\n2. Beta\n3. Gamma",
+      "initialSelection": {
+        "anchor": 3,
+        "focus": 3
+      },
+      "steps": [
+        {
+          "actionIndex": 0,
+          "action": {
+            "id": "trusted-click-another-initial-item",
+            "historyEffect": "navigation"
+          },
+          "expected": {
+            "source": "1. Alpha\n2. Beta\n3. Gamma",
+            "selection": {
+              "anchor": 12,
+              "focus": 12
+            }
+          }
+        },
+        {
+          "actionIndex": 1,
+          "action": {
+            "id": "type-text",
+            "historyEffect": "guaranteed-edit"
+          },
+          "expected": {
+            "source": "1. Alpha\n2. *Beta\n3. Gamma",
+            "selection": {
+              "anchor": 13,
+              "focus": 13
+            }
+          }
+        },
+        {
+          "actionIndex": 2,
+          "action": {
+            "id": "arrowright",
+            "historyEffect": "navigation"
+          },
+          "expected": {
+            "source": "1. Alpha\n2. *Beta\n3. Gamma",
+            "selection": {
+              "anchor": 14,
+              "focus": 14
+            }
+          }
+        },
+        {
+          "actionIndex": 3,
+          "action": {
+            "id": "tab",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "1. Alpha\n    1. *Beta\n2. Gamma",
+            "selection": {
+              "anchor": 18,
+              "focus": 18
+            }
+          }
+        },
+        {
+          "actionIndex": 4,
+          "action": {
+            "id": "enter",
+            "historyEffect": "guaranteed-edit"
+          },
+          "expected": {
+            "source": "1. Alpha\n    1. *B\n    2. eta\n2. Gamma",
+            "selection": {
+              "anchor": 26,
+              "focus": 26
+            }
+          }
+        },
+        {
+          "actionIndex": 5,
+          "action": {
+            "id": "backspace",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "1. Alpha\n    1. *B\n    2.eta\n2. Gamma",
+            "selection": {
+              "anchor": 25,
+              "focus": 25
+            }
+          }
+        },
+        {
+          "actionIndex": 6,
+          "action": {
+            "id": "type-text",
+            "historyEffect": "guaranteed-edit"
+          },
+          "expected": {
+            "source": "1. Alpha\n    1. *B\n    2.xeta\n2. Gamma",
+            "selection": {
+              "anchor": 26,
+              "focus": 26
+            }
+          }
+        },
+        {
+          "actionIndex": 7,
+          "action": {
+            "id": "type-text",
+            "historyEffect": "guaranteed-edit"
+          },
+          "expected": {
+            "source": "1. Alpha\n    1. *B\n    2.xxeta\n2. Gamma",
+            "selection": {
+              "anchor": 27,
+              "focus": 27
+            }
+          }
+        },
+        {
+          "actionIndex": 8,
+          "action": {
+            "id": "undo",
+            "historyEffect": "undo"
+          },
+          "expected": {
+            "source": "1. Alpha\n    1. *Beta\n2. Gamma",
+            "selection": {
+              "anchor": 18,
+              "focus": 18
+            }
+          }
+        },
+        {
+          "actionIndex": 9,
+          "action": {
+            "id": "redo",
+            "historyEffect": "redo"
+          },
+          "expected": {
+            "source": "1. Alpha\n    1. *B\n    2.xxeta\n2. Gamma",
+            "selection": {
+              "anchor": 27,
+              "focus": 27
+            }
+          }
+        }
+      ]
+    },
+    {
+      "scenarioId": "list-random-500.465.b28abdb98695616c",
+      "mode": "live-preview",
+      "targetActionIndex": 4,
+      "targetActionId": "undo",
+      "initialSource": "- Alpha\n  continued alpha\n- Beta\n- Gamma",
+      "initialSelection": {
+        "anchor": 2,
+        "focus": 2
+      },
+      "steps": [
+        {
+          "actionIndex": 0,
+          "action": {
+            "id": "trusted-click-another-initial-item",
+            "historyEffect": "navigation"
+          },
+          "expected": {
+            "source": "- Alpha\n  continued alpha\n- Beta\n- Gamma",
+            "selection": {
+              "anchor": 28,
+              "focus": 28
+            }
+          }
+        },
+        {
+          "actionIndex": 1,
+          "action": {
+            "id": "type-text",
+            "historyEffect": "guaranteed-edit"
+          },
+          "expected": {
+            "source": "- Alpha\n  continued alpha\n-  Beta\n- Gamma",
+            "selection": {
+              "anchor": 29,
+              "focus": 29
+            }
+          }
+        },
+        {
+          "actionIndex": 2,
+          "action": {
+            "id": "shift-tab",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "- Alpha\n  continued alpha\n-  Beta\n- Gamma",
+            "selection": {
+              "anchor": 29,
+              "focus": 29
+            }
+          }
+        },
+        {
+          "actionIndex": 3,
+          "action": {
+            "id": "delete",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "- Alpha\n  continued alpha\n-  eta\n- Gamma",
+            "selection": {
+              "anchor": 29,
+              "focus": 29
+            }
+          }
+        },
+        {
+          "actionIndex": 4,
+          "action": {
+            "id": "undo",
+            "historyEffect": "undo"
+          },
+          "expected": {
+            "source": "- Alpha\n  continued alpha\n-  Beta\n- Gamma",
+            "selection": {
+              "anchor": 29,
+              "focus": 29
+            }
+          }
+        }
+      ]
+    },
+    {
+      "scenarioId": "list-random-500.469.8ce912a9be0e798f",
+      "mode": "source",
+      "targetActionIndex": 7,
+      "targetActionId": "undo",
+      "initialSource": "1. Alpha\n2. Beta\n3. Gamma",
+      "initialSelection": {
+        "anchor": 3,
+        "focus": 3
+      },
+      "steps": [
+        {
+          "actionIndex": 0,
+          "action": {
+            "id": "trusted-click-another-initial-item",
+            "historyEffect": "navigation"
+          },
+          "expected": {
+            "source": "1. Alpha\n2. Beta\n3. Gamma",
+            "selection": {
+              "anchor": 12,
+              "focus": 12
+            }
+          }
+        },
+        {
+          "actionIndex": 1,
+          "action": {
+            "id": "type-text",
+            "historyEffect": "guaranteed-edit"
+          },
+          "expected": {
+            "source": "1. Alpha\n2. *Beta\n3. Gamma",
+            "selection": {
+              "anchor": 13,
+              "focus": 13
+            }
+          }
+        },
+        {
+          "actionIndex": 2,
+          "action": {
+            "id": "arrowright",
+            "historyEffect": "navigation"
+          },
+          "expected": {
+            "source": "1. Alpha\n2. *Beta\n3. Gamma",
+            "selection": {
+              "anchor": 14,
+              "focus": 14
+            }
+          }
+        },
+        {
+          "actionIndex": 3,
+          "action": {
+            "id": "undo",
+            "historyEffect": "undo"
+          },
+          "expected": {
+            "source": "1. Alpha\n2. Beta\n3. Gamma",
+            "selection": {
+              "anchor": 12,
+              "focus": 12
+            }
+          }
+        },
+        {
+          "actionIndex": 4,
+          "action": {
+            "id": "redo",
+            "historyEffect": "redo"
+          },
+          "expected": {
+            "source": "1. Alpha\n2. *Beta\n3. Gamma",
+            "selection": {
+              "anchor": 13,
+              "focus": 13
+            }
+          }
+        },
+        {
+          "actionIndex": 5,
+          "action": {
+            "id": "tab",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "1. Alpha\n    1. *Beta\n2. Gamma",
+            "selection": {
+              "anchor": 17,
+              "focus": 17
+            }
+          }
+        },
+        {
+          "actionIndex": 6,
+          "action": {
+            "id": "type-text",
+            "historyEffect": "guaranteed-edit"
+          },
+          "expected": {
+            "source": "1. Alpha\n    1. **Beta\n2. Gamma",
+            "selection": {
+              "anchor": 18,
+              "focus": 18
+            }
+          }
+        },
+        {
+          "actionIndex": 7,
+          "action": {
+            "id": "undo",
+            "historyEffect": "undo"
+          },
+          "expected": {
+            "source": "1. Alpha\n    1. *Beta\n2. Gamma",
+            "selection": {
+              "anchor": 17,
+              "focus": 17
+            }
+          }
+        }
+      ]
+    },
+    {
+      "scenarioId": "list-random-500.487.d489ad20d246d6fe",
+      "mode": "source",
+      "targetActionIndex": 8,
+      "targetActionId": "undo",
+      "initialSource": "1. Alpha\n   - Beta\n     1. Gamma\n2. Delta",
+      "initialSelection": {
+        "anchor": 3,
+        "focus": 3
+      },
+      "steps": [
+        {
+          "actionIndex": 0,
+          "action": {
+            "id": "trusted-click-another-initial-item",
+            "historyEffect": "navigation"
+          },
+          "expected": {
+            "source": "1. Alpha\n   - Beta\n     1. Gamma\n2. Delta",
+            "selection": {
+              "anchor": 14,
+              "focus": 14
+            }
+          }
+        },
+        {
+          "actionIndex": 1,
+          "action": {
+            "id": "type-text",
+            "historyEffect": "guaranteed-edit"
+          },
+          "expected": {
+            "source": "1. Alpha\n   - *Beta\n     1. Gamma\n2. Delta",
+            "selection": {
+              "anchor": 15,
+              "focus": 15
+            }
+          }
+        },
+        {
+          "actionIndex": 2,
+          "action": {
+            "id": "arrowright",
+            "historyEffect": "navigation"
+          },
+          "expected": {
+            "source": "1. Alpha\n   - *Beta\n     1. Gamma\n2. Delta",
+            "selection": {
+              "anchor": 16,
+              "focus": 16
+            }
+          }
+        },
+        {
+          "actionIndex": 3,
+          "action": {
+            "id": "shift-tab",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "1. Alpha\n- *Beta\n     1. Gamma\n2. Delta",
+            "selection": {
+              "anchor": 13,
+              "focus": 13
+            }
+          }
+        },
+        {
+          "actionIndex": 4,
+          "action": {
+            "id": "enter",
+            "historyEffect": "guaranteed-edit"
+          },
+          "expected": {
+            "source": "1. Alpha\n- *B\n- eta\n     1. Gamma\n2. Delta",
+            "selection": {
+              "anchor": 16,
+              "focus": 16
+            }
+          }
+        },
+        {
+          "actionIndex": 5,
+          "action": {
+            "id": "shift-tab",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "1. Alpha\n- *B\n- eta\n     1. Gamma\n2. Delta",
+            "selection": {
+              "anchor": 16,
+              "focus": 16
+            }
+          }
+        },
+        {
+          "actionIndex": 6,
+          "action": {
+            "id": "shift-tab",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "1. Alpha\n- *B\n- eta\n     1. Gamma\n2. Delta",
+            "selection": {
+              "anchor": 16,
+              "focus": 16
+            }
+          }
+        },
+        {
+          "actionIndex": 7,
+          "action": {
+            "id": "enter",
+            "historyEffect": "guaranteed-edit"
+          },
+          "expected": {
+            "source": "1. Alpha\n- *B\n- \n- eta\n     1. Gamma\n2. Delta",
+            "selection": {
+              "anchor": 19,
+              "focus": 19
+            }
+          }
+        },
+        {
+          "actionIndex": 8,
+          "action": {
+            "id": "undo",
+            "historyEffect": "undo"
+          },
+          "expected": {
+            "source": "1. Alpha\n- *B\n- eta\n     1. Gamma\n2. Delta",
+            "selection": {
+              "anchor": 16,
+              "focus": 16
+            }
+          }
+        }
+      ]
+    },
+    {
+      "scenarioId": "list-random-500.492.9041b4050fcfde08",
+      "mode": "source",
+      "targetActionIndex": 4,
+      "targetActionId": "undo",
+      "initialSource": "1. Alpha\n2. Beta\n3. Gamma",
+      "initialSelection": {
+        "anchor": 3,
+        "focus": 3
+      },
+      "steps": [
+        {
+          "actionIndex": 0,
+          "action": {
+            "id": "trusted-click-another-initial-item",
+            "historyEffect": "navigation"
+          },
+          "expected": {
+            "source": "1. Alpha\n2. Beta\n3. Gamma",
+            "selection": {
+              "anchor": 12,
+              "focus": 12
+            }
+          }
+        },
+        {
+          "actionIndex": 1,
+          "action": {
+            "id": "type-text",
+            "historyEffect": "guaranteed-edit"
+          },
+          "expected": {
+            "source": "1. Alpha\n2. 1Beta\n3. Gamma",
+            "selection": {
+              "anchor": 13,
+              "focus": 13
+            }
+          }
+        },
+        {
+          "actionIndex": 2,
+          "action": {
+            "id": "shift-tab",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "1. Alpha\n2. 1Beta\n3. Gamma",
+            "selection": {
+              "anchor": 13,
+              "focus": 13
+            }
+          }
+        },
+        {
+          "actionIndex": 3,
+          "action": {
+            "id": "type-text",
+            "historyEffect": "guaranteed-edit"
+          },
+          "expected": {
+            "source": "1. Alpha\n2. 1ABeta\n3. Gamma",
+            "selection": {
+              "anchor": 14,
+              "focus": 14
+            }
+          }
+        },
+        {
+          "actionIndex": 4,
+          "action": {
+            "id": "undo",
+            "historyEffect": "undo"
+          },
+          "expected": {
+            "source": "1. Alpha\n2. 1Beta\n3. Gamma",
+            "selection": {
+              "anchor": 13,
+              "focus": 13
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

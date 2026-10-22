@@ -1,0 +1,24 @@
+{
+  "kind": "promoted-o1-v1-regression",
+  "metadata": {
+    "evidenceLevels": ["O1", "V1"],
+    "predicate": "source",
+    "randomOriginId": "random.80d0278160a796744f86",
+    "reason": "The first divergent prefix is one Tab; O1 indents quote content and Viewer formerly deepened the quote."
+  },
+  "minimizedLength": 1,
+  "originalLength": 6,
+  "schemaVersion": 1,
+  "sequence": {
+    "actions": [{ "key": "Tab", "type": "keyboard" }],
+    "fixtureId": "quote-two-lines",
+    "id": "regression.e138d65fa07f0ed2f434",
+    "initialSelection": { "anchor": 2, "focus": 2 },
+    "initialSource": "> A\n> B",
+    "mode": "live-preview",
+    "randomOriginId": "random.80d0278160a796744f86",
+    "requiredObservations": ["source", "selection", "physical", "semantic"],
+    "schemaVersion": 1,
+    "syntaxFamily": "quotes"
+  }
+}

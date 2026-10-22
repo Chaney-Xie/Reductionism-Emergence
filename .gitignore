@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Packaged Electron builds
+out/
+
+# macOS
+.DS_Store
+
+# Logs / temp
+*.log
+*.tmp
+*.swp
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Generated generic audit output
+artifacts/
+
+# Generated Markdown conformance evidence
+test/markdownConformance/evidence/
+

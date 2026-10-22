@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "kind": "v0.3-list-focused-real-evidence",
+  "description": "Focused O1/V1 evidence for ordered-list numbering in inactive and active Live Preview, plus a trusted pointer selection spanning two ordered-list items.",
+  "deterministic": true,
+  "scenarioCount": 3,
+  "corpusSha256": "498ab0d04a0bab621a68ccee31221692066bd03522583a81ecb622d3f469a8fc",
+  "scenarios": [
+    {
+      "id": "v0.3-list-numbering.live-preview.inactive.inspect",
+      "schemaVersion": 1,
+      "fixtureId": "v0.3-list-numbering",
+      "syntaxFamily": "ordered-lists",
+      "initialSource": "3. Alpha\n4. Beta\n    1. Child\n5. Gamma",
+      "mode": "live-preview",
+      "state": {
+        "active": false
+      },
+      "initialSelection": {
+        "anchor": 14,
+        "focus": 14
+      },
+      "boundary": {
+        "name": "second-item-text-middle",
+        "offset": 14
+      },
+      "action": {
+        "id": "inspect",
+        "type": "inspect",
+        "editable": false
+      },
+      "requiredObservations": [
+        "source",
+        "physical",
+        "semantic",
+        "presentation"
+      ],
+      "tags": [
+        "v0.3-list-focused",
+        "ordered-numbering",
+        "inactive-live-preview"
+      ]
+    },
+    {
+      "id": "v0.3-list-numbering.live-preview.active.inspect",
+      "schemaVersion": 1,
+      "fixtureId": "v0.3-list-numbering",
+      "syntaxFamily": "ordered-lists",
+      "initialSource": "3. Alpha\n4. Beta\n    1. Child\n5. Gamma",
+      "mode": "live-preview",
+      "state": {
+        "active": true
+      },
+      "initialSelection": {
+        "anchor": 14,
+        "focus": 14
+      },
+      "boundary": {
+        "name": "second-item-text-middle",
+        "offset": 14
+      },
+      "action": {
+        "id": "inspect",
+        "type": "inspect",
+        "editable": false
+      },
+      "requiredObservations": [
+        "source",
+        "selection",
+        "physical",
+        "semantic",
+        "presentation"
+      ],
+      "tags": [
+        "v0.3-list-focused",
+        "ordered-numbering",
+        "active-live-preview"
+      ]
+    },
+    {
+      "id": "v0.3-list-selection.live-preview.active.cross-items",
+      "schemaVersion": 1,
+      "fixtureId": "v0.3-list-numbering",
+      "syntaxFamily": "ordered-lists",
+      "initialSource": "3. Alpha\n4. Beta\n    1. Child\n5. Gamma",
+      "mode": "live-preview",
+      "state": {
+        "active": true
+      },
+      "initialSelection": {
+        "anchor": 3,
+        "focus": 3
+      },
+      "boundary": {
+        "name": "first-item-text-start",
+        "offset": 3
+      },
+      "action": {
+        "id": "select-cross-items",
+        "type": "select",
+        "anchor": 3,
+        "focus": 15,
+        "steps": 20,
+        "durationMs": 300
+      },
+      "requiredObservations": [
+        "source",
+        "selection",
+        "physical",
+        "semantic",
+        "presentation"
+      ],
+      "tags": [
+        "v0.3-list-focused",
+        "ordered-numbering",
+        "selection-crossing-items",
+        "trusted-pointer-action"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+:root {
+  /* File typography: user knowledge-item names across navigation and sidebars. */
+  --font-file-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-file-size: 14.4px;
+  --font-file-character-width: var(--font-file-size);
+  --font-file-row-padding-block: calc(var(--font-file-character-width) / 2);
+  --font-file-row-line-height: 1.2em;
+
+  /* System typography: application chrome and interaction text; component sizes remain local. */
+  --font-system-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  /* Page typography: page-authored content and its title hierarchy. */
+  --font-page-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-page-body-size: 16px;
+  --font-page-title-family: var(--font-page-family);
+  --font-page-title-size: calc(var(--font-page-body-size) - 1.6px);
+}
+
+.system-typography {
+  font-family: var(--font-system-family);
+}
+
+.file-typography {
+  font-family: var(--font-file-family);
+  font-size: var(--font-file-size);
+}
+
+.page-typography {
+  font-family: var(--font-page-family);
+  font-size: var(--font-page-body-size);
+}
+
+.page-title-typography {
+  font-family: var(--font-page-title-family);
+  font-size: var(--font-page-title-size);
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: var(--font-system-family);
+}

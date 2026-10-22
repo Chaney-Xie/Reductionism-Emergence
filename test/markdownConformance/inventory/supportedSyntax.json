@@ -1,0 +1,225 @@
+{
+  "schemaVersion": 1,
+  "productVersion": "0.4.2",
+  "inventoryKind": "currently-supported-viewer-markdown",
+  "authorityOrder": [
+    "explicit-viewer-product-rule",
+    "observed-obsidian-behaviour",
+    "official-obsidian-documentation",
+    "commonmark-fallback"
+  ],
+  "certifiedSyntaxRowCount": 22,
+  "evidence": [
+    "public/markdownEditableFoundation.js",
+    "public/markdownPage.js",
+    "public/js/markdownEditableProjection.js",
+    "public/js/markdownEditableSyntaxAdapters.js",
+    "build/markdownRuntime.entry.mjs",
+    "public/vendor/markdownRuntime.js"
+  ],
+  "syntax": [
+    {
+      "id": "paragraphs",
+      "category": "physical-text",
+      "supported": true,
+      "constructs": ["plain paragraph", "multiple physical source lines in one semantic paragraph"],
+      "semanticTypes": ["paragraph", "text"],
+      "interactionScope": ["ordinary editing", "selection", "undo", "redo", "persistence"]
+    },
+    {
+      "id": "blank-lines",
+      "category": "physical-text",
+      "supported": true,
+      "constructs": ["blank line", "multiple blank lines", "leading blank line", "trailing blank line", "terminal empty row"],
+      "semanticTypes": [],
+      "interactionScope": ["physical-line ownership", "caret placement", "persistence"],
+      "frozenRegressionControl": true
+    },
+    {
+      "id": "soft-break",
+      "category": "physical-text",
+      "supported": true,
+      "constructs": ["single physical newline inside a paragraph"],
+      "semanticTypes": ["paragraph", "text"],
+      "modeRules": {"reading": "collapsed visual whitespace", "live-preview": "editable physical line", "source": "raw newline"}
+    },
+    {
+      "id": "hard-break",
+      "category": "physical-text",
+      "supported": true,
+      "constructs": ["two-space hard break"],
+      "semanticTypes": ["break"],
+      "interactionScope": ["marker editing", "semantic line break"]
+    },
+    {
+      "id": "escaped-syntax",
+      "category": "inline-formatting",
+      "supported": true,
+      "constructs": ["backslash-escaped emphasis marker", "backslash-escaped heading marker"],
+      "semanticTypes": ["text"],
+      "interactionScope": ["ordinary editing", "vertical navigation"]
+    },
+    {
+      "id": "headings",
+      "category": "headings",
+      "supported": true,
+      "constructs": ["ATX H1", "ATX H2", "ATX H3", "ATX H4", "ATX H5", "ATX H6"],
+      "semanticTypes": ["heading"],
+      "interactionScope": ["marker visibility", "editing without depth change"]
+    },
+    {
+      "id": "bold",
+      "category": "inline-formatting",
+      "supported": true,
+      "constructs": ["double-asterisk strong emphasis"],
+      "semanticTypes": ["strong"]
+    },
+    {
+      "id": "italic",
+      "category": "inline-formatting",
+      "supported": true,
+      "constructs": ["asterisk emphasis"],
+      "semanticTypes": ["emphasis"]
+    },
+    {
+      "id": "bold-italic",
+      "category": "inline-formatting",
+      "supported": true,
+      "constructs": ["triple-asterisk nested emphasis and strong"],
+      "semanticTypes": ["emphasis", "strong"]
+    },
+    {
+      "id": "strikethrough",
+      "category": "inline-formatting",
+      "supported": true,
+      "constructs": ["GFM double-tilde deletion"],
+      "semanticTypes": ["delete"]
+    },
+    {
+      "id": "quotes",
+      "category": "quotes",
+      "supported": true,
+      "constructs": ["depth 1", "depth 2", "depth 3", "marker-only line", "quoted blank line", "quote-to-plain transition"],
+      "semanticTypes": ["blockquote"],
+      "interactionScope": ["Enter", "Shift+Enter", "continuation", "exit", "nesting", "caret"],
+      "viewerPresentationOverride": "viewer-quote-rails",
+      "frozenRegressionControl": true
+    },
+    {
+      "id": "ordered-lists",
+      "category": "lists",
+      "supported": true,
+      "constructs": ["depths 1-3", "explicit numbering", "nested numbering", "item continuation", "blank item", "tab indentation", "space indentation"],
+      "semanticTypes": ["list", "listItem"],
+      "interactionScope": ["Enter nonempty", "Enter empty", "Tab", "Shift+Tab", "subtree selection", "numbering"]
+    },
+    {
+      "id": "unordered-lists",
+      "category": "lists",
+      "supported": true,
+      "constructs": ["depths 1-3", "dash marker", "tab indentation", "two-space indentation", "four-space indentation", "ordinary continuation"],
+      "semanticTypes": ["list", "listItem"],
+      "interactionScope": ["Enter", "Tab", "Shift+Tab", "subtree selection"]
+    },
+    {
+      "id": "mixed-lists",
+      "category": "lists",
+      "supported": true,
+      "constructs": ["ordered to unordered to ordered nesting", "quoted list subtree"],
+      "semanticTypes": ["list", "listItem"],
+      "interactionScope": ["Tab", "Shift+Tab", "counter ownership"]
+    },
+    {
+      "id": "task-lists",
+      "category": "lists",
+      "supported": true,
+      "constructs": ["unchecked", "lowercase checked", "uppercase checked", "nested task"],
+      "semanticTypes": ["list", "listItem"],
+      "interactionScope": ["toggle", "Enter", "Tab", "Shift+Tab"]
+    },
+    {
+      "id": "inline-code",
+      "category": "code",
+      "supported": true,
+      "constructs": ["backtick inline code", "opaque Markdown and LaTeX markers"],
+      "semanticTypes": ["inlineCode"],
+      "interactionScope": ["local selection", "ordinary editing"]
+    },
+    {
+      "id": "fenced-code",
+      "category": "code",
+      "supported": true,
+      "constructs": ["backtick fence", "language info", "empty fenced block", "unclosed fence"],
+      "semanticTypes": ["code"],
+      "interactionScope": ["Enter after opening fence", "empty-body caret", "local selection"]
+    },
+    {
+      "id": "links",
+      "category": "links",
+      "supported": true,
+      "constructs": ["Markdown external link", "Viewer external navigation control"],
+      "semanticTypes": ["link"],
+      "interactionScope": ["Reading navigation", "Source editing", "Live navigation control"]
+    },
+    {
+      "id": "inline-latex",
+      "category": "math",
+      "supported": true,
+      "constructs": ["single-dollar inline math"],
+      "semanticTypes": ["inlineMath"],
+      "viewerPresentationOverride": "viewer-latex-frozen",
+      "frozenRegressionControl": true
+    },
+    {
+      "id": "display-latex",
+      "category": "math",
+      "supported": true,
+      "constructs": ["double-dollar display math"],
+      "semanticTypes": ["math"],
+      "viewerPresentationOverride": "viewer-latex-frozen",
+      "frozenRegressionControl": true
+    },
+    {
+      "id": "tables",
+      "category": "tables",
+      "supported": true,
+      "constructs": ["GFM table", "column alignment", "row append", "column append", "ordinary cell editing"],
+      "semanticTypes": ["table", "tableRow", "tableCell"],
+      "viewerPresentationOverride": "viewer-table-interaction"
+    },
+    {
+      "id": "thematic-break",
+      "category": "thematic-break",
+      "supported": true,
+      "constructs": ["standalone triple-dash thematic break"],
+      "semanticTypes": ["thematicBreak"],
+      "viewerPresentationOverride": "viewer-hidden-horizontal-rule"
+    }
+  ],
+  "additionalSupportedForms": [
+    {"parentRows": ["headings"], "forms": ["Setext H1 with equals underline", "Setext H2 with hyphen underline"]},
+    {"parentRows": ["hard-break"], "forms": ["backslash hard break", "safe HTML br"]},
+    {"parentRows": ["bold", "italic", "bold-italic"], "forms": ["double-underscore bold", "underscore italic", "triple-underscore bold plus italic"]},
+    {"parentRows": ["inline-formatting"], "forms": ["safe inline HTML u", "safe inline HTML sub", "safe inline HTML sup"], "safetyRule": "Other raw HTML, including kbd, is escaped rather than passed through."},
+    {"parentRows": ["ordered-lists"], "forms": ["right-parenthesis ordered-list delimiter"]},
+    {"parentRows": ["unordered-lists"], "forms": ["asterisk bullet", "plus bullet"]},
+    {"parentRows": ["inline-code"], "forms": ["multi-backtick code span containing a shorter backtick run"]},
+    {"parentRows": ["fenced-code"], "forms": ["tilde fence", "indented code block", "fences longer than three markers", "preserved fence info metadata", "known-language local highlighting", "escaped unknown-language fallback"]},
+    {"parentRows": ["links"], "forms": ["inline link title", "full reference link", "collapsed reference link", "shortcut reference link", "angle URL autolink", "GFM literal URL autolink", "GFM email autolink", "safe relative link"]},
+    {"parentRows": ["links"], "forms": ["inline Markdown image", "reference Markdown image", "image title"], "interactionRule": "Display exact literal canonical image source in every mode; never load or resolve image targets, and preserve canonical source and definitions."},
+    {"parentRows": ["escaped-syntax", "paragraphs"], "forms": ["named HTML character reference", "numeric HTML character reference", "backslash-escaped punctuation"]},
+    {"parentRows": ["tables"], "forms": ["left/center/right alignment", "empty cells", "optional outer pipes"]},
+    {"parentRows": ["thematic-break"], "forms": ["asterisk thematic break", "underscore thematic break", "longer and space-separated CommonMark marker runs"], "presentationNote": "The explicit product override is frozen for standalone triple-dash; other accepted source forms require O1↔V1 observation rather than an assumed visual override."}
+  ],
+  "explicitlyUnsupportedOrOutOfScope": [
+    "Obsidian wikilinks and embeds",
+    "Obsidian callouts",
+    "Obsidian footnotes",
+    "Obsidian tags",
+    "Obsidian highlights and comments",
+    "Obsidian-only syntax not represented above",
+    "exact Obsidian DOM nesting or class names",
+    "pixel-identical styling",
+    "internal CodeMirror architecture"
+  ]
+}

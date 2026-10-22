@@ -1,0 +1,47 @@
+{
+  "name": "reductionism-emergence",
+  "version": "0.4.2",
+  "private": true,
+  "description": "Reductionism & Emergence desktop knowledge workspace.",
+  "main": "desktop/main.js",
+  "scripts": {
+    "build:markdown-runtime": "node scripts/buildMarkdownRuntime.cjs",
+    "build:runtimes": "npm run build:markdown-runtime",
+    "dev": "node server.js",
+    "start": "node server.js",
+    "desktop:start": "electron .",
+    "desktop:package": "electron-forge package",
+    "desktop:make": "electron-forge make",
+    "test": "node test/topLevelTestSuite.js",
+    "test:markdown-v02-legacy": "node test/topLevelTestSuite.js --markdown-v02-legacy",
+    "test:markdown-conformance": "node --test test/markdownConformance.test.js test/markdownCodeLanguageTransaction.test.js test/markdownEditableAffinity.test.js test/markdownEditableFoundation.test.js test/markdownEditableLiveController.test.js test/markdownEditablePositionCertification.test.js test/markdownEditableProjection.test.js test/markdownEditableRandomizedCertification.test.js test/markdownEditableSyntaxAdapters.test.js test/markdownEditableTransactionCertification.test.js test/markdownExplicitTransactionHistory.test.js test/markdownFencedCodeSelectionContract.test.js test/markdownLatexPresentation.test.js test/markdownLinkTableModes.test.js test/markdownPresentationCorrections.test.js test/markdownSharedSourcePresentation.test.js test/markdownStructuralFolding.test.js test/markdownTableStructuralUi.test.js test/markdownTaskList.test.js test/markdownConformance/runner/*.test.js test/markdownConformance/runner/*.test.mjs test/markdownConformance/runner/adapters/*.test.mjs",
+    "markdown-conformance:generate": "node test/markdownConformance/runner/cli.js generate",
+    "markdown-conformance:real": "node test/markdownConformance/runner/adapters/realRuntimeCli.mjs",
+    "markdown-conformance:compare-real": "node test/markdownConformance/runner/crossRuntimeContractCli.js",
+    "markdown-conformance:compare-actions": "node test/markdownConformance/runner/actionTraceComparisonCli.js",
+    "markdown-conformance:repair-artifacts": "node test/markdownConformance/runner/actionTraceRepairArtifactsCli.js",
+    "markdown-conformance:prefix-probes": "node test/markdownConformance/runner/prefixProbeScenariosCli.js",
+    "markdown-conformance:repair-gate": "node test/markdownConformance/runner/repairGateEvidenceCli.mjs",
+    "markdown-conformance:validate-o1-replay": "node test/markdownConformance/runner/repairGateOracleReplayCli.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "highlight.js": "^11.11.1",
+    "katex": "^0.18.1",
+    "mdast-util-from-markdown": "^2.0.3",
+    "mdast-util-gfm": "^3.1.0",
+    "mdast-util-math": "^3.0.0",
+    "micromark-extension-gfm": "^3.0.0",
+    "micromark-extension-math": "^3.1.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^7.11.2",
+    "@electron-forge/maker-zip": "^7.11.2",
+    "electron": "^43.1.1",
+    "webpack": "^5.109.2",
+    "webpack-cli": "^7.2.2"
+  }
+}

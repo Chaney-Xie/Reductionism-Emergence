@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "actions": [
+    {"id": "inspect", "type": "inspect", "editable": false},
+    {"id": "click", "type": "mouse", "command": "click", "editable": false},
+    {"id": "select-target", "type": "selection", "command": "select-target", "editable": true},
+    {"id": "insert-text", "type": "input", "command": "insertText", "text": "x", "editable": true},
+    {"id": "backspace", "type": "keyboard", "key": "Backspace", "editable": true},
+    {"id": "delete", "type": "keyboard", "key": "Delete", "editable": true},
+    {"id": "enter", "type": "keyboard", "key": "Enter", "editable": true},
+    {"id": "shift-enter", "type": "keyboard", "key": "Enter", "shiftKey": true, "editable": true},
+    {"id": "tab", "type": "keyboard", "key": "Tab", "editable": true},
+    {"id": "shift-tab", "type": "keyboard", "key": "Tab", "shiftKey": true, "editable": true},
+    {"id": "arrow-left", "type": "keyboard", "key": "ArrowLeft", "editable": true},
+    {"id": "arrow-right", "type": "keyboard", "key": "ArrowRight", "editable": true},
+    {"id": "arrow-up", "type": "keyboard", "key": "ArrowUp", "editable": true, "requiresMultipleLines": true},
+    {"id": "arrow-down", "type": "keyboard", "key": "ArrowDown", "editable": true, "requiresMultipleLines": true},
+    {"id": "undo", "type": "sequence", "editable": true, "steps": [{"type": "input", "command": "insertText", "text": "x"}, {"type": "keyboard", "key": "z", "modifiers": ["platform-primary"]}]},
+    {"id": "redo", "type": "sequence", "editable": true, "steps": [{"type": "input", "command": "insertText", "text": "x"}, {"type": "keyboard", "key": "z", "modifiers": ["platform-primary"]}, {"type": "keyboard", "key": "z", "modifiers": ["platform-primary", "shift"]}]},
+    {"id": "save", "type": "keyboard", "key": "s", "modifiers": ["platform-primary"], "editable": true},
+    {"id": "switch-mode", "type": "application", "command": "switch-mode", "editable": false},
+    {"id": "reopen-note", "type": "application", "command": "reopen-note", "editable": false}
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "sequences": [
+    {
+      "id": "stacked-marker.parent-end.enter-1",
+      "syntaxFamily": "ordered-lists",
+      "mode": "live-preview",
+      "state": { "active": true },
+      "initialSource": "1. Glycolysis\n2. Link reaction\n3. TCA cycle\n    1. Citrate\n    2. Isocitrate",
+      "initialSelection": { "anchor": 43, "focus": 43 },
+      "actions": [
+        { "id": "enter", "type": "keyboard", "key": "Enter" }
+      ],
+      "requiredObservations": ["source", "selection", "physical", "semantic", "presentation"],
+      "tags": ["list-editing-expanded", "stacked-marker-probe", "minimized-regression"]
+    },
+    {
+      "id": "stacked-marker.parent-end.enter-2",
+      "syntaxFamily": "ordered-lists",
+      "mode": "live-preview",
+      "state": { "active": true },
+      "initialSource": "1. Glycolysis\n2. Link reaction\n3. TCA cycle\n    1. Citrate\n    2. Isocitrate",
+      "initialSelection": { "anchor": 43, "focus": 43 },
+      "actions": [
+        { "id": "enter-1", "type": "keyboard", "key": "Enter" },
+        { "id": "enter-2", "type": "keyboard", "key": "Enter" }
+      ],
+      "requiredObservations": ["source", "selection", "physical", "semantic", "presentation"],
+      "tags": ["list-editing-expanded", "stacked-marker-probe", "minimized-regression"]
+    },
+    {
+      "id": "stacked-marker.parent-end.enter-3",
+      "syntaxFamily": "ordered-lists",
+      "mode": "live-preview",
+      "state": { "active": true },
+      "initialSource": "1. Glycolysis\n2. Link reaction\n3. TCA cycle\n    1. Citrate\n    2. Isocitrate",
+      "initialSelection": { "anchor": 43, "focus": 43 },
+      "actions": [
+        { "id": "enter-1", "type": "keyboard", "key": "Enter" },
+        { "id": "enter-2", "type": "keyboard", "key": "Enter" },
+        { "id": "enter-3", "type": "keyboard", "key": "Enter" }
+      ],
+      "requiredObservations": ["source", "selection", "physical", "semantic", "presentation"],
+      "tags": ["list-editing-expanded", "stacked-marker-probe", "minimized-regression"]
+    },
+    {
+      "id": "stacked-marker.first-child-start.enter-3",
+      "syntaxFamily": "ordered-lists",
+      "mode": "live-preview",
+      "state": { "active": true },
+      "initialSource": "1. Glycolysis\n2. Link reaction\n3. TCA cycle\n    1. Citrate\n    2. Isocitrate",
+      "initialSelection": { "anchor": 51, "focus": 51 },
+      "actions": [
+        { "id": "enter-1", "type": "keyboard", "key": "Enter" },
+        { "id": "enter-2", "type": "keyboard", "key": "Enter" },
+        { "id": "enter-3", "type": "keyboard", "key": "Enter" }
+      ],
+      "requiredObservations": ["source", "selection", "physical", "semantic", "presentation"],
+      "tags": ["list-editing-expanded", "stacked-marker-probe", "minimized-regression"]
+    },
+    {
+      "id": "stacked-marker.first-child-end.enter-3",
+      "syntaxFamily": "ordered-lists",
+      "mode": "live-preview",
+      "state": { "active": true },
+      "initialSource": "1. Glycolysis\n2. Link reaction\n3. TCA cycle\n    1. Citrate\n    2. Isocitrate",
+      "initialSelection": { "anchor": 58, "focus": 58 },
+      "actions": [
+        { "id": "enter-1", "type": "keyboard", "key": "Enter" },
+        { "id": "enter-2", "type": "keyboard", "key": "Enter" },
+        { "id": "enter-3", "type": "keyboard", "key": "Enter" }
+      ],
+      "requiredObservations": ["source", "selection", "physical", "semantic", "presentation"],
+      "tags": ["list-editing-expanded", "stacked-marker-probe", "minimized-regression"]
+    }
+  ]
+}

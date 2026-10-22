@@ -1,0 +1,213 @@
+{
+  "schemaVersion": 1,
+  "kind": "o1-list-history-residual-regression-gate",
+  "description": "Exact O1 1.13.7 source and selection states for the three residual Round-3 minimized history comparisons.",
+  "provenance": {
+    "obsidianEvidenceSha256": "3fe9bbac46dea5c9ee128b922817811dc5af6ca253ae5c5fac22bf7be61d2218",
+    "comparisonEvidenceSha256": "c134544b5c1c8d14e4f3e82b174ce0f688d0dc1c1a23ea005554b3d59d45e389",
+    "minimizedCorpus": "test/markdownConformance/scenarios/v0.3ListRandom500MinimizedRegressionsRound3.json",
+    "minimizedCorpusSha256": "5bc7b0bd3de8325faef827db8715d5dc62ab7f527c5f044d8c5eb73b748b21fe"
+  },
+  "counts": {
+    "cases": 3,
+    "undoDivergences": 2,
+    "redoDivergences": 1,
+    "exactHistorySteps": 5,
+    "intermediateSteps": 11
+  },
+  "cases": [
+    {
+      "scenarioId": "v0.3-full-trace-repair.list-random-500.404.57d23f63ac5596dc.action-9",
+      "mode": "source",
+      "divergenceActionIndex": 2,
+      "divergenceActionId": "undo",
+      "initialSource": "1. A\n\n2. C",
+      "initialSelection": {
+        "anchor": 5,
+        "focus": 5
+      },
+      "steps": [
+        {
+          "actionIndex": 0,
+          "action": {
+            "id": "tab",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "1. A\n    \n2. C",
+            "selection": {
+              "anchor": 9,
+              "focus": 9
+            }
+          }
+        },
+        {
+          "actionIndex": 1,
+          "action": {
+            "id": "delete",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "1. A\n    1. C",
+            "selection": {
+              "anchor": 9,
+              "focus": 9
+            }
+          }
+        },
+        {
+          "actionIndex": 2,
+          "action": {
+            "id": "undo",
+            "historyEffect": "undo"
+          },
+          "expected": {
+            "source": "1. A\n\n2. C",
+            "selection": {
+              "anchor": 5,
+              "focus": 5
+            }
+          }
+        }
+      ]
+    },
+    {
+      "scenarioId": "v0.3-full-trace-repair.list-random-500.404.57d23f63ac5596dc.action-10",
+      "mode": "source",
+      "divergenceActionIndex": 2,
+      "divergenceActionId": "undo",
+      "initialSource": "1. A\n\n2. C",
+      "initialSelection": {
+        "anchor": 5,
+        "focus": 5
+      },
+      "steps": [
+        {
+          "actionIndex": 0,
+          "action": {
+            "id": "tab",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "1. A\n    \n2. C",
+            "selection": {
+              "anchor": 9,
+              "focus": 9
+            }
+          }
+        },
+        {
+          "actionIndex": 1,
+          "action": {
+            "id": "delete",
+            "historyEffect": "possible-edit"
+          },
+          "expected": {
+            "source": "1. A\n    1. C",
+            "selection": {
+              "anchor": 9,
+              "focus": 9
+            }
+          }
+        },
+        {
+          "actionIndex": 2,
+          "action": {
+            "id": "undo",
+            "historyEffect": "undo"
+          },
+          "expected": {
+            "source": "1. A\n\n2. C",
+            "selection": {
+              "anchor": 5,
+              "focus": 5
+            }
+          }
+        },
+        {
+          "actionIndex": 3,
+          "action": {
+            "id": "redo",
+            "historyEffect": "redo"
+          },
+          "expected": {
+            "source": "1. A\n    1. C",
+            "selection": {
+              "anchor": 9,
+              "focus": 9
+            }
+          }
+        }
+      ]
+    },
+    {
+      "scenarioId": "v0.3-full-trace-repair.list-random-500.419.b5ce07b2d97e31e3.action-11",
+      "mode": "source",
+      "divergenceActionIndex": 3,
+      "divergenceActionId": "redo",
+      "initialSource": "- Alpha\n    *  Beta\n+ Gamma",
+      "initialSelection": {
+        "anchor": 13,
+        "focus": 13
+      },
+      "steps": [
+        {
+          "actionIndex": 0,
+          "action": {
+            "id": "enter",
+            "historyEffect": "guaranteed-edit"
+          },
+          "expected": {
+            "source": "- Alpha\n    *\n    Beta\n+ Gamma",
+            "selection": {
+              "anchor": 18,
+              "focus": 18
+            }
+          }
+        },
+        {
+          "actionIndex": 1,
+          "action": {
+            "id": "type-text",
+            "historyEffect": "guaranteed-edit"
+          },
+          "expected": {
+            "source": "- Alpha\n    *\n    *Beta\n+ Gamma",
+            "selection": {
+              "anchor": 19,
+              "focus": 19
+            }
+          }
+        },
+        {
+          "actionIndex": 2,
+          "action": {
+            "id": "undo",
+            "historyEffect": "undo"
+          },
+          "expected": {
+            "source": "- Alpha\n    *  Beta\n+ Gamma",
+            "selection": {
+              "anchor": 13,
+              "focus": 13
+            }
+          }
+        },
+        {
+          "actionIndex": 3,
+          "action": {
+            "id": "redo",
+            "historyEffect": "redo"
+          },
+          "expected": {
+            "source": "- Alpha\n    *\n    *Beta\n+ Gamma",
+            "selection": {
+              "anchor": 13,
+              "focus": 13
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

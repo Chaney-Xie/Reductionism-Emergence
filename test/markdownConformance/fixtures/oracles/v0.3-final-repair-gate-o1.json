@@ -1,0 +1,4904 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-11T14:47:57.143Z",
+  "safety": {
+    "isolatedProfiles": true,
+    "realVaultsTouched": false,
+    "realConfigurationsTouched": false
+  },
+  "scenarios": [
+    "repair.nbsp-leading-space",
+    "repair.quote-tab",
+    "repair.quote-shift-tab",
+    "repair.quote-repeated-tab",
+    "repair.shift-enter-plain-live",
+    "repair.shift-enter-plain-source",
+    "repair.shift-enter-indented",
+    "repair.enter-indented",
+    "repair.shift-enter-unordered",
+    "repair.shift-enter-ordered",
+    "repair.shift-enter-quote",
+    "repair.ordered-delete-minimized",
+    "repair.ordered-delete-explicit-start"
+  ],
+  "results": {
+    "obsidian": {
+      "schemaVersion": 1,
+      "adapter": "obsidian-o1",
+      "evidenceLevel": "O1",
+      "scenarioCount": 13,
+      "observationCount": 13,
+      "automatableCount": 13,
+      "runtimeLaunchCount": 3,
+      "transportRetryCount": 0,
+      "observations": [
+        {
+          "scenarioId": "repair.nbsp-leading-space",
+          "evidenceLevel": "O1",
+          "automatable": true,
+          "source": " Alpha",
+          "fileBytes": {
+            "path": "/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-sWeRom/vault/Conformance.md",
+            "byteLength": 6,
+            "base64": "IEFscGhh",
+            "sha256": "fe0af57a01b9d2561331a4a28f5af624c6c5b735453a2f13aef2f21ef0961eac",
+            "utf8": " Alpha",
+            "kind": "actual-markdown-file"
+          },
+          "sourceBytesBase64": "IEFscGhh",
+          "fileBytesBase64": "IEFscGhh",
+          "selection": {
+            "anchor": 1,
+            "focus": 1,
+            "start": 1,
+            "end": 1,
+            "collapsed": true,
+            "direction": "forward"
+          },
+          "physicalLines": [
+            " Alpha"
+          ],
+          "physicalLineCount": 1,
+          "semantic": {
+            "rootTypes": [
+              "paragraph"
+            ],
+            "nodes": [
+              {
+                "path": "0",
+                "type": "paragraph",
+                "quoteDepth": 0,
+                "listDepth": 0
+              }
+            ],
+            "typeCounts": {
+              "paragraph": 1
+            },
+            "maximumQuoteDepth": 0,
+            "maximumListDepth": 0
+          },
+          "presentation": {
+            "mode": "live-preview",
+            "visibleText": "Conformance\n Alpha",
+            "visibleLines": [
+              "Conformance",
+              " Alpha"
+            ],
+            "markerVisibility": "hidden",
+            "visibleMarkers": "",
+            "quoteRailText": null,
+            "elementType": null,
+            "layout": null,
+            "controls": null,
+            "renderedState": "mixed",
+            "geometry": null
+          },
+          "geometry": {
+            "viewport": {
+              "x": 0,
+              "y": 0,
+              "left": 0,
+              "top": 0,
+              "right": 800,
+              "bottom": 599,
+              "width": 800,
+              "height": 599
+            },
+            "editor": {
+              "x": 344,
+              "y": 77.39,
+              "left": 344,
+              "top": 77.39,
+              "right": 800,
+              "bottom": 599,
+              "width": 456,
+              "height": 521.61
+            },
+            "lines": [
+              {
+                "index": 0,
+                "text": " Alpha",
+                "sourceStart": 0,
+                "sourceEnd": 6,
+                "rect": {
+                  "x": 376,
+                  "y": 153.39,
+                  "left": 376,
+                  "top": 153.39,
+                  "right": 768,
+                  "bottom": 177.39,
+                  "width": 392,
+                  "height": 24
+                }
+              }
+            ]
+          },
+          "visibleText": "Conformance\n Alpha",
+          "metadata": {
+            "adapter": "obsidian-o1",
+            "mode": "live-preview",
+            "versions": {
+              "obsidian": "1.13.6",
+              "shell": "1.12.4",
+              "electron": "39.7.0",
+              "chrome": "142.0.7444.265",
+              "node": "22.22.0"
+            },
+            "settings": {
+              "defaultViewMode": "source",
+              "livePreview": true,
+              "strictLineBreaks": false,
+              "showLineNumber": false,
+              "showIndentGuide": true,
+              "useTab": false,
+              "tabSize": 4,
+              "autoPairBrackets": true,
+              "autoPairMarkdown": true,
+              "smartIndentList": true,
+              "foldHeading": true,
+              "foldIndent": true
+            },
+            "targetUrl": "app://obsidian.md/index.html",
+            "activeFile": "Conformance.md",
+            "isolated": true,
+            "isolatedRoot": "/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-sWeRom",
+            "isolatedProfile": "/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-sWeRom/profile",
+            "isolatedVault": "/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-sWeRom/vault",
+            "artifactsRetained": false,
+            "fileEditorMatch": true,
+            "runtimeExpectation": {
+              "obsidian": "1.13.6",
+              "electron": "39.7.0",
+              "chrome": "142.0.7444.265"
+            },
+            "asarSha256": "d769003f81435abe53576172f3bb0695132880cc7b7970f2f0086f7d5ea968b5",
+            "evidenceLevel": "O1",
+            "sourceCharacterLength": 6,
+            "sourceByteLength": 6
+          },
+          "raw": {
+            "editorSource": " Alpha",
+            "fileBytes": {
+              "path": "/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-sWeRom/vault/Conformance.md",
+              "byteLength": 6,
+              "base64": "IEFscGhh",
+              "sha256": "fe0af57a01b9d2561331a4a28f5af624c6c5b735453a2f13aef2f21ef0961eac",
+              "utf8": " Alpha"
+            },
+            "processLog": "2026-08-11 14:47:40 Loaded updated app package /private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-sWeRom/profile/obsidian-1.13.6.asar\n\nDevTools listening on ws://127.0.0.1:63214/devtools/browser/ec4bbb50-a7af-4535-9b89-9228190b17ea\nIgnored: Error: Argument must be a file path or a NativeImage\nIgnored: Error: ENOENT: no such file or directory, open '/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-sWeRom/profile/c0dec0dec0dec0de.json'\n2026-08-11 14:47:40 Checking for update using Github\n2026-08-11 14:47:41 Success.\n2026-08-11 14:47:41 Latest version is 1.13.6\n2026-08-11 14:47:41 App is up to date.\n",
+            "runtime": {
+              "source": " Alpha",
+              "selection": {
+                "anchor": 1,
+                "focus": 1,
+                "from": 1,
+                "to": 1
+              },
+              "mode": "live-preview",
+              "visibleText": "Conformance\n Alpha",
+              "semantic": {
+                "rootTypes": [
+                  "paragraph"
+                ],
+                "nodes": [
+                  {
+                    "path": "0",
+                    "type": "paragraph",
+                    "quoteDepth": 0,
+                    "listDepth": 0
+                  }
+                ],
+                "typeCounts": {
+                  "paragraph": 1
+                },
+                "maximumQuoteDepth": 0,
+                "maximumListDepth": 0
+              },
+              "semanticCapture": "temporary-reading-view",
+              "semanticError": {
+                "name": "Error",
+                "message": "Cannot find module 'obsidian'\nRequire stack:\n- electron/js2c/renderer_init"
+              },
+              "semanticElements": [],
+              "markers": [],
+              "renderedState": "mixed",
+              "geometry": {
+                "viewport": {
+                  "x": 0,
+                  "y": 0,
+                  "left": 0,
+                  "top": 0,
+                  "right": 800,
+                  "bottom": 599,
+                  "width": 800,
+                  "height": 599
+                },
+                "editor": {
+                  "x": 344,
+                  "y": 77.390625,
+                  "left": 344,
+                  "top": 77.390625,
+                  "right": 800,
+                  "bottom": 599,
+                  "width": 456,
+                  "height": 521.609375
+                },
+                "lines": [
+                  {
+                    "index": 0,
+                    "text": " Alpha",
+                    "sourceStart": 0,
+                    "sourceEnd": 6,
+                    "rect": {
+                      "x": 376,
+                      "y": 153.390625,
+                      "left": 376,
+                      "top": 153.390625,
+                      "right": 768,
+                      "bottom": 177.390625,
+                      "width": 392,
+                      "height": 24
+                    }
+                  }
+                ]
+              },
+              "versions": {
+                "obsidian": "1.13.6",
+                "shell": "1.12.4",
+                "electron": "39.7.0",
+                "chrome": "142.0.7444.265",
+                "node": "22.22.0"
+              },
+              "settings": {
+                "defaultViewMode": "source",
+                "livePreview": true,
+                "strictLineBreaks": false,
+                "showLineNumber": false,
+                "showIndentGuide": true,
+                "useTab": false,
+                "tabSize": 4,
+                "autoPairBrackets": true,
+                "autoPairMarkdown": true,
+                "smartIndentList": true,
+                "foldHeading": true,
+                "foldIndent": true
+              },
+              "activeFile": "Conformance.md",
+              "vaultName": "vault",
+              "vaultBasePath": "/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-sWeRom/vault",
+              "targetUrl": "app://obsidian.md/index.html"
+            }
+          }
+        },
+        {
+          "scenarioId": "repair.quote-tab",
+          "evidenceLevel": "O1",
+          "automatable": true,
+          "source": ">     A\n> B",
+          "fileBytes": {
+            "path": "/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-sWeRom/vault/Conformance.md",
+            "byteLength": 11,
+            "base64": "PiAgICAgQQo+IEI=",
+            "sha256": "16686f13046ad33d689b9d251c38b48dbd453eac92180055012768a603511d4b",
+            "utf8": ">     A\n> B",
+            "kind": "actual-markdown-file"
+          },
+          "sourceBytesBase64": "PiAgICAgQQo+IEI=",
+          "fileBytesBase64": "PiAgICAgQQo+IEI=",
+          "selection": {
+            "anchor": 6,
+            "focus": 6,
+            "start": 6,
+            "end": 6,
+            "collapsed": true,
+            "direction": "forward"
+          },
+          "physicalLines": [
+            ">     A",
+            "> B"
+          ],
+          "physicalLineCount": 2,
+          "semantic": {
+            "rootTypes": [
+              "blockquote"
+            ],
+            "nodes": [
+              {
+                "path": "0",
+                "type": "blockquote",
+                "quoteDepth": 1,
+                "listDepth": 0
+              },
+              {
+                "path": "0.0",
+                "type": "code",
+                "quoteDepth": 1,
+                "listDepth": 0
+              },
+              {
+                "path": "0.1",
+                "type": "paragraph",
+                "quoteDepth": 1,
+                "listDepth": 0
+              }
+            ],
+            "typeCounts": {
+              "blockquote": 1,
+              "code": 1,
+              "paragraph": 1
+            },
+            "maximumQuoteDepth": 1,
+            "maximumListDepth": 0
+          },
+          "presentation": {
+            "mode": "live-preview",
+            "visibleText": "Conformance\n>     A\n> B",
+            "visibleLines": [
+              "Conformance",
+              ">     A",
+              "> B"
+            ],
+            "markerVisibility": "visible",
+            "visibleMarkers": ">>",
+            "quoteRailText": null,
+            "elementType": null,
+            "layout": null,
+            "controls": null,
+            "renderedState": "mixed",
+            "geometry": null
+          },
+          "geometry": {
+            "viewport": {
+              "x": 0,
+              "y": 0,
+              "left": 0,
+              "top": 0,
+              "right": 800,
+              "bottom": 599,
+              "width": 800,
+              "height": 599
+            },
+            "editor": {
+              "x": 344,
+              "y": 77.39,
+              "left": 344,
+              "top": 77.39,
+              "right": 800,
+              "bottom": 599,
+              "width": 456,
+              "height": 521.61
+            },
+            "lines": [
+              {
+                "index": 0,
+                "text": ">     A",
+                "sourceStart": 0,
+                "sourceEnd": 7,
+                "rect": {
+                  "x": 376,
+                  "y": 153.39,
+                  "left": 376,
+                  "top": 153.39,
+                  "right": 768,
+                  "bottom": 177.39,
+                  "width": 392,
+                  "height": 24
+                }
+              },
+              {
+                "index": 1,
+                "text": "> B",
+                "sourceStart": 8,
+                "sourceEnd": 11,
+                "rect": {
+                  "x": 376,
+                  "y": 177.39,
+                  "left": 376,
+                  "top": 177.39,
+                  "right": 768,
+                  "bottom": 201.39,
+                  "width": 392,
+                  "height": 24
+                }
+              }
+            ]
+          },
+          "visibleText": "Conformance\n>     A\n> B",
+          "metadata": {
+            "adapter": "obsidian-o1",
+            "mode": "live-preview",
+            "versions": {
+              "obsidian": "1.13.6",
+              "shell": "1.12.4",
+              "electron": "39.7.0",
+              "chrome": "142.0.7444.265",
+              "node": "22.22.0"
+            },
+            "settings": {
+              "defaultViewMode": "source",
+              "livePreview": true,
+              "strictLineBreaks": false,
+              "showLineNumber": false,
+              "showIndentGuide": true,
+              "useTab": false,
+              "tabSize": 4,
+              "autoPairBrackets": true,
+              "autoPairMarkdown": true,
+              "smartIndentList": true,
+              "foldHeading": true,
+              "foldIndent": true
+            },
+            "targetUrl": "app://obsidian.md/index.html",
+            "activeFile": "Conformance.md",
+            "isolated": true,
+            "isolatedRoot": "/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-sWeRom",
+            "isolatedProfile": "/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-sWeRom/profile",
+            "isolatedVault": "/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-sWeRom/vault",
+            "artifactsRetained": false,
+            "fileEditorMatch": true,
+            "runtimeExpectation": {
+              "obsidian": "1.13.6",
+              "electron": "39.7.0",
+              "chrome": "142.0.7444.265"
+            },
+            "asarSha256": "d769003f81435abe53576172f3bb0695132880cc7b7970f2f0086f7d5ea968b5",
+            "evidenceLevel": "O1",
+            "sourceCharacterLength": 11,
+            "sourceByteLength": 11
+          },
+          "raw": {
+            "editorSource": ">     A\n> B",
+            "fileBytes": {
+              "path": "/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-sWeRom/vault/Conformance.md",
+              "byteLength": 11,
+              "base64": "PiAgICAgQQo+IEI=",
+              "sha256": "16686f13046ad33d689b9d251c38b48dbd453eac92180055012768a603511d4b",
+              "utf8": ">     A\n> B"
+            },
+            "processLog": "2026-08-11 14:47:40 Loaded updated app package /private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-sWeRom/profile/obsidian-1.13.6.asar\n\nDevTools listening on ws://127.0.0.1:63214/devtools/browser/ec4bbb50-a7af-4535-9b89-9228190b17ea\nIgnored: Error: Argument must be a file path or a NativeImage\nIgnored: Error: ENOENT: no such file or directory, open '/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-sWeRom/profile/c0dec0dec0dec0de.json'\n2026-08-11 14:47:40 Checking for update using Github\n2026-08-11 14:47:41 Success.\n2026-08-11 14:47:41 Latest version is 1.13.6\n2026-08-11 14:47:41 App is up to date.\n",
+            "runtime": {
+              "source": ">     A\n> B",
+              "selection": {
+                "anchor": 6,
+                "focus": 6,
+                "from": 6,
+                "to": 6
+              },
+              "mode": "live-preview",
+              "visibleText": "Conformance\n>     A\n> B",
+              "semantic": {
+                "rootTypes": [
+                  "blockquote"
+                ],
+                "nodes": [
+                  {
+                    "path": "0",
+                    "type": "blockquote",
+                    "quoteDepth": 1,
+                    "listDepth": 0
+                  },
+                  {
+                    "path": "0.0",
+                    "type": "code",
+                    "quoteDepth": 1,
+                    "listDepth": 0
+                  },
+                  {
+                    "path": "0.1",
+                    "type": "paragraph",
+                    "quoteDepth": 1,
+                    "listDepth": 0
+                  }
+                ],
+                "typeCounts": {
+                  "blockquote": 1,
+                  "code": 1,
+                  "paragraph": 1
+                },
+                "maximumQuoteDepth": 1,
+                "maximumListDepth": 0
+              },
+              "semanticCapture": "temporary-reading-view",
+              "semanticError": {
+                "name": "Error",
+                "message": "Cannot find module 'obsidian'\nRequire stack:\n- electron/js2c/renderer_init"
+              },
+              "semanticElements": [
+                {
+                  "type": "quote-line",
+                  "depth": 0,
+                  "headingDepth": 0,
+                  "text": ">     A",
+                  "checked": null,
+                  "visible": true
+                },
+                {
+                  "type": "quote-line",
+                  "depth": 0,
+                  "headingDepth": 0,
+                  "text": "> B",
+                  "checked": null,
+                  "visible": true
+                }
+              ],
+              "markers": [
+                {
+                  "text": ">",
+                  "visible": true,
+                  "kind": "syntax"
+                },
+                {
+                  "text": ">",
+                  "visible": true,
+                  "kind": "syntax"
+                }
+              ],
+              "renderedState": "mixed",
+              "geometry": {
+                "viewport": {
+                  "x": 0,
+                  "y": 0,
+                  "left": 0,
+                  "top": 0,
+                  "right": 800,
+                  "bottom": 599,
+                  "width": 800,
+                  "height": 599
+                },
+                "editor": {
+                  "x": 344,
+                  "y": 77.390625,
+                  "left": 344,
+                  "top": 77.390625,
+                  "right": 800,
+                  "bottom": 599,
+                  "width": 456,
+                  "height": 521.609375
+                },
+                "lines": [
+                  {
+                    "index": 0,
+                    "text": ">     A",
+                    "sourceStart": 0,
+                    "sourceEnd": 7,
+                    "rect": {
+                      "x": 376,
+                      "y": 153.390625,
+                      "left": 376,
+                      "top": 153.390625,
+                      "right": 768,
+                      "bottom": 177.390625,
+                      "width": 392,
+                      "height": 24
+                    }
+                  },
+                  {
+                    "index": 1,
+                    "text": "> B",
+                    "sourceStart": 8,
+                    "sourceEnd": 11,
+                    "rect": {
+                      "x": 376,
+                      "y": 177.390625,
+                      "left": 376,
+                      "top": 177.390625,
+                      "right": 768,
+                      "bottom": 201.390625,
+                      "width": 392,
+                      "height": 24
+                    }
+                  }
+                ]
+              },
+              "versions": {
+                "obsidian": "1.13.6",
+                "shell": "1.12.4",
+                "electron": "39.7.0",
+                "chrome": "142.0.7444.265",
+                "node": "22.22.0"
+              },
+              "settings": {
+                "defaultViewMode": "source",
+                "livePreview": true,
+                "strictLineBreaks": false,
+                "showLineNumber": false,
+                "showIndentGuide": true,
+                "useTab": false,
+                "tabSize": 4,
+                "autoPairBrackets": true,
+                "autoPairMarkdown": true,
+                "smartIndentList": true,
+                "foldHeading": true,
+                "foldIndent": true
+              },
+              "activeFile": "Conformance.md",
+              "vaultName": "vault",
+              "vaultBasePath": "/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-sWeRom/vault",
+              "targetUrl": "app://obsidian.md/index.html"
+            }
+          }
+        },
+        {
+          "scenarioId": "repair.quote-shift-tab",
+          "evidenceLevel": "O1",
+          "automatable": true,
+          "source": "> A\n> B",
+          "fileBytes": {
+            "path": "/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-sWeRom/vault/Conformance.md",
+            "byteLength": 7,
+            "base64": "PiBBCj4gQg==",
+            "sha256": "703b34f8f483b979a7cc0e9217ee671a0932887f41f977f1f79880d692f0ba69",
+            "utf8": "> A\n> B",
+            "kind": "actual-markdown-file"
+          },
+          "sourceBytesBase64": "PiBBCj4gQg==",
+          "fileBytesBase64": "PiBBCj4gQg==",
+          "selection": {
+            "anchor": 2,
+            "focus": 2,
+            "start": 2,
+            "end": 2,
+            "collapsed": true,
+            "direction": "forward"
+          },
+          "physicalLines": [
+            "> A",
+            "> B"
+          ],
+          "physicalLineCount": 2,
+          "semantic": {
+            "rootTypes": [
+              "blockquote"
+            ],
+            "nodes": [
+              {
+                "path": "0",
+                "type": "blockquote",
+                "quoteDepth": 1,
+                "listDepth": 0
+              },
+              {
+                "path": "0.0",
+                "type": "paragraph",
+                "quoteDepth": 1,
+                "listDepth": 0
+              },
+              {
+                "path": "0.0.0",
+                "type": "break",
+                "quoteDepth": 1,
+                "listDepth": 0
+              }
+            ],
+            "typeCounts": {
+              "blockquote": 1,
+              "paragraph": 1,
+              "break": 1
+            },
+            "maximumQuoteDepth": 1,
+            "maximumListDepth": 0
+          },
+          "presentation": {
+            "mode": "live-preview",
+            "visibleText": "Conformance\n> A\n> B",
+            "visibleLines": [
+              "Conformance",
+              "> A",
+              "> B"
+            ],
+            "markerVisibility": "visible",
+            "visibleMarkers": ">>",
+            "quoteRailText": null,
+            "elementType": null,
+            "layout": null,
+            "controls": null,
+            "renderedState": "mixed",
+            "geometry": null
+          },
+          "geometry": {
+            "viewport": {
+              "x": 0,
+              "y": 0,
+              "left": 0,
+              "top": 0,
+              "right": 800,
+              "bottom": 599,
+              "width": 800,
+              "height": 599
+            },
+            "editor": {
+              "x": 344,
+              "y": 77.39,
+              "left": 344,
+              "top": 77.39,
+              "right": 800,
+              "bottom": 599,
+              "width": 456,
+              "height": 521.61
+            },
+            "lines": [
+              {
+                "index": 0,
+                "text": "> A",
+                "sourceStart": 0,
+                "sourceEnd": 3,
+                "rect": {
+                  "x": 376,
+                  "y": 153.39,
+                  "left": 376,
+                  "top": 153.39,
+                  "right": 768,
+                  "bottom": 177.39,
+                  "width": 392,
+                  "height": 24
+                }
+              },
+              {
+                "index": 1,
+                "text": "> B",
+                "sourceStart": 4,
+                "sourceEnd": 7,
+                "rect": {
+                  "x": 376,
+                  "y": 177.39,
+                  "left": 376,
+                  "top": 177.39,
+                  "right": 768,
+                  "bottom": 201.39,
+                  "width": 392,
+                  "height": 24
+                }
+              }
+            ]
+          },
+          "visibleText": "Conformance\n> A\n> B",
+          "metadata": {
+            "adapter": "obsidian-o1",
+            "mode": "live-preview",
+            "versions": {
+              "obsidian": "1.13.6",
+              "shell": "1.12.4",
+              "electron": "39.7.0",
+              "chrome": "142.0.7444.265",
+              "node": "22.22.0"
+            },
+            "settings": {
+              "defaultViewMode": "source",
+              "livePreview": true,
+              "strictLineBreaks": false,
+              "showLineNumber": false,
+              "showIndentGuide": true,
+              "useTab": false,
+              "tabSize": 4,
+              "autoPairBrackets": true,
+              "autoPairMarkdown": true,
+              "smartIndentList": true,
+              "foldHeading": true,
+              "foldIndent": true
+            },
+            "targetUrl": "app://obsidian.md/index.html",
+            "activeFile": "Conformance.md",
+            "isolated": true,
+            "isolatedRoot": "/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-sWeRom",
+            "isolatedProfile": "/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-sWeRom/profile",
+            "isolatedVault": "/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-sWeRom/vault",
+            "artifactsRetained": false,
+            "fileEditorMatch": true,
+            "runtimeExpectation": {
+              "obsidian": "1.13.6",
+              "electron": "39.7.0",
+              "chrome": "142.0.7444.265"
+            },
+            "asarSha256": "d769003f81435abe53576172f3bb0695132880cc7b7970f2f0086f7d5ea968b5",
+            "evidenceLevel": "O1",
+            "sourceCharacterLength": 7,
+            "sourceByteLength": 7
+          },
+          "raw": {
+            "editorSource": "> A\n> B",
+            "fileBytes": {
+              "path": "/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-sWeRom/vault/Conformance.md",
+              "byteLength": 7,
+              "base64": "PiBBCj4gQg==",
+              "sha256": "703b34f8f483b979a7cc0e9217ee671a0932887f41f977f1f79880d692f0ba69",
+              "utf8": "> A\n> B"
+            },
+            "processLog": "2026-08-11 14:47:40 Loaded updated app package /private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-sWeRom/profile/obsidian-1.13.6.asar\n\nDevTools listening on ws://127.0.0.1:63214/devtools/browser/ec4bbb50-a7af-4535-9b89-9228190b17ea\nIgnored: Error: Argument must be a file path or a NativeImage\nIgnored: Error: ENOENT: no such file or directory, open '/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-sWeRom/profile/c0dec0dec0dec0de.json'\n2026-08-11 14:47:40 Checking for update using Github\n2026-08-11 14:47:41 Success.\n2026-08-11 14:47:41 Latest version is 1.13.6\n2026-08-11 14:47:41 App is up to date.\n",
+            "runtime": {
+              "source": "> A\n> B",
+              "selection": {
+                "anchor": 2,
+                "focus": 2,
+                "from": 2,
+                "to": 2
+              },
+              "mode": "live-preview",
+              "visibleText": "Conformance\n> A\n> B",
+              "semantic": {
+                "rootTypes": [
+                  "blockquote"
+                ],
+                "nodes": [
+                  {
+                    "path": "0",
+                    "type": "blockquote",
+                    "quoteDepth": 1,
+                    "listDepth": 0
+                  },
+                  {
+                    "path": "0.0",
+                    "type": "paragraph",
+                    "quoteDepth": 1,
+                    "listDepth": 0
+                  },
+                  {
+                    "path": "0.0.0",
+                    "type": "break",
+                    "quoteDepth": 1,
+                    "listDepth": 0
+                  }
+                ],
+                "typeCounts": {
+                  "blockquote": 1,
+                  "paragraph": 1,
+                  "break": 1
+                },
+                "maximumQuoteDepth": 1,
+                "maximumListDepth": 0
+              },
+              "semanticCapture": "temporary-reading-view",
+              "semanticError": {
+                "name": "Error",
+                "message": "Cannot find module 'obsidian'\nRequire stack:\n- electron/js2c/renderer_init"
+              },
+              "semanticElements": [
+                {
+                  "type": "quote-line",
+                  "depth": 0,
+                  "headingDepth": 0,
+                  "text": "> A",
+                  "checked": null,
+                  "visible": true
+                },
+                {
+                  "type": "quote-line",
+                  "depth": 0,
+                  "headingDepth": 0,
+                  "text": "> B",
+                  "checked": null,
+                  "visible": true
+                }
+              ],
+              "markers": [
+                {
+                  "text": ">",
+                  "visible": true,
+                  "kind": "syntax"
+                },
+                {
+                  "text": ">",
+                  "visible": true,
+                  "kind": "syntax"
+                }
+              ],
+              "renderedState": "mixed",
+              "geometry": {
+                "viewport": {
+                  "x": 0,
+                  "y": 0,
+                  "left": 0,
+                  "top": 0,
+                  "right": 800,
+                  "bottom": 599,
+                  "width": 800,
+                  "height": 599
+                },
+                "editor": {
+                  "x": 344,
+                  "y": 77.390625,
+                  "left": 344,
+                  "top": 77.390625,
+                  "right": 800,
+                  "bottom": 599,
+                  "width": 456,
+                  "height": 521.609375
+                },
+                "lines": [
+                  {
+                    "index": 0,
+                    "text": "> A",
+                    "sourceStart": 0,
+                    "sourceEnd": 3,
+                    "rect": {
+                      "x": 376,
+                      "y": 153.390625,
+                      "left": 376,
+                      "top": 153.390625,
+                      "right": 768,
+                      "bottom": 177.390625,
+                      "width": 392,
+                      "height": 24
+                    }
+                  },
+                  {
+                    "index": 1,
+                    "text": "> B",
+                    "sourceStart": 4,
+                    "sourceEnd": 7,
+                    "rect": {
+                      "x": 376,
+                      "y": 177.390625,
+                      "left": 376,
+                      "top": 177.390625,
+                      "right": 768,
+                      "bottom": 201.390625,
+                      "width": 392,
+                      "height": 24
+                    }
+                  }
+                ]
+              },
+              "versions": {
+                "obsidian": "1.13.6",
+                "shell": "1.12.4",
+                "electron": "39.7.0",
+                "chrome": "142.0.7444.265",
+                "node": "22.22.0"
+              },
+              "settings": {
+                "defaultViewMode": "source",
+                "livePreview": true,
+                "strictLineBreaks": false,
+                "showLineNumber": false,
+                "showIndentGuide": true,
+                "useTab": false,
+                "tabSize": 4,
+                "autoPairBrackets": true,
+                "autoPairMarkdown": true,
+                "smartIndentList": true,
+                "foldHeading": true,
+                "foldIndent": true
+              },
+              "activeFile": "Conformance.md",
+              "vaultName": "vault",
+              "vaultBasePath": "/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-sWeRom/vault",
+              "targetUrl": "app://obsidian.md/index.html"
+            }
+          }
+        },
+        {
+          "scenarioId": "repair.quote-repeated-tab",
+          "evidenceLevel": "O1",
+          "automatable": true,
+          "source": ">         A",
+          "fileBytes": {
+            "path": "/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-sWeRom/vault/Conformance.md",
+            "byteLength": 11,
+            "base64": "PiAgICAgICAgIEE=",
+            "sha256": "16cc1d1f77a8b3f0e625ab4efbee6cc9040c88d7801193265cda75cf2ff67075",
+            "utf8": ">         A",
+            "kind": "actual-markdown-file"
+          },
+          "sourceBytesBase64": "PiAgICAgICAgIEE=",
+          "fileBytesBase64": "PiAgICAgICAgIEE=",
+          "selection": {
+            "anchor": 10,
+            "focus": 10,
+            "start": 10,
+            "end": 10,
+            "collapsed": true,
+            "direction": "forward"
+          },
+          "physicalLines": [
+            ">         A"
+          ],
+          "physicalLineCount": 1,
+          "semantic": {
+            "rootTypes": [
+              "blockquote"
+            ],
+            "nodes": [
+              {
+                "path": "0",
+                "type": "blockquote",
+                "quoteDepth": 1,
+                "listDepth": 0
+              },
+              {
+                "path": "0.0",
+                "type": "code",
+                "quoteDepth": 1,
+                "listDepth": 0
+              }
+            ],
+            "typeCounts": {
+              "blockquote": 1,
+              "code": 1
+            },
+            "maximumQuoteDepth": 1,
+            "maximumListDepth": 0
+          },
+          "presentation": {
+            "mode": "live-preview",
+            "visibleText": "Conformance\n>         A",
+            "visibleLines": [
+              "Conformance",
+              ">         A"
+            ],
+            "markerVisibility": "visible",
+            "visibleMarkers": ">",
+            "quoteRailText": null,
+            "elementType": null,
+            "layout": null,
+            "controls": null,
+            "renderedState": "mixed",
+            "geometry": null
+          },
+          "geometry": {
+            "viewport": {
+              "x": 0,
+              "y": 0,
+              "left": 0,
+              "top": 0,
+              "right": 800,
+              "bottom": 599,
+              "width": 800,
+              "height": 599
+            },
+            "editor": {
+              "x": 344,
+              "y": 77.39,
+              "left": 344,
+              "top": 77.39,
+              "right": 800,
+              "bottom": 599,
+              "width": 456,
+              "height": 521.61
+            },
+            "lines": [
+              {
+                "index": 0,
+                "text": ">         A",
+                "sourceStart": 0,
+                "sourceEnd": 11,
+                "rect": {
+                  "x": 376,
+                  "y": 153.39,
+                  "left": 376,
+                  "top": 153.39,
+                  "right": 768,
+                  "bottom": 177.39,
+                  "width": 392,
+                  "height": 24
+                }
+              }
+            ]
+          },
+          "visibleText": "Conformance\n>         A",
+          "metadata": {
+            "adapter": "obsidian-o1",
+            "mode": "live-preview",
+            "versions": {
+              "obsidian": "1.13.6",
+              "shell": "1.12.4",
+              "electron": "39.7.0",
+              "chrome": "142.0.7444.265",
+              "node": "22.22.0"
+            },
+            "settings": {
+              "defaultViewMode": "source",
+              "livePreview": true,
+              "strictLineBreaks": false,
+              "showLineNumber": false,
+              "showIndentGuide": true,
+              "useTab": false,
+              "tabSize": 4,
+              "autoPairBrackets": true,
+              "autoPairMarkdown": true,
+              "smartIndentList": true,
+              "foldHeading": true,
+              "foldIndent": true
+            },
+            "targetUrl": "app://obsidian.md/index.html",
+            "activeFile": "Conformance.md",
+            "isolated": true,
+            "isolatedRoot": "/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-sWeRom",
+            "isolatedProfile": "/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-sWeRom/profile",
+            "isolatedVault": "/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-sWeRom/vault",
+            "artifactsRetained": false,
+            "fileEditorMatch": true,
+            "runtimeExpectation": {
+              "obsidian": "1.13.6",
+              "electron": "39.7.0",
+              "chrome": "142.0.7444.265"
+            },
+            "asarSha256": "d769003f81435abe53576172f3bb0695132880cc7b7970f2f0086f7d5ea968b5",
+            "evidenceLevel": "O1",
+            "sourceCharacterLength": 11,
+            "sourceByteLength": 11
+          },
+          "raw": {
+            "editorSource": ">         A",
+            "fileBytes": {
+              "path": "/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-sWeRom/vault/Conformance.md",
+              "byteLength": 11,
+              "base64": "PiAgICAgICAgIEE=",
+              "sha256": "16cc1d1f77a8b3f0e625ab4efbee6cc9040c88d7801193265cda75cf2ff67075",
+              "utf8": ">         A"
+            },
+            "processLog": "2026-08-11 14:47:40 Loaded updated app package /private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-sWeRom/profile/obsidian-1.13.6.asar\n\nDevTools listening on ws://127.0.0.1:63214/devtools/browser/ec4bbb50-a7af-4535-9b89-9228190b17ea\nIgnored: Error: Argument must be a file path or a NativeImage\nIgnored: Error: ENOENT: no such file or directory, open '/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-sWeRom/profile/c0dec0dec0dec0de.json'\n2026-08-11 14:47:40 Checking for update using Github\n2026-08-11 14:47:41 Success.\n2026-08-11 14:47:41 Latest version is 1.13.6\n2026-08-11 14:47:41 App is up to date.\n",
+            "runtime": {
+              "source": ">         A",
+              "selection": {
+                "anchor": 10,
+                "focus": 10,
+                "from": 10,
+                "to": 10
+              },
+              "mode": "live-preview",
+              "visibleText": "Conformance\n>         A",
+              "semantic": {
+                "rootTypes": [
+                  "blockquote"
+                ],
+                "nodes": [
+                  {
+                    "path": "0",
+                    "type": "blockquote",
+                    "quoteDepth": 1,
+                    "listDepth": 0
+                  },
+                  {
+                    "path": "0.0",
+                    "type": "code",
+                    "quoteDepth": 1,
+                    "listDepth": 0
+                  }
+                ],
+                "typeCounts": {
+                  "blockquote": 1,
+                  "code": 1
+                },
+                "maximumQuoteDepth": 1,
+                "maximumListDepth": 0
+              },
+              "semanticCapture": "temporary-reading-view",
+              "semanticError": {
+                "name": "Error",
+                "message": "Cannot find module 'obsidian'\nRequire stack:\n- electron/js2c/renderer_init"
+              },
+              "semanticElements": [
+                {
+                  "type": "quote-line",
+                  "depth": 0,
+                  "headingDepth": 0,
+                  "text": ">         A",
+                  "checked": null,
+                  "visible": true
+                }
+              ],
+              "markers": [
+                {
+                  "text": ">",
+                  "visible": true,
+                  "kind": "syntax"
+                }
+              ],
+              "renderedState": "mixed",
+              "geometry": {
+                "viewport": {
+                  "x": 0,
+                  "y": 0,
+                  "left": 0,
+                  "top": 0,
+                  "right": 800,
+                  "bottom": 599,
+                  "width": 800,
+                  "height": 599
+                },
+                "editor": {
+                  "x": 344,
+                  "y": 77.390625,
+                  "left": 344,
+                  "top": 77.390625,
+                  "right": 800,
+                  "bottom": 599,
+                  "width": 456,
+                  "height": 521.609375
+                },
+                "lines": [
+                  {
+                    "index": 0,
+                    "text": ">         A",
+                    "sourceStart": 0,
+                    "sourceEnd": 11,
+                    "rect": {
+                      "x": 376,
+                      "y": 153.390625,
+                      "left": 376,
+                      "top": 153.390625,
+                      "right": 768,
+                      "bottom": 177.390625,
+                      "width": 392,
+                      "height": 24
+                    }
+                  }
+                ]
+              },
+              "versions": {
+                "obsidian": "1.13.6",
+                "shell": "1.12.4",
+                "electron": "39.7.0",
+                "chrome": "142.0.7444.265",
+                "node": "22.22.0"
+              },
+              "settings": {
+                "defaultViewMode": "source",
+                "livePreview": true,
+                "strictLineBreaks": false,
+                "showLineNumber": false,
+                "showIndentGuide": true,
+                "useTab": false,
+                "tabSize": 4,
+                "autoPairBrackets": true,
+                "autoPairMarkdown": true,
+                "smartIndentList": true,
+                "foldHeading": true,
+                "foldIndent": true
+              },
+              "activeFile": "Conformance.md",
+              "vaultName": "vault",
+              "vaultBasePath": "/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-sWeRom/vault",
+              "targetUrl": "app://obsidian.md/index.html"
+            }
+          }
+        },
+        {
+          "scenarioId": "repair.shift-enter-plain-live",
+          "evidenceLevel": "O1",
+          "automatable": true,
+          "source": "Alpha\n",
+          "fileBytes": {
+            "path": "/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-sWeRom/vault/Conformance.md",
+            "byteLength": 6,
+            "base64": "QWxwaGEK",
+            "sha256": "90c877f65b3141d28d51619fd2bbc862c49c48be4fab42386062f532e27e4fd6",
+            "utf8": "Alpha\n",
+            "kind": "actual-markdown-file"
+          },
+          "sourceBytesBase64": "QWxwaGEK",
+          "fileBytesBase64": "QWxwaGEK",
+          "selection": {
+            "anchor": 6,
+            "focus": 6,
+            "start": 6,
+            "end": 6,
+            "collapsed": true,
+            "direction": "forward"
+          },
+          "physicalLines": [
+            "Alpha",
+            ""
+          ],
+          "physicalLineCount": 2,
+          "semantic": {
+            "rootTypes": [
+              "paragraph"
+            ],
+            "nodes": [
+              {
+                "path": "0",
+                "type": "paragraph",
+                "quoteDepth": 0,
+                "listDepth": 0
+              }
+            ],
+            "typeCounts": {
+              "paragraph": 1
+            },
+            "maximumQuoteDepth": 0,
+            "maximumListDepth": 0
+          },
+          "presentation": {
+            "mode": "live-preview",
+            "visibleText": "Conformance\nAlpha\n\n",
+            "visibleLines": [
+              "Conformance",
+              "Alpha",
+              "",
+              ""
+            ],
+            "markerVisibility": "hidden",
+            "visibleMarkers": "",
+            "quoteRailText": null,
+            "elementType": null,
+            "layout": null,
+            "controls": null,
+            "renderedState": "mixed",
+            "geometry": null
+          },
+          "geometry": {
+            "viewport": {
+              "x": 0,
+              "y": 0,
+              "left": 0,
+              "top": 0,
+              "right": 800,
+              "bottom": 599,
+              "width": 800,
+              "height": 599
+            },
+            "editor": {
+              "x": 344,
+              "y": 77.39,
+              "left": 344,
+              "top": 77.39,
+              "right": 800,
+              "bottom": 599,
+              "width": 456,
+              "height": 521.61
+            },
+            "lines": [
+              {
+                "index": 0,
+                "text": "Alpha",
+                "sourceStart": 0,
+                "sourceEnd": 5,
+                "rect": {
+                  "x": 376,
+                  "y": 153.39,
+                  "left": 376,
+                  "top": 153.39,
+                  "right": 768,
+                  "bottom": 177.39,
+                  "width": 392,
+                  "height": 24
+                }
+              },
+              {
+                "index": 1,
+                "text": "\n",
+                "sourceStart": 6,
+                "sourceEnd": 6,
+                "rect": {
+                  "x": 376,
+                  "y": 177.39,
+                  "left": 376,
+                  "top": 177.39,
+                  "right": 768,
+                  "bottom": 201.39,
+                  "width": 392,
+                  "height": 24
+                }
+              }
+            ]
+          },
+          "visibleText": "Conformance\nAlpha\n\n",
+          "metadata": {
+            "adapter": "obsidian-o1",
+            "mode": "live-preview",
+            "versions": {
+              "obsidian": "1.13.6",
+              "shell": "1.12.4",
+              "electron": "39.7.0",
+              "chrome": "142.0.7444.265",
+              "node": "22.22.0"
+            },
+            "settings": {
+              "defaultViewMode": "source",
+              "livePreview": true,
+              "strictLineBreaks": false,
+              "showLineNumber": false,
+              "showIndentGuide": true,
+              "useTab": false,
+              "tabSize": 4,
+              "autoPairBrackets": true,
+              "autoPairMarkdown": true,
+              "smartIndentList": true,
+              "foldHeading": true,
+              "foldIndent": true
+            },
+            "targetUrl": "app://obsidian.md/index.html",
+            "activeFile": "Conformance.md",
+            "isolated": true,
+            "isolatedRoot": "/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-sWeRom",
+            "isolatedProfile": "/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-sWeRom/profile",
+            "isolatedVault": "/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-sWeRom/vault",
+            "artifactsRetained": false,
+            "fileEditorMatch": true,
+            "runtimeExpectation": {
+              "obsidian": "1.13.6",
+              "electron": "39.7.0",
+              "chrome": "142.0.7444.265"
+            },
+            "asarSha256": "d769003f81435abe53576172f3bb0695132880cc7b7970f2f0086f7d5ea968b5",
+            "evidenceLevel": "O1",
+            "sourceCharacterLength": 6,
+            "sourceByteLength": 6
+          },
+          "raw": {
+            "editorSource": "Alpha\n",
+            "fileBytes": {
+              "path": "/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-sWeRom/vault/Conformance.md",
+              "byteLength": 6,
+              "base64": "QWxwaGEK",
+              "sha256": "90c877f65b3141d28d51619fd2bbc862c49c48be4fab42386062f532e27e4fd6",
+              "utf8": "Alpha\n"
+            },
+            "processLog": "2026-08-11 14:47:40 Loaded updated app package /private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-sWeRom/profile/obsidian-1.13.6.asar\n\nDevTools listening on ws://127.0.0.1:63214/devtools/browser/ec4bbb50-a7af-4535-9b89-9228190b17ea\nIgnored: Error: Argument must be a file path or a NativeImage\nIgnored: Error: ENOENT: no such file or directory, open '/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-sWeRom/profile/c0dec0dec0dec0de.json'\n2026-08-11 14:47:40 Checking for update using Github\n2026-08-11 14:47:41 Success.\n2026-08-11 14:47:41 Latest version is 1.13.6\n2026-08-11 14:47:41 App is up to date.\n",
+            "runtime": {
+              "source": "Alpha\n",
+              "selection": {
+                "anchor": 6,
+                "focus": 6,
+                "from": 6,
+                "to": 6
+              },
+              "mode": "live-preview",
+              "visibleText": "Conformance\nAlpha\n\n",
+              "semantic": {
+                "rootTypes": [
+                  "paragraph"
+                ],
+                "nodes": [
+                  {
+                    "path": "0",
+                    "type": "paragraph",
+                    "quoteDepth": 0,
+                    "listDepth": 0
+                  }
+                ],
+                "typeCounts": {
+                  "paragraph": 1
+                },
+                "maximumQuoteDepth": 0,
+                "maximumListDepth": 0
+              },
+              "semanticCapture": "temporary-reading-view",
+              "semanticError": {
+                "name": "Error",
+                "message": "Cannot find module 'obsidian'\nRequire stack:\n- electron/js2c/renderer_init"
+              },
+              "semanticElements": [],
+              "markers": [],
+              "renderedState": "mixed",
+              "geometry": {
+                "viewport": {
+                  "x": 0,
+                  "y": 0,
+                  "left": 0,
+                  "top": 0,
+                  "right": 800,
+                  "bottom": 599,
+                  "width": 800,
+                  "height": 599
+                },
+                "editor": {
+                  "x": 344,
+                  "y": 77.390625,
+                  "left": 344,
+                  "top": 77.390625,
+                  "right": 800,
+                  "bottom": 599,
+                  "width": 456,
+                  "height": 521.609375
+                },
+                "lines": [
+                  {
+                    "index": 0,
+                    "text": "Alpha",
+                    "sourceStart": 0,
+                    "sourceEnd": 5,
+                    "rect": {
+                      "x": 376,
+                      "y": 153.390625,
+                      "left": 376,
+                      "top": 153.390625,
+                      "right": 768,
+                      "bottom": 177.390625,
+                      "width": 392,
+                      "height": 24
+                    }
+                  },
+                  {
+                    "index": 1,
+                    "text": "\n",
+                    "sourceStart": 6,
+                    "sourceEnd": 6,
+                    "rect": {
+                      "x": 376,
+                      "y": 177.390625,
+                      "left": 376,
+                      "top": 177.390625,
+                      "right": 768,
+                      "bottom": 201.390625,
+                      "width": 392,
+                      "height": 24
+                    }
+                  }
+                ]
+              },
+              "versions": {
+                "obsidian": "1.13.6",
+                "shell": "1.12.4",
+                "electron": "39.7.0",
+                "chrome": "142.0.7444.265",
+                "node": "22.22.0"
+              },
+              "settings": {
+                "defaultViewMode": "source",
+                "livePreview": true,
+                "strictLineBreaks": false,
+                "showLineNumber": false,
+                "showIndentGuide": true,
+                "useTab": false,
+                "tabSize": 4,
+                "autoPairBrackets": true,
+                "autoPairMarkdown": true,
+                "smartIndentList": true,
+                "foldHeading": true,
+                "foldIndent": true
+              },
+              "activeFile": "Conformance.md",
+              "vaultName": "vault",
+              "vaultBasePath": "/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-sWeRom/vault",
+              "targetUrl": "app://obsidian.md/index.html"
+            }
+          }
+        },
+        {
+          "scenarioId": "repair.shift-enter-plain-source",
+          "evidenceLevel": "O1",
+          "automatable": true,
+          "source": "Alpha\n",
+          "fileBytes": {
+            "path": "/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-nSru7J/vault/Conformance.md",
+            "byteLength": 6,
+            "base64": "QWxwaGEK",
+            "sha256": "90c877f65b3141d28d51619fd2bbc862c49c48be4fab42386062f532e27e4fd6",
+            "utf8": "Alpha\n",
+            "kind": "actual-markdown-file"
+          },
+          "sourceBytesBase64": "QWxwaGEK",
+          "fileBytesBase64": "QWxwaGEK",
+          "selection": {
+            "anchor": 6,
+            "focus": 6,
+            "start": 6,
+            "end": 6,
+            "collapsed": true,
+            "direction": "forward"
+          },
+          "physicalLines": [
+            "Alpha",
+            ""
+          ],
+          "physicalLineCount": 2,
+          "semantic": {
+            "rootTypes": [
+              "paragraph"
+            ],
+            "nodes": [
+              {
+                "path": "0",
+                "type": "paragraph",
+                "quoteDepth": 0,
+                "listDepth": 0
+              }
+            ],
+            "typeCounts": {
+              "paragraph": 1
+            },
+            "maximumQuoteDepth": 0,
+            "maximumListDepth": 0
+          },
+          "presentation": {
+            "mode": "source",
+            "visibleText": "Conformance\nAlpha\n\n",
+            "visibleLines": [
+              "Conformance",
+              "Alpha",
+              "",
+              ""
+            ],
+            "markerVisibility": "hidden",
+            "visibleMarkers": "",
+            "quoteRailText": null,
+            "elementType": null,
+            "layout": null,
+            "controls": null,
+            "renderedState": "raw",
+            "geometry": null
+          },
+          "geometry": {
+            "viewport": {
+              "x": 0,
+              "y": 0,
+              "left": 0,
+              "top": 0,
+              "right": 800,
+              "bottom": 599,
+              "width": 800,
+              "height": 599
+            },
+            "editor": {
+              "x": 344,
+              "y": 77.39,
+              "left": 344,
+              "top": 77.39,
+              "right": 800,
+              "bottom": 599,
+              "width": 456,
+              "height": 521.61
+            },
+            "lines": [
+              {
+                "index": 0,
+                "text": "Alpha",
+                "sourceStart": 0,
+                "sourceEnd": 5,
+                "rect": {
+                  "x": 376,
+                  "y": 153.39,
+                  "left": 376,
+                  "top": 153.39,
+                  "right": 768,
+                  "bottom": 177.39,
+                  "width": 392,
+                  "height": 24
+                }
+              },
+              {
+                "index": 1,
+                "text": "\n",
+                "sourceStart": 6,
+                "sourceEnd": 6,
+                "rect": {
+                  "x": 376,
+                  "y": 177.39,
+                  "left": 376,
+                  "top": 177.39,
+                  "right": 768,
+                  "bottom": 201.39,
+                  "width": 392,
+                  "height": 24
+                }
+              }
+            ]
+          },
+          "visibleText": "Conformance\nAlpha\n\n",
+          "metadata": {
+            "adapter": "obsidian-o1",
+            "mode": "source",
+            "versions": {
+              "obsidian": "1.13.6",
+              "shell": "1.12.4",
+              "electron": "39.7.0",
+              "chrome": "142.0.7444.265",
+              "node": "22.22.0"
+            },
+            "settings": {
+              "defaultViewMode": "source",
+              "livePreview": true,
+              "strictLineBreaks": false,
+              "showLineNumber": false,
+              "showIndentGuide": true,
+              "useTab": false,
+              "tabSize": 4,
+              "autoPairBrackets": true,
+              "autoPairMarkdown": true,
+              "smartIndentList": true,
+              "foldHeading": true,
+              "foldIndent": true
+            },
+            "targetUrl": "app://obsidian.md/index.html",
+            "activeFile": "Conformance.md",
+            "isolated": true,
+            "isolatedRoot": "/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-nSru7J",
+            "isolatedProfile": "/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-nSru7J/profile",
+            "isolatedVault": "/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-nSru7J/vault",
+            "artifactsRetained": false,
+            "fileEditorMatch": true,
+            "runtimeExpectation": {
+              "obsidian": "1.13.6",
+              "electron": "39.7.0",
+              "chrome": "142.0.7444.265"
+            },
+            "asarSha256": "d769003f81435abe53576172f3bb0695132880cc7b7970f2f0086f7d5ea968b5",
+            "evidenceLevel": "O1",
+            "sourceCharacterLength": 6,
+            "sourceByteLength": 6
+          },
+          "raw": {
+            "editorSource": "Alpha\n",
+            "fileBytes": {
+              "path": "/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-nSru7J/vault/Conformance.md",
+              "byteLength": 6,
+              "base64": "QWxwaGEK",
+              "sha256": "90c877f65b3141d28d51619fd2bbc862c49c48be4fab42386062f532e27e4fd6",
+              "utf8": "Alpha\n"
+            },
+            "processLog": "2026-08-11 14:47:46 Loaded updated app package /private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-nSru7J/profile/obsidian-1.13.6.asar\n\nDevTools listening on ws://127.0.0.1:63230/devtools/browser/f734b0d6-5f80-4bfd-aca4-c50adabae470\nIgnored: Error: Argument must be a file path or a NativeImage\nIgnored: Error: ENOENT: no such file or directory, open '/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-nSru7J/profile/c0dec0dec0dec0de.json'\n2026-08-11 14:47:47 Checking for update using Github\n",
+            "runtime": {
+              "source": "Alpha\n",
+              "selection": {
+                "anchor": 6,
+                "focus": 6,
+                "from": 6,
+                "to": 6
+              },
+              "mode": "source",
+              "visibleText": "Conformance\nAlpha\n\n",
+              "semantic": {
+                "rootTypes": [
+                  "paragraph"
+                ],
+                "nodes": [
+                  {
+                    "path": "0",
+                    "type": "paragraph",
+                    "quoteDepth": 0,
+                    "listDepth": 0
+                  }
+                ],
+                "typeCounts": {
+                  "paragraph": 1
+                },
+                "maximumQuoteDepth": 0,
+                "maximumListDepth": 0
+              },
+              "semanticCapture": "temporary-reading-view",
+              "semanticError": {
+                "name": "Error",
+                "message": "Cannot find module 'obsidian'\nRequire stack:\n- electron/js2c/renderer_init"
+              },
+              "semanticElements": [],
+              "markers": [],
+              "renderedState": "raw",
+              "geometry": {
+                "viewport": {
+                  "x": 0,
+                  "y": 0,
+                  "left": 0,
+                  "top": 0,
+                  "right": 800,
+                  "bottom": 599,
+                  "width": 800,
+                  "height": 599
+                },
+                "editor": {
+                  "x": 344,
+                  "y": 77.390625,
+                  "left": 344,
+                  "top": 77.390625,
+                  "right": 800,
+                  "bottom": 599,
+                  "width": 456,
+                  "height": 521.609375
+                },
+                "lines": [
+                  {
+                    "index": 0,
+                    "text": "Alpha",
+                    "sourceStart": 0,
+                    "sourceEnd": 5,
+                    "rect": {
+                      "x": 376,
+                      "y": 153.390625,
+                      "left": 376,
+                      "top": 153.390625,
+                      "right": 768,
+                      "bottom": 177.390625,
+                      "width": 392,
+                      "height": 24
+                    }
+                  },
+                  {
+                    "index": 1,
+                    "text": "\n",
+                    "sourceStart": 6,
+                    "sourceEnd": 6,
+                    "rect": {
+                      "x": 376,
+                      "y": 177.390625,
+                      "left": 376,
+                      "top": 177.390625,
+                      "right": 768,
+                      "bottom": 201.390625,
+                      "width": 392,
+                      "height": 24
+                    }
+                  }
+                ]
+              },
+              "versions": {
+                "obsidian": "1.13.6",
+                "shell": "1.12.4",
+                "electron": "39.7.0",
+                "chrome": "142.0.7444.265",
+                "node": "22.22.0"
+              },
+              "settings": {
+                "defaultViewMode": "source",
+                "livePreview": true,
+                "strictLineBreaks": false,
+                "showLineNumber": false,
+                "showIndentGuide": true,
+                "useTab": false,
+                "tabSize": 4,
+                "autoPairBrackets": true,
+                "autoPairMarkdown": true,
+                "smartIndentList": true,
+                "foldHeading": true,
+                "foldIndent": true
+              },
+              "activeFile": "Conformance.md",
+              "vaultName": "vault",
+              "vaultBasePath": "/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-nSru7J/vault",
+              "targetUrl": "app://obsidian.md/index.html"
+            }
+          }
+        },
+        {
+          "scenarioId": "repair.shift-enter-indented",
+          "evidenceLevel": "O1",
+          "automatable": true,
+          "source": "A\nB\n    C\n    \nD",
+          "fileBytes": {
+            "path": "/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-nSru7J/vault/Conformance.md",
+            "byteLength": 16,
+            "base64": "QQpCCiAgICBDCiAgICAKRA==",
+            "sha256": "55185f9f36e9a53f40f4ede86b5a9bb21e288a1233655965e3b8c9a50375aa08",
+            "utf8": "A\nB\n    C\n    \nD",
+            "kind": "actual-markdown-file"
+          },
+          "sourceBytesBase64": "QQpCCiAgICBDCiAgICAKRA==",
+          "fileBytesBase64": "QQpCCiAgICBDCiAgICAKRA==",
+          "selection": {
+            "anchor": 14,
+            "focus": 14,
+            "start": 14,
+            "end": 14,
+            "collapsed": true,
+            "direction": "forward"
+          },
+          "physicalLines": [
+            "A",
+            "B",
+            "    C",
+            "    ",
+            "D"
+          ],
+          "physicalLineCount": 5,
+          "semantic": {
+            "rootTypes": [
+              "paragraph",
+              "paragraph"
+            ],
+            "nodes": [
+              {
+                "path": "0",
+                "type": "paragraph",
+                "quoteDepth": 0,
+                "listDepth": 0
+              },
+              {
+                "path": "0.0",
+                "type": "break",
+                "quoteDepth": 0,
+                "listDepth": 0
+              },
+              {
+                "path": "0.1",
+                "type": "break",
+                "quoteDepth": 0,
+                "listDepth": 0
+              },
+              {
+                "path": "1",
+                "type": "paragraph",
+                "quoteDepth": 0,
+                "listDepth": 0
+              }
+            ],
+            "typeCounts": {
+              "paragraph": 2,
+              "break": 2
+            },
+            "maximumQuoteDepth": 0,
+            "maximumListDepth": 0
+          },
+          "presentation": {
+            "mode": "live-preview",
+            "visibleText": "Conformance\nA\nB\n    C\n    \nD",
+            "visibleLines": [
+              "Conformance",
+              "A",
+              "B",
+              "    C",
+              "    ",
+              "D"
+            ],
+            "markerVisibility": "hidden",
+            "visibleMarkers": "",
+            "quoteRailText": null,
+            "elementType": null,
+            "layout": null,
+            "controls": null,
+            "renderedState": "mixed",
+            "geometry": null
+          },
+          "geometry": {
+            "viewport": {
+              "x": 0,
+              "y": 0,
+              "left": 0,
+              "top": 0,
+              "right": 800,
+              "bottom": 599,
+              "width": 800,
+              "height": 599
+            },
+            "editor": {
+              "x": 344,
+              "y": 77.39,
+              "left": 344,
+              "top": 77.39,
+              "right": 800,
+              "bottom": 599,
+              "width": 456,
+              "height": 521.61
+            },
+            "lines": [
+              {
+                "index": 0,
+                "text": "A",
+                "sourceStart": 0,
+                "sourceEnd": 1,
+                "rect": {
+                  "x": 376,
+                  "y": 153.39,
+                  "left": 376,
+                  "top": 153.39,
+                  "right": 768,
+                  "bottom": 177.39,
+                  "width": 392,
+                  "height": 24
+                }
+              },
+              {
+                "index": 1,
+                "text": "B",
+                "sourceStart": 2,
+                "sourceEnd": 3,
+                "rect": {
+                  "x": 376,
+                  "y": 177.39,
+                  "left": 376,
+                  "top": 177.39,
+                  "right": 768,
+                  "bottom": 201.39,
+                  "width": 392,
+                  "height": 24
+                }
+              },
+              {
+                "index": 2,
+                "text": "    C",
+                "sourceStart": 4,
+                "sourceEnd": 9,
+                "rect": {
+                  "x": 376,
+                  "y": 201.39,
+                  "left": 376,
+                  "top": 201.39,
+                  "right": 768,
+                  "bottom": 225.39,
+                  "width": 392,
+                  "height": 24
+                }
+              },
+              {
+                "index": 3,
+                "text": "    ",
+                "sourceStart": 10,
+                "sourceEnd": 14,
+                "rect": {
+                  "x": 376,
+                  "y": 225.39,
+                  "left": 376,
+                  "top": 225.39,
+                  "right": 768,
+                  "bottom": 249.39,
+                  "width": 392,
+                  "height": 24
+                }
+              },
+              {
+                "index": 4,
+                "text": "D",
+                "sourceStart": 15,
+                "sourceEnd": 16,
+                "rect": {
+                  "x": 376,
+                  "y": 249.39,
+                  "left": 376,
+                  "top": 249.39,
+                  "right": 768,
+                  "bottom": 273.39,
+                  "width": 392,
+                  "height": 24
+                }
+              }
+            ]
+          },
+          "visibleText": "Conformance\nA\nB\n    C\n    \nD",
+          "metadata": {
+            "adapter": "obsidian-o1",
+            "mode": "live-preview",
+            "versions": {
+              "obsidian": "1.13.6",
+              "shell": "1.12.4",
+              "electron": "39.7.0",
+              "chrome": "142.0.7444.265",
+              "node": "22.22.0"
+            },
+            "settings": {
+              "defaultViewMode": "source",
+              "livePreview": true,
+              "strictLineBreaks": false,
+              "showLineNumber": false,
+              "showIndentGuide": true,
+              "useTab": false,
+              "tabSize": 4,
+              "autoPairBrackets": true,
+              "autoPairMarkdown": true,
+              "smartIndentList": true,
+              "foldHeading": true,
+              "foldIndent": true
+            },
+            "targetUrl": "app://obsidian.md/index.html",
+            "activeFile": "Conformance.md",
+            "isolated": true,
+            "isolatedRoot": "/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-nSru7J",
+            "isolatedProfile": "/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-nSru7J/profile",
+            "isolatedVault": "/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-nSru7J/vault",
+            "artifactsRetained": false,
+            "fileEditorMatch": true,
+            "runtimeExpectation": {
+              "obsidian": "1.13.6",
+              "electron": "39.7.0",
+              "chrome": "142.0.7444.265"
+            },
+            "asarSha256": "d769003f81435abe53576172f3bb0695132880cc7b7970f2f0086f7d5ea968b5",
+            "evidenceLevel": "O1",
+            "sourceCharacterLength": 16,
+            "sourceByteLength": 16
+          },
+          "raw": {
+            "editorSource": "A\nB\n    C\n    \nD",
+            "fileBytes": {
+              "path": "/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-nSru7J/vault/Conformance.md",
+              "byteLength": 16,
+              "base64": "QQpCCiAgICBDCiAgICAKRA==",
+              "sha256": "55185f9f36e9a53f40f4ede86b5a9bb21e288a1233655965e3b8c9a50375aa08",
+              "utf8": "A\nB\n    C\n    \nD"
+            },
+            "processLog": "2026-08-11 14:47:46 Loaded updated app package /private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-nSru7J/profile/obsidian-1.13.6.asar\n\nDevTools listening on ws://127.0.0.1:63230/devtools/browser/f734b0d6-5f80-4bfd-aca4-c50adabae470\nIgnored: Error: Argument must be a file path or a NativeImage\nIgnored: Error: ENOENT: no such file or directory, open '/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-nSru7J/profile/c0dec0dec0dec0de.json'\n2026-08-11 14:47:47 Checking for update using Github\n",
+            "runtime": {
+              "source": "A\nB\n    C\n    \nD",
+              "selection": {
+                "anchor": 14,
+                "focus": 14,
+                "from": 14,
+                "to": 14
+              },
+              "mode": "live-preview",
+              "visibleText": "Conformance\nA\nB\n    C\n    \nD",
+              "semantic": {
+                "rootTypes": [
+                  "paragraph",
+                  "paragraph"
+                ],
+                "nodes": [
+                  {
+                    "path": "0",
+                    "type": "paragraph",
+                    "quoteDepth": 0,
+                    "listDepth": 0
+                  },
+                  {
+                    "path": "0.0",
+                    "type": "break",
+                    "quoteDepth": 0,
+                    "listDepth": 0
+                  },
+                  {
+                    "path": "0.1",
+                    "type": "break",
+                    "quoteDepth": 0,
+                    "listDepth": 0
+                  },
+                  {
+                    "path": "1",
+                    "type": "paragraph",
+                    "quoteDepth": 0,
+                    "listDepth": 0
+                  }
+                ],
+                "typeCounts": {
+                  "paragraph": 2,
+                  "break": 2
+                },
+                "maximumQuoteDepth": 0,
+                "maximumListDepth": 0
+              },
+              "semanticCapture": "temporary-reading-view",
+              "semanticError": {
+                "name": "Error",
+                "message": "Cannot find module 'obsidian'\nRequire stack:\n- electron/js2c/renderer_init"
+              },
+              "semanticElements": [],
+              "markers": [],
+              "renderedState": "mixed",
+              "geometry": {
+                "viewport": {
+                  "x": 0,
+                  "y": 0,
+                  "left": 0,
+                  "top": 0,
+                  "right": 800,
+                  "bottom": 599,
+                  "width": 800,
+                  "height": 599
+                },
+                "editor": {
+                  "x": 344,
+                  "y": 77.390625,
+                  "left": 344,
+                  "top": 77.390625,
+                  "right": 800,
+                  "bottom": 599,
+                  "width": 456,
+                  "height": 521.609375
+                },
+                "lines": [
+                  {
+                    "index": 0,
+                    "text": "A",
+                    "sourceStart": 0,
+                    "sourceEnd": 1,
+                    "rect": {
+                      "x": 376,
+                      "y": 153.390625,
+                      "left": 376,
+                      "top": 153.390625,
+                      "right": 768,
+                      "bottom": 177.390625,
+                      "width": 392,
+                      "height": 24
+                    }
+                  },
+                  {
+                    "index": 1,
+                    "text": "B",
+                    "sourceStart": 2,
+                    "sourceEnd": 3,
+                    "rect": {
+                      "x": 376,
+                      "y": 177.390625,
+                      "left": 376,
+                      "top": 177.390625,
+                      "right": 768,
+                      "bottom": 201.390625,
+                      "width": 392,
+                      "height": 24
+                    }
+                  },
+                  {
+                    "index": 2,
+                    "text": "    C",
+                    "sourceStart": 4,
+                    "sourceEnd": 9,
+                    "rect": {
+                      "x": 376,
+                      "y": 201.390625,
+                      "left": 376,
+                      "top": 201.390625,
+                      "right": 768,
+                      "bottom": 225.390625,
+                      "width": 392,
+                      "height": 24
+                    }
+                  },
+                  {
+                    "index": 3,
+                    "text": "    ",
+                    "sourceStart": 10,
+                    "sourceEnd": 14,
+                    "rect": {
+                      "x": 376,
+                      "y": 225.390625,
+                      "left": 376,
+                      "top": 225.390625,
+                      "right": 768,
+                      "bottom": 249.390625,
+                      "width": 392,
+                      "height": 24
+                    }
+                  },
+                  {
+                    "index": 4,
+                    "text": "D",
+                    "sourceStart": 15,
+                    "sourceEnd": 16,
+                    "rect": {
+                      "x": 376,
+                      "y": 249.390625,
+                      "left": 376,
+                      "top": 249.390625,
+                      "right": 768,
+                      "bottom": 273.390625,
+                      "width": 392,
+                      "height": 24
+                    }
+                  }
+                ]
+              },
+              "versions": {
+                "obsidian": "1.13.6",
+                "shell": "1.12.4",
+                "electron": "39.7.0",
+                "chrome": "142.0.7444.265",
+                "node": "22.22.0"
+              },
+              "settings": {
+                "defaultViewMode": "source",
+                "livePreview": true,
+                "strictLineBreaks": false,
+                "showLineNumber": false,
+                "showIndentGuide": true,
+                "useTab": false,
+                "tabSize": 4,
+                "autoPairBrackets": true,
+                "autoPairMarkdown": true,
+                "smartIndentList": true,
+                "foldHeading": true,
+                "foldIndent": true
+              },
+              "activeFile": "Conformance.md",
+              "vaultName": "vault",
+              "vaultBasePath": "/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-nSru7J/vault",
+              "targetUrl": "app://obsidian.md/index.html"
+            }
+          }
+        },
+        {
+          "scenarioId": "repair.enter-indented",
+          "evidenceLevel": "O1",
+          "automatable": true,
+          "source": "A\nB\n    C\n    \nD",
+          "fileBytes": {
+            "path": "/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-nSru7J/vault/Conformance.md",
+            "byteLength": 16,
+            "base64": "QQpCCiAgICBDCiAgICAKRA==",
+            "sha256": "55185f9f36e9a53f40f4ede86b5a9bb21e288a1233655965e3b8c9a50375aa08",
+            "utf8": "A\nB\n    C\n    \nD",
+            "kind": "actual-markdown-file"
+          },
+          "sourceBytesBase64": "QQpCCiAgICBDCiAgICAKRA==",
+          "fileBytesBase64": "QQpCCiAgICBDCiAgICAKRA==",
+          "selection": {
+            "anchor": 14,
+            "focus": 14,
+            "start": 14,
+            "end": 14,
+            "collapsed": true,
+            "direction": "forward"
+          },
+          "physicalLines": [
+            "A",
+            "B",
+            "    C",
+            "    ",
+            "D"
+          ],
+          "physicalLineCount": 5,
+          "semantic": {
+            "rootTypes": [
+              "paragraph",
+              "paragraph"
+            ],
+            "nodes": [
+              {
+                "path": "0",
+                "type": "paragraph",
+                "quoteDepth": 0,
+                "listDepth": 0
+              },
+              {
+                "path": "0.0",
+                "type": "break",
+                "quoteDepth": 0,
+                "listDepth": 0
+              },
+              {
+                "path": "0.1",
+                "type": "break",
+                "quoteDepth": 0,
+                "listDepth": 0
+              },
+              {
+                "path": "1",
+                "type": "paragraph",
+                "quoteDepth": 0,
+                "listDepth": 0
+              }
+            ],
+            "typeCounts": {
+              "paragraph": 2,
+              "break": 2
+            },
+            "maximumQuoteDepth": 0,
+            "maximumListDepth": 0
+          },
+          "presentation": {
+            "mode": "live-preview",
+            "visibleText": "Conformance\nA\nB\n    C\n    \nD",
+            "visibleLines": [
+              "Conformance",
+              "A",
+              "B",
+              "    C",
+              "    ",
+              "D"
+            ],
+            "markerVisibility": "hidden",
+            "visibleMarkers": "",
+            "quoteRailText": null,
+            "elementType": null,
+            "layout": null,
+            "controls": null,
+            "renderedState": "mixed",
+            "geometry": null
+          },
+          "geometry": {
+            "viewport": {
+              "x": 0,
+              "y": 0,
+              "left": 0,
+              "top": 0,
+              "right": 800,
+              "bottom": 599,
+              "width": 800,
+              "height": 599
+            },
+            "editor": {
+              "x": 344,
+              "y": 77.39,
+              "left": 344,
+              "top": 77.39,
+              "right": 800,
+              "bottom": 599,
+              "width": 456,
+              "height": 521.61
+            },
+            "lines": [
+              {
+                "index": 0,
+                "text": "A",
+                "sourceStart": 0,
+                "sourceEnd": 1,
+                "rect": {
+                  "x": 376,
+                  "y": 153.39,
+                  "left": 376,
+                  "top": 153.39,
+                  "right": 768,
+                  "bottom": 177.39,
+                  "width": 392,
+                  "height": 24
+                }
+              },
+              {
+                "index": 1,
+                "text": "B",
+                "sourceStart": 2,
+                "sourceEnd": 3,
+                "rect": {
+                  "x": 376,
+                  "y": 177.39,
+                  "left": 376,
+                  "top": 177.39,
+                  "right": 768,
+                  "bottom": 201.39,
+                  "width": 392,
+                  "height": 24
+                }
+              },
+              {
+                "index": 2,
+                "text": "    C",
+                "sourceStart": 4,
+                "sourceEnd": 9,
+                "rect": {
+                  "x": 376,
+                  "y": 201.39,
+                  "left": 376,
+                  "top": 201.39,
+                  "right": 768,
+                  "bottom": 225.39,
+                  "width": 392,
+                  "height": 24
+                }
+              },
+              {
+                "index": 3,
+                "text": "    ",
+                "sourceStart": 10,
+                "sourceEnd": 14,
+                "rect": {
+                  "x": 376,
+                  "y": 225.39,
+                  "left": 376,
+                  "top": 225.39,
+                  "right": 768,
+                  "bottom": 249.39,
+                  "width": 392,
+                  "height": 24
+                }
+              },
+              {
+                "index": 4,
+                "text": "D",
+                "sourceStart": 15,
+                "sourceEnd": 16,
+                "rect": {
+                  "x": 376,
+                  "y": 249.39,
+                  "left": 376,
+                  "top": 249.39,
+                  "right": 768,
+                  "bottom": 273.39,
+                  "width": 392,
+                  "height": 24
+                }
+              }
+            ]
+          },
+          "visibleText": "Conformance\nA\nB\n    C\n    \nD",
+          "metadata": {
+            "adapter": "obsidian-o1",
+            "mode": "live-preview",
+            "versions": {
+              "obsidian": "1.13.6",
+              "shell": "1.12.4",
+              "electron": "39.7.0",
+              "chrome": "142.0.7444.265",
+              "node": "22.22.0"
+            },
+            "settings": {
+              "defaultViewMode": "source",
+              "livePreview": true,
+              "strictLineBreaks": false,
+              "showLineNumber": false,
+              "showIndentGuide": true,
+              "useTab": false,
+              "tabSize": 4,
+              "autoPairBrackets": true,
+              "autoPairMarkdown": true,
+              "smartIndentList": true,
+              "foldHeading": true,
+              "foldIndent": true
+            },
+            "targetUrl": "app://obsidian.md/index.html",
+            "activeFile": "Conformance.md",
+            "isolated": true,
+            "isolatedRoot": "/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-nSru7J",
+            "isolatedProfile": "/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-nSru7J/profile",
+            "isolatedVault": "/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-nSru7J/vault",
+            "artifactsRetained": false,
+            "fileEditorMatch": true,
+            "runtimeExpectation": {
+              "obsidian": "1.13.6",
+              "electron": "39.7.0",
+              "chrome": "142.0.7444.265"
+            },
+            "asarSha256": "d769003f81435abe53576172f3bb0695132880cc7b7970f2f0086f7d5ea968b5",
+            "evidenceLevel": "O1",
+            "sourceCharacterLength": 16,
+            "sourceByteLength": 16
+          },
+          "raw": {
+            "editorSource": "A\nB\n    C\n    \nD",
+            "fileBytes": {
+              "path": "/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-nSru7J/vault/Conformance.md",
+              "byteLength": 16,
+              "base64": "QQpCCiAgICBDCiAgICAKRA==",
+              "sha256": "55185f9f36e9a53f40f4ede86b5a9bb21e288a1233655965e3b8c9a50375aa08",
+              "utf8": "A\nB\n    C\n    \nD"
+            },
+            "processLog": "2026-08-11 14:47:46 Loaded updated app package /private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-nSru7J/profile/obsidian-1.13.6.asar\n\nDevTools listening on ws://127.0.0.1:63230/devtools/browser/f734b0d6-5f80-4bfd-aca4-c50adabae470\nIgnored: Error: Argument must be a file path or a NativeImage\nIgnored: Error: ENOENT: no such file or directory, open '/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-nSru7J/profile/c0dec0dec0dec0de.json'\n2026-08-11 14:47:47 Checking for update using Github\n",
+            "runtime": {
+              "source": "A\nB\n    C\n    \nD",
+              "selection": {
+                "anchor": 14,
+                "focus": 14,
+                "from": 14,
+                "to": 14
+              },
+              "mode": "live-preview",
+              "visibleText": "Conformance\nA\nB\n    C\n    \nD",
+              "semantic": {
+                "rootTypes": [
+                  "paragraph",
+                  "paragraph"
+                ],
+                "nodes": [
+                  {
+                    "path": "0",
+                    "type": "paragraph",
+                    "quoteDepth": 0,
+                    "listDepth": 0
+                  },
+                  {
+                    "path": "0.0",
+                    "type": "break",
+                    "quoteDepth": 0,
+                    "listDepth": 0
+                  },
+                  {
+                    "path": "0.1",
+                    "type": "break",
+                    "quoteDepth": 0,
+                    "listDepth": 0
+                  },
+                  {
+                    "path": "1",
+                    "type": "paragraph",
+                    "quoteDepth": 0,
+                    "listDepth": 0
+                  }
+                ],
+                "typeCounts": {
+                  "paragraph": 2,
+                  "break": 2
+                },
+                "maximumQuoteDepth": 0,
+                "maximumListDepth": 0
+              },
+              "semanticCapture": "temporary-reading-view",
+              "semanticError": {
+                "name": "Error",
+                "message": "Cannot find module 'obsidian'\nRequire stack:\n- electron/js2c/renderer_init"
+              },
+              "semanticElements": [],
+              "markers": [],
+              "renderedState": "mixed",
+              "geometry": {
+                "viewport": {
+                  "x": 0,
+                  "y": 0,
+                  "left": 0,
+                  "top": 0,
+                  "right": 800,
+                  "bottom": 599,
+                  "width": 800,
+                  "height": 599
+                },
+                "editor": {
+                  "x": 344,
+                  "y": 77.390625,
+                  "left": 344,
+                  "top": 77.390625,
+                  "right": 800,
+                  "bottom": 599,
+                  "width": 456,
+                  "height": 521.609375
+                },
+                "lines": [
+                  {
+                    "index": 0,
+                    "text": "A",
+                    "sourceStart": 0,
+                    "sourceEnd": 1,
+                    "rect": {
+                      "x": 376,
+                      "y": 153.390625,
+                      "left": 376,
+                      "top": 153.390625,
+                      "right": 768,
+                      "bottom": 177.390625,
+                      "width": 392,
+                      "height": 24
+                    }
+                  },
+                  {
+                    "index": 1,
+                    "text": "B",
+                    "sourceStart": 2,
+                    "sourceEnd": 3,
+                    "rect": {
+                      "x": 376,
+                      "y": 177.390625,
+                      "left": 376,
+                      "top": 177.390625,
+                      "right": 768,
+                      "bottom": 201.390625,
+                      "width": 392,
+                      "height": 24
+                    }
+                  },
+                  {
+                    "index": 2,
+                    "text": "    C",
+                    "sourceStart": 4,
+                    "sourceEnd": 9,
+                    "rect": {
+                      "x": 376,
+                      "y": 201.390625,
+                      "left": 376,
+                      "top": 201.390625,
+                      "right": 768,
+                      "bottom": 225.390625,
+                      "width": 392,
+                      "height": 24
+                    }
+                  },
+                  {
+                    "index": 3,
+                    "text": "    ",
+                    "sourceStart": 10,
+                    "sourceEnd": 14,
+                    "rect": {
+                      "x": 376,
+                      "y": 225.390625,
+                      "left": 376,
+                      "top": 225.390625,
+                      "right": 768,
+                      "bottom": 249.390625,
+                      "width": 392,
+                      "height": 24
+                    }
+                  },
+                  {
+                    "index": 4,
+                    "text": "D",
+                    "sourceStart": 15,
+                    "sourceEnd": 16,
+                    "rect": {
+                      "x": 376,
+                      "y": 249.390625,
+                      "left": 376,
+                      "top": 249.390625,
+                      "right": 768,
+                      "bottom": 273.390625,
+                      "width": 392,
+                      "height": 24
+                    }
+                  }
+                ]
+              },
+              "versions": {
+                "obsidian": "1.13.6",
+                "shell": "1.12.4",
+                "electron": "39.7.0",
+                "chrome": "142.0.7444.265",
+                "node": "22.22.0"
+              },
+              "settings": {
+                "defaultViewMode": "source",
+                "livePreview": true,
+                "strictLineBreaks": false,
+                "showLineNumber": false,
+                "showIndentGuide": true,
+                "useTab": false,
+                "tabSize": 4,
+                "autoPairBrackets": true,
+                "autoPairMarkdown": true,
+                "smartIndentList": true,
+                "foldHeading": true,
+                "foldIndent": true
+              },
+              "activeFile": "Conformance.md",
+              "vaultName": "vault",
+              "vaultBasePath": "/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-nSru7J/vault",
+              "targetUrl": "app://obsidian.md/index.html"
+            }
+          }
+        },
+        {
+          "scenarioId": "repair.shift-enter-unordered",
+          "evidenceLevel": "O1",
+          "automatable": true,
+          "source": "- Alpha\n  ",
+          "fileBytes": {
+            "path": "/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-nSru7J/vault/Conformance.md",
+            "byteLength": 10,
+            "base64": "LSBBbHBoYQogIA==",
+            "sha256": "da63482f110a5bf1f25a54fed478a3b854225dafd41c3a48b0d6014ffe0460ef",
+            "utf8": "- Alpha\n  ",
+            "kind": "actual-markdown-file"
+          },
+          "sourceBytesBase64": "LSBBbHBoYQogIA==",
+          "fileBytesBase64": "LSBBbHBoYQogIA==",
+          "selection": {
+            "anchor": 10,
+            "focus": 10,
+            "start": 10,
+            "end": 10,
+            "collapsed": true,
+            "direction": "forward"
+          },
+          "physicalLines": [
+            "- Alpha",
+            "  "
+          ],
+          "physicalLineCount": 2,
+          "semantic": {
+            "rootTypes": [
+              "list"
+            ],
+            "nodes": [
+              {
+                "path": "0",
+                "type": "list",
+                "quoteDepth": 0,
+                "listDepth": 1,
+                "ordered": false,
+                "startNumber": null
+              },
+              {
+                "path": "0.0",
+                "type": "listItem",
+                "quoteDepth": 0,
+                "listDepth": 1,
+                "ordinal": null,
+                "checked": null
+              }
+            ],
+            "typeCounts": {
+              "list": 1,
+              "listItem": 1
+            },
+            "maximumQuoteDepth": 0,
+            "maximumListDepth": 1
+          },
+          "presentation": {
+            "mode": "live-preview",
+            "visibleText": "Conformance\n- Alpha\n  ",
+            "visibleLines": [
+              "Conformance",
+              "- Alpha",
+              "  "
+            ],
+            "markerVisibility": "visible",
+            "visibleMarkers": "--",
+            "quoteRailText": null,
+            "elementType": null,
+            "layout": null,
+            "controls": null,
+            "renderedState": "mixed",
+            "geometry": null
+          },
+          "geometry": {
+            "viewport": {
+              "x": 0,
+              "y": 0,
+              "left": 0,
+              "top": 0,
+              "right": 800,
+              "bottom": 599,
+              "width": 800,
+              "height": 599
+            },
+            "editor": {
+              "x": 344,
+              "y": 77.39,
+              "left": 344,
+              "top": 77.39,
+              "right": 800,
+              "bottom": 599,
+              "width": 456,
+              "height": 521.61
+            },
+            "lines": [
+              {
+                "index": 0,
+                "text": "- Alpha",
+                "sourceStart": 0,
+                "sourceEnd": 7,
+                "rect": {
+                  "x": 376,
+                  "y": 153.39,
+                  "left": 376,
+                  "top": 153.39,
+                  "right": 768,
+                  "bottom": 179.77,
+                  "width": 392,
+                  "height": 26.38
+                }
+              },
+              {
+                "index": 1,
+                "text": "  ",
+                "sourceStart": 8,
+                "sourceEnd": 10,
+                "rect": {
+                  "x": 376,
+                  "y": 179.77,
+                  "left": 376,
+                  "top": 179.77,
+                  "right": 768,
+                  "bottom": 204.95,
+                  "width": 392,
+                  "height": 25.19
+                }
+              }
+            ]
+          },
+          "visibleText": "Conformance\n- Alpha\n  ",
+          "metadata": {
+            "adapter": "obsidian-o1",
+            "mode": "live-preview",
+            "versions": {
+              "obsidian": "1.13.6",
+              "shell": "1.12.4",
+              "electron": "39.7.0",
+              "chrome": "142.0.7444.265",
+              "node": "22.22.0"
+            },
+            "settings": {
+              "defaultViewMode": "source",
+              "livePreview": true,
+              "strictLineBreaks": false,
+              "showLineNumber": false,
+              "showIndentGuide": true,
+              "useTab": false,
+              "tabSize": 4,
+              "autoPairBrackets": true,
+              "autoPairMarkdown": true,
+              "smartIndentList": true,
+              "foldHeading": true,
+              "foldIndent": true
+            },
+            "targetUrl": "app://obsidian.md/index.html",
+            "activeFile": "Conformance.md",
+            "isolated": true,
+            "isolatedRoot": "/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-nSru7J",
+            "isolatedProfile": "/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-nSru7J/profile",
+            "isolatedVault": "/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-nSru7J/vault",
+            "artifactsRetained": false,
+            "fileEditorMatch": true,
+            "runtimeExpectation": {
+              "obsidian": "1.13.6",
+              "electron": "39.7.0",
+              "chrome": "142.0.7444.265"
+            },
+            "asarSha256": "d769003f81435abe53576172f3bb0695132880cc7b7970f2f0086f7d5ea968b5",
+            "evidenceLevel": "O1",
+            "sourceCharacterLength": 10,
+            "sourceByteLength": 10
+          },
+          "raw": {
+            "editorSource": "- Alpha\n  ",
+            "fileBytes": {
+              "path": "/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-nSru7J/vault/Conformance.md",
+              "byteLength": 10,
+              "base64": "LSBBbHBoYQogIA==",
+              "sha256": "da63482f110a5bf1f25a54fed478a3b854225dafd41c3a48b0d6014ffe0460ef",
+              "utf8": "- Alpha\n  "
+            },
+            "processLog": "2026-08-11 14:47:46 Loaded updated app package /private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-nSru7J/profile/obsidian-1.13.6.asar\n\nDevTools listening on ws://127.0.0.1:63230/devtools/browser/f734b0d6-5f80-4bfd-aca4-c50adabae470\nIgnored: Error: Argument must be a file path or a NativeImage\nIgnored: Error: ENOENT: no such file or directory, open '/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-nSru7J/profile/c0dec0dec0dec0de.json'\n2026-08-11 14:47:47 Checking for update using Github\n2026-08-11 14:47:51 Success.\n2026-08-11 14:47:51 Latest version is 1.13.6\n2026-08-11 14:47:51 App is up to date.\n",
+            "runtime": {
+              "source": "- Alpha\n  ",
+              "selection": {
+                "anchor": 10,
+                "focus": 10,
+                "from": 10,
+                "to": 10
+              },
+              "mode": "live-preview",
+              "visibleText": "Conformance\n- Alpha\n  ",
+              "semantic": {
+                "rootTypes": [
+                  "list"
+                ],
+                "nodes": [
+                  {
+                    "path": "0",
+                    "type": "list",
+                    "quoteDepth": 0,
+                    "listDepth": 1,
+                    "ordered": false,
+                    "startNumber": null
+                  },
+                  {
+                    "path": "0.0",
+                    "type": "listItem",
+                    "quoteDepth": 0,
+                    "listDepth": 1,
+                    "ordinal": null,
+                    "checked": null
+                  }
+                ],
+                "typeCounts": {
+                  "list": 1,
+                  "listItem": 1
+                },
+                "maximumQuoteDepth": 0,
+                "maximumListDepth": 1
+              },
+              "semanticCapture": "temporary-reading-view",
+              "semanticError": {
+                "name": "Error",
+                "message": "Cannot find module 'obsidian'\nRequire stack:\n- electron/js2c/renderer_init"
+              },
+              "semanticElements": [
+                {
+                  "type": "list-line",
+                  "depth": 0,
+                  "headingDepth": 0,
+                  "text": "- Alpha",
+                  "checked": null,
+                  "visible": true
+                },
+                {
+                  "type": "list-line",
+                  "depth": 0,
+                  "headingDepth": 0,
+                  "text": "  ",
+                  "checked": null,
+                  "visible": true
+                }
+              ],
+              "markers": [
+                {
+                  "text": "-",
+                  "visible": true,
+                  "kind": "syntax"
+                },
+                {
+                  "text": "-",
+                  "visible": true,
+                  "kind": "syntax"
+                }
+              ],
+              "renderedState": "mixed",
+              "geometry": {
+                "viewport": {
+                  "x": 0,
+                  "y": 0,
+                  "left": 0,
+                  "top": 0,
+                  "right": 800,
+                  "bottom": 599,
+                  "width": 800,
+                  "height": 599
+                },
+                "editor": {
+                  "x": 344,
+                  "y": 77.390625,
+                  "left": 344,
+                  "top": 77.390625,
+                  "right": 800,
+                  "bottom": 599,
+                  "width": 456,
+                  "height": 521.609375
+                },
+                "lines": [
+                  {
+                    "index": 0,
+                    "text": "- Alpha",
+                    "sourceStart": 0,
+                    "sourceEnd": 7,
+                    "rect": {
+                      "x": 376,
+                      "y": 153.390625,
+                      "left": 376,
+                      "top": 153.390625,
+                      "right": 768,
+                      "bottom": 179.765625,
+                      "width": 392,
+                      "height": 26.375
+                    }
+                  },
+                  {
+                    "index": 1,
+                    "text": "  ",
+                    "sourceStart": 8,
+                    "sourceEnd": 10,
+                    "rect": {
+                      "x": 376,
+                      "y": 179.765625,
+                      "left": 376,
+                      "top": 179.765625,
+                      "right": 768,
+                      "bottom": 204.953125,
+                      "width": 392,
+                      "height": 25.1875
+                    }
+                  }
+                ]
+              },
+              "versions": {
+                "obsidian": "1.13.6",
+                "shell": "1.12.4",
+                "electron": "39.7.0",
+                "chrome": "142.0.7444.265",
+                "node": "22.22.0"
+              },
+              "settings": {
+                "defaultViewMode": "source",
+                "livePreview": true,
+                "strictLineBreaks": false,
+                "showLineNumber": false,
+                "showIndentGuide": true,
+                "useTab": false,
+                "tabSize": 4,
+                "autoPairBrackets": true,
+                "autoPairMarkdown": true,
+                "smartIndentList": true,
+                "foldHeading": true,
+                "foldIndent": true
+              },
+              "activeFile": "Conformance.md",
+              "vaultName": "vault",
+              "vaultBasePath": "/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-nSru7J/vault",
+              "targetUrl": "app://obsidian.md/index.html"
+            }
+          }
+        },
+        {
+          "scenarioId": "repair.shift-enter-ordered",
+          "evidenceLevel": "O1",
+          "automatable": true,
+          "source": "1. Alpha\n   ",
+          "fileBytes": {
+            "path": "/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-nSru7J/vault/Conformance.md",
+            "byteLength": 12,
+            "base64": "MS4gQWxwaGEKICAg",
+            "sha256": "3677733e320fd4460a2e5bc26d0531d11e0df17ba4cda403b5d549b99204a7c2",
+            "utf8": "1. Alpha\n   ",
+            "kind": "actual-markdown-file"
+          },
+          "sourceBytesBase64": "MS4gQWxwaGEKICAg",
+          "fileBytesBase64": "MS4gQWxwaGEKICAg",
+          "selection": {
+            "anchor": 12,
+            "focus": 12,
+            "start": 12,
+            "end": 12,
+            "collapsed": true,
+            "direction": "forward"
+          },
+          "physicalLines": [
+            "1. Alpha",
+            "   "
+          ],
+          "physicalLineCount": 2,
+          "semantic": {
+            "rootTypes": [
+              "list"
+            ],
+            "nodes": [
+              {
+                "path": "0",
+                "type": "list",
+                "quoteDepth": 0,
+                "listDepth": 1,
+                "ordered": true,
+                "startNumber": 1
+              },
+              {
+                "path": "0.0",
+                "type": "listItem",
+                "quoteDepth": 0,
+                "listDepth": 1,
+                "ordinal": 1,
+                "checked": null
+              }
+            ],
+            "typeCounts": {
+              "list": 1,
+              "listItem": 1
+            },
+            "maximumQuoteDepth": 0,
+            "maximumListDepth": 1
+          },
+          "presentation": {
+            "mode": "live-preview",
+            "visibleText": "Conformance\n1. Alpha\n   ",
+            "visibleLines": [
+              "Conformance",
+              "1. Alpha",
+              "   "
+            ],
+            "markerVisibility": "visible",
+            "visibleMarkers": "1.",
+            "quoteRailText": null,
+            "elementType": null,
+            "layout": null,
+            "controls": null,
+            "renderedState": "mixed",
+            "geometry": null
+          },
+          "geometry": {
+            "viewport": {
+              "x": 0,
+              "y": 0,
+              "left": 0,
+              "top": 0,
+              "right": 800,
+              "bottom": 599,
+              "width": 800,
+              "height": 599
+            },
+            "editor": {
+              "x": 344,
+              "y": 77.39,
+              "left": 344,
+              "top": 77.39,
+              "right": 800,
+              "bottom": 599,
+              "width": 456,
+              "height": 521.61
+            },
+            "lines": [
+              {
+                "index": 0,
+                "text": "1. Alpha",
+                "sourceStart": 0,
+                "sourceEnd": 8,
+                "rect": {
+                  "x": 376,
+                  "y": 153.39,
+                  "left": 376,
+                  "top": 153.39,
+                  "right": 768,
+                  "bottom": 179.77,
+                  "width": 392,
+                  "height": 26.38
+                }
+              },
+              {
+                "index": 1,
+                "text": "   ",
+                "sourceStart": 9,
+                "sourceEnd": 12,
+                "rect": {
+                  "x": 376,
+                  "y": 179.77,
+                  "left": 376,
+                  "top": 179.77,
+                  "right": 768,
+                  "bottom": 204.95,
+                  "width": 392,
+                  "height": 25.19
+                }
+              }
+            ]
+          },
+          "visibleText": "Conformance\n1. Alpha\n   ",
+          "metadata": {
+            "adapter": "obsidian-o1",
+            "mode": "live-preview",
+            "versions": {
+              "obsidian": "1.13.6",
+              "shell": "1.12.4",
+              "electron": "39.7.0",
+              "chrome": "142.0.7444.265",
+              "node": "22.22.0"
+            },
+            "settings": {
+              "defaultViewMode": "source",
+              "livePreview": true,
+              "strictLineBreaks": false,
+              "showLineNumber": false,
+              "showIndentGuide": true,
+              "useTab": false,
+              "tabSize": 4,
+              "autoPairBrackets": true,
+              "autoPairMarkdown": true,
+              "smartIndentList": true,
+              "foldHeading": true,
+              "foldIndent": true
+            },
+            "targetUrl": "app://obsidian.md/index.html",
+            "activeFile": "Conformance.md",
+            "isolated": true,
+            "isolatedRoot": "/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-nSru7J",
+            "isolatedProfile": "/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-nSru7J/profile",
+            "isolatedVault": "/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-nSru7J/vault",
+            "artifactsRetained": false,
+            "fileEditorMatch": true,
+            "runtimeExpectation": {
+              "obsidian": "1.13.6",
+              "electron": "39.7.0",
+              "chrome": "142.0.7444.265"
+            },
+            "asarSha256": "d769003f81435abe53576172f3bb0695132880cc7b7970f2f0086f7d5ea968b5",
+            "evidenceLevel": "O1",
+            "sourceCharacterLength": 12,
+            "sourceByteLength": 12
+          },
+          "raw": {
+            "editorSource": "1. Alpha\n   ",
+            "fileBytes": {
+              "path": "/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-nSru7J/vault/Conformance.md",
+              "byteLength": 12,
+              "base64": "MS4gQWxwaGEKICAg",
+              "sha256": "3677733e320fd4460a2e5bc26d0531d11e0df17ba4cda403b5d549b99204a7c2",
+              "utf8": "1. Alpha\n   "
+            },
+            "processLog": "2026-08-11 14:47:46 Loaded updated app package /private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-nSru7J/profile/obsidian-1.13.6.asar\n\nDevTools listening on ws://127.0.0.1:63230/devtools/browser/f734b0d6-5f80-4bfd-aca4-c50adabae470\nIgnored: Error: Argument must be a file path or a NativeImage\nIgnored: Error: ENOENT: no such file or directory, open '/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-nSru7J/profile/c0dec0dec0dec0de.json'\n2026-08-11 14:47:47 Checking for update using Github\n2026-08-11 14:47:51 Success.\n2026-08-11 14:47:51 Latest version is 1.13.6\n2026-08-11 14:47:51 App is up to date.\n",
+            "runtime": {
+              "source": "1. Alpha\n   ",
+              "selection": {
+                "anchor": 12,
+                "focus": 12,
+                "from": 12,
+                "to": 12
+              },
+              "mode": "live-preview",
+              "visibleText": "Conformance\n1. Alpha\n   ",
+              "semantic": {
+                "rootTypes": [
+                  "list"
+                ],
+                "nodes": [
+                  {
+                    "path": "0",
+                    "type": "list",
+                    "quoteDepth": 0,
+                    "listDepth": 1,
+                    "ordered": true,
+                    "startNumber": 1
+                  },
+                  {
+                    "path": "0.0",
+                    "type": "listItem",
+                    "quoteDepth": 0,
+                    "listDepth": 1,
+                    "ordinal": 1,
+                    "checked": null
+                  }
+                ],
+                "typeCounts": {
+                  "list": 1,
+                  "listItem": 1
+                },
+                "maximumQuoteDepth": 0,
+                "maximumListDepth": 1
+              },
+              "semanticCapture": "temporary-reading-view",
+              "semanticError": {
+                "name": "Error",
+                "message": "Cannot find module 'obsidian'\nRequire stack:\n- electron/js2c/renderer_init"
+              },
+              "semanticElements": [
+                {
+                  "type": "list-line",
+                  "depth": 0,
+                  "headingDepth": 0,
+                  "text": "1. Alpha",
+                  "checked": null,
+                  "visible": true
+                },
+                {
+                  "type": "list-line",
+                  "depth": 0,
+                  "headingDepth": 0,
+                  "text": "   ",
+                  "checked": null,
+                  "visible": true
+                }
+              ],
+              "markers": [
+                {
+                  "text": "1.",
+                  "visible": true,
+                  "kind": "syntax"
+                }
+              ],
+              "renderedState": "mixed",
+              "geometry": {
+                "viewport": {
+                  "x": 0,
+                  "y": 0,
+                  "left": 0,
+                  "top": 0,
+                  "right": 800,
+                  "bottom": 599,
+                  "width": 800,
+                  "height": 599
+                },
+                "editor": {
+                  "x": 344,
+                  "y": 77.390625,
+                  "left": 344,
+                  "top": 77.390625,
+                  "right": 800,
+                  "bottom": 599,
+                  "width": 456,
+                  "height": 521.609375
+                },
+                "lines": [
+                  {
+                    "index": 0,
+                    "text": "1. Alpha",
+                    "sourceStart": 0,
+                    "sourceEnd": 8,
+                    "rect": {
+                      "x": 376,
+                      "y": 153.390625,
+                      "left": 376,
+                      "top": 153.390625,
+                      "right": 768,
+                      "bottom": 179.765625,
+                      "width": 392,
+                      "height": 26.375
+                    }
+                  },
+                  {
+                    "index": 1,
+                    "text": "   ",
+                    "sourceStart": 9,
+                    "sourceEnd": 12,
+                    "rect": {
+                      "x": 376,
+                      "y": 179.765625,
+                      "left": 376,
+                      "top": 179.765625,
+                      "right": 768,
+                      "bottom": 204.953125,
+                      "width": 392,
+                      "height": 25.1875
+                    }
+                  }
+                ]
+              },
+              "versions": {
+                "obsidian": "1.13.6",
+                "shell": "1.12.4",
+                "electron": "39.7.0",
+                "chrome": "142.0.7444.265",
+                "node": "22.22.0"
+              },
+              "settings": {
+                "defaultViewMode": "source",
+                "livePreview": true,
+                "strictLineBreaks": false,
+                "showLineNumber": false,
+                "showIndentGuide": true,
+                "useTab": false,
+                "tabSize": 4,
+                "autoPairBrackets": true,
+                "autoPairMarkdown": true,
+                "smartIndentList": true,
+                "foldHeading": true,
+                "foldIndent": true
+              },
+              "activeFile": "Conformance.md",
+              "vaultName": "vault",
+              "vaultBasePath": "/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-nSru7J/vault",
+              "targetUrl": "app://obsidian.md/index.html"
+            }
+          }
+        },
+        {
+          "scenarioId": "repair.shift-enter-quote",
+          "evidenceLevel": "O1",
+          "automatable": true,
+          "source": "> Alpha\n> ",
+          "fileBytes": {
+            "path": "/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-WALYrw/vault/Conformance.md",
+            "byteLength": 10,
+            "base64": "PiBBbHBoYQo+IA==",
+            "sha256": "2eab6503eed6e5c987e1270d95afce6be0f04312710d6405dd7539f616cea692",
+            "utf8": "> Alpha\n> ",
+            "kind": "actual-markdown-file"
+          },
+          "sourceBytesBase64": "PiBBbHBoYQo+IA==",
+          "fileBytesBase64": "PiBBbHBoYQo+IA==",
+          "selection": {
+            "anchor": 10,
+            "focus": 10,
+            "start": 10,
+            "end": 10,
+            "collapsed": true,
+            "direction": "forward"
+          },
+          "physicalLines": [
+            "> Alpha",
+            "> "
+          ],
+          "physicalLineCount": 2,
+          "semantic": {
+            "rootTypes": [
+              "blockquote"
+            ],
+            "nodes": [
+              {
+                "path": "0",
+                "type": "blockquote",
+                "quoteDepth": 1,
+                "listDepth": 0
+              },
+              {
+                "path": "0.0",
+                "type": "paragraph",
+                "quoteDepth": 1,
+                "listDepth": 0
+              }
+            ],
+            "typeCounts": {
+              "blockquote": 1,
+              "paragraph": 1
+            },
+            "maximumQuoteDepth": 1,
+            "maximumListDepth": 0
+          },
+          "presentation": {
+            "mode": "live-preview",
+            "visibleText": "Conformance\n> Alpha\n> ",
+            "visibleLines": [
+              "Conformance",
+              "> Alpha",
+              "> "
+            ],
+            "markerVisibility": "visible",
+            "visibleMarkers": ">>",
+            "quoteRailText": null,
+            "elementType": null,
+            "layout": null,
+            "controls": null,
+            "renderedState": "mixed",
+            "geometry": null
+          },
+          "geometry": {
+            "viewport": {
+              "x": 0,
+              "y": 0,
+              "left": 0,
+              "top": 0,
+              "right": 800,
+              "bottom": 599,
+              "width": 800,
+              "height": 599
+            },
+            "editor": {
+              "x": 344,
+              "y": 77.39,
+              "left": 344,
+              "top": 77.39,
+              "right": 800,
+              "bottom": 599,
+              "width": 456,
+              "height": 521.61
+            },
+            "lines": [
+              {
+                "index": 0,
+                "text": "> Alpha",
+                "sourceStart": 0,
+                "sourceEnd": 7,
+                "rect": {
+                  "x": 376,
+                  "y": 153.39,
+                  "left": 376,
+                  "top": 153.39,
+                  "right": 768,
+                  "bottom": 177.39,
+                  "width": 392,
+                  "height": 24
+                }
+              },
+              {
+                "index": 1,
+                "text": "> ",
+                "sourceStart": 8,
+                "sourceEnd": 10,
+                "rect": {
+                  "x": 376,
+                  "y": 177.39,
+                  "left": 376,
+                  "top": 177.39,
+                  "right": 768,
+                  "bottom": 201.39,
+                  "width": 392,
+                  "height": 24
+                }
+              }
+            ]
+          },
+          "visibleText": "Conformance\n> Alpha\n> ",
+          "metadata": {
+            "adapter": "obsidian-o1",
+            "mode": "live-preview",
+            "versions": {
+              "obsidian": "1.13.6",
+              "shell": "1.12.4",
+              "electron": "39.7.0",
+              "chrome": "142.0.7444.265",
+              "node": "22.22.0"
+            },
+            "settings": {
+              "defaultViewMode": "source",
+              "livePreview": true,
+              "strictLineBreaks": false,
+              "showLineNumber": false,
+              "showIndentGuide": true,
+              "useTab": false,
+              "tabSize": 4,
+              "autoPairBrackets": true,
+              "autoPairMarkdown": true,
+              "smartIndentList": true,
+              "foldHeading": true,
+              "foldIndent": true
+            },
+            "targetUrl": "app://obsidian.md/index.html",
+            "activeFile": "Conformance.md",
+            "isolated": true,
+            "isolatedRoot": "/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-WALYrw",
+            "isolatedProfile": "/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-WALYrw/profile",
+            "isolatedVault": "/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-WALYrw/vault",
+            "artifactsRetained": false,
+            "fileEditorMatch": true,
+            "runtimeExpectation": {
+              "obsidian": "1.13.6",
+              "electron": "39.7.0",
+              "chrome": "142.0.7444.265"
+            },
+            "asarSha256": "d769003f81435abe53576172f3bb0695132880cc7b7970f2f0086f7d5ea968b5",
+            "evidenceLevel": "O1",
+            "sourceCharacterLength": 10,
+            "sourceByteLength": 10
+          },
+          "raw": {
+            "editorSource": "> Alpha\n> ",
+            "fileBytes": {
+              "path": "/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-WALYrw/vault/Conformance.md",
+              "byteLength": 10,
+              "base64": "PiBBbHBoYQo+IA==",
+              "sha256": "2eab6503eed6e5c987e1270d95afce6be0f04312710d6405dd7539f616cea692",
+              "utf8": "> Alpha\n> "
+            },
+            "processLog": "2026-08-11 14:47:53 Loaded updated app package /private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-WALYrw/profile/obsidian-1.13.6.asar\n\nDevTools listening on ws://127.0.0.1:63249/devtools/browser/af9894e6-b06a-4bcb-8052-dea3ae7ffd17\nIgnored: Error: Argument must be a file path or a NativeImage\nIgnored: Error: ENOENT: no such file or directory, open '/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-WALYrw/profile/c0dec0dec0dec0de.json'\n2026-08-11 14:47:53 Checking for update using Github\n2026-08-11 14:47:54 Success.\n2026-08-11 14:47:54 Latest version is 1.13.6\n2026-08-11 14:47:54 App is up to date.\n",
+            "runtime": {
+              "source": "> Alpha\n> ",
+              "selection": {
+                "anchor": 10,
+                "focus": 10,
+                "from": 10,
+                "to": 10
+              },
+              "mode": "live-preview",
+              "visibleText": "Conformance\n> Alpha\n> ",
+              "semantic": {
+                "rootTypes": [
+                  "blockquote"
+                ],
+                "nodes": [
+                  {
+                    "path": "0",
+                    "type": "blockquote",
+                    "quoteDepth": 1,
+                    "listDepth": 0
+                  },
+                  {
+                    "path": "0.0",
+                    "type": "paragraph",
+                    "quoteDepth": 1,
+                    "listDepth": 0
+                  }
+                ],
+                "typeCounts": {
+                  "blockquote": 1,
+                  "paragraph": 1
+                },
+                "maximumQuoteDepth": 1,
+                "maximumListDepth": 0
+              },
+              "semanticCapture": "temporary-reading-view",
+              "semanticError": {
+                "name": "Error",
+                "message": "Cannot find module 'obsidian'\nRequire stack:\n- electron/js2c/renderer_init"
+              },
+              "semanticElements": [
+                {
+                  "type": "quote-line",
+                  "depth": 0,
+                  "headingDepth": 0,
+                  "text": "> Alpha",
+                  "checked": null,
+                  "visible": true
+                },
+                {
+                  "type": "quote-line",
+                  "depth": 0,
+                  "headingDepth": 0,
+                  "text": "> ",
+                  "checked": null,
+                  "visible": true
+                }
+              ],
+              "markers": [
+                {
+                  "text": ">",
+                  "visible": true,
+                  "kind": "syntax"
+                },
+                {
+                  "text": ">",
+                  "visible": true,
+                  "kind": "syntax"
+                }
+              ],
+              "renderedState": "mixed",
+              "geometry": {
+                "viewport": {
+                  "x": 0,
+                  "y": 0,
+                  "left": 0,
+                  "top": 0,
+                  "right": 800,
+                  "bottom": 599,
+                  "width": 800,
+                  "height": 599
+                },
+                "editor": {
+                  "x": 344,
+                  "y": 77.390625,
+                  "left": 344,
+                  "top": 77.390625,
+                  "right": 800,
+                  "bottom": 599,
+                  "width": 456,
+                  "height": 521.609375
+                },
+                "lines": [
+                  {
+                    "index": 0,
+                    "text": "> Alpha",
+                    "sourceStart": 0,
+                    "sourceEnd": 7,
+                    "rect": {
+                      "x": 376,
+                      "y": 153.390625,
+                      "left": 376,
+                      "top": 153.390625,
+                      "right": 768,
+                      "bottom": 177.390625,
+                      "width": 392,
+                      "height": 24
+                    }
+                  },
+                  {
+                    "index": 1,
+                    "text": "> ",
+                    "sourceStart": 8,
+                    "sourceEnd": 10,
+                    "rect": {
+                      "x": 376,
+                      "y": 177.390625,
+                      "left": 376,
+                      "top": 177.390625,
+                      "right": 768,
+                      "bottom": 201.390625,
+                      "width": 392,
+                      "height": 24
+                    }
+                  }
+                ]
+              },
+              "versions": {
+                "obsidian": "1.13.6",
+                "shell": "1.12.4",
+                "electron": "39.7.0",
+                "chrome": "142.0.7444.265",
+                "node": "22.22.0"
+              },
+              "settings": {
+                "defaultViewMode": "source",
+                "livePreview": true,
+                "strictLineBreaks": false,
+                "showLineNumber": false,
+                "showIndentGuide": true,
+                "useTab": false,
+                "tabSize": 4,
+                "autoPairBrackets": true,
+                "autoPairMarkdown": true,
+                "smartIndentList": true,
+                "foldHeading": true,
+                "foldIndent": true
+              },
+              "activeFile": "Conformance.md",
+              "vaultName": "vault",
+              "vaultBasePath": "/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-WALYrw/vault",
+              "targetUrl": "app://obsidian.md/index.html"
+            }
+          }
+        },
+        {
+          "scenarioId": "repair.ordered-delete-minimized",
+          "evidenceLevel": "O1",
+          "automatable": true,
+          "source": "1. Ordered parent\n   - Bullet child\n     1. Number grandchild\n     2. Number sibling\n   - ullet sibling\n1. Ordered next",
+          "fileBytes": {
+            "path": "/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-WALYrw/vault/Conformance.md",
+            "byteLength": 119,
+            "base64": "MS4gT3JkZXJlZCBwYXJlbnQKICAgLSBCdWxsZXQgY2hpbGQKICAgICAxLiBOdW1iZXIgZ3JhbmRjaGlsZAogICAgIDIuIE51bWJlciBzaWJsaW5nCiAgIC0gdWxsZXQgc2libGluZwoxLiBPcmRlcmVkIG5leHQ=",
+            "sha256": "41ce9fd5fad023a2c9e9cedd362e00f2c96956d7e38fb9e3c5a8ef4b1d25508e",
+            "utf8": "1. Ordered parent\n   - Bullet child\n     1. Number grandchild\n     2. Number sibling\n   - ullet sibling\n1. Ordered next",
+            "kind": "actual-markdown-file"
+          },
+          "sourceBytesBase64": "MS4gT3JkZXJlZCBwYXJlbnQKICAgLSBCdWxsZXQgY2hpbGQKICAgICAxLiBOdW1iZXIgZ3JhbmRjaGlsZAogICAgIDIuIE51bWJlciBzaWJsaW5nCiAgIC0gdWxsZXQgc2libGluZwoxLiBPcmRlcmVkIG5leHQ=",
+          "fileBytesBase64": "MS4gT3JkZXJlZCBwYXJlbnQKICAgLSBCdWxsZXQgY2hpbGQKICAgICAxLiBOdW1iZXIgZ3JhbmRjaGlsZAogICAgIDIuIE51bWJlciBzaWJsaW5nCiAgIC0gdWxsZXQgc2libGluZwoxLiBPcmRlcmVkIG5leHQ=",
+          "selection": {
+            "anchor": 90,
+            "focus": 90,
+            "start": 90,
+            "end": 90,
+            "collapsed": true,
+            "direction": "forward"
+          },
+          "physicalLines": [
+            "1. Ordered parent",
+            "   - Bullet child",
+            "     1. Number grandchild",
+            "     2. Number sibling",
+            "   - ullet sibling",
+            "1. Ordered next"
+          ],
+          "physicalLineCount": 6,
+          "semantic": {
+            "rootTypes": [
+              "list"
+            ],
+            "nodes": [
+              {
+                "path": "0",
+                "type": "list",
+                "quoteDepth": 0,
+                "listDepth": 1,
+                "ordered": true,
+                "startNumber": 1
+              },
+              {
+                "path": "0.0",
+                "type": "listItem",
+                "quoteDepth": 0,
+                "listDepth": 1,
+                "ordinal": 1,
+                "checked": null
+              },
+              {
+                "path": "0.0.0",
+                "type": "list",
+                "quoteDepth": 0,
+                "listDepth": 2,
+                "ordered": false,
+                "startNumber": null
+              },
+              {
+                "path": "0.0.0.0",
+                "type": "listItem",
+                "quoteDepth": 0,
+                "listDepth": 2,
+                "ordinal": null,
+                "checked": null
+              },
+              {
+                "path": "0.0.0.0.0",
+                "type": "list",
+                "quoteDepth": 0,
+                "listDepth": 3,
+                "ordered": true,
+                "startNumber": 1
+              },
+              {
+                "path": "0.0.0.0.0.0",
+                "type": "listItem",
+                "quoteDepth": 0,
+                "listDepth": 3,
+                "ordinal": 1,
+                "checked": null
+              },
+              {
+                "path": "0.0.0.0.0.1",
+                "type": "listItem",
+                "quoteDepth": 0,
+                "listDepth": 3,
+                "ordinal": 2,
+                "checked": null
+              },
+              {
+                "path": "0.0.0.1",
+                "type": "listItem",
+                "quoteDepth": 0,
+                "listDepth": 2,
+                "ordinal": null,
+                "checked": null
+              },
+              {
+                "path": "0.1",
+                "type": "listItem",
+                "quoteDepth": 0,
+                "listDepth": 1,
+                "ordinal": 2,
+                "checked": null
+              }
+            ],
+            "typeCounts": {
+              "list": 3,
+              "listItem": 6
+            },
+            "maximumQuoteDepth": 0,
+            "maximumListDepth": 3
+          },
+          "presentation": {
+            "mode": "live-preview",
+            "visibleText": "Conformance\n1. Ordered parent\n   \n- Bullet child\n     1. Number grandchild\n     2. Number sibling\n   - ullet sibling\n1. Ordered next",
+            "visibleLines": [
+              "Conformance",
+              "1. Ordered parent",
+              "   ",
+              "- Bullet child",
+              "     1. Number grandchild",
+              "     2. Number sibling",
+              "   - ullet sibling",
+              "1. Ordered next"
+            ],
+            "markerVisibility": "visible",
+            "visibleMarkers": "1.--1.2.--1.",
+            "quoteRailText": null,
+            "elementType": null,
+            "layout": null,
+            "controls": null,
+            "renderedState": "mixed",
+            "geometry": null
+          },
+          "geometry": {
+            "viewport": {
+              "x": 0,
+              "y": 0,
+              "left": 0,
+              "top": 0,
+              "right": 800,
+              "bottom": 599,
+              "width": 800,
+              "height": 599
+            },
+            "editor": {
+              "x": 344,
+              "y": 77.39,
+              "left": 344,
+              "top": 77.39,
+              "right": 800,
+              "bottom": 599,
+              "width": 456,
+              "height": 521.61
+            },
+            "lines": [
+              {
+                "index": 0,
+                "text": "1. Ordered parent",
+                "sourceStart": 0,
+                "sourceEnd": 17,
+                "rect": {
+                  "x": 376,
+                  "y": 153.39,
+                  "left": 376,
+                  "top": 153.39,
+                  "right": 768,
+                  "bottom": 179.77,
+                  "width": 392,
+                  "height": 26.38
+                }
+              },
+              {
+                "index": 1,
+                "text": "   \n- Bullet child",
+                "sourceStart": 18,
+                "sourceEnd": 35,
+                "rect": {
+                  "x": 376,
+                  "y": 179.77,
+                  "left": 376,
+                  "top": 179.77,
+                  "right": 768,
+                  "bottom": 206.14,
+                  "width": 392,
+                  "height": 26.38
+                }
+              },
+              {
+                "index": 2,
+                "text": "     1. Number grandchild",
+                "sourceStart": 36,
+                "sourceEnd": 61,
+                "rect": {
+                  "x": 376,
+                  "y": 206.14,
+                  "left": 376,
+                  "top": 206.14,
+                  "right": 768,
+                  "bottom": 232.52,
+                  "width": 392,
+                  "height": 26.38
+                }
+              },
+              {
+                "index": 3,
+                "text": "     2. Number sibling",
+                "sourceStart": 62,
+                "sourceEnd": 84,
+                "rect": {
+                  "x": 376,
+                  "y": 232.52,
+                  "left": 376,
+                  "top": 232.52,
+                  "right": 768,
+                  "bottom": 258.89,
+                  "width": 392,
+                  "height": 26.38
+                }
+              },
+              {
+                "index": 4,
+                "text": "   - ullet sibling",
+                "sourceStart": 85,
+                "sourceEnd": 103,
+                "rect": {
+                  "x": 376,
+                  "y": 258.89,
+                  "left": 376,
+                  "top": 258.89,
+                  "right": 768,
+                  "bottom": 285.27,
+                  "width": 392,
+                  "height": 26.38
+                }
+              },
+              {
+                "index": 5,
+                "text": "1. Ordered next",
+                "sourceStart": 104,
+                "sourceEnd": 119,
+                "rect": {
+                  "x": 376,
+                  "y": 285.27,
+                  "left": 376,
+                  "top": 285.27,
+                  "right": 768,
+                  "bottom": 311.64,
+                  "width": 392,
+                  "height": 26.38
+                }
+              }
+            ]
+          },
+          "visibleText": "Conformance\n1. Ordered parent\n   \n- Bullet child\n     1. Number grandchild\n     2. Number sibling\n   - ullet sibling\n1. Ordered next",
+          "metadata": {
+            "adapter": "obsidian-o1",
+            "mode": "live-preview",
+            "versions": {
+              "obsidian": "1.13.6",
+              "shell": "1.12.4",
+              "electron": "39.7.0",
+              "chrome": "142.0.7444.265",
+              "node": "22.22.0"
+            },
+            "settings": {
+              "defaultViewMode": "source",
+              "livePreview": true,
+              "strictLineBreaks": false,
+              "showLineNumber": false,
+              "showIndentGuide": true,
+              "useTab": false,
+              "tabSize": 4,
+              "autoPairBrackets": true,
+              "autoPairMarkdown": true,
+              "smartIndentList": true,
+              "foldHeading": true,
+              "foldIndent": true
+            },
+            "targetUrl": "app://obsidian.md/index.html",
+            "activeFile": "Conformance.md",
+            "isolated": true,
+            "isolatedRoot": "/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-WALYrw",
+            "isolatedProfile": "/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-WALYrw/profile",
+            "isolatedVault": "/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-WALYrw/vault",
+            "artifactsRetained": false,
+            "fileEditorMatch": true,
+            "runtimeExpectation": {
+              "obsidian": "1.13.6",
+              "electron": "39.7.0",
+              "chrome": "142.0.7444.265"
+            },
+            "asarSha256": "d769003f81435abe53576172f3bb0695132880cc7b7970f2f0086f7d5ea968b5",
+            "evidenceLevel": "O1",
+            "sourceCharacterLength": 119,
+            "sourceByteLength": 119
+          },
+          "raw": {
+            "editorSource": "1. Ordered parent\n   - Bullet child\n     1. Number grandchild\n     2. Number sibling\n   - ullet sibling\n1. Ordered next",
+            "fileBytes": {
+              "path": "/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-WALYrw/vault/Conformance.md",
+              "byteLength": 119,
+              "base64": "MS4gT3JkZXJlZCBwYXJlbnQKICAgLSBCdWxsZXQgY2hpbGQKICAgICAxLiBOdW1iZXIgZ3JhbmRjaGlsZAogICAgIDIuIE51bWJlciBzaWJsaW5nCiAgIC0gdWxsZXQgc2libGluZwoxLiBPcmRlcmVkIG5leHQ=",
+              "sha256": "41ce9fd5fad023a2c9e9cedd362e00f2c96956d7e38fb9e3c5a8ef4b1d25508e",
+              "utf8": "1. Ordered parent\n   - Bullet child\n     1. Number grandchild\n     2. Number sibling\n   - ullet sibling\n1. Ordered next"
+            },
+            "processLog": "2026-08-11 14:47:53 Loaded updated app package /private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-WALYrw/profile/obsidian-1.13.6.asar\n\nDevTools listening on ws://127.0.0.1:63249/devtools/browser/af9894e6-b06a-4bcb-8052-dea3ae7ffd17\nIgnored: Error: Argument must be a file path or a NativeImage\nIgnored: Error: ENOENT: no such file or directory, open '/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-WALYrw/profile/c0dec0dec0dec0de.json'\n2026-08-11 14:47:53 Checking for update using Github\n2026-08-11 14:47:54 Success.\n2026-08-11 14:47:54 Latest version is 1.13.6\n2026-08-11 14:47:54 App is up to date.\n",
+            "runtime": {
+              "source": "1. Ordered parent\n   - Bullet child\n     1. Number grandchild\n     2. Number sibling\n   - ullet sibling\n1. Ordered next",
+              "selection": {
+                "anchor": 90,
+                "focus": 90,
+                "from": 90,
+                "to": 90
+              },
+              "mode": "live-preview",
+              "visibleText": "Conformance\n1. Ordered parent\n   \n- Bullet child\n     1. Number grandchild\n     2. Number sibling\n   - ullet sibling\n1. Ordered next",
+              "semantic": {
+                "rootTypes": [
+                  "list"
+                ],
+                "nodes": [
+                  {
+                    "path": "0",
+                    "type": "list",
+                    "quoteDepth": 0,
+                    "listDepth": 1,
+                    "ordered": true,
+                    "startNumber": 1
+                  },
+                  {
+                    "path": "0.0",
+                    "type": "listItem",
+                    "quoteDepth": 0,
+                    "listDepth": 1,
+                    "ordinal": 1,
+                    "checked": null
+                  },
+                  {
+                    "path": "0.0.0",
+                    "type": "list",
+                    "quoteDepth": 0,
+                    "listDepth": 2,
+                    "ordered": false,
+                    "startNumber": null
+                  },
+                  {
+                    "path": "0.0.0.0",
+                    "type": "listItem",
+                    "quoteDepth": 0,
+                    "listDepth": 2,
+                    "ordinal": null,
+                    "checked": null
+                  },
+                  {
+                    "path": "0.0.0.0.0",
+                    "type": "list",
+                    "quoteDepth": 0,
+                    "listDepth": 3,
+                    "ordered": true,
+                    "startNumber": 1
+                  },
+                  {
+                    "path": "0.0.0.0.0.0",
+                    "type": "listItem",
+                    "quoteDepth": 0,
+                    "listDepth": 3,
+                    "ordinal": 1,
+                    "checked": null
+                  },
+                  {
+                    "path": "0.0.0.0.0.1",
+                    "type": "listItem",
+                    "quoteDepth": 0,
+                    "listDepth": 3,
+                    "ordinal": 2,
+                    "checked": null
+                  },
+                  {
+                    "path": "0.0.0.1",
+                    "type": "listItem",
+                    "quoteDepth": 0,
+                    "listDepth": 2,
+                    "ordinal": null,
+                    "checked": null
+                  },
+                  {
+                    "path": "0.1",
+                    "type": "listItem",
+                    "quoteDepth": 0,
+                    "listDepth": 1,
+                    "ordinal": 2,
+                    "checked": null
+                  }
+                ],
+                "typeCounts": {
+                  "list": 3,
+                  "listItem": 6
+                },
+                "maximumQuoteDepth": 0,
+                "maximumListDepth": 3
+              },
+              "semanticCapture": "temporary-reading-view",
+              "semanticError": {
+                "name": "Error",
+                "message": "Cannot find module 'obsidian'\nRequire stack:\n- electron/js2c/renderer_init"
+              },
+              "semanticElements": [
+                {
+                  "type": "list-line",
+                  "depth": 0,
+                  "headingDepth": 0,
+                  "text": "1. Ordered parent",
+                  "checked": null,
+                  "visible": true
+                },
+                {
+                  "type": "list-line",
+                  "depth": 0,
+                  "headingDepth": 0,
+                  "text": "   \n- Bullet child",
+                  "checked": null,
+                  "visible": true
+                },
+                {
+                  "type": "list-line",
+                  "depth": 0,
+                  "headingDepth": 0,
+                  "text": "     1. Number grandchild",
+                  "checked": null,
+                  "visible": true
+                },
+                {
+                  "type": "list-line",
+                  "depth": 0,
+                  "headingDepth": 0,
+                  "text": "     2. Number sibling",
+                  "checked": null,
+                  "visible": true
+                },
+                {
+                  "type": "list-line",
+                  "depth": 0,
+                  "headingDepth": 0,
+                  "text": "   - ullet sibling",
+                  "checked": null,
+                  "visible": true
+                },
+                {
+                  "type": "list-line",
+                  "depth": 0,
+                  "headingDepth": 0,
+                  "text": "1. Ordered next",
+                  "checked": null,
+                  "visible": true
+                }
+              ],
+              "markers": [
+                {
+                  "text": "1.",
+                  "visible": true,
+                  "kind": "syntax"
+                },
+                {
+                  "text": "-",
+                  "visible": true,
+                  "kind": "syntax"
+                },
+                {
+                  "text": "-",
+                  "visible": true,
+                  "kind": "syntax"
+                },
+                {
+                  "text": "1.",
+                  "visible": true,
+                  "kind": "syntax"
+                },
+                {
+                  "text": "2.",
+                  "visible": true,
+                  "kind": "syntax"
+                },
+                {
+                  "text": "-",
+                  "visible": true,
+                  "kind": "syntax"
+                },
+                {
+                  "text": "-",
+                  "visible": true,
+                  "kind": "syntax"
+                },
+                {
+                  "text": "1.",
+                  "visible": true,
+                  "kind": "syntax"
+                }
+              ],
+              "renderedState": "mixed",
+              "geometry": {
+                "viewport": {
+                  "x": 0,
+                  "y": 0,
+                  "left": 0,
+                  "top": 0,
+                  "right": 800,
+                  "bottom": 599,
+                  "width": 800,
+                  "height": 599
+                },
+                "editor": {
+                  "x": 344,
+                  "y": 77.390625,
+                  "left": 344,
+                  "top": 77.390625,
+                  "right": 800,
+                  "bottom": 599,
+                  "width": 456,
+                  "height": 521.609375
+                },
+                "lines": [
+                  {
+                    "index": 0,
+                    "text": "1. Ordered parent",
+                    "sourceStart": 0,
+                    "sourceEnd": 17,
+                    "rect": {
+                      "x": 376,
+                      "y": 153.390625,
+                      "left": 376,
+                      "top": 153.390625,
+                      "right": 768,
+                      "bottom": 179.765625,
+                      "width": 392,
+                      "height": 26.375
+                    }
+                  },
+                  {
+                    "index": 1,
+                    "text": "   \n- Bullet child",
+                    "sourceStart": 18,
+                    "sourceEnd": 35,
+                    "rect": {
+                      "x": 376,
+                      "y": 179.765625,
+                      "left": 376,
+                      "top": 179.765625,
+                      "right": 768,
+                      "bottom": 206.140625,
+                      "width": 392,
+                      "height": 26.375
+                    }
+                  },
+                  {
+                    "index": 2,
+                    "text": "     1. Number grandchild",
+                    "sourceStart": 36,
+                    "sourceEnd": 61,
+                    "rect": {
+                      "x": 376,
+                      "y": 206.140625,
+                      "left": 376,
+                      "top": 206.140625,
+                      "right": 768,
+                      "bottom": 232.515625,
+                      "width": 392,
+                      "height": 26.375
+                    }
+                  },
+                  {
+                    "index": 3,
+                    "text": "     2. Number sibling",
+                    "sourceStart": 62,
+                    "sourceEnd": 84,
+                    "rect": {
+                      "x": 376,
+                      "y": 232.515625,
+                      "left": 376,
+                      "top": 232.515625,
+                      "right": 768,
+                      "bottom": 258.890625,
+                      "width": 392,
+                      "height": 26.375
+                    }
+                  },
+                  {
+                    "index": 4,
+                    "text": "   - ullet sibling",
+                    "sourceStart": 85,
+                    "sourceEnd": 103,
+                    "rect": {
+                      "x": 376,
+                      "y": 258.890625,
+                      "left": 376,
+                      "top": 258.890625,
+                      "right": 768,
+                      "bottom": 285.265625,
+                      "width": 392,
+                      "height": 26.375
+                    }
+                  },
+                  {
+                    "index": 5,
+                    "text": "1. Ordered next",
+                    "sourceStart": 104,
+                    "sourceEnd": 119,
+                    "rect": {
+                      "x": 376,
+                      "y": 285.265625,
+                      "left": 376,
+                      "top": 285.265625,
+                      "right": 768,
+                      "bottom": 311.640625,
+                      "width": 392,
+                      "height": 26.375
+                    }
+                  }
+                ]
+              },
+              "versions": {
+                "obsidian": "1.13.6",
+                "shell": "1.12.4",
+                "electron": "39.7.0",
+                "chrome": "142.0.7444.265",
+                "node": "22.22.0"
+              },
+              "settings": {
+                "defaultViewMode": "source",
+                "livePreview": true,
+                "strictLineBreaks": false,
+                "showLineNumber": false,
+                "showIndentGuide": true,
+                "useTab": false,
+                "tabSize": 4,
+                "autoPairBrackets": true,
+                "autoPairMarkdown": true,
+                "smartIndentList": true,
+                "foldHeading": true,
+                "foldIndent": true
+              },
+              "activeFile": "Conformance.md",
+              "vaultName": "vault",
+              "vaultBasePath": "/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-WALYrw/vault",
+              "targetUrl": "app://obsidian.md/index.html"
+            }
+          }
+        },
+        {
+          "scenarioId": "repair.ordered-delete-explicit-start",
+          "evidenceLevel": "O1",
+          "automatable": true,
+          "source": "3. Root\n   - hild\n3. Next\n4. Last",
+          "fileBytes": {
+            "path": "/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-WALYrw/vault/Conformance.md",
+            "byteLength": 33,
+            "base64": "My4gUm9vdAogICAtIGhpbGQKMy4gTmV4dAo0LiBMYXN0",
+            "sha256": "9c7e604f7e9e6e9ef2cdf95ec192121deeaa729d5f0b357ce6fd2fd377a90fce",
+            "utf8": "3. Root\n   - hild\n3. Next\n4. Last",
+            "kind": "actual-markdown-file"
+          },
+          "sourceBytesBase64": "My4gUm9vdAogICAtIGhpbGQKMy4gTmV4dAo0LiBMYXN0",
+          "fileBytesBase64": "My4gUm9vdAogICAtIGhpbGQKMy4gTmV4dAo0LiBMYXN0",
+          "selection": {
+            "anchor": 13,
+            "focus": 13,
+            "start": 13,
+            "end": 13,
+            "collapsed": true,
+            "direction": "forward"
+          },
+          "physicalLines": [
+            "3. Root",
+            "   - hild",
+            "3. Next",
+            "4. Last"
+          ],
+          "physicalLineCount": 4,
+          "semantic": {
+            "rootTypes": [
+              "list"
+            ],
+            "nodes": [
+              {
+                "path": "0",
+                "type": "list",
+                "quoteDepth": 0,
+                "listDepth": 1,
+                "ordered": true,
+                "startNumber": 3
+              },
+              {
+                "path": "0.0",
+                "type": "listItem",
+                "quoteDepth": 0,
+                "listDepth": 1,
+                "ordinal": 3,
+                "checked": null
+              },
+              {
+                "path": "0.0.0",
+                "type": "list",
+                "quoteDepth": 0,
+                "listDepth": 2,
+                "ordered": false,
+                "startNumber": null
+              },
+              {
+                "path": "0.0.0.0",
+                "type": "listItem",
+                "quoteDepth": 0,
+                "listDepth": 2,
+                "ordinal": null,
+                "checked": null
+              },
+              {
+                "path": "0.1",
+                "type": "listItem",
+                "quoteDepth": 0,
+                "listDepth": 1,
+                "ordinal": 4,
+                "checked": null
+              },
+              {
+                "path": "0.2",
+                "type": "listItem",
+                "quoteDepth": 0,
+                "listDepth": 1,
+                "ordinal": 5,
+                "checked": null
+              }
+            ],
+            "typeCounts": {
+              "list": 2,
+              "listItem": 4
+            },
+            "maximumQuoteDepth": 0,
+            "maximumListDepth": 2
+          },
+          "presentation": {
+            "mode": "live-preview",
+            "visibleText": "Conformance\n3. Root\n   - hild\n3. Next\n4. Last",
+            "visibleLines": [
+              "Conformance",
+              "3. Root",
+              "   - hild",
+              "3. Next",
+              "4. Last"
+            ],
+            "markerVisibility": "visible",
+            "visibleMarkers": "3.--3.4.",
+            "quoteRailText": null,
+            "elementType": null,
+            "layout": null,
+            "controls": null,
+            "renderedState": "mixed",
+            "geometry": null
+          },
+          "geometry": {
+            "viewport": {
+              "x": 0,
+              "y": 0,
+              "left": 0,
+              "top": 0,
+              "right": 800,
+              "bottom": 599,
+              "width": 800,
+              "height": 599
+            },
+            "editor": {
+              "x": 344,
+              "y": 77.39,
+              "left": 344,
+              "top": 77.39,
+              "right": 800,
+              "bottom": 599,
+              "width": 456,
+              "height": 521.61
+            },
+            "lines": [
+              {
+                "index": 0,
+                "text": "3. Root",
+                "sourceStart": 0,
+                "sourceEnd": 7,
+                "rect": {
+                  "x": 376,
+                  "y": 153.39,
+                  "left": 376,
+                  "top": 153.39,
+                  "right": 768,
+                  "bottom": 179.77,
+                  "width": 392,
+                  "height": 26.38
+                }
+              },
+              {
+                "index": 1,
+                "text": "   - hild",
+                "sourceStart": 8,
+                "sourceEnd": 17,
+                "rect": {
+                  "x": 376,
+                  "y": 179.77,
+                  "left": 376,
+                  "top": 179.77,
+                  "right": 768,
+                  "bottom": 206.14,
+                  "width": 392,
+                  "height": 26.38
+                }
+              },
+              {
+                "index": 2,
+                "text": "3. Next",
+                "sourceStart": 18,
+                "sourceEnd": 25,
+                "rect": {
+                  "x": 376,
+                  "y": 206.14,
+                  "left": 376,
+                  "top": 206.14,
+                  "right": 768,
+                  "bottom": 232.52,
+                  "width": 392,
+                  "height": 26.38
+                }
+              },
+              {
+                "index": 3,
+                "text": "4. Last",
+                "sourceStart": 26,
+                "sourceEnd": 33,
+                "rect": {
+                  "x": 376,
+                  "y": 232.52,
+                  "left": 376,
+                  "top": 232.52,
+                  "right": 768,
+                  "bottom": 258.89,
+                  "width": 392,
+                  "height": 26.38
+                }
+              }
+            ]
+          },
+          "visibleText": "Conformance\n3. Root\n   - hild\n3. Next\n4. Last",
+          "metadata": {
+            "adapter": "obsidian-o1",
+            "mode": "live-preview",
+            "versions": {
+              "obsidian": "1.13.6",
+              "shell": "1.12.4",
+              "electron": "39.7.0",
+              "chrome": "142.0.7444.265",
+              "node": "22.22.0"
+            },
+            "settings": {
+              "defaultViewMode": "source",
+              "livePreview": true,
+              "strictLineBreaks": false,
+              "showLineNumber": false,
+              "showIndentGuide": true,
+              "useTab": false,
+              "tabSize": 4,
+              "autoPairBrackets": true,
+              "autoPairMarkdown": true,
+              "smartIndentList": true,
+              "foldHeading": true,
+              "foldIndent": true
+            },
+            "targetUrl": "app://obsidian.md/index.html",
+            "activeFile": "Conformance.md",
+            "isolated": true,
+            "isolatedRoot": "/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-WALYrw",
+            "isolatedProfile": "/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-WALYrw/profile",
+            "isolatedVault": "/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-WALYrw/vault",
+            "artifactsRetained": false,
+            "fileEditorMatch": true,
+            "runtimeExpectation": {
+              "obsidian": "1.13.6",
+              "electron": "39.7.0",
+              "chrome": "142.0.7444.265"
+            },
+            "asarSha256": "d769003f81435abe53576172f3bb0695132880cc7b7970f2f0086f7d5ea968b5",
+            "evidenceLevel": "O1",
+            "sourceCharacterLength": 33,
+            "sourceByteLength": 33
+          },
+          "raw": {
+            "editorSource": "3. Root\n   - hild\n3. Next\n4. Last",
+            "fileBytes": {
+              "path": "/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-WALYrw/vault/Conformance.md",
+              "byteLength": 33,
+              "base64": "My4gUm9vdAogICAtIGhpbGQKMy4gTmV4dAo0LiBMYXN0",
+              "sha256": "9c7e604f7e9e6e9ef2cdf95ec192121deeaa729d5f0b357ce6fd2fd377a90fce",
+              "utf8": "3. Root\n   - hild\n3. Next\n4. Last"
+            },
+            "processLog": "2026-08-11 14:47:53 Loaded updated app package /private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-WALYrw/profile/obsidian-1.13.6.asar\n\nDevTools listening on ws://127.0.0.1:63249/devtools/browser/af9894e6-b06a-4bcb-8052-dea3ae7ffd17\nIgnored: Error: Argument must be a file path or a NativeImage\nIgnored: Error: ENOENT: no such file or directory, open '/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-WALYrw/profile/c0dec0dec0dec0de.json'\n2026-08-11 14:47:53 Checking for update using Github\n2026-08-11 14:47:54 Success.\n2026-08-11 14:47:54 Latest version is 1.13.6\n2026-08-11 14:47:54 App is up to date.\n",
+            "runtime": {
+              "source": "3. Root\n   - hild\n3. Next\n4. Last",
+              "selection": {
+                "anchor": 13,
+                "focus": 13,
+                "from": 13,
+                "to": 13
+              },
+              "mode": "live-preview",
+              "visibleText": "Conformance\n3. Root\n   - hild\n3. Next\n4. Last",
+              "semantic": {
+                "rootTypes": [
+                  "list"
+                ],
+                "nodes": [
+                  {
+                    "path": "0",
+                    "type": "list",
+                    "quoteDepth": 0,
+                    "listDepth": 1,
+                    "ordered": true,
+                    "startNumber": 3
+                  },
+                  {
+                    "path": "0.0",
+                    "type": "listItem",
+                    "quoteDepth": 0,
+                    "listDepth": 1,
+                    "ordinal": 3,
+                    "checked": null
+                  },
+                  {
+                    "path": "0.0.0",
+                    "type": "list",
+                    "quoteDepth": 0,
+                    "listDepth": 2,
+                    "ordered": false,
+                    "startNumber": null
+                  },
+                  {
+                    "path": "0.0.0.0",
+                    "type": "listItem",
+                    "quoteDepth": 0,
+                    "listDepth": 2,
+                    "ordinal": null,
+                    "checked": null
+                  },
+                  {
+                    "path": "0.1",
+                    "type": "listItem",
+                    "quoteDepth": 0,
+                    "listDepth": 1,
+                    "ordinal": 4,
+                    "checked": null
+                  },
+                  {
+                    "path": "0.2",
+                    "type": "listItem",
+                    "quoteDepth": 0,
+                    "listDepth": 1,
+                    "ordinal": 5,
+                    "checked": null
+                  }
+                ],
+                "typeCounts": {
+                  "list": 2,
+                  "listItem": 4
+                },
+                "maximumQuoteDepth": 0,
+                "maximumListDepth": 2
+              },
+              "semanticCapture": "temporary-reading-view",
+              "semanticError": {
+                "name": "Error",
+                "message": "Cannot find module 'obsidian'\nRequire stack:\n- electron/js2c/renderer_init"
+              },
+              "semanticElements": [
+                {
+                  "type": "list-line",
+                  "depth": 0,
+                  "headingDepth": 0,
+                  "text": "3. Root",
+                  "checked": null,
+                  "visible": true
+                },
+                {
+                  "type": "list-line",
+                  "depth": 0,
+                  "headingDepth": 0,
+                  "text": "   - hild",
+                  "checked": null,
+                  "visible": true
+                },
+                {
+                  "type": "list-line",
+                  "depth": 0,
+                  "headingDepth": 0,
+                  "text": "3. Next",
+                  "checked": null,
+                  "visible": true
+                },
+                {
+                  "type": "list-line",
+                  "depth": 0,
+                  "headingDepth": 0,
+                  "text": "4. Last",
+                  "checked": null,
+                  "visible": true
+                }
+              ],
+              "markers": [
+                {
+                  "text": "3.",
+                  "visible": true,
+                  "kind": "syntax"
+                },
+                {
+                  "text": "-",
+                  "visible": true,
+                  "kind": "syntax"
+                },
+                {
+                  "text": "-",
+                  "visible": true,
+                  "kind": "syntax"
+                },
+                {
+                  "text": "3.",
+                  "visible": true,
+                  "kind": "syntax"
+                },
+                {
+                  "text": "4.",
+                  "visible": true,
+                  "kind": "syntax"
+                }
+              ],
+              "renderedState": "mixed",
+              "geometry": {
+                "viewport": {
+                  "x": 0,
+                  "y": 0,
+                  "left": 0,
+                  "top": 0,
+                  "right": 800,
+                  "bottom": 599,
+                  "width": 800,
+                  "height": 599
+                },
+                "editor": {
+                  "x": 344,
+                  "y": 77.390625,
+                  "left": 344,
+                  "top": 77.390625,
+                  "right": 800,
+                  "bottom": 599,
+                  "width": 456,
+                  "height": 521.609375
+                },
+                "lines": [
+                  {
+                    "index": 0,
+                    "text": "3. Root",
+                    "sourceStart": 0,
+                    "sourceEnd": 7,
+                    "rect": {
+                      "x": 376,
+                      "y": 153.390625,
+                      "left": 376,
+                      "top": 153.390625,
+                      "right": 768,
+                      "bottom": 179.765625,
+                      "width": 392,
+                      "height": 26.375
+                    }
+                  },
+                  {
+                    "index": 1,
+                    "text": "   - hild",
+                    "sourceStart": 8,
+                    "sourceEnd": 17,
+                    "rect": {
+                      "x": 376,
+                      "y": 179.765625,
+                      "left": 376,
+                      "top": 179.765625,
+                      "right": 768,
+                      "bottom": 206.140625,
+                      "width": 392,
+                      "height": 26.375
+                    }
+                  },
+                  {
+                    "index": 2,
+                    "text": "3. Next",
+                    "sourceStart": 18,
+                    "sourceEnd": 25,
+                    "rect": {
+                      "x": 376,
+                      "y": 206.140625,
+                      "left": 376,
+                      "top": 206.140625,
+                      "right": 768,
+                      "bottom": 232.515625,
+                      "width": 392,
+                      "height": 26.375
+                    }
+                  },
+                  {
+                    "index": 3,
+                    "text": "4. Last",
+                    "sourceStart": 26,
+                    "sourceEnd": 33,
+                    "rect": {
+                      "x": 376,
+                      "y": 232.515625,
+                      "left": 376,
+                      "top": 232.515625,
+                      "right": 768,
+                      "bottom": 258.890625,
+                      "width": 392,
+                      "height": 26.375
+                    }
+                  }
+                ]
+              },
+              "versions": {
+                "obsidian": "1.13.6",
+                "shell": "1.12.4",
+                "electron": "39.7.0",
+                "chrome": "142.0.7444.265",
+                "node": "22.22.0"
+              },
+              "settings": {
+                "defaultViewMode": "source",
+                "livePreview": true,
+                "strictLineBreaks": false,
+                "showLineNumber": false,
+                "showIndentGuide": true,
+                "useTab": false,
+                "tabSize": 4,
+                "autoPairBrackets": true,
+                "autoPairMarkdown": true,
+                "smartIndentList": true,
+                "foldHeading": true,
+                "foldIndent": true
+              },
+              "activeFile": "Conformance.md",
+              "vaultName": "vault",
+              "vaultBasePath": "/private/var/folders/4t/q859bhjd2vb0sh110x0mxhl00000gn/T/cne-md-conformance-obsidian-o1-WALYrw/vault",
+              "targetUrl": "app://obsidian.md/index.html"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

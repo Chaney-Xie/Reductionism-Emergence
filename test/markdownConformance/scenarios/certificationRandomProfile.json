@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "v0.3-valid",
+  "description": "Bounded, source-comparable random edit sequences for v0.3 O1↔V1 certification.",
+  "seed": "cogneuro-v0.3-certification-random-001",
+  "count": 100,
+  "minimumActions": 8,
+  "maximumActions": 24,
+  "bounds": {
+    "maximumSequences": 100,
+    "maximumActionsPerSequence": 60
+  },
+  "historyRules": {
+    "undo": "Only after at least one conservatively guaranteed edit remains undoable.",
+    "redo": "Only immediately after a generated Undo, with no intervening action.",
+    "ambiguousEdit": "May clear Redo but is never used alone to prove Undo availability."
+  },
+  "verticalNavigation": {
+    "default": "excluded",
+    "optional": "A single terminal ArrowUp or ArrowDown may be added only when marked non-comparable for selection."
+  }
+}

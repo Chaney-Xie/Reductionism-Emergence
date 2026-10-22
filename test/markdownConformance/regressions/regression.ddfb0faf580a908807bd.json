@@ -1,0 +1,24 @@
+{
+  "kind": "promoted-o1-v1-regression",
+  "metadata": {
+    "evidenceLevels": ["O1", "V1"],
+    "predicate": "source",
+    "randomOriginId": "random.bb6747057be8d79dcd8e",
+    "reason": "Clean one-action equivalent of the random Shift+Enter source-authority failure."
+  },
+  "minimizedLength": 1,
+  "originalLength": 4,
+  "schemaVersion": 1,
+  "sequence": {
+    "actions": [{ "key": "Enter", "shiftKey": true, "type": "keyboard" }],
+    "fixtureId": "plain",
+    "id": "regression.ddfb0faf580a908807bd",
+    "initialSelection": { "anchor": 5, "focus": 5 },
+    "initialSource": "Alpha",
+    "mode": "live-preview",
+    "randomOriginId": "random.bb6747057be8d79dcd8e",
+    "requiredObservations": ["source", "selection", "physical", "semantic"],
+    "schemaVersion": 1,
+    "syntaxFamily": "hard-break"
+  }
+}

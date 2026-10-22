@@ -1,0 +1,38 @@
+{
+  "kind": "promoted-o1-v1-regression",
+  "metadata": {
+    "evidenceLevels": ["O1", "V1"],
+    "predicate": "source",
+    "randomOriginId": "random.16e23712237e388f317b",
+    "reason": "Clean one-action equivalent of the random trace after its original active-marker caret became non-automatable in Obsidian."
+  },
+  "minimizedLength": 1,
+  "originalLength": 3,
+  "schemaVersion": 1,
+  "sequence": {
+    "actions": [
+      {
+        "command": "insertText",
+        "text": " ",
+        "type": "input"
+      }
+    ],
+    "fixtureId": "plain-text-leading-space",
+    "id": "regression.150b92dcc76f219567bf",
+    "initialSelection": {
+      "anchor": 0,
+      "focus": 0
+    },
+    "initialSource": "Alpha",
+    "mode": "live-preview",
+    "randomOriginId": "random.16e23712237e388f317b",
+    "requiredObservations": [
+      "source",
+      "selection",
+      "physical",
+      "semantic"
+    ],
+    "schemaVersion": 1,
+    "syntaxFamily": "plain-text"
+  }
+}

@@ -1,0 +1,2805 @@
+{
+  "authoritativePredecessorRebasedCount": 3,
+  "automaticMinimizationCaseCount": 7,
+  "automaticMinimizationComplete": true,
+  "caretAffinityDependencyCount": 0,
+  "caretAffinityProducingPrefixCount": 0,
+  "caretAffinityProducingSuffixCount": 0,
+  "caseCount": 7,
+  "categoryCounts": {
+    "delete": 1,
+    "history": 4,
+    "navigation": 1,
+    "text-insertion": 1
+  },
+  "corpusSha256": "2353fee9c7f463bcc30e5582914de7eef2011e267a756f56892f9c22bfece84d",
+  "dependencySuffixCount": 4,
+  "deterministic": true,
+  "divergentActionCount": 7,
+  "divergentScenarioCount": 4,
+  "everyAuthoritativeDivergentActionSaved": true,
+  "historyDependencyResolvedCount": 4,
+  "historyDependencySuffixCount": 4,
+  "kind": "v0.3-list-editing-expanded-minimized-action-repair-gate",
+  "minimizationPolicy": {
+    "freshLoadCaretAffinity": "after a strict O1 setup failure adjacent to an incomplete Live Preview asterisk delimiter, retain the shortest observed suffix beginning on an active line before that delimiter was produced; require a new strict O1 replay before certification",
+    "oneActionMinimality": "Target action is required to produce its action-trace observation; no proper non-empty action subsequence exists.",
+    "ordinaryAction": "rebase-from-exact-o1-predecessor",
+    "statefulAction": "retain the shortest contiguous suffix spanning both the O1-restored state and the aligned prior state restored by V1, so an incorrect merge/split boundary remains reproducible; Redo retains that edit suffix plus Undo/Redo",
+    "target": "every-authoritative-divergent-action"
+  },
+  "o1ReplayDependencyExpandedCount": 0,
+  "o1ReplayOracleMismatchCount": 0,
+  "o1ReplayReproducedCount": 7,
+  "oneActionRebasedCount": 3,
+  "oneMinimalCaseCount": 3,
+  "originalSingleActionCount": 0,
+  "prefixStateRequiredCount": 4,
+  "preservedPrefixCount": 0,
+  "requiresO1ReplayValidationCount": 0,
+  "schemaVersion": 1,
+  "sequences": [
+    {
+      "actions": [
+        {
+          "command": "insertText",
+          "historyEffect": "guaranteed-edit",
+          "id": "type-text",
+          "text": "A",
+          "type": "input"
+        },
+        {
+          "historyEffect": "guaranteed-edit",
+          "id": "enter",
+          "key": "Enter",
+          "type": "keyboard"
+        },
+        {
+          "historyEffect": "possible-edit",
+          "id": "delete",
+          "key": "Delete",
+          "type": "keyboard"
+        },
+        {
+          "historyEffect": "possible-edit",
+          "id": "shift-tab",
+          "key": "Tab",
+          "shiftKey": true,
+          "type": "keyboard"
+        },
+        {
+          "historyEffect": "possible-edit",
+          "id": "backspace",
+          "key": "Backspace",
+          "type": "keyboard"
+        },
+        {
+          "historyEffect": "undo",
+          "id": "undo",
+          "key": "z",
+          "modifiers": [
+            "platform-primary"
+          ],
+          "type": "keyboard"
+        }
+      ],
+      "comparisonPolicy": {
+        "kind": "fully-comparable",
+        "nonComparableDimensions": []
+      },
+      "fixtureId": "random-nested-depth-2",
+      "id": "v0.3-full-trace-repair.list-random-500.002.ab87e9a2e3876e26.action-7",
+      "initialSelection": {
+        "anchor": 12,
+        "focus": 12
+      },
+      "initialSource": "- Alpha\n  - Beta\n- Gamma",
+      "mode": "live-preview",
+      "oracleExpected": {
+        "presentation": {
+          "list": {
+            "active": true,
+            "focus": {
+              "activeItemPaths": [
+                "0.0"
+              ],
+              "activeLineIndexes": [
+                1
+              ],
+              "editorActive": true
+            },
+            "markers": [
+              {
+                "active": false,
+                "displayedMarker": "-",
+                "displayedOrdinal": null,
+                "itemPath": "0",
+                "kind": "unordered",
+                "lineIndex": 0,
+                "markerOwner": "source",
+                "markerVisible": true
+              },
+              {
+                "active": true,
+                "displayedMarker": "-",
+                "displayedOrdinal": null,
+                "itemPath": "0.0",
+                "kind": "unordered",
+                "lineIndex": 1,
+                "markerOwner": "source",
+                "markerVisible": true
+              },
+              {
+                "active": false,
+                "displayedMarker": "-",
+                "displayedOrdinal": null,
+                "itemPath": "1",
+                "kind": "unordered",
+                "lineIndex": 2,
+                "markerOwner": "source",
+                "markerVisible": true
+              }
+            ]
+          },
+          "mode": "live-preview"
+        },
+        "selection": {
+          "anchor": 12,
+          "focus": 12
+        },
+        "semantic": {
+          "construct": "list",
+          "items": [
+            {
+              "checked": null,
+              "itemPath": "0",
+              "kind": "unordered",
+              "lineIndex": 0,
+              "listDepth": 1,
+              "parentPath": null,
+              "quoteDepth": 0,
+              "recognized": true
+            },
+            {
+              "checked": null,
+              "itemPath": "0.0",
+              "kind": "unordered",
+              "lineIndex": 1,
+              "listDepth": 2,
+              "parentPath": "0",
+              "quoteDepth": 0,
+              "recognized": true
+            },
+            {
+              "checked": null,
+              "itemPath": "1",
+              "kind": "unordered",
+              "lineIndex": 2,
+              "listDepth": 1,
+              "parentPath": null,
+              "quoteDepth": 0,
+              "recognized": true
+            }
+          ],
+          "maximumListDepth": 2
+        },
+        "source": "- Alpha\n  - Beta\n- Gamma"
+      },
+      "repairCategory": "history",
+      "repairMetadata": {
+        "authoritativeDifferencePaths": [
+          "source.byteLength",
+          "source.bytesBase64",
+          "source.sha256",
+          "source.text",
+          "selection.anchor",
+          "selection.anchorPoint.column",
+          "selection.anchorPoint.line",
+          "selection.anchorPoint.lineIndex",
+          "selection.anchorPoint.offset",
+          "selection.end",
+          "selection.focus",
+          "selection.focusPoint.column",
+          "selection.focusPoint.line",
+          "selection.focusPoint.lineIndex",
+          "selection.focusPoint.offset",
+          "selection.start",
+          "physical.lineCount",
+          "physical.lines.1.end",
+          "physical.lines.1.endWithEnding",
+          "physical.lines.1.text",
+          "physical.lines.2.end",
+          "physical.lines.2.endWithEnding",
+          "physical.lines.2.lineEnding",
+          "physical.lines.2.start",
+          "physical.lines.2.terminal",
+          "physical.lines.2.text",
+          "physical.lines.3",
+          "semantic.items.3",
+          "presentation.list.markers.1.active",
+          "presentation.list.markers.2.active",
+          "presentation.list.markers.3",
+          "presentation.list.focus.activeItemPaths.0",
+          "presentation.list.focus.activeLineIndexes.0"
+        ],
+        "automaticMinimizationComplete": true,
+        "caretAffinityDependencyPreserved": false,
+        "caretAffinityKind": null,
+        "caretAffinityPredecessorStateIndex": null,
+        "caretAffinityReplayStartActionIndex": null,
+        "caretAffinityUnsafeStateIndex": null,
+        "dependencySuffixPreserved": true,
+        "divergentActionIndex": 6,
+        "divergentActionNumber": 7,
+        "expectedO1": {
+          "presentation": {
+            "list": {
+              "active": true,
+              "focus": {
+                "activeItemPaths": [
+                  "0.0"
+                ],
+                "activeLineIndexes": [
+                  1
+                ],
+                "editorActive": true
+              },
+              "markers": [
+                {
+                  "active": false,
+                  "displayedMarker": "-",
+                  "displayedOrdinal": null,
+                  "itemPath": "0",
+                  "kind": "unordered",
+                  "lineIndex": 0,
+                  "markerOwner": "source",
+                  "markerVisible": true
+                },
+                {
+                  "active": true,
+                  "displayedMarker": "-",
+                  "displayedOrdinal": null,
+                  "itemPath": "0.0",
+                  "kind": "unordered",
+                  "lineIndex": 1,
+                  "markerOwner": "source",
+                  "markerVisible": true
+                },
+                {
+                  "active": false,
+                  "displayedMarker": "-",
+                  "displayedOrdinal": null,
+                  "itemPath": "1",
+                  "kind": "unordered",
+                  "lineIndex": 2,
+                  "markerOwner": "source",
+                  "markerVisible": true
+                }
+              ]
+            },
+            "mode": "live-preview"
+          },
+          "selection": {
+            "anchor": 12,
+            "focus": 12
+          },
+          "semantic": {
+            "construct": "list",
+            "items": [
+              {
+                "checked": null,
+                "itemPath": "0",
+                "kind": "unordered",
+                "lineIndex": 0,
+                "listDepth": 1,
+                "parentPath": null,
+                "quoteDepth": 0,
+                "recognized": true
+              },
+              {
+                "checked": null,
+                "itemPath": "0.0",
+                "kind": "unordered",
+                "lineIndex": 1,
+                "listDepth": 2,
+                "parentPath": "0",
+                "quoteDepth": 0,
+                "recognized": true
+              },
+              {
+                "checked": null,
+                "itemPath": "1",
+                "kind": "unordered",
+                "lineIndex": 2,
+                "listDepth": 1,
+                "parentPath": null,
+                "quoteDepth": 0,
+                "recognized": true
+              }
+            ],
+            "maximumListDepth": 2
+          },
+          "source": "- Alpha\n  - Beta\n- Gamma"
+        },
+        "firstDivergentActionIndex": 6,
+        "firstDivergentActionNumber": 7,
+        "historyAnchorMatch": "source-and-selection",
+        "historyCoreReplayStartActionIndex": 1,
+        "historyDependencyReduced": true,
+        "historyDependencyResolved": true,
+        "historyReplayStartActionIndex": 1,
+        "historyUndoActionIndex": 6,
+        "historyViewerRedoTargetMatch": null,
+        "historyViewerRedoTargetStateIndex": null,
+        "historyViewerTargetMatch": "source-and-selection",
+        "historyViewerTargetStateIndex": 4,
+        "historyViewerUndoTargetMatch": "source-and-selection",
+        "historyViewerUndoTargetStateIndex": 4,
+        "listContractDifferencePaths": [
+          "semantic.items.3",
+          "presentation.list.markers.1.active",
+          "presentation.list.markers.2.active",
+          "presentation.list.markers.3",
+          "presentation.list.focus.activeItemPaths.0",
+          "presentation.list.focus.activeLineIndexes.0"
+        ],
+        "minimizationStrategy": "exact-history-dependency-suffix",
+        "minimizedActionCount": 6,
+        "o1ReplayDependencyExpanded": false,
+        "o1ReplayDependencyExpansionKind": null,
+        "o1ReplayDependencyPreviousStartActionIndex": null,
+        "o1ReplayOracleMismatchObserved": false,
+        "o1ReplayPriorGateActionCount": 6,
+        "o1ReplayPriorStartActionIndex": 1,
+        "o1ReplayReasonCode": "oracle-reproduced",
+        "o1ReplayReproduced": true,
+        "o1ReplaySetupFailureObserved": false,
+        "o1ReplaySetupReasonCode": null,
+        "o1ReplaySetupStatus": null,
+        "o1ReplayStatus": "REPRODUCIBLE",
+        "o1ReplayValidationObserved": true,
+        "observedV1BeforeRepair": {
+          "presentation": {
+            "list": {
+              "active": true,
+              "focus": {
+                "activeItemPaths": [
+                  "1"
+                ],
+                "activeLineIndexes": [
+                  2
+                ],
+                "editorActive": true
+              },
+              "markers": [
+                {
+                  "active": false,
+                  "displayedMarker": "-",
+                  "displayedOrdinal": null,
+                  "itemPath": "0",
+                  "kind": "unordered",
+                  "lineIndex": 0,
+                  "markerOwner": "source",
+                  "markerVisible": true
+                },
+                {
+                  "active": false,
+                  "displayedMarker": "-",
+                  "displayedOrdinal": null,
+                  "itemPath": "0.0",
+                  "kind": "unordered",
+                  "lineIndex": 1,
+                  "markerOwner": "source",
+                  "markerVisible": true
+                },
+                {
+                  "active": true,
+                  "displayedMarker": "-",
+                  "displayedOrdinal": null,
+                  "itemPath": "1",
+                  "kind": "unordered",
+                  "lineIndex": 2,
+                  "markerOwner": "source",
+                  "markerVisible": true
+                },
+                {
+                  "active": false,
+                  "displayedMarker": "-",
+                  "displayedOrdinal": null,
+                  "itemPath": "2",
+                  "kind": "unordered",
+                  "lineIndex": 3,
+                  "markerOwner": "source",
+                  "markerVisible": true
+                }
+              ]
+            },
+            "mode": "live-preview"
+          },
+          "selection": {
+            "anchor": 16,
+            "focus": 16
+          },
+          "semantic": {
+            "construct": "list",
+            "items": [
+              {
+                "checked": null,
+                "itemPath": "0",
+                "kind": "unordered",
+                "lineIndex": 0,
+                "listDepth": 1,
+                "parentPath": null,
+                "quoteDepth": 0,
+                "recognized": true
+              },
+              {
+                "checked": null,
+                "itemPath": "0.0",
+                "kind": "unordered",
+                "lineIndex": 1,
+                "listDepth": 2,
+                "parentPath": "0",
+                "quoteDepth": 0,
+                "recognized": true
+              },
+              {
+                "checked": null,
+                "itemPath": "1",
+                "kind": "unordered",
+                "lineIndex": 2,
+                "listDepth": 1,
+                "parentPath": null,
+                "quoteDepth": 0,
+                "recognized": true
+              },
+              {
+                "checked": null,
+                "itemPath": "2",
+                "kind": "unordered",
+                "lineIndex": 3,
+                "listDepth": 1,
+                "parentPath": null,
+                "quoteDepth": 0,
+                "recognized": true
+              }
+            ],
+            "maximumListDepth": 2
+          },
+          "source": "- Alpha\n  - A\n- eta\n- Gamma"
+        },
+        "oneMinimalByActionCount": false,
+        "originReplayStartActionIndex": 1,
+        "originScenarioId": "list-random-500.002.ab87e9a2e3876e26",
+        "prefixStatePreserved": false,
+        "prefixStateRequired": true,
+        "requiresO1ReplayValidation": false
+      },
+      "requiredObservations": [
+        "source",
+        "selection",
+        "physical",
+        "semantic",
+        "presentation"
+      ],
+      "schemaVersion": 1,
+      "state": {
+        "active": true
+      },
+      "syntaxFamily": "unordered-lists",
+      "tags": [
+        "list-editing-expanded",
+        "list-random-500",
+        "list-category-nested"
+      ]
+    },
+    {
+      "actions": [
+        {
+          "historyEffect": "possible-edit",
+          "id": "tab",
+          "key": "Tab",
+          "type": "keyboard"
+        },
+        {
+          "command": "insertText",
+          "historyEffect": "guaranteed-edit",
+          "id": "type-text",
+          "text": "*",
+          "type": "input"
+        },
+        {
+          "historyEffect": "undo",
+          "id": "undo",
+          "key": "z",
+          "modifiers": [
+            "platform-primary"
+          ],
+          "type": "keyboard"
+        }
+      ],
+      "comparisonPolicy": {
+        "kind": "fully-comparable",
+        "nonComparableDimensions": []
+      },
+      "fixtureId": "random-ordered-9-10-11",
+      "id": "v0.3-full-trace-repair.list-random-500.090.db357197c37d622e.action-6",
+      "initialSelection": {
+        "anchor": 9,
+        "focus": 9
+      },
+      "initialSource": "9. A\n10. *B\n11. C",
+      "mode": "source",
+      "oracleExpected": {
+        "presentation": {
+          "list": {
+            "active": true,
+            "focus": {
+              "activeItemPaths": [
+                "1"
+              ],
+              "activeLineIndexes": [
+                1
+              ],
+              "editorActive": true
+            },
+            "markers": [
+              {
+                "active": false,
+                "displayedMarker": "9.",
+                "displayedOrdinal": 9,
+                "itemPath": "0",
+                "kind": "ordered",
+                "lineIndex": 0,
+                "markerOwner": "source",
+                "markerVisible": true
+              },
+              {
+                "active": true,
+                "displayedMarker": "10.",
+                "displayedOrdinal": 10,
+                "itemPath": "1",
+                "kind": "ordered",
+                "lineIndex": 1,
+                "markerOwner": "source",
+                "markerVisible": true
+              },
+              {
+                "active": false,
+                "displayedMarker": "11.",
+                "displayedOrdinal": 11,
+                "itemPath": "2",
+                "kind": "ordered",
+                "lineIndex": 2,
+                "markerOwner": "source",
+                "markerVisible": true
+              }
+            ]
+          },
+          "mode": "source"
+        },
+        "selection": {
+          "anchor": 9,
+          "focus": 9
+        },
+        "semantic": {
+          "construct": "list",
+          "items": [
+            {
+              "checked": null,
+              "itemPath": "0",
+              "kind": "ordered",
+              "lineIndex": 0,
+              "listDepth": 1,
+              "parentPath": null,
+              "quoteDepth": 0,
+              "recognized": true
+            },
+            {
+              "checked": null,
+              "itemPath": "1",
+              "kind": "ordered",
+              "lineIndex": 1,
+              "listDepth": 1,
+              "parentPath": null,
+              "quoteDepth": 0,
+              "recognized": true
+            },
+            {
+              "checked": null,
+              "itemPath": "2",
+              "kind": "ordered",
+              "lineIndex": 2,
+              "listDepth": 1,
+              "parentPath": null,
+              "quoteDepth": 0,
+              "recognized": true
+            }
+          ],
+          "maximumListDepth": 1
+        },
+        "source": "9. A\n10. *B\n11. C"
+      },
+      "repairCategory": "history",
+      "repairMetadata": {
+        "authoritativeDifferencePaths": [
+          "source.byteLength",
+          "source.bytesBase64",
+          "source.sha256",
+          "source.text",
+          "selection.anchor",
+          "selection.anchorPoint.column",
+          "selection.anchorPoint.offset",
+          "selection.end",
+          "selection.focus",
+          "selection.focusPoint.column",
+          "selection.focusPoint.offset",
+          "selection.start",
+          "physical.lines.1.end",
+          "physical.lines.1.endWithEnding",
+          "physical.lines.1.text",
+          "physical.lines.2.end",
+          "physical.lines.2.endWithEnding",
+          "physical.lines.2.start",
+          "physical.lines.2.text",
+          "semantic.items.1.itemPath",
+          "semantic.items.1.listDepth",
+          "semantic.items.1.parentPath",
+          "semantic.items.2.itemPath",
+          "semantic.maximumListDepth",
+          "presentation.list.markers.1.displayedMarker",
+          "presentation.list.markers.1.displayedOrdinal",
+          "presentation.list.markers.1.itemPath",
+          "presentation.list.markers.2.displayedMarker",
+          "presentation.list.markers.2.displayedOrdinal",
+          "presentation.list.markers.2.itemPath",
+          "presentation.list.focus.activeItemPaths.0"
+        ],
+        "automaticMinimizationComplete": true,
+        "caretAffinityDependencyPreserved": false,
+        "caretAffinityKind": null,
+        "caretAffinityPredecessorStateIndex": null,
+        "caretAffinityReplayStartActionIndex": null,
+        "caretAffinityUnsafeStateIndex": null,
+        "dependencySuffixPreserved": true,
+        "divergentActionIndex": 5,
+        "divergentActionNumber": 6,
+        "expectedO1": {
+          "presentation": {
+            "list": {
+              "active": true,
+              "focus": {
+                "activeItemPaths": [
+                  "1"
+                ],
+                "activeLineIndexes": [
+                  1
+                ],
+                "editorActive": true
+              },
+              "markers": [
+                {
+                  "active": false,
+                  "displayedMarker": "9.",
+                  "displayedOrdinal": 9,
+                  "itemPath": "0",
+                  "kind": "ordered",
+                  "lineIndex": 0,
+                  "markerOwner": "source",
+                  "markerVisible": true
+                },
+                {
+                  "active": true,
+                  "displayedMarker": "10.",
+                  "displayedOrdinal": 10,
+                  "itemPath": "1",
+                  "kind": "ordered",
+                  "lineIndex": 1,
+                  "markerOwner": "source",
+                  "markerVisible": true
+                },
+                {
+                  "active": false,
+                  "displayedMarker": "11.",
+                  "displayedOrdinal": 11,
+                  "itemPath": "2",
+                  "kind": "ordered",
+                  "lineIndex": 2,
+                  "markerOwner": "source",
+                  "markerVisible": true
+                }
+              ]
+            },
+            "mode": "source"
+          },
+          "selection": {
+            "anchor": 9,
+            "focus": 9
+          },
+          "semantic": {
+            "construct": "list",
+            "items": [
+              {
+                "checked": null,
+                "itemPath": "0",
+                "kind": "ordered",
+                "lineIndex": 0,
+                "listDepth": 1,
+                "parentPath": null,
+                "quoteDepth": 0,
+                "recognized": true
+              },
+              {
+                "checked": null,
+                "itemPath": "1",
+                "kind": "ordered",
+                "lineIndex": 1,
+                "listDepth": 1,
+                "parentPath": null,
+                "quoteDepth": 0,
+                "recognized": true
+              },
+              {
+                "checked": null,
+                "itemPath": "2",
+                "kind": "ordered",
+                "lineIndex": 2,
+                "listDepth": 1,
+                "parentPath": null,
+                "quoteDepth": 0,
+                "recognized": true
+              }
+            ],
+            "maximumListDepth": 1
+          },
+          "source": "9. A\n10. *B\n11. C"
+        },
+        "firstDivergentActionIndex": 5,
+        "firstDivergentActionNumber": 6,
+        "historyAnchorMatch": "source-and-selection",
+        "historyCoreReplayStartActionIndex": 3,
+        "historyDependencyReduced": true,
+        "historyDependencyResolved": true,
+        "historyReplayStartActionIndex": 3,
+        "historyUndoActionIndex": 5,
+        "historyViewerRedoTargetMatch": null,
+        "historyViewerRedoTargetStateIndex": null,
+        "historyViewerTargetMatch": "source-and-selection",
+        "historyViewerTargetStateIndex": 3,
+        "historyViewerUndoTargetMatch": "source-and-selection",
+        "historyViewerUndoTargetStateIndex": 3,
+        "listContractDifferencePaths": [
+          "semantic.items.1.itemPath",
+          "semantic.items.1.listDepth",
+          "semantic.items.1.parentPath",
+          "semantic.items.2.itemPath",
+          "semantic.maximumListDepth",
+          "presentation.list.markers.1.displayedMarker",
+          "presentation.list.markers.1.displayedOrdinal",
+          "presentation.list.markers.1.itemPath",
+          "presentation.list.markers.2.displayedMarker",
+          "presentation.list.markers.2.displayedOrdinal",
+          "presentation.list.markers.2.itemPath",
+          "presentation.list.focus.activeItemPaths.0"
+        ],
+        "minimizationStrategy": "exact-history-dependency-suffix",
+        "minimizedActionCount": 3,
+        "o1ReplayDependencyExpanded": false,
+        "o1ReplayDependencyExpansionKind": null,
+        "o1ReplayDependencyPreviousStartActionIndex": null,
+        "o1ReplayOracleMismatchObserved": false,
+        "o1ReplayPriorGateActionCount": 3,
+        "o1ReplayPriorStartActionIndex": 3,
+        "o1ReplayReasonCode": "oracle-reproduced",
+        "o1ReplayReproduced": true,
+        "o1ReplaySetupFailureObserved": false,
+        "o1ReplaySetupReasonCode": null,
+        "o1ReplaySetupStatus": null,
+        "o1ReplayStatus": "REPRODUCIBLE",
+        "o1ReplayValidationObserved": true,
+        "observedV1BeforeRepair": {
+          "presentation": {
+            "list": {
+              "active": true,
+              "focus": {
+                "activeItemPaths": [
+                  "0.0"
+                ],
+                "activeLineIndexes": [
+                  1
+                ],
+                "editorActive": true
+              },
+              "markers": [
+                {
+                  "active": false,
+                  "displayedMarker": "9.",
+                  "displayedOrdinal": 9,
+                  "itemPath": "0",
+                  "kind": "ordered",
+                  "lineIndex": 0,
+                  "markerOwner": "source",
+                  "markerVisible": true
+                },
+                {
+                  "active": true,
+                  "displayedMarker": "1.",
+                  "displayedOrdinal": 1,
+                  "itemPath": "0.0",
+                  "kind": "ordered",
+                  "lineIndex": 1,
+                  "markerOwner": "source",
+                  "markerVisible": true
+                },
+                {
+                  "active": false,
+                  "displayedMarker": "10.",
+                  "displayedOrdinal": 10,
+                  "itemPath": "1",
+                  "kind": "ordered",
+                  "lineIndex": 2,
+                  "markerOwner": "source",
+                  "markerVisible": true
+                }
+              ]
+            },
+            "mode": "source"
+          },
+          "selection": {
+            "anchor": 12,
+            "focus": 12
+          },
+          "semantic": {
+            "construct": "list",
+            "items": [
+              {
+                "checked": null,
+                "itemPath": "0",
+                "kind": "ordered",
+                "lineIndex": 0,
+                "listDepth": 1,
+                "parentPath": null,
+                "quoteDepth": 0,
+                "recognized": true
+              },
+              {
+                "checked": null,
+                "itemPath": "0.0",
+                "kind": "ordered",
+                "lineIndex": 1,
+                "listDepth": 2,
+                "parentPath": "0",
+                "quoteDepth": 0,
+                "recognized": true
+              },
+              {
+                "checked": null,
+                "itemPath": "1",
+                "kind": "ordered",
+                "lineIndex": 2,
+                "listDepth": 1,
+                "parentPath": null,
+                "quoteDepth": 0,
+                "recognized": true
+              }
+            ],
+            "maximumListDepth": 2
+          },
+          "source": "9. A\n    1. *B\n10. C"
+        },
+        "oneMinimalByActionCount": false,
+        "originReplayStartActionIndex": 3,
+        "originScenarioId": "list-random-500.090.db357197c37d622e",
+        "prefixStatePreserved": false,
+        "prefixStateRequired": true,
+        "requiresO1ReplayValidation": false
+      },
+      "requiredObservations": [
+        "source",
+        "selection",
+        "physical",
+        "semantic",
+        "presentation"
+      ],
+      "schemaVersion": 1,
+      "state": {
+        "active": true
+      },
+      "syntaxFamily": "ordered-lists",
+      "tags": [
+        "list-editing-expanded",
+        "list-random-500",
+        "list-category-arbitrary"
+      ]
+    },
+    {
+      "actions": [
+        {
+          "command": "insertText",
+          "historyEffect": "guaranteed-edit",
+          "id": "type-text",
+          "text": "*",
+          "type": "input"
+        },
+        {
+          "historyEffect": "guaranteed-edit",
+          "id": "enter",
+          "key": "Enter",
+          "type": "keyboard"
+        },
+        {
+          "historyEffect": "possible-edit",
+          "id": "delete",
+          "key": "Delete",
+          "type": "keyboard"
+        },
+        {
+          "historyEffect": "possible-edit",
+          "id": "shift-tab",
+          "key": "Tab",
+          "shiftKey": true,
+          "type": "keyboard"
+        },
+        {
+          "historyEffect": "undo",
+          "id": "undo",
+          "key": "z",
+          "modifiers": [
+            "platform-primary"
+          ],
+          "type": "keyboard"
+        }
+      ],
+      "comparisonPolicy": {
+        "kind": "fully-comparable",
+        "nonComparableDimensions": []
+      },
+      "fixtureId": "random-continuation-mixed",
+      "id": "v0.3-full-trace-repair.list-random-500.118.a9ac910c37812c16.action-8",
+      "initialSelection": {
+        "anchor": 33,
+        "focus": 33
+      },
+      "initialSource": "- Alpha\n  continued alpha\n  1. *Beta\n- Gamma",
+      "mode": "source",
+      "oracleExpected": {
+        "presentation": {
+          "list": {
+            "active": true,
+            "focus": {
+              "activeItemPaths": [
+                "0.0"
+              ],
+              "activeLineIndexes": [
+                2
+              ],
+              "editorActive": true
+            },
+            "markers": [
+              {
+                "active": false,
+                "displayedMarker": "-",
+                "displayedOrdinal": null,
+                "itemPath": "0",
+                "kind": "unordered",
+                "lineIndex": 0,
+                "markerOwner": "source",
+                "markerVisible": true
+              },
+              {
+                "active": true,
+                "displayedMarker": "1.",
+                "displayedOrdinal": 1,
+                "itemPath": "0.0",
+                "kind": "ordered",
+                "lineIndex": 2,
+                "markerOwner": "source",
+                "markerVisible": true
+              },
+              {
+                "active": false,
+                "displayedMarker": "-",
+                "displayedOrdinal": null,
+                "itemPath": "1",
+                "kind": "unordered",
+                "lineIndex": 3,
+                "markerOwner": "source",
+                "markerVisible": true
+              }
+            ]
+          },
+          "mode": "source"
+        },
+        "selection": {
+          "anchor": 33,
+          "focus": 33
+        },
+        "semantic": {
+          "construct": "list",
+          "items": [
+            {
+              "checked": null,
+              "itemPath": "0",
+              "kind": "unordered",
+              "lineIndex": 0,
+              "listDepth": 1,
+              "parentPath": null,
+              "quoteDepth": 0,
+              "recognized": true
+            },
+            {
+              "checked": null,
+              "itemPath": "0.0",
+              "kind": "ordered",
+              "lineIndex": 2,
+              "listDepth": 2,
+              "parentPath": "0",
+              "quoteDepth": 0,
+              "recognized": true
+            },
+            {
+              "checked": null,
+              "itemPath": "1",
+              "kind": "unordered",
+              "lineIndex": 3,
+              "listDepth": 1,
+              "parentPath": null,
+              "quoteDepth": 0,
+              "recognized": true
+            }
+          ],
+          "maximumListDepth": 2
+        },
+        "source": "- Alpha\n  continued alpha\n  1. *Beta\n- Gamma"
+      },
+      "repairCategory": "history",
+      "repairMetadata": {
+        "authoritativeDifferencePaths": [
+          "source.byteLength",
+          "source.bytesBase64",
+          "source.sha256",
+          "source.text",
+          "selection.anchor",
+          "selection.anchorPoint.column",
+          "selection.anchorPoint.line",
+          "selection.anchorPoint.lineIndex",
+          "selection.anchorPoint.offset",
+          "selection.end",
+          "selection.focus",
+          "selection.focusPoint.column",
+          "selection.focusPoint.line",
+          "selection.focusPoint.lineIndex",
+          "selection.focusPoint.offset",
+          "selection.start",
+          "physical.lineCount",
+          "physical.lines.2.end",
+          "physical.lines.2.endWithEnding",
+          "physical.lines.2.text",
+          "physical.lines.3.end",
+          "physical.lines.3.endWithEnding",
+          "physical.lines.3.lineEnding",
+          "physical.lines.3.start",
+          "physical.lines.3.terminal",
+          "physical.lines.3.text",
+          "physical.lines.4",
+          "semantic.items.2.itemPath",
+          "semantic.items.2.kind",
+          "semantic.items.2.listDepth",
+          "semantic.items.2.parentPath",
+          "semantic.items.3",
+          "presentation.list.markers.1.active",
+          "presentation.list.markers.2.active",
+          "presentation.list.markers.2.displayedMarker",
+          "presentation.list.markers.2.displayedOrdinal",
+          "presentation.list.markers.2.itemPath",
+          "presentation.list.markers.2.kind",
+          "presentation.list.markers.3",
+          "presentation.list.focus.activeItemPaths.0",
+          "presentation.list.focus.activeLineIndexes.0"
+        ],
+        "automaticMinimizationComplete": true,
+        "caretAffinityDependencyPreserved": false,
+        "caretAffinityKind": null,
+        "caretAffinityPredecessorStateIndex": null,
+        "caretAffinityReplayStartActionIndex": null,
+        "caretAffinityUnsafeStateIndex": null,
+        "dependencySuffixPreserved": true,
+        "divergentActionIndex": 7,
+        "divergentActionNumber": 8,
+        "expectedO1": {
+          "presentation": {
+            "list": {
+              "active": true,
+              "focus": {
+                "activeItemPaths": [
+                  "0.0"
+                ],
+                "activeLineIndexes": [
+                  2
+                ],
+                "editorActive": true
+              },
+              "markers": [
+                {
+                  "active": false,
+                  "displayedMarker": "-",
+                  "displayedOrdinal": null,
+                  "itemPath": "0",
+                  "kind": "unordered",
+                  "lineIndex": 0,
+                  "markerOwner": "source",
+                  "markerVisible": true
+                },
+                {
+                  "active": true,
+                  "displayedMarker": "1.",
+                  "displayedOrdinal": 1,
+                  "itemPath": "0.0",
+                  "kind": "ordered",
+                  "lineIndex": 2,
+                  "markerOwner": "source",
+                  "markerVisible": true
+                },
+                {
+                  "active": false,
+                  "displayedMarker": "-",
+                  "displayedOrdinal": null,
+                  "itemPath": "1",
+                  "kind": "unordered",
+                  "lineIndex": 3,
+                  "markerOwner": "source",
+                  "markerVisible": true
+                }
+              ]
+            },
+            "mode": "source"
+          },
+          "selection": {
+            "anchor": 33,
+            "focus": 33
+          },
+          "semantic": {
+            "construct": "list",
+            "items": [
+              {
+                "checked": null,
+                "itemPath": "0",
+                "kind": "unordered",
+                "lineIndex": 0,
+                "listDepth": 1,
+                "parentPath": null,
+                "quoteDepth": 0,
+                "recognized": true
+              },
+              {
+                "checked": null,
+                "itemPath": "0.0",
+                "kind": "ordered",
+                "lineIndex": 2,
+                "listDepth": 2,
+                "parentPath": "0",
+                "quoteDepth": 0,
+                "recognized": true
+              },
+              {
+                "checked": null,
+                "itemPath": "1",
+                "kind": "unordered",
+                "lineIndex": 3,
+                "listDepth": 1,
+                "parentPath": null,
+                "quoteDepth": 0,
+                "recognized": true
+              }
+            ],
+            "maximumListDepth": 2
+          },
+          "source": "- Alpha\n  continued alpha\n  1. *Beta\n- Gamma"
+        },
+        "firstDivergentActionIndex": 7,
+        "firstDivergentActionNumber": 8,
+        "historyAnchorMatch": "source-and-selection",
+        "historyCoreReplayStartActionIndex": 3,
+        "historyDependencyReduced": true,
+        "historyDependencyResolved": true,
+        "historyReplayStartActionIndex": 3,
+        "historyUndoActionIndex": 7,
+        "historyViewerRedoTargetMatch": null,
+        "historyViewerRedoTargetStateIndex": null,
+        "historyViewerTargetMatch": "source-and-selection",
+        "historyViewerTargetStateIndex": 5,
+        "historyViewerUndoTargetMatch": "source-and-selection",
+        "historyViewerUndoTargetStateIndex": 5,
+        "listContractDifferencePaths": [
+          "semantic.items.2.itemPath",
+          "semantic.items.2.kind",
+          "semantic.items.2.listDepth",
+          "semantic.items.2.parentPath",
+          "semantic.items.3",
+          "presentation.list.markers.1.active",
+          "presentation.list.markers.2.active",
+          "presentation.list.markers.2.displayedMarker",
+          "presentation.list.markers.2.displayedOrdinal",
+          "presentation.list.markers.2.itemPath",
+          "presentation.list.markers.2.kind",
+          "presentation.list.markers.3",
+          "presentation.list.focus.activeItemPaths.0",
+          "presentation.list.focus.activeLineIndexes.0"
+        ],
+        "minimizationStrategy": "exact-history-dependency-suffix",
+        "minimizedActionCount": 5,
+        "o1ReplayDependencyExpanded": false,
+        "o1ReplayDependencyExpansionKind": null,
+        "o1ReplayDependencyPreviousStartActionIndex": null,
+        "o1ReplayOracleMismatchObserved": false,
+        "o1ReplayPriorGateActionCount": 5,
+        "o1ReplayPriorStartActionIndex": 3,
+        "o1ReplayReasonCode": "oracle-reproduced",
+        "o1ReplayReproduced": true,
+        "o1ReplaySetupFailureObserved": false,
+        "o1ReplaySetupReasonCode": null,
+        "o1ReplaySetupStatus": null,
+        "o1ReplayStatus": "REPRODUCIBLE",
+        "o1ReplayValidationObserved": true,
+        "observedV1BeforeRepair": {
+          "presentation": {
+            "list": {
+              "active": true,
+              "focus": {
+                "activeItemPaths": [
+                  "0.1"
+                ],
+                "activeLineIndexes": [
+                  3
+                ],
+                "editorActive": true
+              },
+              "markers": [
+                {
+                  "active": false,
+                  "displayedMarker": "-",
+                  "displayedOrdinal": null,
+                  "itemPath": "0",
+                  "kind": "unordered",
+                  "lineIndex": 0,
+                  "markerOwner": "source",
+                  "markerVisible": true
+                },
+                {
+                  "active": false,
+                  "displayedMarker": "1.",
+                  "displayedOrdinal": 1,
+                  "itemPath": "0.0",
+                  "kind": "ordered",
+                  "lineIndex": 2,
+                  "markerOwner": "source",
+                  "markerVisible": true
+                },
+                {
+                  "active": true,
+                  "displayedMarker": "2.",
+                  "displayedOrdinal": 2,
+                  "itemPath": "0.1",
+                  "kind": "ordered",
+                  "lineIndex": 3,
+                  "markerOwner": "source",
+                  "markerVisible": true
+                },
+                {
+                  "active": false,
+                  "displayedMarker": "-",
+                  "displayedOrdinal": null,
+                  "itemPath": "1",
+                  "kind": "unordered",
+                  "lineIndex": 4,
+                  "markerOwner": "source",
+                  "markerVisible": true
+                }
+              ]
+            },
+            "mode": "source"
+          },
+          "selection": {
+            "anchor": 40,
+            "focus": 40
+          },
+          "semantic": {
+            "construct": "list",
+            "items": [
+              {
+                "checked": null,
+                "itemPath": "0",
+                "kind": "unordered",
+                "lineIndex": 0,
+                "listDepth": 1,
+                "parentPath": null,
+                "quoteDepth": 0,
+                "recognized": true
+              },
+              {
+                "checked": null,
+                "itemPath": "0.0",
+                "kind": "ordered",
+                "lineIndex": 2,
+                "listDepth": 2,
+                "parentPath": "0",
+                "quoteDepth": 0,
+                "recognized": true
+              },
+              {
+                "checked": null,
+                "itemPath": "0.1",
+                "kind": "ordered",
+                "lineIndex": 3,
+                "listDepth": 2,
+                "parentPath": "0",
+                "quoteDepth": 0,
+                "recognized": true
+              },
+              {
+                "checked": null,
+                "itemPath": "1",
+                "kind": "unordered",
+                "lineIndex": 4,
+                "listDepth": 1,
+                "parentPath": null,
+                "quoteDepth": 0,
+                "recognized": true
+              }
+            ],
+            "maximumListDepth": 2
+          },
+          "source": "- Alpha\n  continued alpha\n  1. *B*\n  2. ta\n- Gamma"
+        },
+        "oneMinimalByActionCount": false,
+        "originReplayStartActionIndex": 3,
+        "originScenarioId": "list-random-500.118.a9ac910c37812c16",
+        "prefixStatePreserved": false,
+        "prefixStateRequired": true,
+        "requiresO1ReplayValidation": false
+      },
+      "requiredObservations": [
+        "source",
+        "selection",
+        "physical",
+        "semantic",
+        "presentation"
+      ],
+      "schemaVersion": 1,
+      "state": {
+        "active": true
+      },
+      "syntaxFamily": "mixed-lists",
+      "tags": [
+        "list-editing-expanded",
+        "list-random-500",
+        "list-category-continuation"
+      ]
+    },
+    {
+      "actions": [
+        {
+          "historyEffect": "navigation",
+          "id": "arrowright",
+          "key": "ArrowRight",
+          "type": "keyboard"
+        },
+        {
+          "historyEffect": "possible-edit",
+          "id": "shift-tab",
+          "key": "Tab",
+          "shiftKey": true,
+          "type": "keyboard"
+        },
+        {
+          "historyEffect": "undo",
+          "id": "undo",
+          "key": "z",
+          "modifiers": [
+            "platform-primary"
+          ],
+          "type": "keyboard"
+        },
+        {
+          "historyEffect": "redo",
+          "id": "redo",
+          "key": "z",
+          "modifiers": [
+            "platform-primary",
+            "shift"
+          ],
+          "type": "keyboard"
+        }
+      ],
+      "comparisonPolicy": {
+        "kind": "fully-comparable",
+        "nonComparableDimensions": []
+      },
+      "fixtureId": "random-ordered-9-10-11",
+      "id": "v0.3-full-trace-repair.list-random-500.264.ac52270c30fa0c8d.action-9",
+      "initialSelection": {
+        "anchor": 9,
+        "focus": 9
+      },
+      "initialSource": "9. A\n10. B\n11. C",
+      "mode": "live-preview",
+      "oracleExpected": {
+        "presentation": {
+          "list": {
+            "active": true,
+            "focus": {
+              "activeItemPaths": [
+                "1"
+              ],
+              "activeLineIndexes": [
+                1
+              ],
+              "editorActive": true
+            },
+            "markers": [
+              {
+                "active": false,
+                "displayedMarker": "9.",
+                "displayedOrdinal": 9,
+                "itemPath": "0",
+                "kind": "ordered",
+                "lineIndex": 0,
+                "markerOwner": "source",
+                "markerVisible": true
+              },
+              {
+                "active": true,
+                "displayedMarker": "10.",
+                "displayedOrdinal": 10,
+                "itemPath": "1",
+                "kind": "ordered",
+                "lineIndex": 1,
+                "markerOwner": "source",
+                "markerVisible": true
+              },
+              {
+                "active": false,
+                "displayedMarker": "11.",
+                "displayedOrdinal": 11,
+                "itemPath": "2",
+                "kind": "ordered",
+                "lineIndex": 2,
+                "markerOwner": "source",
+                "markerVisible": true
+              }
+            ]
+          },
+          "mode": "live-preview"
+        },
+        "selection": {
+          "anchor": 10,
+          "focus": 10
+        },
+        "semantic": {
+          "construct": "list",
+          "items": [
+            {
+              "checked": null,
+              "itemPath": "0",
+              "kind": "ordered",
+              "lineIndex": 0,
+              "listDepth": 1,
+              "parentPath": null,
+              "quoteDepth": 0,
+              "recognized": true
+            },
+            {
+              "checked": null,
+              "itemPath": "1",
+              "kind": "ordered",
+              "lineIndex": 1,
+              "listDepth": 1,
+              "parentPath": null,
+              "quoteDepth": 0,
+              "recognized": true
+            },
+            {
+              "checked": null,
+              "itemPath": "2",
+              "kind": "ordered",
+              "lineIndex": 2,
+              "listDepth": 1,
+              "parentPath": null,
+              "quoteDepth": 0,
+              "recognized": true
+            }
+          ],
+          "maximumListDepth": 1
+        },
+        "source": "9. A\n10. B\n11. C"
+      },
+      "repairCategory": "history",
+      "repairMetadata": {
+        "authoritativeDifferencePaths": [
+          "selection.anchor",
+          "selection.anchorPoint.column",
+          "selection.anchorPoint.offset",
+          "selection.end",
+          "selection.focus",
+          "selection.focusPoint.column",
+          "selection.focusPoint.offset",
+          "selection.start"
+        ],
+        "automaticMinimizationComplete": true,
+        "caretAffinityDependencyPreserved": false,
+        "caretAffinityKind": null,
+        "caretAffinityPredecessorStateIndex": null,
+        "caretAffinityReplayStartActionIndex": null,
+        "caretAffinityUnsafeStateIndex": null,
+        "dependencySuffixPreserved": true,
+        "divergentActionIndex": 8,
+        "divergentActionNumber": 9,
+        "expectedO1": {
+          "presentation": {
+            "list": {
+              "active": true,
+              "focus": {
+                "activeItemPaths": [
+                  "1"
+                ],
+                "activeLineIndexes": [
+                  1
+                ],
+                "editorActive": true
+              },
+              "markers": [
+                {
+                  "active": false,
+                  "displayedMarker": "9.",
+                  "displayedOrdinal": 9,
+                  "itemPath": "0",
+                  "kind": "ordered",
+                  "lineIndex": 0,
+                  "markerOwner": "source",
+                  "markerVisible": true
+                },
+                {
+                  "active": true,
+                  "displayedMarker": "10.",
+                  "displayedOrdinal": 10,
+                  "itemPath": "1",
+                  "kind": "ordered",
+                  "lineIndex": 1,
+                  "markerOwner": "source",
+                  "markerVisible": true
+                },
+                {
+                  "active": false,
+                  "displayedMarker": "11.",
+                  "displayedOrdinal": 11,
+                  "itemPath": "2",
+                  "kind": "ordered",
+                  "lineIndex": 2,
+                  "markerOwner": "source",
+                  "markerVisible": true
+                }
+              ]
+            },
+            "mode": "live-preview"
+          },
+          "selection": {
+            "anchor": 10,
+            "focus": 10
+          },
+          "semantic": {
+            "construct": "list",
+            "items": [
+              {
+                "checked": null,
+                "itemPath": "0",
+                "kind": "ordered",
+                "lineIndex": 0,
+                "listDepth": 1,
+                "parentPath": null,
+                "quoteDepth": 0,
+                "recognized": true
+              },
+              {
+                "checked": null,
+                "itemPath": "1",
+                "kind": "ordered",
+                "lineIndex": 1,
+                "listDepth": 1,
+                "parentPath": null,
+                "quoteDepth": 0,
+                "recognized": true
+              },
+              {
+                "checked": null,
+                "itemPath": "2",
+                "kind": "ordered",
+                "lineIndex": 2,
+                "listDepth": 1,
+                "parentPath": null,
+                "quoteDepth": 0,
+                "recognized": true
+              }
+            ],
+            "maximumListDepth": 1
+          },
+          "source": "9. A\n10. B\n11. C"
+        },
+        "firstDivergentActionIndex": 8,
+        "firstDivergentActionNumber": 9,
+        "historyAnchorMatch": "source-and-selection",
+        "historyCoreReplayStartActionIndex": 5,
+        "historyDependencyReduced": true,
+        "historyDependencyResolved": true,
+        "historyReplayStartActionIndex": 5,
+        "historyUndoActionIndex": 7,
+        "historyViewerRedoTargetMatch": "source-and-selection",
+        "historyViewerRedoTargetStateIndex": 4,
+        "historyViewerTargetMatch": "source-and-selection",
+        "historyViewerTargetStateIndex": 4,
+        "historyViewerUndoTargetMatch": "source-and-selection",
+        "historyViewerUndoTargetStateIndex": 5,
+        "listContractDifferencePaths": [],
+        "minimizationStrategy": "exact-history-dependency-suffix",
+        "minimizedActionCount": 4,
+        "o1ReplayDependencyExpanded": false,
+        "o1ReplayDependencyExpansionKind": null,
+        "o1ReplayDependencyPreviousStartActionIndex": null,
+        "o1ReplayOracleMismatchObserved": false,
+        "o1ReplayPriorGateActionCount": 4,
+        "o1ReplayPriorStartActionIndex": 5,
+        "o1ReplayReasonCode": "oracle-reproduced",
+        "o1ReplayReproduced": true,
+        "o1ReplaySetupFailureObserved": false,
+        "o1ReplaySetupReasonCode": null,
+        "o1ReplaySetupStatus": null,
+        "o1ReplayStatus": "REPRODUCIBLE",
+        "o1ReplayValidationObserved": true,
+        "observedV1BeforeRepair": {
+          "presentation": {
+            "list": {
+              "active": true,
+              "focus": {
+                "activeItemPaths": [
+                  "1"
+                ],
+                "activeLineIndexes": [
+                  1
+                ],
+                "editorActive": true
+              },
+              "markers": [
+                {
+                  "active": false,
+                  "displayedMarker": "9.",
+                  "displayedOrdinal": 9,
+                  "itemPath": "0",
+                  "kind": "ordered",
+                  "lineIndex": 0,
+                  "markerOwner": "source",
+                  "markerVisible": true
+                },
+                {
+                  "active": true,
+                  "displayedMarker": "10.",
+                  "displayedOrdinal": 10,
+                  "itemPath": "1",
+                  "kind": "ordered",
+                  "lineIndex": 1,
+                  "markerOwner": "source",
+                  "markerVisible": true
+                },
+                {
+                  "active": false,
+                  "displayedMarker": "11.",
+                  "displayedOrdinal": 11,
+                  "itemPath": "2",
+                  "kind": "ordered",
+                  "lineIndex": 2,
+                  "markerOwner": "source",
+                  "markerVisible": true
+                }
+              ]
+            },
+            "mode": "live-preview"
+          },
+          "selection": {
+            "anchor": 9,
+            "focus": 9
+          },
+          "semantic": {
+            "construct": "list",
+            "items": [
+              {
+                "checked": null,
+                "itemPath": "0",
+                "kind": "ordered",
+                "lineIndex": 0,
+                "listDepth": 1,
+                "parentPath": null,
+                "quoteDepth": 0,
+                "recognized": true
+              },
+              {
+                "checked": null,
+                "itemPath": "1",
+                "kind": "ordered",
+                "lineIndex": 1,
+                "listDepth": 1,
+                "parentPath": null,
+                "quoteDepth": 0,
+                "recognized": true
+              },
+              {
+                "checked": null,
+                "itemPath": "2",
+                "kind": "ordered",
+                "lineIndex": 2,
+                "listDepth": 1,
+                "parentPath": null,
+                "quoteDepth": 0,
+                "recognized": true
+              }
+            ],
+            "maximumListDepth": 1
+          },
+          "source": "9. A\n10. B\n11. C"
+        },
+        "oneMinimalByActionCount": false,
+        "originReplayStartActionIndex": 5,
+        "originScenarioId": "list-random-500.264.ac52270c30fa0c8d",
+        "prefixStatePreserved": false,
+        "prefixStateRequired": true,
+        "requiresO1ReplayValidation": false
+      },
+      "requiredObservations": [
+        "source",
+        "selection",
+        "physical",
+        "semantic",
+        "presentation"
+      ],
+      "schemaVersion": 1,
+      "state": {
+        "active": true
+      },
+      "syntaxFamily": "ordered-lists",
+      "tags": [
+        "list-editing-expanded",
+        "list-random-500",
+        "list-category-arbitrary"
+      ]
+    },
+    {
+      "actions": [
+        {
+          "historyEffect": "possible-edit",
+          "id": "delete",
+          "key": "Delete",
+          "type": "keyboard"
+        }
+      ],
+      "comparisonPolicy": {
+        "kind": "fully-comparable",
+        "nonComparableDimensions": []
+      },
+      "fixtureId": "random-ordered-9-10-11",
+      "id": "v0.3-full-trace-repair.list-random-500.264.ac52270c30fa0c8d.action-10",
+      "initialSelection": {
+        "anchor": 10,
+        "focus": 10
+      },
+      "initialSource": "9. A\n10. B\n11. C",
+      "mode": "live-preview",
+      "oracleExpected": {
+        "presentation": {
+          "list": {
+            "active": true,
+            "focus": {
+              "activeItemPaths": [
+                "1"
+              ],
+              "activeLineIndexes": [
+                1
+              ],
+              "editorActive": true
+            },
+            "markers": [
+              {
+                "active": false,
+                "displayedMarker": "9.",
+                "displayedOrdinal": 9,
+                "itemPath": "0",
+                "kind": "ordered",
+                "lineIndex": 0,
+                "markerOwner": "source",
+                "markerVisible": true
+              },
+              {
+                "active": true,
+                "displayedMarker": "10.",
+                "displayedOrdinal": 10,
+                "itemPath": "1",
+                "kind": "ordered",
+                "lineIndex": 1,
+                "markerOwner": "source",
+                "markerVisible": true
+              }
+            ]
+          },
+          "mode": "live-preview"
+        },
+        "selection": {
+          "anchor": 10,
+          "focus": 10
+        },
+        "semantic": {
+          "construct": "list",
+          "items": [
+            {
+              "checked": null,
+              "itemPath": "0",
+              "kind": "ordered",
+              "lineIndex": 0,
+              "listDepth": 1,
+              "parentPath": null,
+              "quoteDepth": 0,
+              "recognized": true
+            },
+            {
+              "checked": null,
+              "itemPath": "1",
+              "kind": "ordered",
+              "lineIndex": 1,
+              "listDepth": 1,
+              "parentPath": null,
+              "quoteDepth": 0,
+              "recognized": true
+            }
+          ],
+          "maximumListDepth": 1
+        },
+        "source": "9. A\n10. B11. C"
+      },
+      "repairCategory": "delete",
+      "repairMetadata": {
+        "authoritativeDifferencePaths": [
+          "source.bytesBase64",
+          "source.sha256",
+          "source.text",
+          "selection.anchor",
+          "selection.anchorPoint.column",
+          "selection.anchorPoint.offset",
+          "selection.end",
+          "selection.focus",
+          "selection.focusPoint.column",
+          "selection.focusPoint.offset",
+          "selection.start",
+          "physical.lineCount",
+          "physical.lines.1.end",
+          "physical.lines.1.endWithEnding",
+          "physical.lines.1.lineEnding",
+          "physical.lines.1.terminal",
+          "physical.lines.1.text",
+          "physical.lines.2",
+          "semantic.items.2",
+          "presentation.list.markers.2"
+        ],
+        "automaticMinimizationComplete": true,
+        "caretAffinityDependencyPreserved": false,
+        "caretAffinityKind": null,
+        "caretAffinityPredecessorStateIndex": null,
+        "caretAffinityReplayStartActionIndex": null,
+        "caretAffinityUnsafeStateIndex": null,
+        "dependencySuffixPreserved": false,
+        "divergentActionIndex": 9,
+        "divergentActionNumber": 10,
+        "expectedO1": {
+          "presentation": {
+            "list": {
+              "active": true,
+              "focus": {
+                "activeItemPaths": [
+                  "1"
+                ],
+                "activeLineIndexes": [
+                  1
+                ],
+                "editorActive": true
+              },
+              "markers": [
+                {
+                  "active": false,
+                  "displayedMarker": "9.",
+                  "displayedOrdinal": 9,
+                  "itemPath": "0",
+                  "kind": "ordered",
+                  "lineIndex": 0,
+                  "markerOwner": "source",
+                  "markerVisible": true
+                },
+                {
+                  "active": true,
+                  "displayedMarker": "10.",
+                  "displayedOrdinal": 10,
+                  "itemPath": "1",
+                  "kind": "ordered",
+                  "lineIndex": 1,
+                  "markerOwner": "source",
+                  "markerVisible": true
+                }
+              ]
+            },
+            "mode": "live-preview"
+          },
+          "selection": {
+            "anchor": 10,
+            "focus": 10
+          },
+          "semantic": {
+            "construct": "list",
+            "items": [
+              {
+                "checked": null,
+                "itemPath": "0",
+                "kind": "ordered",
+                "lineIndex": 0,
+                "listDepth": 1,
+                "parentPath": null,
+                "quoteDepth": 0,
+                "recognized": true
+              },
+              {
+                "checked": null,
+                "itemPath": "1",
+                "kind": "ordered",
+                "lineIndex": 1,
+                "listDepth": 1,
+                "parentPath": null,
+                "quoteDepth": 0,
+                "recognized": true
+              }
+            ],
+            "maximumListDepth": 1
+          },
+          "source": "9. A\n10. B11. C"
+        },
+        "firstDivergentActionIndex": 9,
+        "firstDivergentActionNumber": 10,
+        "historyAnchorMatch": null,
+        "historyCoreReplayStartActionIndex": null,
+        "historyDependencyReduced": false,
+        "historyDependencyResolved": false,
+        "historyReplayStartActionIndex": null,
+        "historyUndoActionIndex": null,
+        "historyViewerRedoTargetMatch": null,
+        "historyViewerRedoTargetStateIndex": null,
+        "historyViewerTargetMatch": null,
+        "historyViewerTargetStateIndex": null,
+        "historyViewerUndoTargetMatch": null,
+        "historyViewerUndoTargetStateIndex": null,
+        "listContractDifferencePaths": [
+          "semantic.items.2",
+          "presentation.list.markers.2"
+        ],
+        "minimizationStrategy": "rebase-o1-authoritative-predecessor",
+        "minimizedActionCount": 1,
+        "o1ReplayDependencyExpanded": false,
+        "o1ReplayDependencyExpansionKind": null,
+        "o1ReplayDependencyPreviousStartActionIndex": null,
+        "o1ReplayOracleMismatchObserved": false,
+        "o1ReplayPriorGateActionCount": 1,
+        "o1ReplayPriorStartActionIndex": null,
+        "o1ReplayReasonCode": "oracle-reproduced",
+        "o1ReplayReproduced": true,
+        "o1ReplaySetupFailureObserved": false,
+        "o1ReplaySetupReasonCode": null,
+        "o1ReplaySetupStatus": null,
+        "o1ReplayStatus": "REPRODUCIBLE",
+        "o1ReplayValidationObserved": true,
+        "observedV1BeforeRepair": {
+          "presentation": {
+            "list": {
+              "active": true,
+              "focus": {
+                "activeItemPaths": [
+                  "1"
+                ],
+                "activeLineIndexes": [
+                  1
+                ],
+                "editorActive": true
+              },
+              "markers": [
+                {
+                  "active": false,
+                  "displayedMarker": "9.",
+                  "displayedOrdinal": 9,
+                  "itemPath": "0",
+                  "kind": "ordered",
+                  "lineIndex": 0,
+                  "markerOwner": "source",
+                  "markerVisible": true
+                },
+                {
+                  "active": true,
+                  "displayedMarker": "10.",
+                  "displayedOrdinal": 10,
+                  "itemPath": "1",
+                  "kind": "ordered",
+                  "lineIndex": 1,
+                  "markerOwner": "source",
+                  "markerVisible": true
+                },
+                {
+                  "active": false,
+                  "displayedMarker": "11.",
+                  "displayedOrdinal": 11,
+                  "itemPath": "2",
+                  "kind": "ordered",
+                  "lineIndex": 2,
+                  "markerOwner": "source",
+                  "markerVisible": true
+                }
+              ]
+            },
+            "mode": "live-preview"
+          },
+          "selection": {
+            "anchor": 9,
+            "focus": 9
+          },
+          "semantic": {
+            "construct": "list",
+            "items": [
+              {
+                "checked": null,
+                "itemPath": "0",
+                "kind": "ordered",
+                "lineIndex": 0,
+                "listDepth": 1,
+                "parentPath": null,
+                "quoteDepth": 0,
+                "recognized": true
+              },
+              {
+                "checked": null,
+                "itemPath": "1",
+                "kind": "ordered",
+                "lineIndex": 1,
+                "listDepth": 1,
+                "parentPath": null,
+                "quoteDepth": 0,
+                "recognized": true
+              },
+              {
+                "checked": null,
+                "itemPath": "2",
+                "kind": "ordered",
+                "lineIndex": 2,
+                "listDepth": 1,
+                "parentPath": null,
+                "quoteDepth": 0,
+                "recognized": true
+              }
+            ],
+            "maximumListDepth": 1
+          },
+          "source": "9. A\n10. \n11. C"
+        },
+        "oneMinimalByActionCount": true,
+        "originReplayStartActionIndex": 9,
+        "originScenarioId": "list-random-500.264.ac52270c30fa0c8d",
+        "prefixStatePreserved": false,
+        "prefixStateRequired": false,
+        "requiresO1ReplayValidation": false
+      },
+      "requiredObservations": [
+        "source",
+        "selection",
+        "physical",
+        "semantic",
+        "presentation"
+      ],
+      "schemaVersion": 1,
+      "state": {
+        "active": true
+      },
+      "syntaxFamily": "ordered-lists",
+      "tags": [
+        "list-editing-expanded",
+        "list-random-500",
+        "list-category-arbitrary"
+      ]
+    },
+    {
+      "actions": [
+        {
+          "command": "insertText",
+          "historyEffect": "guaranteed-edit",
+          "id": "type-text",
+          "text": "A",
+          "type": "input"
+        }
+      ],
+      "comparisonPolicy": {
+        "kind": "fully-comparable",
+        "nonComparableDimensions": []
+      },
+      "fixtureId": "random-ordered-9-10-11",
+      "id": "v0.3-full-trace-repair.list-random-500.264.ac52270c30fa0c8d.action-11",
+      "initialSelection": {
+        "anchor": 10,
+        "focus": 10
+      },
+      "initialSource": "9. A\n10. B11. C",
+      "mode": "live-preview",
+      "oracleExpected": {
+        "presentation": {
+          "list": {
+            "active": true,
+            "focus": {
+              "activeItemPaths": [
+                "1"
+              ],
+              "activeLineIndexes": [
+                1
+              ],
+              "editorActive": true
+            },
+            "markers": [
+              {
+                "active": false,
+                "displayedMarker": "9.",
+                "displayedOrdinal": 9,
+                "itemPath": "0",
+                "kind": "ordered",
+                "lineIndex": 0,
+                "markerOwner": "source",
+                "markerVisible": true
+              },
+              {
+                "active": true,
+                "displayedMarker": "10.",
+                "displayedOrdinal": 10,
+                "itemPath": "1",
+                "kind": "ordered",
+                "lineIndex": 1,
+                "markerOwner": "source",
+                "markerVisible": true
+              }
+            ]
+          },
+          "mode": "live-preview"
+        },
+        "selection": {
+          "anchor": 11,
+          "focus": 11
+        },
+        "semantic": {
+          "construct": "list",
+          "items": [
+            {
+              "checked": null,
+              "itemPath": "0",
+              "kind": "ordered",
+              "lineIndex": 0,
+              "listDepth": 1,
+              "parentPath": null,
+              "quoteDepth": 0,
+              "recognized": true
+            },
+            {
+              "checked": null,
+              "itemPath": "1",
+              "kind": "ordered",
+              "lineIndex": 1,
+              "listDepth": 1,
+              "parentPath": null,
+              "quoteDepth": 0,
+              "recognized": true
+            }
+          ],
+          "maximumListDepth": 1
+        },
+        "source": "9. A\n10. BA11. C"
+      },
+      "repairCategory": "text-insertion",
+      "repairMetadata": {
+        "authoritativeDifferencePaths": [
+          "source.bytesBase64",
+          "source.sha256",
+          "source.text",
+          "selection.anchor",
+          "selection.anchorPoint.column",
+          "selection.anchorPoint.offset",
+          "selection.end",
+          "selection.focus",
+          "selection.focusPoint.column",
+          "selection.focusPoint.offset",
+          "selection.start",
+          "physical.lineCount",
+          "physical.lines.1.end",
+          "physical.lines.1.endWithEnding",
+          "physical.lines.1.lineEnding",
+          "physical.lines.1.terminal",
+          "physical.lines.1.text",
+          "physical.lines.2",
+          "semantic.items.2",
+          "presentation.list.markers.2"
+        ],
+        "automaticMinimizationComplete": true,
+        "caretAffinityDependencyPreserved": false,
+        "caretAffinityKind": null,
+        "caretAffinityPredecessorStateIndex": null,
+        "caretAffinityReplayStartActionIndex": null,
+        "caretAffinityUnsafeStateIndex": null,
+        "dependencySuffixPreserved": false,
+        "divergentActionIndex": 10,
+        "divergentActionNumber": 11,
+        "expectedO1": {
+          "presentation": {
+            "list": {
+              "active": true,
+              "focus": {
+                "activeItemPaths": [
+                  "1"
+                ],
+                "activeLineIndexes": [
+                  1
+                ],
+                "editorActive": true
+              },
+              "markers": [
+                {
+                  "active": false,
+                  "displayedMarker": "9.",
+                  "displayedOrdinal": 9,
+                  "itemPath": "0",
+                  "kind": "ordered",
+                  "lineIndex": 0,
+                  "markerOwner": "source",
+                  "markerVisible": true
+                },
+                {
+                  "active": true,
+                  "displayedMarker": "10.",
+                  "displayedOrdinal": 10,
+                  "itemPath": "1",
+                  "kind": "ordered",
+                  "lineIndex": 1,
+                  "markerOwner": "source",
+                  "markerVisible": true
+                }
+              ]
+            },
+            "mode": "live-preview"
+          },
+          "selection": {
+            "anchor": 11,
+            "focus": 11
+          },
+          "semantic": {
+            "construct": "list",
+            "items": [
+              {
+                "checked": null,
+                "itemPath": "0",
+                "kind": "ordered",
+                "lineIndex": 0,
+                "listDepth": 1,
+                "parentPath": null,
+                "quoteDepth": 0,
+                "recognized": true
+              },
+              {
+                "checked": null,
+                "itemPath": "1",
+                "kind": "ordered",
+                "lineIndex": 1,
+                "listDepth": 1,
+                "parentPath": null,
+                "quoteDepth": 0,
+                "recognized": true
+              }
+            ],
+            "maximumListDepth": 1
+          },
+          "source": "9. A\n10. BA11. C"
+        },
+        "firstDivergentActionIndex": 10,
+        "firstDivergentActionNumber": 11,
+        "historyAnchorMatch": null,
+        "historyCoreReplayStartActionIndex": null,
+        "historyDependencyReduced": false,
+        "historyDependencyResolved": false,
+        "historyReplayStartActionIndex": null,
+        "historyUndoActionIndex": null,
+        "historyViewerRedoTargetMatch": null,
+        "historyViewerRedoTargetStateIndex": null,
+        "historyViewerTargetMatch": null,
+        "historyViewerTargetStateIndex": null,
+        "historyViewerUndoTargetMatch": null,
+        "historyViewerUndoTargetStateIndex": null,
+        "listContractDifferencePaths": [
+          "semantic.items.2",
+          "presentation.list.markers.2"
+        ],
+        "minimizationStrategy": "rebase-o1-authoritative-predecessor",
+        "minimizedActionCount": 1,
+        "o1ReplayDependencyExpanded": false,
+        "o1ReplayDependencyExpansionKind": null,
+        "o1ReplayDependencyPreviousStartActionIndex": null,
+        "o1ReplayOracleMismatchObserved": false,
+        "o1ReplayPriorGateActionCount": 1,
+        "o1ReplayPriorStartActionIndex": null,
+        "o1ReplayReasonCode": "oracle-reproduced",
+        "o1ReplayReproduced": true,
+        "o1ReplaySetupFailureObserved": false,
+        "o1ReplaySetupReasonCode": null,
+        "o1ReplaySetupStatus": null,
+        "o1ReplayStatus": "REPRODUCIBLE",
+        "o1ReplayValidationObserved": true,
+        "observedV1BeforeRepair": {
+          "presentation": {
+            "list": {
+              "active": true,
+              "focus": {
+                "activeItemPaths": [
+                  "1"
+                ],
+                "activeLineIndexes": [
+                  1
+                ],
+                "editorActive": true
+              },
+              "markers": [
+                {
+                  "active": false,
+                  "displayedMarker": "9.",
+                  "displayedOrdinal": 9,
+                  "itemPath": "0",
+                  "kind": "ordered",
+                  "lineIndex": 0,
+                  "markerOwner": "source",
+                  "markerVisible": true
+                },
+                {
+                  "active": true,
+                  "displayedMarker": "10.",
+                  "displayedOrdinal": 10,
+                  "itemPath": "1",
+                  "kind": "ordered",
+                  "lineIndex": 1,
+                  "markerOwner": "source",
+                  "markerVisible": true
+                },
+                {
+                  "active": false,
+                  "displayedMarker": "11.",
+                  "displayedOrdinal": 11,
+                  "itemPath": "2",
+                  "kind": "ordered",
+                  "lineIndex": 2,
+                  "markerOwner": "source",
+                  "markerVisible": true
+                }
+              ]
+            },
+            "mode": "live-preview"
+          },
+          "selection": {
+            "anchor": 10,
+            "focus": 10
+          },
+          "semantic": {
+            "construct": "list",
+            "items": [
+              {
+                "checked": null,
+                "itemPath": "0",
+                "kind": "ordered",
+                "lineIndex": 0,
+                "listDepth": 1,
+                "parentPath": null,
+                "quoteDepth": 0,
+                "recognized": true
+              },
+              {
+                "checked": null,
+                "itemPath": "1",
+                "kind": "ordered",
+                "lineIndex": 1,
+                "listDepth": 1,
+                "parentPath": null,
+                "quoteDepth": 0,
+                "recognized": true
+              },
+              {
+                "checked": null,
+                "itemPath": "2",
+                "kind": "ordered",
+                "lineIndex": 2,
+                "listDepth": 1,
+                "parentPath": null,
+                "quoteDepth": 0,
+                "recognized": true
+              }
+            ],
+            "maximumListDepth": 1
+          },
+          "source": "9. A\n10. A\n11. C"
+        },
+        "oneMinimalByActionCount": true,
+        "originReplayStartActionIndex": 10,
+        "originScenarioId": "list-random-500.264.ac52270c30fa0c8d",
+        "prefixStatePreserved": false,
+        "prefixStateRequired": false,
+        "requiresO1ReplayValidation": false
+      },
+      "requiredObservations": [
+        "source",
+        "selection",
+        "physical",
+        "semantic",
+        "presentation"
+      ],
+      "schemaVersion": 1,
+      "state": {
+        "active": true
+      },
+      "syntaxFamily": "ordered-lists",
+      "tags": [
+        "list-editing-expanded",
+        "list-random-500",
+        "list-category-arbitrary"
+      ]
+    },
+    {
+      "actions": [
+        {
+          "historyEffect": "navigation",
+          "id": "arrowleft",
+          "key": "ArrowLeft",
+          "type": "keyboard"
+        }
+      ],
+      "comparisonPolicy": {
+        "kind": "fully-comparable",
+        "nonComparableDimensions": []
+      },
+      "fixtureId": "random-ordered-9-10-11",
+      "id": "v0.3-full-trace-repair.list-random-500.264.ac52270c30fa0c8d.action-12",
+      "initialSelection": {
+        "anchor": 11,
+        "focus": 11
+      },
+      "initialSource": "9. A\n10. BA11. C",
+      "mode": "live-preview",
+      "oracleExpected": {
+        "presentation": {
+          "list": {
+            "active": true,
+            "focus": {
+              "activeItemPaths": [
+                "1"
+              ],
+              "activeLineIndexes": [
+                1
+              ],
+              "editorActive": true
+            },
+            "markers": [
+              {
+                "active": false,
+                "displayedMarker": "9.",
+                "displayedOrdinal": 9,
+                "itemPath": "0",
+                "kind": "ordered",
+                "lineIndex": 0,
+                "markerOwner": "source",
+                "markerVisible": true
+              },
+              {
+                "active": true,
+                "displayedMarker": "10.",
+                "displayedOrdinal": 10,
+                "itemPath": "1",
+                "kind": "ordered",
+                "lineIndex": 1,
+                "markerOwner": "source",
+                "markerVisible": true
+              }
+            ]
+          },
+          "mode": "live-preview"
+        },
+        "selection": {
+          "anchor": 10,
+          "focus": 10
+        },
+        "semantic": {
+          "construct": "list",
+          "items": [
+            {
+              "checked": null,
+              "itemPath": "0",
+              "kind": "ordered",
+              "lineIndex": 0,
+              "listDepth": 1,
+              "parentPath": null,
+              "quoteDepth": 0,
+              "recognized": true
+            },
+            {
+              "checked": null,
+              "itemPath": "1",
+              "kind": "ordered",
+              "lineIndex": 1,
+              "listDepth": 1,
+              "parentPath": null,
+              "quoteDepth": 0,
+              "recognized": true
+            }
+          ],
+          "maximumListDepth": 1
+        },
+        "source": "9. A\n10. BA11. C"
+      },
+      "repairCategory": "navigation",
+      "repairMetadata": {
+        "authoritativeDifferencePaths": [
+          "source.bytesBase64",
+          "source.sha256",
+          "source.text",
+          "selection.anchor",
+          "selection.anchorPoint.column",
+          "selection.anchorPoint.offset",
+          "selection.end",
+          "selection.focus",
+          "selection.focusPoint.column",
+          "selection.focusPoint.offset",
+          "selection.start",
+          "physical.lineCount",
+          "physical.lines.1.end",
+          "physical.lines.1.endWithEnding",
+          "physical.lines.1.lineEnding",
+          "physical.lines.1.terminal",
+          "physical.lines.1.text",
+          "physical.lines.2",
+          "semantic.items.2",
+          "presentation.list.markers.2"
+        ],
+        "automaticMinimizationComplete": true,
+        "caretAffinityDependencyPreserved": false,
+        "caretAffinityKind": null,
+        "caretAffinityPredecessorStateIndex": null,
+        "caretAffinityReplayStartActionIndex": null,
+        "caretAffinityUnsafeStateIndex": null,
+        "dependencySuffixPreserved": false,
+        "divergentActionIndex": 11,
+        "divergentActionNumber": 12,
+        "expectedO1": {
+          "presentation": {
+            "list": {
+              "active": true,
+              "focus": {
+                "activeItemPaths": [
+                  "1"
+                ],
+                "activeLineIndexes": [
+                  1
+                ],
+                "editorActive": true
+              },
+              "markers": [
+                {
+                  "active": false,
+                  "displayedMarker": "9.",
+                  "displayedOrdinal": 9,
+                  "itemPath": "0",
+                  "kind": "ordered",
+                  "lineIndex": 0,
+                  "markerOwner": "source",
+                  "markerVisible": true
+                },
+                {
+                  "active": true,
+                  "displayedMarker": "10.",
+                  "displayedOrdinal": 10,
+                  "itemPath": "1",
+                  "kind": "ordered",
+                  "lineIndex": 1,
+                  "markerOwner": "source",
+                  "markerVisible": true
+                }
+              ]
+            },
+            "mode": "live-preview"
+          },
+          "selection": {
+            "anchor": 10,
+            "focus": 10
+          },
+          "semantic": {
+            "construct": "list",
+            "items": [
+              {
+                "checked": null,
+                "itemPath": "0",
+                "kind": "ordered",
+                "lineIndex": 0,
+                "listDepth": 1,
+                "parentPath": null,
+                "quoteDepth": 0,
+                "recognized": true
+              },
+              {
+                "checked": null,
+                "itemPath": "1",
+                "kind": "ordered",
+                "lineIndex": 1,
+                "listDepth": 1,
+                "parentPath": null,
+                "quoteDepth": 0,
+                "recognized": true
+              }
+            ],
+            "maximumListDepth": 1
+          },
+          "source": "9. A\n10. BA11. C"
+        },
+        "firstDivergentActionIndex": 11,
+        "firstDivergentActionNumber": 12,
+        "historyAnchorMatch": null,
+        "historyCoreReplayStartActionIndex": null,
+        "historyDependencyReduced": false,
+        "historyDependencyResolved": false,
+        "historyReplayStartActionIndex": null,
+        "historyUndoActionIndex": null,
+        "historyViewerRedoTargetMatch": null,
+        "historyViewerRedoTargetStateIndex": null,
+        "historyViewerTargetMatch": null,
+        "historyViewerTargetStateIndex": null,
+        "historyViewerUndoTargetMatch": null,
+        "historyViewerUndoTargetStateIndex": null,
+        "listContractDifferencePaths": [
+          "semantic.items.2",
+          "presentation.list.markers.2"
+        ],
+        "minimizationStrategy": "rebase-o1-authoritative-predecessor",
+        "minimizedActionCount": 1,
+        "o1ReplayDependencyExpanded": false,
+        "o1ReplayDependencyExpansionKind": null,
+        "o1ReplayDependencyPreviousStartActionIndex": null,
+        "o1ReplayOracleMismatchObserved": false,
+        "o1ReplayPriorGateActionCount": 1,
+        "o1ReplayPriorStartActionIndex": null,
+        "o1ReplayReasonCode": "oracle-reproduced",
+        "o1ReplayReproduced": true,
+        "o1ReplaySetupFailureObserved": false,
+        "o1ReplaySetupReasonCode": null,
+        "o1ReplaySetupStatus": null,
+        "o1ReplayStatus": "REPRODUCIBLE",
+        "o1ReplayValidationObserved": true,
+        "observedV1BeforeRepair": {
+          "presentation": {
+            "list": {
+              "active": true,
+              "focus": {
+                "activeItemPaths": [
+                  "1"
+                ],
+                "activeLineIndexes": [
+                  1
+                ],
+                "editorActive": true
+              },
+              "markers": [
+                {
+                  "active": false,
+                  "displayedMarker": "9.",
+                  "displayedOrdinal": 9,
+                  "itemPath": "0",
+                  "kind": "ordered",
+                  "lineIndex": 0,
+                  "markerOwner": "source",
+                  "markerVisible": true
+                },
+                {
+                  "active": true,
+                  "displayedMarker": "10.",
+                  "displayedOrdinal": 10,
+                  "itemPath": "1",
+                  "kind": "ordered",
+                  "lineIndex": 1,
+                  "markerOwner": "source",
+                  "markerVisible": true
+                },
+                {
+                  "active": false,
+                  "displayedMarker": "11.",
+                  "displayedOrdinal": 11,
+                  "itemPath": "2",
+                  "kind": "ordered",
+                  "lineIndex": 2,
+                  "markerOwner": "source",
+                  "markerVisible": true
+                }
+              ]
+            },
+            "mode": "live-preview"
+          },
+          "selection": {
+            "anchor": 9,
+            "focus": 9
+          },
+          "semantic": {
+            "construct": "list",
+            "items": [
+              {
+                "checked": null,
+                "itemPath": "0",
+                "kind": "ordered",
+                "lineIndex": 0,
+                "listDepth": 1,
+                "parentPath": null,
+                "quoteDepth": 0,
+                "recognized": true
+              },
+              {
+                "checked": null,
+                "itemPath": "1",
+                "kind": "ordered",
+                "lineIndex": 1,
+                "listDepth": 1,
+                "parentPath": null,
+                "quoteDepth": 0,
+                "recognized": true
+              },
+              {
+                "checked": null,
+                "itemPath": "2",
+                "kind": "ordered",
+                "lineIndex": 2,
+                "listDepth": 1,
+                "parentPath": null,
+                "quoteDepth": 0,
+                "recognized": true
+              }
+            ],
+            "maximumListDepth": 1
+          },
+          "source": "9. A\n10. A\n11. C"
+        },
+        "oneMinimalByActionCount": true,
+        "originReplayStartActionIndex": 11,
+        "originScenarioId": "list-random-500.264.ac52270c30fa0c8d",
+        "prefixStatePreserved": false,
+        "prefixStateRequired": false,
+        "requiresO1ReplayValidation": false
+      },
+      "requiredObservations": [
+        "source",
+        "selection",
+        "physical",
+        "semantic",
+        "presentation"
+      ],
+      "schemaVersion": 1,
+      "state": {
+        "active": true
+      },
+      "syntaxFamily": "ordered-lists",
+      "tags": [
+        "list-editing-expanded",
+        "list-random-500",
+        "list-category-arbitrary"
+      ]
+    }
+  ],
+  "sourceComparisonKind": "o1-v1-action-trace-evidence-comparison",
+  "sourceCorpusSha256": "3ae298bd5e71e6a4760df72ca996fc18e178e08edd47ba8343b38dc2ec98d5a5",
+  "sourceMismatchScenarioCount": 4,
+  "sourceO1ReplayGateCorpusSha256": "9d08bc476e550f8ea8f0a9d280696559f82e7822f07fce402482a26324b49777",
+  "sourceO1ReplayKind": "repair-gate-o1-oracle-replay-validation"
+}

@@ -1,0 +1,116 @@
+{
+  "evaluations": 6,
+  "kind": "minimized-o1-v1-regression",
+  "metadata": {
+    "differencePathPrefix": null,
+    "evidenceLevels": [
+      "V1"
+    ],
+    "minimizedAt": "2026-08-20T06:04:56.921Z",
+    "obsidianLaunches": 0,
+    "predicate": "viewer-integrity",
+    "randomOriginId": "list-lifecycle-random-500.150.2016be4af283ae10",
+    "viewerLaunches": 1
+  },
+  "minimizedLength": 2,
+  "originalLength": 8,
+  "schemaVersion": 1,
+  "sequence": {
+    "actionTracePolicy": {
+      "captureAfterEveryAction": true,
+      "compareAfterEveryAction": true,
+      "expectedActionCount": 8,
+      "required": true,
+      "requiredDimensions": [
+        "source",
+        "selection",
+        "physical",
+        "semantic",
+        "presentation.list",
+        "presentation.list.focus",
+        "presentation.list.lifecycleIntegrity"
+      ]
+    },
+    "actions": [
+      {
+        "captureAfterAction": true,
+        "historyEffect": "guaranteed-edit",
+        "id": "enter",
+        "key": "Enter",
+        "motifRole": "motif-core",
+        "traceIndex": 2,
+        "type": "keyboard"
+      },
+      {
+        "captureAfterAction": true,
+        "historyEffect": "possible-edit",
+        "id": "backspace",
+        "key": "Backspace",
+        "motifRole": "motif-core",
+        "traceIndex": 3,
+        "type": "keyboard"
+      }
+    ],
+    "boundary": {
+      "name": "parent-text-end-before-nested-list",
+      "notation": "1. Glycolysis\n2. Link reaction\n3. TCA cycle|\n    1. Citrate\n    2. Isocitrate",
+      "offset": 43
+    },
+    "boundaryKind": "parent-text-end-before-nested-list",
+    "comparisonPolicy": {
+      "kind": "fully-comparable",
+      "nonComparableDimensions": []
+    },
+    "fixtureId": "lifecycle-ordered-parent-before-nested-list",
+    "id": "regression.5033e0338d964bb4e73d",
+    "index": 150,
+    "initialItem": 3,
+    "initialSelection": {
+      "anchor": 43,
+      "focus": 43
+    },
+    "initialSource": "1. Glycolysis\n2. Link reaction\n3. TCA cycle\n    1. Citrate\n    2. Isocitrate",
+    "lifecycleCoverage": {
+      "activeTransitions": false,
+      "alternatingActions": [
+        "Enter",
+        "Backspace"
+      ],
+      "emptyItem": false,
+      "historyReplay": false,
+      "parentNestedBoundary": true,
+      "repeatedAction": null
+    },
+    "listKind": "ordered",
+    "marker": "ordered",
+    "maximumDepth": 2,
+    "mode": "source",
+    "motifFamily": "parent-boundary-enter-backspace",
+    "motifId": "parent-boundary-enter-backspace.ordered",
+    "motifRepetition": 0,
+    "profile": "v0.3-list-lifecycle-random-500",
+    "randomOriginId": "list-lifecycle-random-500.150.2016be4af283ae10",
+    "requiredObservations": [
+      "source",
+      "selection",
+      "physical",
+      "semantic",
+      "presentation"
+    ],
+    "schemaVersion": 1,
+    "seed": "cogneuro-v0.3-list-lifecycle-random-500-001",
+    "sequenceSeed": "cogneuro-v0.3-list-lifecycle-random-500-001:parent-boundary-enter-backspace.ordered:0",
+    "state": {
+      "active": true
+    },
+    "syntaxFamily": "ordered-lists",
+    "tags": [
+      "list-editing-expanded",
+      "list-lifecycle-random-500",
+      "empty-item-lifecycle",
+      "ordered-list-lifecycle",
+      "lifecycle-motif-parent-boundary-enter-backspace",
+      "parent-nested-boundary"
+    ]
+  }
+}

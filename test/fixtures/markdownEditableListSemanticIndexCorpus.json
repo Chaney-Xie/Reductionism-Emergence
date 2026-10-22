@@ -1,0 +1,52 @@
+[
+  {
+    "id": "unordered",
+    "source": "- a\n- b\n- c",
+    "rows": [[0, "unordered", 1, "-", false], [1, "unordered", 1, "-", false], [2, "unordered", 1, "-", false]]
+  },
+  {
+    "id": "nested",
+    "source": "- a\n\t- b\n\t\t- c\n\t- d\n- e",
+    "rows": [[0, "unordered", 1, "-", false], [1, "unordered", 2, "-", false], [2, "unordered", 3, "-", false], [3, "unordered", 2, "-", false], [4, "unordered", 1, "-", false]]
+  },
+  {
+    "id": "ordered",
+    "source": "1. a\n2. b\n3. c",
+    "rows": [[0, "ordered", 1, "1.", false], [1, "ordered", 1, "2.", false], [2, "ordered", 1, "3.", false]]
+  },
+  {
+    "id": "manual-values",
+    "source": "3. a\n4. b\n\n1. a\n7. b",
+    "rows": [[0, "ordered", 1, "3.", false], [1, "ordered", 1, "4.", false], [3, "ordered", 1, "1.", false], [4, "ordered", 1, "7.", false]]
+  },
+  {
+    "id": "tasks",
+    "source": "- [ ] todo\n- [x] done",
+    "rows": [[0, "unordered", 1, "-", true], [1, "unordered", 1, "-", true]]
+  },
+  {
+    "id": "nested-tasks",
+    "source": "- parent\n\t- [ ] child\n\t- [x] child",
+    "rows": [[0, "unordered", 1, "-", false], [1, "unordered", 2, "-", true], [2, "unordered", 2, "-", true]]
+  },
+  {
+    "id": "mixed",
+    "source": "- unordered\n\t1. ordered\n\t2. ordered\n- unordered",
+    "rows": [[0, "unordered", 1, "-", false], [1, "ordered", 2, "1.", false], [2, "ordered", 2, "2.", false], [3, "unordered", 1, "-", false]]
+  },
+  {
+    "id": "boundaries-and-code",
+    "source": "plain\n- item\nplain\n\n# heading\n- adjacent\n> quote\n- after quote\n```\n- fenced\n```\n\t- tab code row",
+    "rows": [[1, "unordered", 1, "-", false], [5, "unordered", 1, "-", false], [7, "unordered", 1, "-", false], [11, "unordered", 2, "-", false]]
+  },
+  {
+    "id": "false-positives",
+    "source": "\\- escaped\n-literal\n1.numeric\n  - space parser\n* parser\n+ parser\n> - quoted",
+    "rows": []
+  },
+  {
+    "id": "table-html-rule-adjacent",
+    "source": "<div>- html</div>\n\n| A | B |\n| - | - |\n| - item | text |\n\n---\n- after",
+    "rows": [[7, "unordered", 1, "-", false]]
+  }
+]

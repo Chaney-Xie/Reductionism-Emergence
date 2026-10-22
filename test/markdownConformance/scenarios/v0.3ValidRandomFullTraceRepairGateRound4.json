@@ -1,0 +1,1617 @@
+{
+  "caseCount": 12,
+  "categoryCounts": {
+    "enter": 2,
+    "history": 8,
+    "shift-tab": 1,
+    "tab": 1
+  },
+  "corpusSha256": "00602bb26d4f9b7d9c1f97f589455564e86dfdd6b54f5fdf41a13c30866d15b5",
+  "deterministic": true,
+  "kind": "v0.3-valid-random-full-action-trace-repair-gate",
+  "oneActionRebasedCount": 2,
+  "preservedPrefixCount": 10,
+  "schemaVersion": 1,
+  "sequences": [
+    {
+      "actions": [
+        {
+          "certificationEffect": "guaranteed-edit",
+          "key": "Enter",
+          "shiftKey": true,
+          "type": "keyboard"
+        },
+        {
+          "certificationEffect": "possible-edit",
+          "key": "Delete",
+          "type": "keyboard"
+        },
+        {
+          "certificationEffect": "navigation",
+          "key": "ArrowRight",
+          "type": "keyboard"
+        },
+        {
+          "certificationEffect": "possible-edit",
+          "key": "Tab",
+          "type": "keyboard"
+        },
+        {
+          "certificationEffect": "possible-edit",
+          "key": "Tab",
+          "type": "keyboard"
+        },
+        {
+          "certificationEffect": "possible-edit",
+          "key": "Backspace",
+          "type": "keyboard"
+        },
+        {
+          "certificationEffect": "possible-edit",
+          "key": "Tab",
+          "shiftKey": true,
+          "type": "keyboard"
+        },
+        {
+          "certificationEffect": "possible-edit",
+          "key": "Tab",
+          "type": "keyboard"
+        },
+        {
+          "certificationEffect": "guaranteed-edit",
+          "command": "insertText",
+          "text": "$",
+          "type": "input"
+        },
+        {
+          "certificationEffect": "guaranteed-edit",
+          "command": "insertText",
+          "text": " ",
+          "type": "input"
+        },
+        {
+          "certificationEffect": "guaranteed-edit",
+          "command": "insertText",
+          "text": "$",
+          "type": "input"
+        },
+        {
+          "certificationEffect": "possible-edit",
+          "key": "Tab",
+          "type": "keyboard"
+        },
+        {
+          "certificationEffect": "guaranteed-edit",
+          "key": "Enter",
+          "shiftKey": true,
+          "type": "keyboard"
+        },
+        {
+          "certificationEffect": "guaranteed-edit",
+          "command": "insertText",
+          "text": " ",
+          "type": "input"
+        },
+        {
+          "certificationEffect": "guaranteed-edit",
+          "key": "Enter",
+          "type": "keyboard"
+        },
+        {
+          "certificationEffect": "possible-edit",
+          "key": "Delete",
+          "type": "keyboard"
+        },
+        {
+          "certificationEffect": "navigation",
+          "key": "ArrowLeft",
+          "type": "keyboard"
+        },
+        {
+          "certificationEffect": "possible-edit",
+          "key": "Tab",
+          "shiftKey": true,
+          "type": "keyboard"
+        }
+      ],
+      "comparisonPolicy": {
+        "kind": "fully-comparable",
+        "nonComparableDimensions": []
+      },
+      "fixtureId": "unordered-three-depths",
+      "id": "v0.3-full-trace-repair.0d41a3de9d2bd48b00dc.action-18",
+      "initialSelection": {
+        "anchor": 8,
+        "focus": 8
+      },
+      "initialSource": "- A\n  - B\n    - C",
+      "mode": "source",
+      "oracleExpected": {
+        "selection": {
+          "anchor": 54,
+          "focus": 54
+        },
+        "source": "- A\n  - \n    \n            $ $\n             \n          C"
+      },
+      "repairCategory": "shift-tab",
+      "repairMetadata": {
+        "authoritativeDifferencePaths": [
+          "selection.anchor",
+          "selection.anchorPoint.column",
+          "selection.anchorPoint.offset",
+          "selection.end",
+          "selection.focus",
+          "selection.focusPoint.column",
+          "selection.focusPoint.offset",
+          "selection.start"
+        ],
+        "expectedO1": {
+          "selection": {
+            "anchor": 54,
+            "focus": 54
+          },
+          "source": "- A\n  - \n    \n            $ $\n             \n          C"
+        },
+        "firstDivergentActionIndex": 17,
+        "firstDivergentActionNumber": 18,
+        "minimizedActionCount": 18,
+        "observedV1BeforeRepair": {
+          "selection": {
+            "anchor": 52,
+            "focus": 52
+          },
+          "source": "- A\n  - \n    \n            $ $\n             \n          C"
+        },
+        "originScenarioId": "certification-random.0d41a3de9d2bd48b00dc",
+        "prefixStatePreserved": true
+      },
+      "requiredObservations": [
+        "source",
+        "selection",
+        "physical",
+        "semantic"
+      ],
+      "schemaVersion": 1,
+      "state": {
+        "active": true
+      },
+      "syntaxFamily": "unordered-lists"
+    },
+    {
+      "actions": [
+        {
+          "certificationEffect": "guaranteed-edit",
+          "command": "insertText",
+          "text": " ",
+          "type": "input"
+        },
+        {
+          "certificationEffect": "possible-edit",
+          "key": "Backspace",
+          "type": "keyboard"
+        },
+        {
+          "certificationEffect": "guaranteed-edit",
+          "key": "Enter",
+          "shiftKey": true,
+          "type": "keyboard"
+        },
+        {
+          "certificationEffect": "guaranteed-edit",
+          "command": "insertText",
+          "text": " ",
+          "type": "input"
+        },
+        {
+          "certificationEffect": "possible-edit",
+          "key": "Backspace",
+          "type": "keyboard"
+        },
+        {
+          "certificationEffect": "possible-edit",
+          "key": "Delete",
+          "type": "keyboard"
+        },
+        {
+          "certificationEffect": "possible-edit",
+          "key": "Tab",
+          "shiftKey": true,
+          "type": "keyboard"
+        },
+        {
+          "certificationEffect": "possible-edit",
+          "key": "Tab",
+          "type": "keyboard"
+        },
+        {
+          "certificationEffect": "guaranteed-edit",
+          "command": "insertText",
+          "text": "1",
+          "type": "input"
+        },
+        {
+          "certificationEffect": "guaranteed-edit",
+          "key": "Enter",
+          "type": "keyboard"
+        },
+        {
+          "certificationEffect": "guaranteed-edit",
+          "key": "Enter",
+          "shiftKey": true,
+          "type": "keyboard"
+        },
+        {
+          "certificationEffect": "undo",
+          "key": "z",
+          "modifiers": [
+            "platform-primary"
+          ],
+          "type": "keyboard"
+        }
+      ],
+      "comparisonPolicy": {
+        "kind": "fully-comparable",
+        "nonComparableDimensions": []
+      },
+      "fixtureId": "empty-fenced-code",
+      "id": "v0.3-full-trace-repair.daa564d97259e8507239.action-12",
+      "initialSelection": {
+        "anchor": 6,
+        "focus": 6
+      },
+      "initialSource": "```js\n\n```",
+      "mode": "source",
+      "oracleExpected": {
+        "selection": {
+          "anchor": 7,
+          "focus": 7
+        },
+        "source": "```js\n\n```"
+      },
+      "repairCategory": "history",
+      "repairMetadata": {
+        "authoritativeDifferencePaths": [
+          "source.byteLength",
+          "source.bytesBase64",
+          "source.sha256",
+          "source.text",
+          "selection.anchor",
+          "selection.anchorPoint.column",
+          "selection.anchorPoint.offset",
+          "selection.end",
+          "selection.focus",
+          "selection.focusPoint.column",
+          "selection.focusPoint.offset",
+          "selection.start",
+          "physical.lines.2.end",
+          "physical.lines.2.endWithEnding",
+          "physical.lines.2.text"
+        ],
+        "expectedO1": {
+          "selection": {
+            "anchor": 7,
+            "focus": 7
+          },
+          "source": "```js\n\n```"
+        },
+        "firstDivergentActionIndex": 11,
+        "firstDivergentActionNumber": 12,
+        "minimizedActionCount": 12,
+        "observedV1BeforeRepair": {
+          "selection": {
+            "anchor": 11,
+            "focus": 11
+          },
+          "source": "```js\n\n    ```"
+        },
+        "originScenarioId": "certification-random.daa564d97259e8507239",
+        "prefixStatePreserved": true
+      },
+      "requiredObservations": [
+        "source",
+        "selection",
+        "physical",
+        "semantic"
+      ],
+      "schemaVersion": 1,
+      "state": {
+        "active": true
+      },
+      "syntaxFamily": "fenced-code"
+    },
+    {
+      "actions": [
+        {
+          "certificationEffect": "guaranteed-edit",
+          "command": "insertText",
+          "text": "*",
+          "type": "input"
+        },
+        {
+          "certificationEffect": "undo",
+          "key": "z",
+          "modifiers": [
+            "platform-primary"
+          ],
+          "type": "keyboard"
+        },
+        {
+          "certificationEffect": "redo",
+          "key": "z",
+          "modifiers": [
+            "platform-primary",
+            "shift"
+          ],
+          "type": "keyboard"
+        },
+        {
+          "certificationEffect": "navigation",
+          "key": "ArrowLeft",
+          "type": "keyboard"
+        },
+        {
+          "certificationEffect": "possible-edit",
+          "key": "Delete",
+          "type": "keyboard"
+        },
+        {
+          "certificationEffect": "guaranteed-edit",
+          "key": "Enter",
+          "type": "keyboard"
+        },
+        {
+          "certificationEffect": "possible-edit",
+          "key": "Tab",
+          "type": "keyboard"
+        },
+        {
+          "certificationEffect": "undo",
+          "key": "z",
+          "modifiers": [
+            "platform-primary"
+          ],
+          "type": "keyboard"
+        },
+        {
+          "certificationEffect": "redo",
+          "key": "z",
+          "modifiers": [
+            "platform-primary",
+            "shift"
+          ],
+          "type": "keyboard"
+        },
+        {
+          "certificationEffect": "possible-edit",
+          "key": "Tab",
+          "type": "keyboard"
+        },
+        {
+          "certificationEffect": "possible-edit",
+          "key": "Backspace",
+          "type": "keyboard"
+        },
+        {
+          "certificationEffect": "undo",
+          "key": "z",
+          "modifiers": [
+            "platform-primary"
+          ],
+          "type": "keyboard"
+        }
+      ],
+      "comparisonPolicy": {
+        "kind": "fully-comparable",
+        "nonComparableDimensions": []
+      },
+      "fixtureId": "escaped-markers",
+      "id": "v0.3-full-trace-repair.f79fc4408b365dfd8324.action-12",
+      "initialSelection": {
+        "anchor": 19,
+        "focus": 19
+      },
+      "initialSource": "Escaped symbols: \\*not italic\\*, \\# not a heading.",
+      "mode": "live-preview",
+      "oracleExpected": {
+        "selection": {
+          "anchor": 24,
+          "focus": 24
+        },
+        "source": "Escaped symbols: \\*\n    not italic\\*, \\# not a heading."
+      },
+      "repairCategory": "history",
+      "repairMetadata": {
+        "authoritativeDifferencePaths": [
+          "source.byteLength",
+          "source.bytesBase64",
+          "source.sha256",
+          "source.text",
+          "selection.anchor",
+          "selection.anchorPoint.column",
+          "selection.anchorPoint.offset",
+          "selection.end",
+          "selection.focus",
+          "selection.focusPoint.column",
+          "selection.focusPoint.offset",
+          "selection.start",
+          "physical.lines.1.end",
+          "physical.lines.1.endWithEnding",
+          "physical.lines.1.text"
+        ],
+        "expectedO1": {
+          "selection": {
+            "anchor": 24,
+            "focus": 24
+          },
+          "source": "Escaped symbols: \\*\n    not italic\\*, \\# not a heading."
+        },
+        "firstDivergentActionIndex": 11,
+        "firstDivergentActionNumber": 12,
+        "minimizedActionCount": 12,
+        "observedV1BeforeRepair": {
+          "selection": {
+            "anchor": 28,
+            "focus": 28
+          },
+          "source": "Escaped symbols: \\*\n        not italic\\*, \\# not a heading."
+        },
+        "originScenarioId": "certification-random.f79fc4408b365dfd8324",
+        "prefixStatePreserved": true
+      },
+      "requiredObservations": [
+        "source",
+        "selection",
+        "physical",
+        "semantic"
+      ],
+      "schemaVersion": 1,
+      "state": {
+        "active": true
+      },
+      "syntaxFamily": "escaped-syntax"
+    },
+    {
+      "actions": [
+        {
+          "certificationEffect": "guaranteed-edit",
+          "key": "Enter",
+          "shiftKey": true,
+          "type": "keyboard"
+        },
+        {
+          "certificationEffect": "possible-edit",
+          "key": "Tab",
+          "type": "keyboard"
+        },
+        {
+          "certificationEffect": "possible-edit",
+          "key": "Backspace",
+          "type": "keyboard"
+        },
+        {
+          "certificationEffect": "undo",
+          "key": "z",
+          "modifiers": [
+            "platform-primary"
+          ],
+          "type": "keyboard"
+        }
+      ],
+      "comparisonPolicy": {
+        "kind": "fully-comparable",
+        "nonComparableDimensions": []
+      },
+      "fixtureId": "empty-document",
+      "id": "v0.3-full-trace-repair.6318e4b97afcd2a786c3.action-4",
+      "initialSelection": {
+        "anchor": 0,
+        "focus": 0
+      },
+      "initialSource": "",
+      "mode": "live-preview",
+      "oracleExpected": {
+        "selection": {
+          "anchor": 1,
+          "focus": 1
+        },
+        "source": "\n"
+      },
+      "repairCategory": "history",
+      "repairMetadata": {
+        "authoritativeDifferencePaths": [
+          "source.byteLength",
+          "source.bytesBase64",
+          "source.endsWithLineEnding",
+          "source.sha256",
+          "source.text",
+          "selection.anchor",
+          "selection.anchorPoint.column",
+          "selection.anchorPoint.offset",
+          "selection.end",
+          "selection.focus",
+          "selection.focusPoint.column",
+          "selection.focusPoint.offset",
+          "selection.start",
+          "physical.lines.1.blank",
+          "physical.lines.1.end",
+          "physical.lines.1.endWithEnding",
+          "physical.lines.1.text"
+        ],
+        "expectedO1": {
+          "selection": {
+            "anchor": 1,
+            "focus": 1
+          },
+          "source": "\n"
+        },
+        "firstDivergentActionIndex": 3,
+        "firstDivergentActionNumber": 4,
+        "minimizedActionCount": 4,
+        "observedV1BeforeRepair": {
+          "selection": {
+            "anchor": 5,
+            "focus": 5
+          },
+          "source": "\n    "
+        },
+        "originScenarioId": "certification-random.6318e4b97afcd2a786c3",
+        "prefixStatePreserved": true
+      },
+      "requiredObservations": [
+        "source",
+        "selection",
+        "physical",
+        "semantic"
+      ],
+      "schemaVersion": 1,
+      "state": {
+        "active": true
+      },
+      "syntaxFamily": "blank-lines"
+    },
+    {
+      "actions": [
+        {
+          "certificationEffect": "guaranteed-edit",
+          "command": "insertText",
+          "text": " ",
+          "type": "input"
+        },
+        {
+          "certificationEffect": "navigation",
+          "key": "ArrowRight",
+          "type": "keyboard"
+        },
+        {
+          "certificationEffect": "possible-edit",
+          "key": "Tab",
+          "type": "keyboard"
+        },
+        {
+          "certificationEffect": "navigation",
+          "key": "ArrowRight",
+          "type": "keyboard"
+        },
+        {
+          "certificationEffect": "navigation",
+          "key": "ArrowRight",
+          "type": "keyboard"
+        },
+        {
+          "certificationEffect": "guaranteed-edit",
+          "command": "insertText",
+          "text": " ",
+          "type": "input"
+        },
+        {
+          "certificationEffect": "possible-edit",
+          "key": "Backspace",
+          "type": "keyboard"
+        },
+        {
+          "certificationEffect": "possible-edit",
+          "key": "Tab",
+          "type": "keyboard"
+        },
+        {
+          "certificationEffect": "guaranteed-edit",
+          "key": "Enter",
+          "shiftKey": true,
+          "type": "keyboard"
+        },
+        {
+          "certificationEffect": "possible-edit",
+          "key": "Tab",
+          "shiftKey": true,
+          "type": "keyboard"
+        },
+        {
+          "certificationEffect": "possible-edit",
+          "key": "Backspace",
+          "type": "keyboard"
+        },
+        {
+          "certificationEffect": "undo",
+          "key": "z",
+          "modifiers": [
+            "platform-primary"
+          ],
+          "type": "keyboard"
+        }
+      ],
+      "comparisonPolicy": {
+        "kind": "fully-comparable",
+        "nonComparableDimensions": []
+      },
+      "fixtureId": "unordered-star-plus",
+      "id": "v0.3-full-trace-repair.4862111c0826e1a0f802.action-12",
+      "initialSelection": {
+        "anchor": 2,
+        "focus": 2
+      },
+      "initialSource": "* Star\n\n+ Plus",
+      "mode": "source",
+      "oracleExpected": {
+        "selection": {
+          "anchor": 14,
+          "focus": 14
+        },
+        "source": "        *  Star\n\n+ Plus"
+      },
+      "repairCategory": "history",
+      "repairMetadata": {
+        "authoritativeDifferencePaths": [
+          "source.byteLength",
+          "source.bytesBase64",
+          "source.sha256",
+          "source.text",
+          "selection.anchor",
+          "selection.anchorPoint.column",
+          "selection.anchorPoint.line",
+          "selection.anchorPoint.lineIndex",
+          "selection.anchorPoint.offset",
+          "selection.end",
+          "selection.focus",
+          "selection.focusPoint.column",
+          "selection.focusPoint.line",
+          "selection.focusPoint.lineIndex",
+          "selection.focusPoint.offset",
+          "selection.start",
+          "physical.lineCount",
+          "physical.lines.0.end",
+          "physical.lines.0.endWithEnding",
+          "physical.lines.0.text",
+          "physical.lines.1.blank",
+          "physical.lines.1.end",
+          "physical.lines.1.endWithEnding",
+          "physical.lines.1.start",
+          "physical.lines.1.text",
+          "physical.lines.2.blank",
+          "physical.lines.2.end",
+          "physical.lines.2.endWithEnding",
+          "physical.lines.2.lineEnding",
+          "physical.lines.2.start",
+          "physical.lines.2.terminal",
+          "physical.lines.2.text",
+          "physical.lines.3"
+        ],
+        "expectedO1": {
+          "selection": {
+            "anchor": 14,
+            "focus": 14
+          },
+          "source": "        *  Star\n\n+ Plus"
+        },
+        "firstDivergentActionIndex": 11,
+        "firstDivergentActionNumber": 12,
+        "minimizedActionCount": 12,
+        "observedV1BeforeRepair": {
+          "selection": {
+            "anchor": 25,
+            "focus": 25
+          },
+          "source": "        *  Sta\n          r\n\n+ Plus"
+        },
+        "originScenarioId": "certification-random.4862111c0826e1a0f802",
+        "prefixStatePreserved": true
+      },
+      "requiredObservations": [
+        "source",
+        "selection",
+        "physical",
+        "semantic"
+      ],
+      "schemaVersion": 1,
+      "state": {
+        "active": true
+      },
+      "syntaxFamily": "unordered-lists"
+    },
+    {
+      "actions": [
+        {
+          "certificationEffect": "guaranteed-edit",
+          "key": "Enter",
+          "type": "keyboard"
+        }
+      ],
+      "comparisonPolicy": {
+        "kind": "fully-comparable",
+        "nonComparableDimensions": []
+      },
+      "fixtureId": "quote-transition",
+      "id": "v0.3-full-trace-repair.9f6cc92b1d816115d2c1.action-12",
+      "initialSelection": {
+        "anchor": 30,
+        "focus": 30
+      },
+      "initialSource": ">>  \n>>     \n>>     >\n>>     >\n> B\nC",
+      "mode": "live-preview",
+      "oracleExpected": {
+        "selection": {
+          "anchor": 28,
+          "focus": 28
+        },
+        "source": ">>  \n>>     \n>>     \n>>     \n> B\nC"
+      },
+      "repairCategory": "enter",
+      "repairMetadata": {
+        "authoritativeDifferencePaths": [
+          "source.byteLength",
+          "source.bytesBase64",
+          "source.sha256",
+          "source.text",
+          "selection.anchor",
+          "selection.anchorPoint.column",
+          "selection.anchorPoint.line",
+          "selection.anchorPoint.lineIndex",
+          "selection.anchorPoint.offset",
+          "selection.end",
+          "selection.focus",
+          "selection.focusPoint.column",
+          "selection.focusPoint.line",
+          "selection.focusPoint.lineIndex",
+          "selection.focusPoint.offset",
+          "selection.start",
+          "physical.lineCount",
+          "physical.lines.2.end",
+          "physical.lines.2.endWithEnding",
+          "physical.lines.2.text",
+          "physical.lines.3.end",
+          "physical.lines.3.endWithEnding",
+          "physical.lines.3.start",
+          "physical.lines.3.text",
+          "physical.lines.4.end",
+          "physical.lines.4.endWithEnding",
+          "physical.lines.4.start",
+          "physical.lines.4.text",
+          "physical.lines.5.end",
+          "physical.lines.5.endWithEnding",
+          "physical.lines.5.lineEnding",
+          "physical.lines.5.start",
+          "physical.lines.5.terminal",
+          "physical.lines.5.text",
+          "physical.lines.6"
+        ],
+        "expectedO1": {
+          "selection": {
+            "anchor": 28,
+            "focus": 28
+          },
+          "source": ">>  \n>>     \n>>     \n>>     \n> B\nC"
+        },
+        "firstDivergentActionIndex": 11,
+        "firstDivergentActionNumber": 12,
+        "minimizedActionCount": 1,
+        "observedV1BeforeRepair": {
+          "selection": {
+            "anchor": 39,
+            "focus": 39
+          },
+          "source": ">>  \n>>     \n>>     >\n>>     >\n>>     >\n> B\nC"
+        },
+        "originScenarioId": "certification-random.9f6cc92b1d816115d2c1",
+        "prefixStatePreserved": false
+      },
+      "requiredObservations": [
+        "source",
+        "selection",
+        "physical",
+        "semantic"
+      ],
+      "schemaVersion": 1,
+      "state": {
+        "active": true
+      },
+      "syntaxFamily": "quotes"
+    },
+    {
+      "actions": [
+        {
+          "certificationEffect": "guaranteed-edit",
+          "key": "Enter",
+          "type": "keyboard"
+        },
+        {
+          "certificationEffect": "undo",
+          "key": "z",
+          "modifiers": [
+            "platform-primary"
+          ],
+          "type": "keyboard"
+        },
+        {
+          "certificationEffect": "redo",
+          "key": "z",
+          "modifiers": [
+            "platform-primary",
+            "shift"
+          ],
+          "type": "keyboard"
+        },
+        {
+          "certificationEffect": "guaranteed-edit",
+          "command": "insertText",
+          "text": " ",
+          "type": "input"
+        },
+        {
+          "certificationEffect": "undo",
+          "key": "z",
+          "modifiers": [
+            "platform-primary"
+          ],
+          "type": "keyboard"
+        },
+        {
+          "certificationEffect": "redo",
+          "key": "z",
+          "modifiers": [
+            "platform-primary",
+            "shift"
+          ],
+          "type": "keyboard"
+        },
+        {
+          "certificationEffect": "navigation",
+          "key": "ArrowRight",
+          "type": "keyboard"
+        },
+        {
+          "certificationEffect": "guaranteed-edit",
+          "key": "Enter",
+          "shiftKey": true,
+          "type": "keyboard"
+        },
+        {
+          "certificationEffect": "navigation",
+          "key": "ArrowRight",
+          "type": "keyboard"
+        },
+        {
+          "certificationEffect": "navigation",
+          "key": "ArrowRight",
+          "type": "keyboard"
+        },
+        {
+          "certificationEffect": "possible-edit",
+          "key": "Backspace",
+          "type": "keyboard"
+        },
+        {
+          "certificationEffect": "guaranteed-edit",
+          "command": "insertText",
+          "text": " ",
+          "type": "input"
+        },
+        {
+          "certificationEffect": "possible-edit",
+          "key": "Delete",
+          "type": "keyboard"
+        },
+        {
+          "certificationEffect": "guaranteed-edit",
+          "command": "insertText",
+          "text": " ",
+          "type": "input"
+        },
+        {
+          "certificationEffect": "possible-edit",
+          "key": "Tab",
+          "type": "keyboard"
+        }
+      ],
+      "comparisonPolicy": {
+        "kind": "fully-comparable",
+        "nonComparableDimensions": []
+      },
+      "fixtureId": "ordered-tab-indent",
+      "id": "v0.3-full-trace-repair.b2e410bc3e8beae135f7.action-15",
+      "initialSelection": {
+        "anchor": 9,
+        "focus": 9
+      },
+      "initialSource": "1. A\n\t1. B\n\t\t1. C",
+      "mode": "live-preview",
+      "oracleExpected": {
+        "selection": {
+          "anchor": 28,
+          "focus": 28
+        },
+        "source": "1. A\n\t1. \n\t2.  B\n\t   \n      3. C"
+      },
+      "repairCategory": "tab",
+      "repairMetadata": {
+        "authoritativeDifferencePaths": [
+          "source.bytesBase64",
+          "source.sha256",
+          "source.text",
+          "physical.lines.4.text"
+        ],
+        "expectedO1": {
+          "selection": {
+            "anchor": 28,
+            "focus": 28
+          },
+          "source": "1. A\n\t1. \n\t2.  B\n\t   \n      3. C"
+        },
+        "firstDivergentActionIndex": 14,
+        "firstDivergentActionNumber": 15,
+        "minimizedActionCount": 15,
+        "observedV1BeforeRepair": {
+          "selection": {
+            "anchor": 28,
+            "focus": 28
+          },
+          "source": "1. A\n\t1. \n\t2.  B\n\t   \n      1. C"
+        },
+        "originScenarioId": "certification-random.b2e410bc3e8beae135f7",
+        "prefixStatePreserved": true
+      },
+      "requiredObservations": [
+        "source",
+        "selection",
+        "physical",
+        "semantic"
+      ],
+      "schemaVersion": 1,
+      "state": {
+        "active": true
+      },
+      "syntaxFamily": "ordered-lists"
+    },
+    {
+      "actions": [
+        {
+          "certificationEffect": "guaranteed-edit",
+          "command": "insertText",
+          "text": " ",
+          "type": "input"
+        },
+        {
+          "certificationEffect": "guaranteed-edit",
+          "key": "Enter",
+          "type": "keyboard"
+        },
+        {
+          "certificationEffect": "guaranteed-edit",
+          "key": "Enter",
+          "type": "keyboard"
+        },
+        {
+          "certificationEffect": "possible-edit",
+          "key": "Backspace",
+          "type": "keyboard"
+        },
+        {
+          "certificationEffect": "possible-edit",
+          "key": "Tab",
+          "shiftKey": true,
+          "type": "keyboard"
+        },
+        {
+          "certificationEffect": "possible-edit",
+          "key": "Delete",
+          "type": "keyboard"
+        },
+        {
+          "certificationEffect": "undo",
+          "key": "z",
+          "modifiers": [
+            "platform-primary"
+          ],
+          "type": "keyboard"
+        },
+        {
+          "certificationEffect": "redo",
+          "key": "z",
+          "modifiers": [
+            "platform-primary",
+            "shift"
+          ],
+          "type": "keyboard"
+        },
+        {
+          "certificationEffect": "undo",
+          "key": "z",
+          "modifiers": [
+            "platform-primary"
+          ],
+          "type": "keyboard"
+        }
+      ],
+      "comparisonPolicy": {
+        "kind": "fully-comparable",
+        "nonComparableDimensions": []
+      },
+      "fixtureId": "ordered-required",
+      "id": "v0.3-full-trace-repair.11a090f7e3bb618edb45.action-9",
+      "initialSelection": {
+        "anchor": 16,
+        "focus": 16
+      },
+      "initialSource": "1. A\n2. B\n   1. C\n   2. D\n3. E",
+      "mode": "source",
+      "oracleExpected": {
+        "selection": {
+          "anchor": 17,
+          "focus": 17
+        },
+        "source": "1. A\n2. B\n   1. C\n   2. D\n3. E"
+      },
+      "repairCategory": "history",
+      "repairMetadata": {
+        "authoritativeDifferencePaths": [
+          "selection.anchor",
+          "selection.anchorPoint.column",
+          "selection.anchorPoint.line",
+          "selection.anchorPoint.lineIndex",
+          "selection.anchorPoint.offset",
+          "selection.end",
+          "selection.focus",
+          "selection.focusPoint.column",
+          "selection.focusPoint.line",
+          "selection.focusPoint.lineIndex",
+          "selection.focusPoint.offset",
+          "selection.start"
+        ],
+        "expectedO1": {
+          "selection": {
+            "anchor": 17,
+            "focus": 17
+          },
+          "source": "1. A\n2. B\n   1. C\n   2. D\n3. E"
+        },
+        "firstDivergentActionIndex": 8,
+        "firstDivergentActionNumber": 9,
+        "minimizedActionCount": 9,
+        "observedV1BeforeRepair": {
+          "selection": {
+            "anchor": 27,
+            "focus": 27
+          },
+          "source": "1. A\n2. B\n   1. C\n   2. D\n3. E"
+        },
+        "originScenarioId": "certification-random.11a090f7e3bb618edb45",
+        "prefixStatePreserved": true
+      },
+      "requiredObservations": [
+        "source",
+        "selection",
+        "physical",
+        "semantic"
+      ],
+      "schemaVersion": 1,
+      "state": {
+        "active": true
+      },
+      "syntaxFamily": "ordered-lists"
+    },
+    {
+      "actions": [
+        {
+          "certificationEffect": "guaranteed-edit",
+          "key": "Enter",
+          "type": "keyboard"
+        }
+      ],
+      "comparisonPolicy": {
+        "kind": "fully-comparable",
+        "nonComparableDimensions": []
+      },
+      "fixtureId": "task-list",
+      "id": "v0.3-full-trace-repair.170d1fc84d06025f2e0d.action-12",
+      "initialSelection": {
+        "anchor": 100,
+        "focus": 100
+      },
+      "initialSource": "- [ ] Open\n- [x] Done\n  - [X] Nested done\n  - [ ] \n            \n            x \n            \n        ested open\n- [ ] Last",
+      "mode": "source",
+      "oracleExpected": {
+        "selection": {
+          "anchor": 109,
+          "focus": 109
+        },
+        "source": "- [ ] Open\n- [x] Done\n  - [X] Nested done\n  - [ ] \n            \n            x \n            \n        \n  - [ ] ested open\n- [ ] Last"
+      },
+      "repairCategory": "enter",
+      "repairMetadata": {
+        "authoritativeDifferencePaths": [
+          "source.bytesBase64",
+          "source.sha256",
+          "source.text",
+          "physical.lines.8.text"
+        ],
+        "expectedO1": {
+          "selection": {
+            "anchor": 109,
+            "focus": 109
+          },
+          "source": "- [ ] Open\n- [x] Done\n  - [X] Nested done\n  - [ ] \n            \n            x \n            \n        \n  - [ ] ested open\n- [ ] Last"
+        },
+        "firstDivergentActionIndex": 11,
+        "firstDivergentActionNumber": 12,
+        "minimizedActionCount": 1,
+        "observedV1BeforeRepair": {
+          "selection": {
+            "anchor": 109,
+            "focus": 109
+          },
+          "source": "- [ ] Open\n- [x] Done\n  - [X] Nested done\n  - [ ] \n            \n            x \n            \n        \n        ested open\n- [ ] Last"
+        },
+        "originScenarioId": "certification-random.170d1fc84d06025f2e0d",
+        "prefixStatePreserved": false
+      },
+      "requiredObservations": [
+        "source",
+        "selection",
+        "physical",
+        "semantic"
+      ],
+      "schemaVersion": 1,
+      "state": {
+        "active": true
+      },
+      "syntaxFamily": "task-lists"
+    },
+    {
+      "actions": [
+        {
+          "certificationEffect": "guaranteed-edit",
+          "key": "Enter",
+          "type": "keyboard"
+        },
+        {
+          "certificationEffect": "undo",
+          "key": "z",
+          "modifiers": [
+            "platform-primary"
+          ],
+          "type": "keyboard"
+        },
+        {
+          "certificationEffect": "redo",
+          "key": "z",
+          "modifiers": [
+            "platform-primary",
+            "shift"
+          ],
+          "type": "keyboard"
+        },
+        {
+          "certificationEffect": "possible-edit",
+          "key": "Tab",
+          "type": "keyboard"
+        },
+        {
+          "certificationEffect": "undo",
+          "key": "z",
+          "modifiers": [
+            "platform-primary"
+          ],
+          "type": "keyboard"
+        },
+        {
+          "certificationEffect": "redo",
+          "key": "z",
+          "modifiers": [
+            "platform-primary",
+            "shift"
+          ],
+          "type": "keyboard"
+        },
+        {
+          "certificationEffect": "undo",
+          "key": "z",
+          "modifiers": [
+            "platform-primary"
+          ],
+          "type": "keyboard"
+        },
+        {
+          "certificationEffect": "redo",
+          "key": "z",
+          "modifiers": [
+            "platform-primary",
+            "shift"
+          ],
+          "type": "keyboard"
+        },
+        {
+          "certificationEffect": "guaranteed-edit",
+          "key": "Enter",
+          "type": "keyboard"
+        },
+        {
+          "certificationEffect": "possible-edit",
+          "key": "Tab",
+          "type": "keyboard"
+        },
+        {
+          "certificationEffect": "possible-edit",
+          "key": "Backspace",
+          "type": "keyboard"
+        },
+        {
+          "certificationEffect": "guaranteed-edit",
+          "key": "Enter",
+          "shiftKey": true,
+          "type": "keyboard"
+        },
+        {
+          "certificationEffect": "undo",
+          "key": "z",
+          "modifiers": [
+            "platform-primary"
+          ],
+          "type": "keyboard"
+        }
+      ],
+      "comparisonPolicy": {
+        "kind": "fully-comparable",
+        "nonComparableDimensions": []
+      },
+      "fixtureId": "autolinks",
+      "id": "v0.3-full-trace-repair.a6c40579ea7842824697.action-13",
+      "initialSelection": {
+        "anchor": 1,
+        "focus": 1
+      },
+      "initialSource": "<https://example.com> and https://literal.example/path",
+      "mode": "live-preview",
+      "oracleExpected": {
+        "selection": {
+          "anchor": 11,
+          "focus": 11
+        },
+        "source": "<\n    \n    https://example.com> and https://literal.example/path"
+      },
+      "repairCategory": "history",
+      "repairMetadata": {
+        "authoritativeDifferencePaths": [
+          "source.byteLength",
+          "source.bytesBase64",
+          "source.sha256",
+          "source.text",
+          "selection.anchor",
+          "selection.anchorPoint.column",
+          "selection.anchorPoint.offset",
+          "selection.end",
+          "selection.focus",
+          "selection.focusPoint.column",
+          "selection.focusPoint.offset",
+          "selection.start",
+          "physical.lines.2.end",
+          "physical.lines.2.endWithEnding",
+          "physical.lines.2.text"
+        ],
+        "expectedO1": {
+          "selection": {
+            "anchor": 11,
+            "focus": 11
+          },
+          "source": "<\n    \n    https://example.com> and https://literal.example/path"
+        },
+        "firstDivergentActionIndex": 12,
+        "firstDivergentActionNumber": 13,
+        "minimizedActionCount": 13,
+        "observedV1BeforeRepair": {
+          "selection": {
+            "anchor": 15,
+            "focus": 15
+          },
+          "source": "<\n    \n        https://example.com> and https://literal.example/path"
+        },
+        "originScenarioId": "certification-random.a6c40579ea7842824697",
+        "prefixStatePreserved": true
+      },
+      "requiredObservations": [
+        "source",
+        "selection",
+        "physical",
+        "semantic"
+      ],
+      "schemaVersion": 1,
+      "state": {
+        "active": true
+      },
+      "syntaxFamily": "links"
+    },
+    {
+      "actions": [
+        {
+          "certificationEffect": "guaranteed-edit",
+          "command": "insertText",
+          "text": "*",
+          "type": "input"
+        },
+        {
+          "certificationEffect": "guaranteed-edit",
+          "command": "insertText",
+          "text": " ",
+          "type": "input"
+        },
+        {
+          "certificationEffect": "possible-edit",
+          "key": "Delete",
+          "type": "keyboard"
+        },
+        {
+          "certificationEffect": "guaranteed-edit",
+          "key": "Enter",
+          "shiftKey": true,
+          "type": "keyboard"
+        },
+        {
+          "certificationEffect": "guaranteed-edit",
+          "key": "Enter",
+          "type": "keyboard"
+        },
+        {
+          "certificationEffect": "navigation",
+          "key": "ArrowLeft",
+          "type": "keyboard"
+        },
+        {
+          "certificationEffect": "navigation",
+          "key": "ArrowRight",
+          "type": "keyboard"
+        },
+        {
+          "certificationEffect": "guaranteed-edit",
+          "key": "Enter",
+          "shiftKey": true,
+          "type": "keyboard"
+        },
+        {
+          "certificationEffect": "navigation",
+          "key": "ArrowRight",
+          "type": "keyboard"
+        },
+        {
+          "certificationEffect": "possible-edit",
+          "key": "Delete",
+          "type": "keyboard"
+        },
+        {
+          "certificationEffect": "possible-edit",
+          "key": "Tab",
+          "type": "keyboard"
+        },
+        {
+          "certificationEffect": "guaranteed-edit",
+          "command": "insertText",
+          "text": "1",
+          "type": "input"
+        },
+        {
+          "certificationEffect": "guaranteed-edit",
+          "key": "Enter",
+          "shiftKey": true,
+          "type": "keyboard"
+        },
+        {
+          "certificationEffect": "guaranteed-edit",
+          "key": "Enter",
+          "shiftKey": true,
+          "type": "keyboard"
+        },
+        {
+          "certificationEffect": "undo",
+          "key": "z",
+          "modifiers": [
+            "platform-primary"
+          ],
+          "type": "keyboard"
+        }
+      ],
+      "comparisonPolicy": {
+        "kind": "fully-comparable",
+        "nonComparableDimensions": []
+      },
+      "fixtureId": "plain-indented-transition",
+      "id": "v0.3-full-trace-repair.410d77b9df51f401b0bc.action-15",
+      "initialSelection": {
+        "anchor": 8,
+        "focus": 8
+      },
+      "initialSource": "A\nB\n    C\nD",
+      "mode": "source",
+      "oracleExpected": {
+        "selection": {
+          "anchor": 17,
+          "focus": 17
+        },
+        "source": "A\nB\n    * \n  \n  \n"
+      },
+      "repairCategory": "history",
+      "repairMetadata": {
+        "authoritativeDifferencePaths": [
+          "source.byteLength",
+          "source.bytesBase64",
+          "source.endsWithLineEnding",
+          "source.sha256",
+          "source.text",
+          "selection.anchor",
+          "selection.anchorPoint.column",
+          "selection.anchorPoint.offset",
+          "selection.end",
+          "selection.focus",
+          "selection.focusPoint.column",
+          "selection.focusPoint.offset",
+          "selection.start",
+          "physical.lines.5.blank",
+          "physical.lines.5.end",
+          "physical.lines.5.endWithEnding",
+          "physical.lines.5.text"
+        ],
+        "expectedO1": {
+          "selection": {
+            "anchor": 17,
+            "focus": 17
+          },
+          "source": "A\nB\n    * \n  \n  \n"
+        },
+        "firstDivergentActionIndex": 14,
+        "firstDivergentActionNumber": 15,
+        "minimizedActionCount": 15,
+        "observedV1BeforeRepair": {
+          "selection": {
+            "anchor": 21,
+            "focus": 21
+          },
+          "source": "A\nB\n    * \n  \n  \n    "
+        },
+        "originScenarioId": "certification-random.410d77b9df51f401b0bc",
+        "prefixStatePreserved": true
+      },
+      "requiredObservations": [
+        "source",
+        "selection",
+        "physical",
+        "semantic"
+      ],
+      "schemaVersion": 1,
+      "state": {
+        "active": true
+      },
+      "syntaxFamily": "paragraphs"
+    },
+    {
+      "actions": [
+        {
+          "certificationEffect": "guaranteed-edit",
+          "command": "insertText",
+          "text": "x",
+          "type": "input"
+        },
+        {
+          "certificationEffect": "guaranteed-edit",
+          "key": "Enter",
+          "shiftKey": true,
+          "type": "keyboard"
+        },
+        {
+          "certificationEffect": "possible-edit",
+          "key": "Tab",
+          "type": "keyboard"
+        },
+        {
+          "certificationEffect": "possible-edit",
+          "key": "Tab",
+          "type": "keyboard"
+        },
+        {
+          "certificationEffect": "possible-edit",
+          "key": "Backspace",
+          "type": "keyboard"
+        },
+        {
+          "certificationEffect": "undo",
+          "key": "z",
+          "modifiers": [
+            "platform-primary"
+          ],
+          "type": "keyboard"
+        }
+      ],
+      "comparisonPolicy": {
+        "kind": "fully-comparable",
+        "nonComparableDimensions": []
+      },
+      "fixtureId": "reference-image",
+      "id": "v0.3-full-trace-repair.1c7706220688af8fba13.action-6",
+      "initialSelection": {
+        "anchor": 2,
+        "focus": 2
+      },
+      "initialSource": "![Diagram][asset]\n\n[asset]: assets/images/example.png \"Example title\"",
+      "mode": "live-preview",
+      "oracleExpected": {
+        "selection": {
+          "anchor": 8,
+          "focus": 8
+        },
+        "source": "![x\n    Diagram][asset]\n\n[asset]: assets/images/example.png \"Example title\""
+      },
+      "repairCategory": "history",
+      "repairMetadata": {
+        "authoritativeDifferencePaths": [
+          "source.byteLength",
+          "source.bytesBase64",
+          "source.sha256",
+          "source.text",
+          "selection.anchor",
+          "selection.anchorPoint.column",
+          "selection.anchorPoint.offset",
+          "selection.end",
+          "selection.focus",
+          "selection.focusPoint.column",
+          "selection.focusPoint.offset",
+          "selection.start",
+          "physical.lines.1.end",
+          "physical.lines.1.endWithEnding",
+          "physical.lines.1.text",
+          "physical.lines.2.end",
+          "physical.lines.2.endWithEnding",
+          "physical.lines.2.start",
+          "physical.lines.3.end",
+          "physical.lines.3.endWithEnding",
+          "physical.lines.3.start"
+        ],
+        "expectedO1": {
+          "selection": {
+            "anchor": 8,
+            "focus": 8
+          },
+          "source": "![x\n    Diagram][asset]\n\n[asset]: assets/images/example.png \"Example title\""
+        },
+        "firstDivergentActionIndex": 5,
+        "firstDivergentActionNumber": 6,
+        "minimizedActionCount": 6,
+        "observedV1BeforeRepair": {
+          "selection": {
+            "anchor": 12,
+            "focus": 12
+          },
+          "source": "![x\n        Diagram][asset]\n\n[asset]: assets/images/example.png \"Example title\""
+        },
+        "originScenarioId": "certification-random.1c7706220688af8fba13",
+        "prefixStatePreserved": true
+      },
+      "requiredObservations": [
+        "source",
+        "selection",
+        "physical",
+        "semantic"
+      ],
+      "schemaVersion": 1,
+      "state": {
+        "active": true
+      },
+      "syntaxFamily": "links"
+    }
+  ],
+  "sourceComparisonKind": "o1-v1-action-trace-evidence-comparison",
+  "sourceCorpusSha256": "6085a46a252f666a9f0ae3e60e9d649a797039c84500e8f385b86cf78db24868"
+}

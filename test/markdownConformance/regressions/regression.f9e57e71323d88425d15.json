@@ -1,0 +1,104 @@
+{
+  "evaluations": 6,
+  "kind": "minimized-o1-v1-regression",
+  "metadata": {
+    "differencePathPrefix": null,
+    "evidenceLevels": [
+      "V1"
+    ],
+    "minimizedAt": "2026-08-20T06:03:53.310Z",
+    "obsidianLaunches": 0,
+    "predicate": "viewer-integrity",
+    "randomOriginId": "list-lifecycle-random-500.100.2987f23467504087",
+    "viewerLaunches": 1
+  },
+  "minimizedLength": 1,
+  "originalLength": 8,
+  "schemaVersion": 1,
+  "sequence": {
+    "actionTracePolicy": {
+      "captureAfterEveryAction": true,
+      "compareAfterEveryAction": true,
+      "expectedActionCount": 8,
+      "required": true,
+      "requiredDimensions": [
+        "source",
+        "selection",
+        "physical",
+        "semantic",
+        "presentation.list",
+        "presentation.list.focus",
+        "presentation.list.lifecycleIntegrity"
+      ]
+    },
+    "actions": [
+      {
+        "captureAfterAction": true,
+        "historyEffect": "possible-edit",
+        "id": "delete",
+        "key": "Delete",
+        "motifRole": "motif-core",
+        "traceIndex": 2,
+        "type": "keyboard"
+      }
+    ],
+    "boundary": {
+      "name": "empty-parent-item-before-nested-list",
+      "notation": "1. A\n2. |\n    1. C\n    2. D",
+      "offset": 8
+    },
+    "boundaryKind": "empty-parent-item-before-nested-list",
+    "comparisonPolicy": {
+      "kind": "fully-comparable",
+      "nonComparableDimensions": []
+    },
+    "fixtureId": "lifecycle-ordered-empty-parent-with-nested-list",
+    "id": "regression.f9e57e71323d88425d15",
+    "index": 100,
+    "initialItem": 2,
+    "initialSelection": {
+      "anchor": 8,
+      "focus": 8
+    },
+    "initialSource": "1. A\n2. \n    1. C\n    2. D",
+    "lifecycleCoverage": {
+      "activeTransitions": false,
+      "alternatingActions": null,
+      "emptyItem": true,
+      "historyReplay": false,
+      "parentNestedBoundary": true,
+      "repeatedAction": "Delete"
+    },
+    "listKind": "ordered",
+    "marker": "ordered",
+    "maximumDepth": 2,
+    "mode": "source",
+    "motifFamily": "owned-empty-repeated-delete",
+    "motifId": "owned-empty-repeated-delete.ordered",
+    "motifRepetition": 0,
+    "profile": "v0.3-list-lifecycle-random-500",
+    "randomOriginId": "list-lifecycle-random-500.100.2987f23467504087",
+    "requiredObservations": [
+      "source",
+      "selection",
+      "physical",
+      "semantic",
+      "presentation"
+    ],
+    "schemaVersion": 1,
+    "seed": "cogneuro-v0.3-list-lifecycle-random-500-001",
+    "sequenceSeed": "cogneuro-v0.3-list-lifecycle-random-500-001:owned-empty-repeated-delete.ordered:0",
+    "state": {
+      "active": true
+    },
+    "syntaxFamily": "ordered-lists",
+    "tags": [
+      "list-editing-expanded",
+      "list-lifecycle-random-500",
+      "empty-item-lifecycle",
+      "ordered-list-lifecycle",
+      "lifecycle-motif-owned-empty-repeated-delete",
+      "parent-nested-boundary"
+    ]
+  }
+}

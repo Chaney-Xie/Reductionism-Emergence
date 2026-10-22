@@ -1,0 +1,99 @@
+:root {
+  --ui-action-height: 30px;
+  --ui-action-min-width: 4rem;
+  --ui-action-padding-inline: 0.75rem;
+  --ui-action-radius: 6px;
+  --ui-action-font-size: 0.82rem;
+}
+
+/*
+ * Canonical action controls. Component CSS may position these buttons, but it
+ * must not restyle their shape, typography, colours, or interaction states.
+ * The legacy names remain compatibility aliases during the class migration.
+ * Right Sidebar section-header text actions and the compact Category Filter
+ * Clear component are explicitly outside this system even if a canonical
+ * class is present in their markup.
+ */
+:not(.right-section-action):not(.filter-clear-button):is(
+  .ui-outline-action,
+  .ui-solid-action,
+  .ui-cancel-action,
+  .ui-primary-action
+) {
+  display: inline-flex;
+  box-sizing: border-box;
+  height: var(--ui-action-height);
+  min-width: var(--ui-action-min-width);
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--ui-action-padding-inline);
+  border-width: 1px;
+  border-style: solid;
+  border-radius: var(--ui-action-radius);
+  font-family: var(--font-system-family);
+  font-size: var(--ui-action-font-size);
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+:not(.right-section-action):not(.filter-clear-button):is(.ui-outline-action, .ui-cancel-action) {
+  border-color: var(--control-border);
+  color: #344152;
+  background: var(--control-surface);
+  font-weight: 400;
+}
+
+:not(.right-section-action):not(.filter-clear-button):is(.ui-outline-action, .ui-cancel-action):not(:disabled):hover,
+:not(.right-section-action):not(.filter-clear-button):is(.ui-outline-action, .ui-cancel-action):not(:disabled):focus-visible {
+  border-color: var(--control-border);
+  color: #344152;
+  background: var(--control-surface-hover);
+}
+
+:not(.right-section-action):not(.filter-clear-button):is(.ui-outline-action, .ui-cancel-action):not(:disabled):active,
+:not(.right-section-action):not(.filter-clear-button):is(.ui-outline-action, .ui-cancel-action).active:not(:disabled),
+:not(.right-section-action):not(.filter-clear-button):is(.ui-outline-action, .ui-cancel-action)[aria-pressed='true']:not(:disabled) {
+  border-color: var(--control-border);
+  color: #344152;
+  background: var(--surface-guide-section);
+}
+
+:not(.right-section-action):not(.filter-clear-button):is(.ui-solid-action, .ui-primary-action) {
+  border-color: var(--theme-colour);
+  color: var(--theme-colour-contrast);
+  background: var(--theme-colour);
+  font-weight: 700;
+}
+
+:not(.right-section-action):not(.filter-clear-button):is(.ui-solid-action, .ui-primary-action):not(:disabled):hover,
+:not(.right-section-action):not(.filter-clear-button):is(.ui-solid-action, .ui-primary-action):not(:disabled):focus-visible {
+  border-color: var(--theme-colour-hover);
+  color: var(--theme-colour-contrast);
+  background: var(--theme-colour-hover);
+}
+
+:not(.right-section-action):not(.filter-clear-button):is(.ui-solid-action, .ui-primary-action):not(:disabled):active,
+:not(.right-section-action):not(.filter-clear-button):is(.ui-solid-action, .ui-primary-action).active:not(:disabled),
+:not(.right-section-action):not(.filter-clear-button):is(.ui-solid-action, .ui-primary-action)[aria-pressed='true']:not(:disabled) {
+  border-color: var(--theme-colour-active);
+  color: var(--theme-colour-contrast);
+  background: var(--theme-colour-active);
+}
+
+:not(.right-section-action):not(.filter-clear-button):is(.ui-outline-action, .ui-cancel-action):disabled {
+  border-color: var(--control-border);
+  color: #657184;
+  background: var(--control-surface);
+  cursor: default;
+  opacity: 0.5;
+}
+
+:not(.right-section-action):not(.filter-clear-button):is(.ui-solid-action, .ui-primary-action):disabled {
+  border-color: var(--theme-soft);
+  color: #657184;
+  background: var(--theme-soft);
+  cursor: default;
+  opacity: 0.65;
+}

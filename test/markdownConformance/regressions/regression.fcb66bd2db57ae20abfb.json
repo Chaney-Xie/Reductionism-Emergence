@@ -1,0 +1,46 @@
+{
+  "evaluations": 3,
+  "kind": "minimized-o1-v1-regression",
+  "metadata": {
+    "evidenceLevels": [
+      "O1",
+      "V1"
+    ],
+    "minimizedAt": "2026-08-11T14:25:22.207Z",
+    "obsidianLaunches": 1,
+    "predicate": "source",
+    "randomOriginId": "random.80d0278160a796744f86",
+    "viewerLaunches": 1
+  },
+  "minimizedLength": 1,
+  "originalLength": 6,
+  "schemaVersion": 1,
+  "sequence": {
+    "actions": [
+      {
+        "key": "Tab",
+        "shiftKey": true,
+        "type": "keyboard"
+      }
+    ],
+    "fixtureId": "quote-two-lines",
+    "id": "regression.fcb66bd2db57ae20abfb",
+    "index": 83,
+    "initialSelection": {
+      "anchor": 2,
+      "focus": 2
+    },
+    "initialSource": "> A\n> B",
+    "mode": "live-preview",
+    "randomOriginId": "random.80d0278160a796744f86",
+    "requiredObservations": [
+      "source",
+      "selection",
+      "physical",
+      "semantic"
+    ],
+    "schemaVersion": 1,
+    "seed": "v03-fixed",
+    "syntaxFamily": "quotes"
+  }
+}

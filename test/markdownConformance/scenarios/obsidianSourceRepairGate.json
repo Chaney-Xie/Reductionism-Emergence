@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 1,
+  "description": "Packaged-Viewer gate for every O1 source mismatch recorded by obsidian-1.13.6-source-interactions.json. The two marker-only nested quote cases are product-decision controls, not authorized repairs.",
+  "oracle": "../oracles/obsidian-1.13.6-source-interactions.json",
+  "scenarios": [
+    {
+      "id": "plain_tab_start",
+      "syntaxFamily": "paragraphs",
+      "initialSource": "Alpha",
+      "mode": "source",
+      "state": { "active": true },
+      "initialSelection": { "anchor": 0, "focus": 0 },
+      "action": { "type": "key", "key": "Tab" },
+      "requiredObservations": ["source", "selection", "physical"],
+      "oracleExpected": { "source": "    Alpha", "selection": { "anchor": 4, "focus": 4 } }
+    },
+    {
+      "id": "plain_tab_middle",
+      "syntaxFamily": "paragraphs",
+      "initialSource": "Alpha",
+      "mode": "source",
+      "state": { "active": true },
+      "initialSelection": { "anchor": 2, "focus": 2 },
+      "action": { "type": "key", "key": "Tab" },
+      "requiredObservations": ["source", "selection", "physical"],
+      "oracleExpected": { "source": "    Alpha", "selection": { "anchor": 6, "focus": 6 } }
+    },
+    {
+      "id": "plain_tab_end",
+      "syntaxFamily": "paragraphs",
+      "initialSource": "Alpha",
+      "mode": "source",
+      "state": { "active": true },
+      "initialSelection": { "anchor": 5, "focus": 5 },
+      "action": { "type": "key", "key": "Tab" },
+      "requiredObservations": ["source", "selection", "physical"],
+      "oracleExpected": { "source": "    Alpha", "selection": { "anchor": 9, "focus": 9 } }
+    },
+    {
+      "id": "quote_depth2_enter_empty",
+      "syntaxFamily": "quotes",
+      "initialSource": ">> ",
+      "mode": "source",
+      "state": { "active": true, "quoteDepth": 2 },
+      "initialSelection": { "anchor": 3, "focus": 3 },
+      "action": { "type": "key", "key": "Enter" },
+      "requiredObservations": ["source", "selection", "physical"],
+      "productDecisionRequired": true,
+      "oracleExpected": { "source": ">\n>", "selection": { "anchor": 3, "focus": 3 } }
+    },
+    {
+      "id": "quote_depth3_enter_empty",
+      "syntaxFamily": "quotes",
+      "initialSource": ">>> ",
+      "mode": "source",
+      "state": { "active": true, "quoteDepth": 3 },
+      "initialSelection": { "anchor": 4, "focus": 4 },
+      "action": { "type": "key", "key": "Enter" },
+      "requiredObservations": ["source", "selection", "physical"],
+      "productDecisionRequired": true,
+      "oracleExpected": { "source": ">>\n>>", "selection": { "anchor": 5, "focus": 5 } }
+    },
+    {
+      "id": "list_ordered_enter_nonempty",
+      "syntaxFamily": "ordered-lists",
+      "initialSource": "1. Item",
+      "mode": "source",
+      "state": { "active": true },
+      "initialSelection": { "anchor": 7, "focus": 7 },
+      "action": { "type": "key", "key": "Enter" },
+      "requiredObservations": ["source", "selection", "physical"],
+      "oracleExpected": { "source": "1. Item\n2. ", "selection": { "anchor": 11, "focus": 11 } }
+    },
+    {
+      "id": "list_ordered_enter_empty",
+      "syntaxFamily": "ordered-lists",
+      "initialSource": "1. ",
+      "mode": "source",
+      "state": { "active": true },
+      "initialSelection": { "anchor": 3, "focus": 3 },
+      "action": { "type": "key", "key": "Enter" },
+      "requiredObservations": ["source", "selection", "physical"],
+      "oracleExpected": { "source": "", "selection": { "anchor": 0, "focus": 0 } }
+    },
+    {
+      "id": "list_ordered_tab_depth1",
+      "syntaxFamily": "ordered-lists",
+      "initialSource": "1. A\n2. Target",
+      "mode": "source",
+      "state": { "active": true },
+      "initialSelection": { "anchor": 14, "focus": 14 },
+      "action": { "type": "key", "key": "Tab" },
+      "requiredObservations": ["source", "selection", "physical"],
+      "oracleExpected": { "source": "1. A\n    1. Target", "selection": { "anchor": 18, "focus": 18 } }
+    },
+    {
+      "id": "list_unordered_enter_empty",
+      "syntaxFamily": "unordered-lists",
+      "initialSource": "- ",
+      "mode": "source",
+      "state": { "active": true },
+      "initialSelection": { "anchor": 2, "focus": 2 },
+      "action": { "type": "key", "key": "Enter" },
+      "requiredObservations": ["source", "selection", "physical"],
+      "oracleExpected": { "source": "", "selection": { "anchor": 0, "focus": 0 } }
+    },
+    {
+      "id": "list_unordered_tab_depth1",
+      "syntaxFamily": "unordered-lists",
+      "initialSource": "- A\n- Target",
+      "mode": "source",
+      "state": { "active": true },
+      "initialSelection": { "anchor": 12, "focus": 12 },
+      "action": { "type": "key", "key": "Tab" },
+      "requiredObservations": ["source", "selection", "physical"],
+      "oracleExpected": { "source": "- A\n    - Target", "selection": { "anchor": 16, "focus": 16 } }
+    },
+    {
+      "id": "list_task_enter_empty",
+      "syntaxFamily": "task-lists",
+      "initialSource": "- [ ] ",
+      "mode": "source",
+      "state": { "active": true },
+      "initialSelection": { "anchor": 6, "focus": 6 },
+      "action": { "type": "key", "key": "Enter" },
+      "requiredObservations": ["source", "selection", "physical"],
+      "oracleExpected": { "source": "", "selection": { "anchor": 0, "focus": 0 } }
+    },
+    {
+      "id": "list_task_tab_depth1",
+      "syntaxFamily": "task-lists",
+      "initialSource": "- [ ] A\n- [ ] Target",
+      "mode": "source",
+      "state": { "active": true },
+      "initialSelection": { "anchor": 20, "focus": 20 },
+      "action": { "type": "key", "key": "Tab" },
+      "requiredObservations": ["source", "selection", "physical"],
+      "oracleExpected": { "source": "- [ ] A\n    - [ ] Target", "selection": { "anchor": 24, "focus": 24 } }
+    },
+    {
+      "id": "list_mixed_enter_innermost",
+      "syntaxFamily": "mixed-lists",
+      "initialSource": "1. Root\n    - Bullet\n        1. Child\n2. Tail",
+      "mode": "source",
+      "state": { "active": true },
+      "initialSelection": { "anchor": 37, "focus": 37 },
+      "action": { "type": "key", "key": "Enter" },
+      "requiredObservations": ["source", "selection", "physical"],
+      "oracleExpected": { "source": "1. Root\n    - Bullet\n        1. Child\n        2. \n2. Tail", "selection": { "anchor": 49, "focus": 49 } }
+    },
+    {
+      "id": "list_mixed_shift_tab_innermost",
+      "syntaxFamily": "mixed-lists",
+      "initialSource": "1. Root\n    - Bullet\n        1. Child\n        2. Target\n2. Tail",
+      "mode": "source",
+      "state": { "active": true },
+      "initialSelection": { "anchor": 55, "focus": 55 },
+      "action": { "type": "key", "key": "Tab", "shiftKey": true },
+      "requiredObservations": ["source", "selection", "physical"],
+      "oracleExpected": { "source": "1. Root\n    - Bullet\n        1. Child\n    1. Target\n2. Tail", "selection": { "anchor": 51, "focus": 51 } }
+    },
+    {
+      "id": "heading_backspace_content_start",
+      "syntaxFamily": "headings",
+      "initialSource": "# Heading",
+      "mode": "source",
+      "state": { "active": true },
+      "initialSelection": { "anchor": 2, "focus": 2 },
+      "action": { "type": "key", "key": "Backspace" },
+      "requiredObservations": ["source", "selection", "physical"],
+      "oracleExpected": { "source": "#Heading", "selection": { "anchor": 1, "focus": 1 } }
+    },
+    {
+      "id": "softline_enter_middle_plain_line",
+      "syntaxFamily": "soft-break",
+      "initialSource": "Alpha Beta",
+      "mode": "source",
+      "state": { "active": true },
+      "initialSelection": { "anchor": 5, "focus": 5 },
+      "action": { "type": "key", "key": "Enter" },
+      "requiredObservations": ["source", "selection", "physical"],
+      "oracleExpected": { "source": "Alpha\nBeta", "selection": { "anchor": 6, "focus": 6 } }
+    }
+  ]
+}
